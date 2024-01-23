@@ -12,7 +12,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "[class^=\"sprite-info_sprite-info_\"] {\n  height: 0;\n  padding: 0 0.75rem;\n  overflow: hidden;\n  transition-property: height, padding, transform;\n  transition-duration: var(--spriteProperties-transitionDuration);\n}\n\n.sa-hide-sprite-properties [class^=\"sprite-info_sprite-info_\"] {\n  border: none;\n}\n\n[class^=\"sprite-selector_scroll-wrapper_\"] {\n  height: 100%;\n  transition-property: height;\n  transition-duration: var(--spriteProperties-transitionDuration);\n}\n\n.sa-show-sprite-properties [class^=\"sprite-info_sprite-info_\"] {\n  /* The height needs to be known for the animation to work.\n     6.5rem + 5px is the exact height of sprite info when\n     this addon is enabled:\n       0.75rem (top padding)\n     + 2rem + 2px (.icon-wrappers in the first row)\n     + 0.5rem (margin between rows)\n     + 2rem + 2px (.icon-wrappers in the second row)\n     + 1.25rem (close button)\n     + 1px (bottom border) */\n  height: calc(6.5rem + 5px);\n  padding: 0.75rem;\n  padding-bottom: 0;\n}\n.sa-sprite-properties-wide-locale.sa-show-sprite-properties [class^=\"sprite-info_sprite-info_\"] {\n  /* In wide languages, add in addition to the previous:\n     + 2 * 0.625rem * 1.2 (each row's text label now uses vertical space)\n     + 2 * 0.25rem (each row has extra padding) */\n  height: calc(6.5rem + 5px + 2rem);\n}\n[class^=\"label_input-group-column_\"] {\n  /* Default line-height: normal is inconsistent across browsers, but above style needs constant line-height. */\n  line-height: 1.2;\n}\n\n/* see heights in above selectors */\n.sa-show-sprite-properties [class^=\"sprite-selector_scroll-wrapper_\"] {\n  height: calc(100% - 6.5rem - 5px);\n}\n.sa-sprite-properties-wide-locale.sa-show-sprite-properties [class^=\"sprite-selector_scroll-wrapper_\"] {\n  height: calc(100% - 6.5rem - 5px - 2rem);\n}\n\n.sa-sprite-properties-info-btn {\n  /* !important to override displayNoneWhileDisabled's inline styles */\n  display: flex !important;\n  position: absolute;\n  justify-content: center;\n  align-items: center;\n  width: 1rem;\n  height: 1rem;\n  top: -2px;\n  left: -2px;\n  border: none;\n  border-radius: 100%;\n  background-color: var(--editorDarkMode-primary, hsla(0, 100%, 65%, 1));\n}\n[dir=\"rtl\"] .sa-sprite-properties-info-btn {\n  left: auto;\n  right: -2px;\n}\n.sa-show-sprite-properties .sa-sprite-properties-info-btn {\n  display: none !important;\n}\n\n.sa-sprite-properties-info-btn img {\n  width: calc(1rem - 6px);\n  height: calc(1rem - 6px);\n  filter: var(--editorDarkMode-primary-filter);\n}\n\n.sa-sprite-properties-close-btn {\n  width: 100%;\n  height: 1.25rem;\n  padding: 0;\n  padding-top: 0.5rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: none;\n  background-color: transparent;\n  user-select: none;\n}\n\n.sa-sprite-properties-close-btn img {\n  filter: var(--editorDarkMode-accent-filter);\n  transition: opacity 0.25s ease-out;\n}\n\n.sa-sprite-properties-close-btn:hover img {\n  opacity: 0.75;\n}\n\n/* Prevent double clicking from highlighting the \"Choose a sprite\" button */\n[class*=\"action-menu_main-button_\"] {\n  user-select: none;\n}\n", ""]);
+exports.push([module.i, "[class^=\"sprite-info_sprite-info_\"] {\n  height: 0;\n  padding: 0 0.75rem;\n  overflow: hidden;\n  transition-property: height, padding, transform;\n  transition-duration: var(--spriteProperties-transitionDuration);\n}\n\n.sa-hide-sprite-properties [class^=\"sprite-info_sprite-info_\"] {\n  border: none;\n}\n\n[class^=\"sprite-selector_scroll-wrapper_\"],\n/* Also take full height if `sprite-properties` is hiding the properties (specificity) */\n.sa-hide-sprite-properties [class^=\"sprite-selector_scroll-wrapper_\"] {\n  height: 100%;\n  transition-property: height;\n  transition-duration: var(--spriteProperties-transitionDuration);\n}\n\n.sa-show-sprite-properties [class^=\"sprite-info_sprite-info_\"] {\n  /* The height needs to be known for the animation to work.\n     6.5rem + 5px is the exact height of sprite info when\n     this addon is enabled:\n       0.75rem (top padding)\n     + 2rem + 2px (.icon-wrappers in the first row)\n     + 0.5rem (margin between rows)\n     + 2rem + 2px (.icon-wrappers in the second row)\n     + 1.25rem (close button)\n     + 1px (bottom border) */\n  height: calc(6.5rem + 5px);\n  padding: 0.75rem;\n  padding-bottom: 0;\n}\n.sa-sprite-properties-wide-locale.sa-show-sprite-properties [class^=\"sprite-info_sprite-info_\"] {\n  /* In wide languages, add in addition to the previous:\n     + 2 * 0.625rem * 1.2 (each row's text label now uses vertical space)\n     + 2 * 0.25rem (each row has extra padding) */\n  height: calc(6.5rem + 5px + 2rem);\n}\n[class^=\"label_input-group-column_\"] {\n  /* Default line-height: normal is inconsistent across browsers, but above style needs constant line-height. */\n  line-height: 1.2;\n}\n\n/* see heights in above selectors */\n.sa-show-sprite-properties [class^=\"sprite-selector_scroll-wrapper_\"] {\n  height: calc(100% - 6.5rem - 5px);\n}\n.sa-sprite-properties-wide-locale.sa-show-sprite-properties [class^=\"sprite-selector_scroll-wrapper_\"] {\n  height: calc(100% - 6.5rem - 5px - 2rem);\n}\n\n.sa-sprite-properties-info-btn {\n  /* !important to override displayNoneWhileDisabled's inline styles */\n  display: flex !important;\n  position: absolute;\n  justify-content: center;\n  align-items: center;\n  width: 1rem;\n  height: 1rem;\n  top: -2px;\n  left: -2px;\n  border: none;\n  border-radius: 100%;\n  background-color: var(--editorDarkMode-primary, hsla(260, 60%, 60%, 1));\n}\n[dir=\"rtl\"] .sa-sprite-properties-info-btn {\n  left: auto;\n  right: -2px;\n}\n.sa-show-sprite-properties .sa-sprite-properties-info-btn {\n  display: none !important;\n}\n\n.sa-sprite-properties-info-btn img {\n  width: calc(1rem - 6px);\n  height: calc(1rem - 6px);\n  filter: var(--editorDarkMode-primary-filter);\n}\n\n.sa-sprite-properties-close-btn {\n  width: 100%;\n  height: 1.25rem;\n  padding: 0;\n  padding-top: 0.5rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: none;\n  margin-left: auto;\n  background-color: transparent;\n  user-select: none;\n}\n\n.sa-sprite-properties-close-btn img {\n  filter: var(--editorDarkMode-accent-filter);\n  transition: opacity 0.25s ease-out;\n}\n\n.sa-sprite-properties-close-btn:hover img {\n  opacity: 0.75;\n}\n\n/* Prevent double clicking from highlighting the \"Choose a sprite\" button */\n[class*=\"action-menu_main-button_\"] {\n  user-select: none;\n}\n", ""]);
 
 // exports
 
@@ -122,10 +122,11 @@ __webpack_require__.r(__webpack_exports__);
       setPropertiesPanelVisible(false);
     }
   }
+  const isDirectionPopoverOpen = () => document.querySelector("body > div.Popover > div > div > [class*=direction-picker_button-row_]");
   // Close properties panel when mouse leaves the entire sprite panel
   document.body.addEventListener("mouseleave", e => {
-    if (e.target.matches('[class*="sprite-selector_sprite-selector_2KgCX"]')) {
-      autoHidePanel();
+    if (e.target.matches('[class*="sprite-selector_sprite-selector_"]')) {
+      if (!isDirectionPopoverOpen()) autoHidePanel();
     }
   }, {
     capture: true
@@ -185,16 +186,15 @@ __webpack_require__.r(__webpack_exports__);
     // Note that when the stage is in small mode, "wide" languages use the same info panel as other
     // languages.
     // List of languages is here:
-    // https://github.com/LLK/scratch-gui/blob/e15b2dfa3a2e58e80fae8d1586c7f56aa0cc0ede/src/lib/locale-utils.js#L6-L18
+    // https://github.com/scratchfoundation/scratch-gui/blob/e15b2dfa3a2e58e80fae8d1586c7f56aa0cc0ede/src/lib/locale-utils.js#L6-L18
     const isWideLocale = !!propertiesPanel.querySelector("[class^=label_input-group-column_]");
     document.body.classList.toggle("sa-sprite-properties-wide-locale", isWideLocale);
   }
-  document.addEventListener("click", e => {
-    if (e.target.closest("[class*='stage-header_stage-button-first']") || e.target.closest("[class*='stage-header_stage-button-last']")) {
+  addon.tab.redux.initialize();
+  addon.tab.redux.addEventListener("statechanged", e => {
+    if (e.detail.action.type === "scratch-gui/StageSize/SET_STAGE_SIZE") {
       setTimeout(updateWideLocaleMode);
     }
-  }, {
-    capture: true
   });
   while (true) {
     propertiesPanel = await addon.tab.waitForElement('[class^="sprite-info_sprite-info_"]', {

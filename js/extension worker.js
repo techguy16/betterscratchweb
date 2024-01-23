@@ -2524,6 +2524,9 @@ class SharedDispatch {
         if (isRemote) {
           return this._remoteTransferCall(provider, service, method, transfer, ...args);
         }
+
+        // TODO: verify correct `this` after switching from apply to spread
+        // eslint-disable-next-line prefer-spread
         const result = provider[method].apply(provider, args);
         return Promise.resolve(result);
       }
@@ -2765,7 +2768,7 @@ class WorkerDispatch extends SharedDispatch {
    * @returns {Promise} - a promise which will resolve once the service is registered.
    */
   setService(service, provider) {
-    if (this.services.hasOwnProperty(service)) {
+    if (Object.prototype.hasOwnProperty.call(this.services, service)) {
       log.warn("Worker dispatch replacing existing service provider for ".concat(service));
     }
     this.services[service] = provider;
@@ -3257,6 +3260,11 @@ const createTranslate = vm => {
       translations: storedTranslations
     });
   };
+  Object.defineProperty(translate, 'language', {
+    configurable: true,
+    enumerable: true,
+    get: () => getLocale()
+  });
   translate.setup({});
   if (vm) {
     vm.on('LOCALE_CHANGED', () => {

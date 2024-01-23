@@ -36,7 +36,7 @@ __webpack_require__.r(__webpack_exports__);
   } = _ref;
   const ScratchBlocks = await addon.tab.traps.getBlockly();
 
-  // https://github.com/LLK/scratch-blocks/blob/develop/core/field_number.js#L165
+  // https://github.com/scratchfoundation/scratch-blocks/blob/develop/core/field_number.js#L165
   const originalMouseDown = ScratchBlocks.FieldNumber.prototype.showEditor_;
   ScratchBlocks.FieldNumber.prototype.showEditor_ = function () {
     if (!addon.self.disabled) {

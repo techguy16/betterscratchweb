@@ -12,7 +12,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".sa-contextmenu-colored .blocklyContextMenu {\n  background-color: var(--sa-contextmenu-bg) !important;\n  border-color: var(--sa-contextmenu-border) !important;\n}\n.sa-contextmenu-colored .blocklyContextMenu .goog-menuitem-highlight,\n.sa-contextmenu-colored .s3dev-mi:hover {\n  background-color: #0001;\n  border-color: transparent !important;\n}\n.sa-contextmenu-colored .blocklyContextMenu .goog-menuitem[style*=\"border-top\"] {\n  border-top-color: var(--sa-contextmenu-border) !important;\n}\n.sa-contextmenu-colored .blocklyContextMenu .goog-menuitem .goog-menuitem-content {\n  color: white;\n}\n", ""]);
+exports.push([module.i, ".sa-contextmenu-colored .blocklyContextMenu {\n  background-color: var(--sa-contextmenu-bg);\n  border-color: var(--sa-contextmenu-border);\n}\n.sa-contextmenu-colored .blocklyContextMenu .goog-menuitem-highlight,\n.sa-contextmenu-colored .s3dev-mi:hover {\n  background-color: #0001;\n  border-color: transparent !important;\n}\n.sa-contextmenu-colored .blocklyContextMenu .goog-menuitem[style*=\"border-top\"] {\n  border-top-color: var(--sa-contextmenu-border) !important;\n}\n.sa-contextmenu-colored .blocklyContextMenu .goog-menuitem .goog-menuitem-content {\n  color: var(--sa-contextmenu-text);\n}\n", ""]);
 
 // exports
 
@@ -70,9 +70,11 @@ __webpack_require__.r(__webpack_exports__);
     }
     const fill = Object(_libraries_common_cs_text_color_esm_js__WEBPACK_IMPORTED_MODULE_0__["removeAlpha"])(background.getAttribute("fill"));
     const border = background.getAttribute("stroke") || "#0003";
+    const text = ScratchBlocks.Colours.text;
     widgetDiv.classList.add("sa-contextmenu-colored");
     widgetDiv.style.setProperty("--sa-contextmenu-bg", fill);
     widgetDiv.style.setProperty("--sa-contextmenu-border", border);
+    widgetDiv.style.setProperty("--sa-contextmenu-text", text);
   };
   const originalHandleRightClick = ScratchBlocks.Gesture.prototype.handleRightClick;
   ScratchBlocks.Gesture.prototype.handleRightClick = function () {

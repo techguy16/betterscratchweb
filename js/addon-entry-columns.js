@@ -12,7 +12,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "[class*=\"blocks_blocks_\"] .blocklyToolboxDiv {\n  width: 310px;\n  height: auto !important;\n}\n\n.scratchCategoryMenu {\n  width: 100%;\n  columns: 2;\n  column-gap: 0.5rem;\n  padding: 0.25rem;\n}\n\n.scratchCategorySecondMenu {\n  columns: 1;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  padding-bottom: 2.25rem;\n}\n\n.scratchCategorySecondMenu:empty {\n  padding-top: 0;\n  padding-bottom: 2rem;\n}\n\n.scratchCategoryMenuItem {\n  display: inline-flex; /* inline so that it isn't split between both columns */\n  width: 100%;\n  padding: 0.25rem;\n  border-radius: 0.875rem;\n}\n\n.scratchCategoryItemBubble,\n.scratchCategoryItemIcon {\n  margin: 0;\n  margin-inline-end: 0.5rem;\n}\n\n.scratchCategoryMenuItemLabel {\n  flex: 1;\n  display: flex;\n  align-items: center;\n}\n\n[class*=\"gui_extension-button-container_\"] {\n  top: var(--sa-add-extension-button-y);\n  bottom: auto;\n  margin-inline-start: 0.5rem;\n  width: calc(308px - 1rem);\n  height: calc(1.75rem - 2px);\n  background-color: transparent;\n  border-color: var(--ui-black-transparent, rgba(0, 0, 0, 0.15));\n}\n\n/* [dir] is for specificity to override editor-stage-left */\n[dir] [class*=\"gui_extension-button-container_\"] {\n  border-radius: 0.25rem;\n}\n\n[class*=\"gui_extension-button-container_\"]:hover {\n  background-color: var(--ui-tertiary, white);\n}\n\n[class*=\"gui_extension-button-container_\"]::before {\n  display: none;\n}\n\n[class*=\"gui_extension-button_\"] {\n  display: flex;\n  align-items: center;\n  padding-inline: 0;\n}\n\n[class*=\"gui_extension-button-icon_\"] {\n  filter: var(--editorDarkMode-categoryMenu-invertedFilter, brightness(0.4));\n}\n\n[class*=\"gui_extension-button-container_\"]:hover [class*=\"gui_extension-button-icon_\"] {\n  filter: var(--editorDarkMode-accent-invertedFilter, brightness(0.4));\n}\n[theme=\"dark\"] [class*=\"gui_extension-button-icon_\"] {\n  filter: none !important;\n}\n\n.sa-add-extension-label {\n  color: var(--text-primary, #575e75);\n  font-size: 0.65rem;\n}\n\n[class*=\"gui_extension-button-container_\"]:hover .sa-add-extension-label {\n  color: var(--text-primary, #575e75);\n  font-size: 0.65rem;\n}\n\n/* hide-flyout compatibility */\n\n[class*=\"gui_tabs_\"] {\n  --sa-flyout-width: 310px;\n  --sa-category-width: 0;\n}\n\n.sa-flyout-placeHolder {\n  top: calc(var(--sa-flyout-y));\n}\n", ""]);
+exports.push([module.i, "[class*=\"blocks_blocks_\"] .blocklyToolboxDiv {\n  width: 310px;\n  height: auto !important;\n}\n\n.scratchCategoryMenu {\n  width: 100%;\n  columns: 2;\n  column-gap: 0.5rem;\n  padding: 0.25rem;\n}\n\n.scratchCategorySecondMenu {\n  columns: 1;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  padding-bottom: 2.25rem;\n}\n\n.scratchCategorySecondMenu:empty {\n  padding-top: 0;\n  padding-bottom: 2rem;\n}\n\n.scratchCategoryMenuItem {\n  display: inline-flex; /* inline so that it isn't split between both columns */\n  width: 100%;\n  padding: 0.25rem;\n  border-radius: 0.875rem;\n}\n\n.scratchCategoryItemBubble,\n.scratchCategoryItemIcon {\n  margin: 0;\n  margin-inline-end: 0.5rem;\n}\n\n.scratchCategoryMenuItemLabel {\n  flex: 1;\n  display: flex;\n  align-items: center;\n}\n\n[class*=\"gui_extension-button-container_\"] {\n  top: var(--sa-add-extension-button-y);\n  bottom: auto;\n  margin-inline-start: 0.5rem;\n  width: calc(308px - 1rem);\n  height: calc(1.75rem - 2px);\n  background-color: transparent;\n  border-color: var(--editorDarkMode-border, rgba(0, 0, 0, 0.15));\n}\n\n/* [dir] is for specificity to override editor-stage-left */\n[dir] [class*=\"gui_extension-button-container_\"] {\n  border-radius: 0.25rem;\n}\n\n[class*=\"gui_extension-button-container_\"]:hover {\n  background-color: var(--editorDarkMode-accent, white);\n}\n\n[class*=\"gui_extension-button-container_\"]::before {\n  display: none;\n}\n\n[class*=\"gui_extension-button_\"] {\n  display: flex;\n  align-items: center;\n  padding-inline: 0;\n}\n\n[class*=\"gui_extension-button-icon_\"] {\n  filter: var(--editorDarkMode-categoryMenu-invertedFilter, brightness(0.4));\n}\n\n[class*=\"gui_extension-button-container_\"]:hover [class*=\"gui_extension-button-icon_\"] {\n  filter: var(--editorDarkMode-accent-invertedFilter, brightness(0.4));\n}\n\n.sa-add-extension-label {\n  color: var(--editorDarkMode-categoryMenu-text, #575e75);\n  font-size: 0.65rem;\n}\n\n[class*=\"gui_extension-button-container_\"]:hover .sa-add-extension-label {\n  color: var(--editorDarkMode-accent-text, #575e75);\n  font-size: 0.65rem;\n}\n\n/* hide-flyout compatibility */\n\n[class*=\"gui_tabs_\"] {\n  --sa-flyout-width: 310px;\n  --sa-category-width: 0;\n}\n\n.sa-flyout-placeHolder {\n  top: calc(var(--sa-flyout-y));\n}\n", ""]);
 
 // exports
 
@@ -59,7 +59,7 @@ __webpack_require__.r(__webpack_exports__);
   } = _ref;
   const Blockly = await addon.tab.traps.getBlockly();
 
-  // https://github.com/LLK/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/toolbox.js#L235
+  // https://github.com/scratchfoundation/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/toolbox.js#L235
   const _ToolboxPosition = Blockly.Toolbox.prototype.position;
   Blockly.Toolbox.prototype.position = function () {
     _ToolboxPosition.call(this);
@@ -73,7 +73,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   };
 
-  // https://github.com/LLK/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/flyout_vertical.js#L314
+  // https://github.com/scratchfoundation/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/flyout_vertical.js#L314
   const _VerticalFlyoutPosition = Blockly.VerticalFlyout.prototype.position;
   Blockly.VerticalFlyout.prototype.position = function () {
     _VerticalFlyoutPosition.call(this);
@@ -113,7 +113,7 @@ __webpack_require__.r(__webpack_exports__);
     container.parentElement.style.setProperty("--sa-flyout-y", "".concat(y, "px"));
   };
 
-  // https://github.com/LLK/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/flyout_base.js#L370
+  // https://github.com/scratchfoundation/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/flyout_base.js#L370
   const _VerticalFlyoutGetWidth = Blockly.VerticalFlyout.prototype.getWidth;
   Blockly.VerticalFlyout.prototype.getWidth = function () {
     // In RTL, this will be called by Blockly to position blocks inside the flyout.
@@ -122,7 +122,7 @@ __webpack_require__.r(__webpack_exports__);
     return width;
   };
 
-  // https://github.com/LLK/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/toolbox.js#L595
+  // https://github.com/scratchfoundation/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/toolbox.js#L595
   const _CategoryMenuCreateDom = Blockly.Toolbox.CategoryMenu.prototype.createDom;
   Blockly.Toolbox.CategoryMenu.prototype.createDom = function () {
     _CategoryMenuCreateDom.call(this);
@@ -132,7 +132,7 @@ __webpack_require__.r(__webpack_exports__);
     this.parentHtml_.appendChild(this.secondTable);
   };
 
-  // https://github.com/LLK/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/toolbox.js#L606
+  // https://github.com/scratchfoundation/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/toolbox.js#L606
   const _CategoryMenuPopulate = Blockly.Toolbox.CategoryMenu.prototype.populate;
   Blockly.Toolbox.CategoryMenu.prototype.populate = function (domTree) {
     if (!domTree) return;
@@ -161,7 +161,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   };
 
-  // https://github.com/LLK/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/toolbox.js#L639
+  // https://github.com/scratchfoundation/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/toolbox.js#L639
   const _CategoryMenuDispose = Blockly.Toolbox.CategoryMenu.prototype.dispose;
   Blockly.Toolbox.CategoryMenu.prototype.dispose = function () {
     _CategoryMenuDispose.call(this);
@@ -187,9 +187,16 @@ __webpack_require__.r(__webpack_exports__);
     // Reposition the toolbox, since it's likely our addon moved it.
     toolbox.position();
   }
+  function updateClass() {
+    // Add class to allow editor-compact to handle this addon
+    if (addon.self.disabled) document.body.classList.remove("sa-columns-enabled");else document.body.classList.add("sa-columns-enabled");
+  }
   updateToolbox();
   addon.self.addEventListener("disabled", updateToolbox);
   addon.self.addEventListener("reenabled", updateToolbox);
+  updateClass();
+  addon.self.addEventListener("disabled", updateClass);
+  addon.self.addEventListener("reenabled", updateClass);
   while (true) {
     const addExtensionButton = await addon.tab.waitForElement("[class*='gui_extension-button_']", {
       markAsSeen: true,

@@ -12,7 +12,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".sa-color-picker {\n  display: flex;\n}\n\n.sa-color-picker-code {\n  margin: 8px 0;\n}\n\n.sa-color-picker-paint {\n  margin-top: 16px;\n  margin-bottom: 4px;\n}\n\n.sa-color-picker > .sa-color-picker-color {\n  border: none;\n  border-top-left-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  padding: 0;\n  padding-left: 0.6rem;\n  padding-right: 0.4rem;\n  margin-left: 0.5rem;\n  outline: none;\n  box-sizing: border-box;\n  width: 3rem;\n  height: 2rem;\n}\n[theme=\"dark\"] .sa-color-picker > .sa-color-picker-color {\n  background: var(--ui-secondary);\n}\n\n.sa-color-picker > .sa-color-picker-text {\n  box-sizing: border-box;\n  width: calc(150px - 3rem);\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n\n[dir=\"rtl\"] .sa-color-picker > .sa-color-picker-color {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n  border-top-right-radius: 1rem;\n  border-bottom-right-radius: 1rem;\n  margin-left: 0;\n  margin-right: 0.5rem;\n}\n\n[dir=\"rtl\"] .sa-color-picker > .sa-color-picker-text {\n  border-top-left-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n\nbody.sa-hide-eye-dropper-background div[class*=\"stage_color-picker-background\"] {\n  /* Do not show eye dropper background if the color picker is \"fake\" */\n  display: none;\n}\n", ""]);
+exports.push([module.i, ".sa-color-picker {\n  display: flex;\n}\n\n.sa-color-picker-code {\n  margin: 8px 0;\n}\n\n.sa-color-picker-paint {\n  margin-top: 16px;\n  margin-bottom: 4px;\n}\n\n.sa-color-picker > .sa-color-picker-color {\n  border: none;\n  border-top-left-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  padding: 0;\n  padding-left: 0.6rem;\n  padding-right: 0.4rem;\n  margin-left: 0.5rem;\n  outline: none;\n  box-sizing: border-box;\n  width: 3rem;\n  height: 2rem;\n}\n\n.sa-color-picker > .sa-color-picker-text {\n  box-sizing: border-box;\n  width: calc(150px - 3rem);\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n\n[dir=\"rtl\"] .sa-color-picker > .sa-color-picker-color {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n  border-top-right-radius: 1rem;\n  border-bottom-right-radius: 1rem;\n  margin-left: 0;\n  margin-right: 0.5rem;\n}\n\n[dir=\"rtl\"] .sa-color-picker > .sa-color-picker-text {\n  border-top-left-radius: 1rem;\n  border-bottom-left-radius: 1rem;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n\nbody.sa-hide-eye-dropper-background div[class*=\"stage_color-picker-background\"] {\n  /* Do not show eye dropper background if the color picker is \"fake\" */\n  display: none;\n}\n", ""]);
 
 // exports
 
@@ -31,7 +31,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".sa-comment-preview-outer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100000000;\n  pointer-events: none;\n}\n\n.sa-comment-preview-inner {\n  width: calc(200px - 16px);\n  max-height: calc(132px - 8px);\n  padding: 8px;\n  overflow: hidden;\n\n  font-size: 12px;\n  white-space: pre-wrap;\n  pointer-events: none;\n\n  color: rgb(87, 94, 117);\n  background-color: rgb(255 255 255 / 90%);\n  border-style: none;\n  border-radius: 8px;\n  filter: drop-shadow(0px 5px 5px rgb(0 0 0 / 10%));\n\n  transform: perspective(200px);\n}\n\n@supports (backdrop-filter: blur(16px)) {\n  .sa-comment-preview-inner {\n    background-color: rgb(255 255 255 / 75%);\n    backdrop-filter: blur(16px);\n  }\n}\n\n.sa-comment-preview-fade {\n  transition: opacity 0.1s, filter 0.1s, transform 0.1s linear;\n}\n\n.sa-comment-preview-hidden {\n  opacity: 0;\n  filter: none;\n  transform: perspective(200px) translateZ(-20px);\n}\n\n.sa-comment-preview-reduce-transparency {\n  background-color: rgb(255 255 255);\n  backdrop-filter: none;\n}\n", ""]);
+exports.push([module.i, ".sa-comment-preview-outer {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100000000;\n  pointer-events: none;\n}\n\n.sa-comment-preview-inner {\n  width: calc(200px - 16px);\n  max-height: calc(132px - 8px);\n  padding: 8px;\n  overflow: hidden;\n\n  font-size: 12px;\n  white-space: pre-wrap;\n  pointer-events: none;\n\n  color: rgb(87, 94, 117);\n  background-color: rgb(255 255 255 / 90%);\n  border-style: none;\n  border-radius: 8px;\n  filter: drop-shadow(0px 5px 5px rgb(0 0 0 / 10%));\n\n  transform: perspective(200px);\n}\n\n@supports (backdrop-filter: blur(16px)) {\n  .sa-comment-preview-inner {\n    background-color: rgb(255 255 255 / 75%);\n    backdrop-filter: blur(16px);\n  }\n}\n\n.sa-comment-preview-fade {\n  transition:\n    opacity 0.1s,\n    filter 0.1s,\n    transform 0.1s linear;\n}\n\n.sa-comment-preview-hidden {\n  opacity: 0;\n  filter: none;\n  transform: perspective(200px) translateZ(-20px);\n}\n\n.sa-comment-preview-reduce-transparency {\n  background-color: rgb(255 255 255);\n  backdrop-filter: none;\n}\n", ""]);
 
 // exports
 
@@ -69,7 +69,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "/* Imported by other addons */\n\n.sa-block-color {\n  --sa-block-colored-background: var(--sa-block-background-primary);\n  --sa-block-colored-background-secondary: var(--sa-block-field-background);\n  --sa-block-bright-background: var(--sa-block-background-primary);\n  --sa-block-text: white;\n  --sa-block-gray-text: white;\n  --sa-block-colored-text: var(--sa-block-background-primary);\n  --sa-block-text-on-bright-background: white;\n}\n\n.sa-block-color-motion {\n  --sa-block-background-primary: var(--editorTheme3-motion-primary, #4c97ff);\n  --sa-block-background-secondary: var(--editorTheme3-motion-secondary, #4280d7);\n  --sa-block-background-tertiary: var(--editorTheme3-motion-tertiary, #3373cc);\n  --sa-block-field-background: var(--editorTheme3-motion-field, #3373cc);\n}\n\n.sa-block-color-looks {\n  --sa-block-background-primary: var(--editorTheme3-looks-primary, #9966ff);\n  --sa-block-background-secondary: var(--editorTheme3-looks-secondary, #855cd6);\n  --sa-block-background-tertiary: var(--editorTheme3-looks-tertiary, #774dcb);\n  --sa-block-field-background: var(--editorTheme3-looks-field, #774dcb);\n}\n\n.sa-block-color-sounds {\n  --sa-block-background-primary: var(--editorTheme3-sounds-primary, #cf63cf);\n  --sa-block-background-secondary: var(--editorTheme3-sounds-secondary, #c94fc9);\n  --sa-block-background-tertiary: var(--editorTheme3-sounds-tertiary, #bd42bd);\n  --sa-block-field-background: var(--editorTheme3-sounds-field, #bd42bd);\n}\n\n.sa-block-color-events {\n  --sa-block-background-primary: var(--editorTheme3-event-primary, #ffbf00);\n  --sa-block-background-secondary: var(--editorTheme3-event-secondary, #e6ac00);\n  --sa-block-background-tertiary: var(--editorTheme3-event-tertiary, #cc9900);\n  --sa-block-field-background: var(--editorTheme3-event-field, #cc9900);\n}\n\n.sa-block-color-control {\n  --sa-block-background-primary: var(--editorTheme3-control-primary, #ffab19);\n  --sa-block-background-secondary: var(--editorTheme3-control-secondary, #ec9c13);\n  --sa-block-background-tertiary: var(--editorTheme3-control-tertiary, #cf8b17);\n  --sa-block-field-background: var(--editorTheme3-control-field, #cf8b17);\n}\n\n.sa-block-color-sensing {\n  --sa-block-background-primary: var(--editorTheme3-sensing-primary, #5cb1d6);\n  --sa-block-background-secondary: var(--editorTheme3-sensing-secondary, #47a8d1);\n  --sa-block-background-tertiary: var(--editorTheme3-sensing-tertiary, #2e8eb8);\n  --sa-block-field-background: var(--editorTheme3-sensing-field, #2e8eb8);\n}\n\n.sa-block-color-operators {\n  --sa-block-background-primary: var(--editorTheme3-operators-primary, #59c059);\n  --sa-block-background-secondary: var(--editorTheme3-operators-secondary, #46b946);\n  --sa-block-background-tertiary: var(--editorTheme3-operators-tertiary, #389438);\n  --sa-block-field-background: var(--editorTheme3-operators-field, #389438);\n}\n\n.sa-block-color-data {\n  --sa-block-background-primary: var(--editorTheme3-data-primary, #ff8c1a);\n  --sa-block-background-secondary: var(--editorTheme3-data-secondary, #ff8000);\n  --sa-block-background-tertiary: var(--editorTheme3-data-tertiary, #db6e00);\n  --sa-block-field-background: var(--editorTheme3-data-field, #db6e00);\n}\n\n.sa-block-color-data-lists,\n.sa-block-color-list {\n  --sa-block-background-primary: var(--editorTheme3-data_lists-primary, #ff661a);\n  --sa-block-background-secondary: var(--editorTheme3-data_lists-secondary, #ff5500);\n  --sa-block-background-tertiary: var(--editorTheme3-data_lists-tertiary, #e64d00);\n  --sa-block-field-background: var(--editorTheme3-data_lists-field, #e64d00);\n}\n\n.sa-block-color-more,\n.sa-block-color-null {\n  --sa-block-background-primary: var(--editorTheme3-more-primary, #ff6680);\n  --sa-block-background-secondary: var(--editorTheme3-more-secondary, #ff4d6a);\n  --sa-block-background-tertiary: var(--editorTheme3-more-tertiary, #ff3355);\n  --sa-block-field-background: var(--editorTheme3-more-field, #ff3355);\n}\n\n.sa-block-color-pen {\n  --sa-block-background-primary: var(--editorTheme3-pen-primary, #0fbd8c);\n  --sa-block-background-secondary: var(--editorTheme3-pen-secondary, #0da57a);\n  --sa-block-background-tertiary: var(--editorTheme3-pen-tertiary, #0b8e69);\n  --sa-block-field-background: var(--editorTheme3-pen-field, #0b8e69);\n}\n\n.sa-block-color-addon-custom-block {\n  --sa-block-background-primary: var(--editorTheme3-sa-primary, #29beb8);\n  --sa-block-background-secondary: var(--editorTheme3-sa-secondary, #3aa8a4);\n  --sa-block-background-tertiary: var(--editorTheme3-sa-tertiary, #3aa8a4);\n  --sa-block-field-background: var(--editorTheme3-sa-field, #3aa8a4);\n}\n\n.sa-block-color-TurboWarp {\n  --sa-block-background-primary: var(--editorTheme3-tw-primary, #ff4c4c);\n  --sa-block-background-secondary: var(--editorTheme3-tw-secondary, #e64444);\n  --sa-block-background-tertiary: var(--editorTheme3-tw-tertiary, #e64444);\n  --sa-block-field-background: var(--editorTheme3-tw-field, #e64444);\n}\n", ""]);
+exports.push([module.i, "/* Imported by other addons */\n\n.sa-block-color {\n  --sa-block-colored-background: var(--sa-block-background-primary);\n  --sa-block-colored-background-secondary: var(--sa-block-field-background);\n  --sa-block-bright-background: var(--sa-block-background-primary);\n  --sa-block-text: var(--editorTheme3-blockText, white);\n  --sa-block-gray-text: white;\n  --sa-block-colored-text: var(--sa-block-background-primary);\n  --sa-block-text-on-bright-background: var(--editorTheme3-blockText, white);\n  --sa-block-input-color: var(--editorTheme3-inputColor, white);\n  --sa-block-input-text: var(--editorTheme3-inputColor-text, #575e75);\n}\n\n.sa-block-color-motion {\n  --sa-block-background-primary: var(--editorTheme3-motion-primary, #4c97ff);\n  --sa-block-background-secondary: var(--editorTheme3-motion-secondary, #4280d7);\n  --sa-block-background-tertiary: var(--editorTheme3-motion-tertiary, #3373cc);\n  --sa-block-field-background: var(--editorTheme3-motion-field, #3373cc);\n}\n\n.sa-block-color-looks {\n  --sa-block-background-primary: var(--editorTheme3-looks-primary, #9966ff);\n  --sa-block-background-secondary: var(--editorTheme3-looks-secondary, #855cd6);\n  --sa-block-background-tertiary: var(--editorTheme3-looks-tertiary, #774dcb);\n  --sa-block-field-background: var(--editorTheme3-looks-field, #774dcb);\n}\n\n.sa-block-color-sounds {\n  --sa-block-background-primary: var(--editorTheme3-sounds-primary, #cf63cf);\n  --sa-block-background-secondary: var(--editorTheme3-sounds-secondary, #c94fc9);\n  --sa-block-background-tertiary: var(--editorTheme3-sounds-tertiary, #bd42bd);\n  --sa-block-field-background: var(--editorTheme3-sounds-field, #bd42bd);\n}\n\n.sa-block-color-events {\n  --sa-block-background-primary: var(--editorTheme3-event-primary, #ffbf00);\n  --sa-block-background-secondary: var(--editorTheme3-event-secondary, #e6ac00);\n  --sa-block-background-tertiary: var(--editorTheme3-event-tertiary, #cc9900);\n  --sa-block-field-background: var(--editorTheme3-event-field, #cc9900);\n}\n\n.sa-block-color-control {\n  --sa-block-background-primary: var(--editorTheme3-control-primary, #ffab19);\n  --sa-block-background-secondary: var(--editorTheme3-control-secondary, #ec9c13);\n  --sa-block-background-tertiary: var(--editorTheme3-control-tertiary, #cf8b17);\n  --sa-block-field-background: var(--editorTheme3-control-field, #cf8b17);\n}\n\n.sa-block-color-sensing {\n  --sa-block-background-primary: var(--editorTheme3-sensing-primary, #5cb1d6);\n  --sa-block-background-secondary: var(--editorTheme3-sensing-secondary, #47a8d1);\n  --sa-block-background-tertiary: var(--editorTheme3-sensing-tertiary, #2e8eb8);\n  --sa-block-field-background: var(--editorTheme3-sensing-field, #2e8eb8);\n}\n\n.sa-block-color-operators {\n  --sa-block-background-primary: var(--editorTheme3-operators-primary, #59c059);\n  --sa-block-background-secondary: var(--editorTheme3-operators-secondary, #46b946);\n  --sa-block-background-tertiary: var(--editorTheme3-operators-tertiary, #389438);\n  --sa-block-field-background: var(--editorTheme3-operators-field, #389438);\n}\n\n.sa-block-color-data {\n  --sa-block-background-primary: var(--editorTheme3-data-primary, #ff8c1a);\n  --sa-block-background-secondary: var(--editorTheme3-data-secondary, #ff8000);\n  --sa-block-background-tertiary: var(--editorTheme3-data-tertiary, #db6e00);\n  --sa-block-field-background: var(--editorTheme3-data-field, #db6e00);\n}\n\n.sa-block-color-data-lists,\n.sa-block-color-list {\n  --sa-block-background-primary: var(--editorTheme3-data_lists-primary, #ff661a);\n  --sa-block-background-secondary: var(--editorTheme3-data_lists-secondary, #ff5500);\n  --sa-block-background-tertiary: var(--editorTheme3-data_lists-tertiary, #e64d00);\n  --sa-block-field-background: var(--editorTheme3-data_lists-field, #e64d00);\n}\n\n.sa-block-color-more,\n.sa-block-color-null {\n  --sa-block-background-primary: var(--editorTheme3-more-primary, #ff6680);\n  --sa-block-background-secondary: var(--editorTheme3-more-secondary, #ff4d6a);\n  --sa-block-background-tertiary: var(--editorTheme3-more-tertiary, #ff3355);\n  --sa-block-field-background: var(--editorTheme3-more-field, #ff3355);\n}\n\n.sa-block-color-pen {\n  --sa-block-background-primary: var(--editorTheme3-pen-primary, #0fbd8c);\n  --sa-block-background-secondary: var(--editorTheme3-pen-secondary, #0da57a);\n  --sa-block-background-tertiary: var(--editorTheme3-pen-tertiary, #0b8e69);\n  --sa-block-field-background: var(--editorTheme3-pen-field, #0b8e69);\n}\n\n.sa-block-color-addon-custom-block {\n  --sa-block-background-primary: var(--editorTheme3-addons-primary, #29beb8);\n  --sa-block-background-secondary: var(--editorTheme3-addons-secondary, #3aa8a4);\n  --sa-block-background-tertiary: var(--editorTheme3-addons-tertiary, #3aa8a4);\n  --sa-block-field-background: var(--editorTheme3-addons-field, #3aa8a4);\n}\n", ""]);
 
 // exports
 
@@ -88,7 +88,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 exports.i(__webpack_require__(/*! -!../../../../node_modules/css-loader!../editor-theme3/compatibility.css */ "./node_modules/css-loader/index.js!./src/addons/addons/editor-theme3/compatibility.css"), "");
 
 // module
-exports.push([module.i, ".sa-find-bar {\n  display: flex;\n  align-items: center;\n  white-space: nowrap;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  height: 100%;\n  margin-left: 1em;\n}\n.sa-find-bar[hidden] {\n  /* !important to override displayNoneWhileDisabled */\n  display: none !important;\n}\n\n.sa-find-wrapper {\n  overflow: visible;\n  position: relative;\n  height: 2rem;\n  width: 100%;\n  max-width: 16em;\n}\n\n.sa-find-dropdown-out {\n  display: block;\n  top: -6px;\n  z-index: 100;\n  width: 100%;\n  max-width: 16em;\n  position: relative;\n  padding: 4px;\n  border: none;\n  border-radius: 10px;\n  margin-top: 8px;\n}\n\n.sa-find-dropdown-out.visible {\n  position: absolute;\n  width: 16em;\n  box-shadow: 0px 0px 8px 1px var(--ui-black-transparent, rgba(0, 0, 0, 0.3));\n  background-color: var(--ui-primary, white);\n}\n\n/* We need to modify Scratch styles so that the place where the find bar is injected */\n/* has actually correct size information, which is used to make the find bar not cover up controls */\n[class*=\"gui_tab-list_\"] {\n  width: 100%;\n}\n[class*=\"gui_tab_\"] {\n  flex-grow: 0;\n}\n\n.sa-find-input {\n  width: 100%;\n  box-sizing: border-box !important;\n  /* !important required for extension, because CSS injection method (and hence order) differs from addon */\n  height: 1.5rem;\n\n  /* Change Scratch default styles */\n  border-radius: 0.25rem;\n  font-size: 0.75rem;\n  padding-left: 0.4em;\n}\n\n.sa-find-input:focus {\n  /* Change Scratch default styles */\n  box-shadow: none;\n}\n\n.sa-find-dropdown {\n  display: none;\n  position: relative;\n  padding: 0.2em 0;\n  font-size: 0.75rem;\n  line-height: 1;\n  overflow-y: auto;\n  min-height: 128px;\n  max-height: 65vh;\n  user-select: none;\n  max-width: 100%;\n  margin-top: 6px;\n  border: none;\n}\n\n.sa-find-dropdown-out.visible > .sa-find-dropdown {\n  display: block;\n}\n\n.sa-find-dropdown > li {\n  display: block;\n  padding: 0.5em 0.3em;\n  white-space: nowrap;\n  margin: 0;\n  font-weight: bold;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.sa-find-dropdown > li > b {\n  background-color: #aaffaa;\n  color: black;\n}\n\n/* Drop down items */\n.sa-find-dropdown > li:hover,\n.sa-find-dropdown > li.sel {\n  color: var(--sa-block-text-on-bright-background);\n  cursor: pointer;\n}\n\n.sa-find-dropdown > li::before {\n  content: \"\\25CF   \"; /* ● */\n}\n\n.sa-find-flag {\n  color: #4cbf56;\n}\n/* .sa-find-dropdown added for specificity */\n.sa-find-dropdown > .sa-find-flag:hover,\n.sa-find-dropdown > .sa-find-flag.sel {\n  background-color: #4cbf56;\n  color: white;\n}\n\n.sa-find-dropdown .sa-block-color {\n  color: var(--sa-block-colored-text);\n}\n.sa-find-dropdown .sa-block-color:hover,\n.sa-find-dropdown .sa-block-color.sel {\n  background-color: var(--sa-block-bright-background);\n}\n\n.sa-find-carousel {\n  font-weight: normal;\n  position: absolute;\n  right: 0;\n  white-space: nowrap;\n  background-color: inherit;\n  z-index: 1;\n  padding: 0;\n}\n\n.sa-find-carousel-control {\n  padding: 0 6px;\n}\n\n.sa-find-carousel-control:hover {\n  color: #ffff80;\n}\n", ""]);
+exports.push([module.i, ".sa-find-bar {\n  display: flex;\n  align-items: center;\n  white-space: nowrap;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  height: 100%;\n  margin-left: 1em;\n}\n.sa-find-bar[hidden] {\n  /* !important to override displayNoneWhileDisabled */\n  display: none !important;\n}\n\n.sa-find-wrapper {\n  overflow: visible;\n  position: relative;\n  height: 2rem;\n  width: 100%;\n  max-width: 16em;\n}\n\n.sa-find-dropdown-out {\n  display: block;\n  top: -6px;\n  z-index: 100;\n  width: 100%;\n  max-width: 16em;\n  position: relative;\n  padding: 4px;\n  border: none;\n  border-radius: 4px;\n  margin-top: 6px;\n}\n\n.sa-find-dropdown-out.visible {\n  position: absolute;\n  width: 16em;\n  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);\n  background-color: var(--ui-modal-background);\n  outline: 1px solid var(--ui-black-transparent);\n}\n\n/* We need to modify Scratch styles so that the place where the find bar is injected */\n/* has actually correct size information, which is used to make the find bar not cover up controls */\n[class*=\"gui_tab-list_\"] {\n  width: 100%;\n}\n[class*=\"gui_tab_\"] {\n  flex-grow: 0;\n}\n\n.sa-find-input {\n  width: 100%;\n  box-sizing: border-box !important;\n  /* !important required for extension, because CSS injection method (and hence order) differs from addon */\n  height: 1.5rem;\n\n  /* Change Scratch default styles */\n  border-radius: 0.25rem;\n  font-size: 0.75rem;\n  padding-left: 0.4em;\n}\n\n.sa-find-input:focus {\n  /* Change Scratch default styles */\n  box-shadow: none;\n}\n\n.sa-find-dropdown {\n  display: none;\n  position: relative;\n  padding: 0.2em 0;\n  font-size: 0.75rem;\n  line-height: 1;\n  overflow-y: auto;\n  min-height: 128px;\n  max-height: 65vh;\n  user-select: none;\n  max-width: 100%;\n  margin-top: 6px;\n  border: none;\n}\n\n.sa-find-dropdown-out.visible > .sa-find-dropdown {\n  display: block;\n}\n\n.sa-find-dropdown > li {\n  display: block;\n  padding: 0.5em 0.3em;\n  white-space: nowrap;\n  margin: 0;\n  font-weight: bold;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.sa-find-dropdown > li > b {\n  background-color: #aaffaa;\n  color: black;\n}\n\n/* Drop down items */\n.sa-find-dropdown > li:hover,\n.sa-find-dropdown > li.sel {\n  color: var(--sa-block-text-on-bright-background);\n  cursor: pointer;\n}\n\n.sa-find-dropdown > li::before {\n  content: \"\\25CF   \"; /* ● */\n}\n\n.sa-find-flag {\n  color: #4cbf56;\n}\n/* .sa-find-dropdown added for specificity */\n.sa-find-dropdown > .sa-find-flag:hover,\n.sa-find-dropdown > .sa-find-flag.sel {\n  background-color: #4cbf56;\n  color: white;\n}\n\n.sa-find-dropdown .sa-block-color {\n  color: var(--sa-block-colored-text);\n}\n.sa-find-dropdown .sa-block-color:hover,\n.sa-find-dropdown .sa-block-color.sel {\n  background-color: var(--sa-block-bright-background);\n}\n\n.sa-find-carousel {\n  font-weight: normal;\n  position: absolute;\n  right: 0;\n  white-space: nowrap;\n  background-color: inherit;\n  z-index: 1;\n  padding: 0;\n}\n\n.sa-find-carousel-control {\n  padding: 0 6px;\n}\n\n.sa-find-carousel-control:hover {\n  color: #ffff80;\n}\n", ""]);
 
 // exports
 
@@ -126,7 +126,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 exports.i(__webpack_require__(/*! -!../../../../node_modules/css-loader!../editor-theme3/compatibility.css */ "./node_modules/css-loader/index.js!./src/addons/addons/editor-theme3/compatibility.css"), "");
 
 // module
-exports.push([module.i, "/* Find Input Box */\n.sa-float-bar-input {\n  width: 100%;\n  box-sizing: border-box !important;\n  /* !important required for extension, because CSS injection method (and hence order) differs from addon */\n  height: 1.5rem;\n\n  /* Change Scratch default styles */\n  border-radius: 0.25rem;\n  font-size: 0.75rem;\n  padding-left: 0.4em;\n}\n[theme=\"dark\"] input.s3devInp {\n  color: #eee;\n  background: #3333;\n}\n[theme=\"dark\"] input.s3devInp:hover {\n  background: #333;\n}\n\n.sa-float-bar-input:focus {\n  /* Change Scratch default styles */\n  box-shadow: none;\n}\n\n/* Drop down from find button */\n.sa-float-bar-dropdown-out {\n  display: block;\n  top: -6px;\n  z-index: 100;\n  max-width: 16em;\n  padding: 4px;\n  position: absolute;\n  width: 16em;\n  box-shadow: 0px 0px 8px 1px var(--ui-black-transparent, rgba(0, 0, 0, 0.3));\n  background-color: var(--ui-primary, white);\n  border: none;\n  border-radius: 4px;\n}\n\n/* Drop down from find button */\n.sa-float-bar-dropdown {\n  display: none;\n  position: relative;\n  padding: 0.2em 0;\n  font-size: 0.75rem;\n  line-height: 1;\n  overflow-y: auto;\n  min-height: 128px;\n  user-select: none;\n  max-width: 100%;\n  max-height: 200px;\n  margin-bottom: 0;\n}\n\n.sa-float-bar-dropdown-out.vis .sa-float-bar-dropdown {\n  display: block;\n  border: none;\n}\n\n/* Drop down items */\n.sa-float-bar-dropdown > li {\n  display: block;\n  padding: 0.5em 0.3em;\n  white-space: nowrap;\n  margin: 0;\n  font-weight: bold;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  cursor: pointer;\n}\n\n.sa-float-bar-dropdown > li > b {\n  background-color: #aaffaa;\n  color: black;\n}\n\n.sa-float-bar-dropdown > li {\n  height: 19px;\n  padding: 3px 8px;\n  margin: 2px 0.3em;\n  box-sizing: border-box;\n  position: relative;\n  background-color: var(--sa-block-colored-background);\n  color: var(--sa-block-text);\n  font-weight: bold;\n  width: min-content;\n}\n.sa-float-bar-dropdown > li:hover,\n.sa-float-bar-dropdown > li.sel {\n  background-color: var(--sa-block-colored-background-secondary);\n}\n\n.sa-float-bar-dropdown > li.sa-hat {\n  border-radius: 14px 14px 3px 3px;\n}\n.sa-float-bar-dropdown > li.sa-block {\n  border-radius: 3px;\n}\n.sa-float-bar-dropdown > li.sa-reporter {\n  border-radius: 10px;\n}\n\n.sa-float-bar-dropdown > li.sa-boolean {\n  width: min-content;\n}\n.sa-float-bar-dropdown > li.sa-boolean::before {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 0;\n  height: 0;\n  border-right: 9px solid transparent;\n  border-top: 9px solid var(--ui-primary, white);\n  border-bottom: 10px solid var(--ui-primary, white);\n}\n.sa-float-bar-dropdown > li.sa-boolean::after {\n  content: \"\";\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 0;\n  height: 0;\n  border-left: 9px solid transparent;\n  border-top: 9px solid var(--ui-primary, white);\n  border-bottom: 10px solid var(--ui-primary, white);\n}\n[theme=\"dark\"] .s3devDD > li.boolean::before {\n  border-top-color: #111;\n  border-bottom-color: #111;\n}\n[theme=\"dark\"] .s3devDD > li.boolean::after {\n  border-top-color: #111;\n  border-bottom-color: #111;\n}\n\n.sa-float-bar {\n  display: flex;\n  white-space: nowrap;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\n  position: absolute;\n  min-width: 128px;\n  background-color: white;\n  border-radius: 4px;\n  box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px, rgba(0, 0, 0, 0.2) 0 3px 10px;\n\n  z-index: 999;\n}\n[theme=\"dark\"] #s3devFloatingBar {\n  background-color: #111;\n}\n\n.sa-float-bar-dropdown > li > b {\n  background-color: rgba(0, 0, 0, 0.6);\n  color: white;\n}\n\n[data-highlighted=\"true\"] {\n  background-color: hsla(30, 100%, 55%, 1) !important; /* orange */\n  color: white !important;\n}\n", ""]);
+exports.push([module.i, ".sa-mcp-root {\n  display: flex;\n  white-space: nowrap;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\n  position: absolute;\n  min-width: 100px;\n  background-color: var(--ui-modal-background);\n  border-radius: 4px;\n  box-shadow:\n    rgba(0, 0, 0, 0.3) 0 0 3px,\n    rgba(0, 0, 0, 0.2) 0 3px 10px;\n\n  z-index: 999;\n}\n\n.sa-mcp-container {\n  display: flex;\n  flex-flow: column;\n  top: -6px;\n  z-index: 100;\n  position: absolute;\n  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);\n  background-color: var(--ui-modal-background);\n  outline: 1px solid var(--ui-black-transparent);\n  border: none;\n  border-radius: 4px;\n}\n\n.sa-mcp-input-wrapper {\n  position: relative;\n  margin: 4px;\n  /* !important required for extension, because CSS injection method (and hence order) differs from addon */\n  box-sizing: border-box !important;\n  height: 1.5rem;\n  min-height: 1.5rem;\n\n  /* Change Scratch default styles */\n  border-radius: 0.25rem;\n  font-size: 0.75rem;\n  padding-left: 0.2rem;\n  padding-right: 0.2rem;\n}\n\n.sa-mcp-input-wrapper:focus {\n  /* Change Scratch default styles */\n  box-shadow: none;\n}\n\n.sa-mcp-input-wrapper[data-error=\"true\"] {\n  border-color: red;\n}\n\n.sa-mcp-input-wrapper > input {\n  position: absolute;\n  border: 0;\n  background-color: transparent;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  line-height: 100%;\n  box-sizing: border-box;\n}\n\n.sa-mcp-input-suggestion {\n  color: hsla(225, 15%, 40%, 0.65);\n}\n\n.sa-mcp-preview-container {\n  flex: auto;\n  overflow-y: scroll;\n  scrollbar-width: none;\n}\n\n.sa-mcp-preview-container::-webkit-scrollbar {\n  width: 0;\n  height: 0;\n}\n\n.sa-mcp-preview-blocks {\n  width: 100%;\n  min-height: 100%;\n  /* https://stackoverflow.com/a/22166728/8448397 */\n  float: left;\n}\n\n.sa-mcp-preview-scrollbar {\n  position: absolute;\n  width: 11px;\n  right: 0;\n  bottom: 0;\n}\n\n.sa-mcp-preview-block-bg {\n  width: 100%;\n  fill: transparent;\n  cursor: grab;\n}\n\n.sa-mcp-preview-block {\n  filter: brightness(95%);\n  cursor: grab;\n}\n\n.sa-mcp-preview-block-selection {\n  filter: brightness(103%);\n}\n\n.sa-mcp-preview-block-bg-selection {\n  fill: #7774;\n}\n", ""]);
 
 // exports
 
@@ -145,7 +145,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".sa-onion-button {\n  position: relative;\n}\n.sa-onion-button:focus-within {\n  background-color: hsla(0, 100%, 65%, 0.2);\n}\n[theme=\"dark\"] .sa-onion-image {\n  filter: brightness(0) invert(0.8);\n}\n.sa-onion-button[data-enabled=\"true\"] .sa-onion-image {\n  filter: brightness(0) invert(1);\n}\n.sa-onion-button[data-enabled=\"true\"] {\n  background-color: #ff4c4c;\n}\n\n.sa-onion-group {\n  position: relative;\n  flex-direction: row;\n}\n\n.sa-onion-settings-wrapper {\n  position: absolute;\n  justify-items: center;\n  left: 50%;\n  width: 1.95rem;\n  height: 1.95rem;\n  display: grid;\n}\n\n.sa-onion-settings {\n  position: absolute;\n  bottom: 100%;\n  /* based on the styles for the color dropdown */\n  padding: 4px;\n  border-radius: 4px;\n  border: 1px solid var(--paint-ui-pane-border, #ddd);\n  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);\n  transition-property: bottom, opacity;\n  transition-duration: 500ms;\n  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);\n  opacity: 0;\n  pointer-events: none;\n  background: var(--ui-primary, white);\n  min-height: 100%;\n  min-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n}\n.sa-onion-settings[data-visible=\"true\"] {\n  bottom: calc(100% + 22px);\n  pointer-events: auto;\n  opacity: 1;\n}\n\n.sa-onion-settings-line {\n  display: flex;\n  justify-content: flex-end;\n  align-items: baseline;\n  gap: 0.25em;\n}\n\n.sa-onion-settings-input {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  text-align: center;\n  border: 0;\n  background: transparent;\n  -moz-appearance: textfield;\n  border: 0;\n  outline: 0;\n}\n\n.sa-onion-settings-input::-webkit-outer-spin-button,\n.sa-onion-settings-input::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n.sa-onion-settings-tip {\n  position: absolute;\n  bottom: 0;\n  transform: translateY(100%);\n  right: calc(50% - 7px);\n}\n.sa-onion-settings-polygon {\n  fill: var(--ui-primary, white);\n  stroke: var(--paint-ui-pane-border, #ddd);\n}\n\n.sa-onion-settings-label {\n  white-space: nowrap;\n}\n", ""]);
+exports.push([module.i, ".sa-onion-button {\n  position: relative;\n}\n.sa-onion-button:focus-within {\n  background-color: var(--editorDarkMode-primary-transparent35, hsla(260, 60%, 60%, 0.35));\n}\n.sa-onion-image[data-image=\"toggle\"] {\n  filter: var(--filter-icon-white);\n}\n.sa-onion-image[data-image=\"settings\"] {\n  filter: var(--filter-icon-black);\n}\n.sa-onion-button[data-enabled=\"true\"] .sa-onion-image {\n  filter: brightness(0) invert(1);\n}\n.sa-onion-button[data-enabled=\"true\"] {\n  color: white;\n  background-color: var(--looks-secondary);\n}\n\n.sa-onion-group {\n  position: relative;\n  flex-direction: row;\n}\n\n.sa-onion-settings-wrapper {\n  position: absolute;\n  justify-items: center;\n  left: 50%;\n  width: 1.95rem;\n  height: 1.95rem;\n  display: grid;\n}\n\n.sa-onion-settings {\n  position: absolute;\n  bottom: 100%;\n  /* based on the styles for the color dropdown */\n  padding: 4px;\n  border-radius: 4px;\n  border: 1px solid #ddd;\n  border: 1px solid var(--ui-black-transparent);\n  transition-property: bottom, opacity;\n  transition-duration: 500ms;\n  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);\n  opacity: 0;\n  pointer-events: none;\n  background: var(--ui-modal-background);\n  color: var(--ui-text-primary);\n  min-height: 100%;\n  min-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n}\n.sa-onion-settings[data-visible=\"true\"] {\n  bottom: calc(100% + 22px);\n  pointer-events: auto;\n  opacity: 1;\n}\n\n.sa-onion-settings-line {\n  display: flex;\n  justify-content: flex-end;\n  align-items: baseline;\n  gap: 0.25em;\n}\n\n.sa-onion-settings-input {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  text-align: center;\n  border: 0;\n  background: transparent;\n  -moz-appearance: textfield;\n  border: 0;\n  outline: 0;\n}\n\n.sa-onion-settings-input::-webkit-outer-spin-button,\n.sa-onion-settings-input::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n.sa-onion-settings-tip {\n  position: absolute;\n  bottom: 0;\n  transform: translateY(100%);\n  right: calc(50% - 7px);\n}\n.sa-onion-settings-polygon {\n  fill: var(--ui-modal-background);\n  stroke: var(--ui-black-transparent);\n}\n\n.sa-onion-settings-label {\n  white-space: nowrap;\n}\n", ""]);
 
 // exports
 
@@ -411,7 +411,7 @@ async function load(addon) {
   loaded = true;
   const ScratchBlocks = await addon.tab.traps.getBlockly();
 
-  // https://github.com/LLK/scratch-blocks/blob/912b8cc728bea8fd91af85078c64fcdbfe21c87a/core/gesture.js#L454
+  // https://github.com/scratchfoundation/scratch-blocks/blob/912b8cc728bea8fd91af85078c64fcdbfe21c87a/core/gesture.js#L454
   const originalStartDraggingBlock = ScratchBlocks.Gesture.prototype.startDraggingBlock_;
   ScratchBlocks.Gesture.prototype.startDraggingBlock_ = function () {
     let block = this.targetBlock_;
@@ -429,7 +429,7 @@ async function load(addon) {
       }
     }
     if (isDuplicating) {
-      // Based on https://github.com/LLK/scratch-blocks/blob/feda366947432b9d82a4f212f43ff6d4ab6f252f/core/scratch_blocks_utils.js#L171
+      // Based on https://github.com/scratchfoundation/scratch-blocks/blob/feda366947432b9d82a4f212f43ff6d4ab6f252f/core/scratch_blocks_utils.js#L171
       // Setting this.shouldDuplicateOnDrag_ = true does NOT work because it doesn't call changeObscuredShadowIds
       this.startWorkspace_.setResizesEnabled(false);
       ScratchBlocks.Events.disable();
@@ -1034,7 +1034,7 @@ __webpack_require__.r(__webpack_exports__);
    * @param {Element} xmlBlock
    */
   const pasteBlockXML = (workspace, xmlBlock) => {
-    // Similar to https://github.com/LLK/scratch-blocks/blob/7575c9a0f2c267676569c4b102b76d77f35d9fd6/core/workspace_svg.js#L1020
+    // Similar to https://github.com/scratchfoundation/scratch-blocks/blob/7575c9a0f2c267676569c4b102b76d77f35d9fd6/core/workspace_svg.js#L1020
     // but without the collision checking.
     const block = ScratchBlocks.Xml.domToBlock(xmlBlock, workspace);
     const x = +xmlBlock.getAttribute("x");
@@ -1276,7 +1276,7 @@ __webpack_require__.r(__webpack_exports__);
     blocks: true
   });
 
-  // https://github.com/LLK/scratch-blocks/blob/abbfe93136fef57fdfb9a077198b0bc64726f012/blocks_vertical/procedures.js#L207-L215
+  // https://github.com/scratchfoundation/scratch-blocks/blob/abbfe93136fef57fdfb9a077198b0bc64726f012/blocks_vertical/procedures.js#L207-L215
   // Returns a list like ["%s", "%d"]
   const parseArguments = code => code.split(/(?=[^\\]%[nbs])/g).map(i => i.trim()).filter(i => i.charAt(0) === "%").map(i => i.substring(0, 2));
   const getCustomBlocks = () => {
@@ -1353,19 +1353,6 @@ __webpack_require__.r(__webpack_exports__);
   } = _ref;
   // 250-ms rate limit
   const rateLimiter = new _libraries_common_cs_rate_limiter_js__WEBPACK_IMPORTED_MODULE_1__["default"](250);
-  const getColor = element => {
-    const {
-      children
-    } = element.parentElement;
-    // h: 0 - 360
-    const h = children[1].getAttribute("aria-valuenow");
-    // s: 0 - 1
-    const s = children[3].getAttribute("aria-valuenow");
-    // v: 0 - 255, divide by 255
-    const vMultipliedBy255 = children[5].getAttribute("aria-valuenow");
-    const v = Number(vMultipliedBy255) / 255;
-    return Object(_libraries_thirdparty_cs_tinycolor_min_js__WEBPACK_IMPORTED_MODULE_2__["default"])("hsv(".concat(h, ", ").concat(s, ", ").concat(v || 0, ")")).toHexString();
-  };
   const setColor = (hex, element) => {
     hex = Object(_libraries_common_cs_normalize_color_js__WEBPACK_IMPORTED_MODULE_0__["normalizeHex"])(hex);
     if (!addon.tab.redux.state || !addon.tab.redux.state.scratchGui) return;
@@ -1399,11 +1386,11 @@ __webpack_require__.r(__webpack_exports__);
     document.body.classList.add("sa-hide-eye-dropper-background");
     element.click();
   };
-  const addColorPicker = () => {
+  const addColorPicker = editor => {
     const element = document.querySelector("button.scratchEyedropper");
     rateLimiter.abort(false);
     addon.tab.redux.initialize();
-    const defaultColor = getColor(element);
+    const defaultColor = editor.getValue();
     const saColorPicker = Object.assign(document.createElement("div"), {
       className: "sa-color-picker sa-color-picker-code"
     });
@@ -1443,8 +1430,28 @@ __webpack_require__.r(__webpack_exports__);
       args[_key] = arguments[_key];
     }
     const r = originalShowEditor.call(this, ...args);
-    addColorPicker();
+    addColorPicker(this);
     return r;
+  };
+  const originalCallbackFactory = ScratchBlocks.FieldColourSlider.prototype.sliderCallbackFactory_;
+  ScratchBlocks.FieldColourSlider.prototype.sliderCallbackFactory_ = function () {
+    for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      args[_key2] = arguments[_key2];
+    }
+    const f = originalCallbackFactory.call(this, ...args);
+    return event => {
+      const r = f(event);
+      const div = ScratchBlocks.DropDownDiv.getContentDiv();
+      if (div) {
+        const saColorPickerColor = div.querySelector(".sa-color-picker-color.sa-color-picker-code-color");
+        const saColorPickerText = div.querySelector(".sa-color-picker-text.sa-color-picker-code-text");
+        if (!saColorPickerColor || !saColorPickerText) return r;
+        const color = this.getValue();
+        saColorPickerColor.value = color || "#000000";
+        saColorPickerText.value = color || "";
+      }
+      return r;
+    };
   };
 });
 
@@ -1533,6 +1540,7 @@ __webpack_require__.r(__webpack_exports__);
   previewInner.classList.add("sa-comment-preview-hidden");
   updateStyles();
   addon.settings.addEventListener("change", updateStyles);
+  addon.tab.displayNoneWhileDisabled(previewOuter);
   previewOuter.appendChild(previewInner);
   document.body.appendChild(previewOuter);
   const getBlock = id => vm.editingTarget.blocks.getBlock(id) || vm.runtime.flyoutBlocks.getBlock(id);
@@ -2233,7 +2241,7 @@ class DevTools {
       return;
     }
     let ctrlKey = e.ctrlKey || e.metaKey;
-    if (e.keyCode === 37 && ctrlKey) {
+    if (e.key === "ArrowLeft" && ctrlKey) {
       // Ctrl + Left Arrow Key
       if (document.activeElement.tagName === "INPUT") {
         return;
@@ -2245,7 +2253,7 @@ class DevTools {
         return true;
       }
     }
-    if (e.keyCode === 39 && ctrlKey) {
+    if (e.key === "ArrowRight" && ctrlKey) {
       // Ctrl + Right Arrow Key
       if (document.activeElement.tagName === "INPUT") {
         return;
@@ -2270,7 +2278,6 @@ class DevTools {
     //
     // }
   }
-
   eventCopyClick(block, blockOnly) {
     let wksp = this.getWorkspace();
     if (block) {
@@ -2290,7 +2297,6 @@ class DevTools {
           if (next) {
             wksp.undo(); // undo the unplug above...
           }
-
           if (blockOnly === 2) {
             _UndoGroup_js__WEBPACK_IMPORTED_MODULE_1__["default"].startUndoGroup(wksp);
             block.dispose(true);
@@ -2502,7 +2508,7 @@ class UndoGroup {
   static endUndoGroup(workspace) {
     const undoStack = workspace.undoStack_;
     // Events (responsible for undoStack updates) are delayed with a setTimeout(f, 0)
-    // https://github.com/LLK/scratch-blocks/blob/f159a1779e5391b502d374fb2fdd0cb5ca43d6a2/core/events.js#L182
+    // https://github.com/scratchfoundation/scratch-blocks/blob/f159a1779e5391b502d374fb2fdd0cb5ca43d6a2/core/events.js#L182
     setTimeout(() => {
       const group = generateUID();
       for (let i = undoStack.length - 1; i >= 0 && !undoStack[i]._devtoolsLastUndo; i--) {
@@ -2513,7 +2519,7 @@ class UndoGroup {
 }
 
 /**
- * https://github.com/LLK/scratch-blocks/blob/f159a1779e5391b502d374fb2fdd0cb5ca43d6a2/core/events.js#L182
+ * https://github.com/scratchfoundation/scratch-blocks/blob/f159a1779e5391b502d374fb2fdd0cb5ca43d6a2/core/events.js#L182
  * @returns {string}
  * @private
  */
@@ -3101,13 +3107,13 @@ __webpack_require__.r(__webpack_exports__);
       this.dropdown.inputKeyDown(e);
 
       // Enter
-      if (e.keyCode === 13) {
+      if (e.key === "Enter") {
         this.findInput.blur();
         return;
       }
 
       // Escape
-      if (e.keyCode === 27) {
+      if (e.key === "Escape") {
         if (this.findInput.value.length > 0) {
           this.findInput.value = ""; // Clear search first, then close on second press
           this.inputChange();
@@ -3121,7 +3127,7 @@ __webpack_require__.r(__webpack_exports__);
     eventKeyDown(e) {
       if (addon.self.disabled || !this.findBarOuter) return;
       let ctrlKey = e.ctrlKey || e.metaKey;
-      if (e.key === "f" && ctrlKey && !e.shiftKey) {
+      if (e.key.toLowerCase() === "f" && ctrlKey && !e.shiftKey) {
         // Ctrl + F (Override default Ctrl+F find)
         this.findInput.focus();
         this.findInput.select();
@@ -3129,7 +3135,7 @@ __webpack_require__.r(__webpack_exports__);
         e.preventDefault();
         return true;
       }
-      if (e.keyCode === 37 && ctrlKey) {
+      if (e.key === "ArrowLeft" && ctrlKey) {
         // Ctrl + Left Arrow Key
         if (document.activeElement.tagName === "INPUT") {
           return;
@@ -3141,7 +3147,7 @@ __webpack_require__.r(__webpack_exports__);
           return true;
         }
       }
-      if (e.keyCode === 39 && ctrlKey) {
+      if (e.key === "ArrowRight" && ctrlKey) {
         // Ctrl + Right Arrow Key
         if (document.activeElement.tagName === "INPUT") {
           return;
@@ -3215,7 +3221,12 @@ __webpack_require__.r(__webpack_exports__);
         let fields = root.inputList[0];
         let desc;
         for (const fieldRow of fields.fieldRow) {
-          desc = (desc ? desc + " " : "") + fieldRow.getText();
+          desc = desc ? desc + " " : "";
+          if (fieldRow instanceof Blockly.FieldImage && fieldRow.src_.endsWith("green-flag.svg")) {
+            desc += msg("/_general/blocks/green-flag");
+          } else {
+            desc += fieldRow.getText();
+          }
         }
         return desc;
       }
@@ -3242,7 +3253,9 @@ __webpack_require__.r(__webpack_exports__);
         if (root.type === "event_whenbroadcastreceived") {
           const fieldRow = root.inputList[0].fieldRow;
           let eventName = fieldRow.find(input => input.name === "BROADCAST_OPTION").getText();
-          addBlock("receive", "event " + eventName, root).eventName = eventName;
+          addBlock("receive", msg("event", {
+            name: eventName
+          }), root).eventName = eventName;
           continue;
         }
         if (root.type.substr(0, 10) === "event_when") {
@@ -3257,15 +3270,25 @@ __webpack_require__.r(__webpack_exports__);
       let map = this.workspace.getVariableMap();
       let vars = map.getVariablesOfType("");
       for (const row of vars) {
-        addBlock(row.isLocal ? "var" : "VAR", (row.isLocal ? "var " : "VAR ") + row.name, row);
+        addBlock(row.isLocal ? "var" : "VAR", row.isLocal ? msg("var-local", {
+          name: row.name
+        }) : msg("var-global", {
+          name: row.name
+        }), row);
       }
       let lists = map.getVariablesOfType("list");
       for (const row of lists) {
-        addBlock(row.isLocal ? "list" : "LIST", (row.isLocal ? "list " : "LIST ") + row.name, row);
+        addBlock(row.isLocal ? "list" : "LIST", row.isLocal ? msg("list-local", {
+          name: row.name
+        }) : msg("list-global", {
+          name: row.name
+        }), row);
       }
       const events = this.getCallsToEvents();
       for (const event of events) {
-        addBlock("receive", "event " + event.eventName, event.block).eventName = event.eventName;
+        addBlock("receive", msg("event", {
+          name: event.eventName
+        }), event.block).eventName = event.eventName;
       }
       const clsOrder = {
         flag: 0,
@@ -3360,21 +3383,21 @@ __webpack_require__.r(__webpack_exports__);
     }
     inputKeyDown(e) {
       // Up Arrow
-      if (e.keyCode === 38) {
+      if (e.key === "ArrowUp") {
         this.navigateFilter(-1);
         e.preventDefault();
         return;
       }
 
       // Down Arrow
-      if (e.keyCode === 40) {
+      if (e.key === "ArrowDown") {
         this.navigateFilter(1);
         e.preventDefault();
         return;
       }
 
       // Enter
-      if (e.keyCode === 13) {
+      if (e.key === "Enter") {
         // Any selected on enter? if not select now
         if (this.selected) {
           this.navigateFilter(1);
@@ -3550,7 +3573,6 @@ __webpack_require__.r(__webpack_exports__);
         if (!target.isOriginal) {
           continue; // Skip clones
         }
-
         const blocks = target.blocks;
         if (!blocks._blocks) {
           continue;
@@ -3636,14 +3658,14 @@ __webpack_require__.r(__webpack_exports__);
     }
     inputKeyDown(e) {
       // Left Arrow
-      if (e.keyCode === 37) {
+      if (e.key === "ArrowLeft") {
         if (this.el && this.blocks) {
           this.navLeft(e);
         }
       }
 
       // Right Arrow
-      if (e.keyCode === 39) {
+      if (e.key === "ArrowRight") {
         if (this.el && this.blocks) {
           this.navRight(e);
         }
@@ -3763,8 +3785,8 @@ __webpack_require__.r(__webpack_exports__);
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 /* harmony default export */ __webpack_exports__["default"] = (async function (_ref) {
   let {
     addon,
@@ -3892,7 +3914,7 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
     }
   };
 
-  // https://github.com/LLK/scratch-gui/blob/develop/src/components/asset-panel/icon--sound.svg
+  // https://github.com/scratchfoundation/scratch-gui/blob/develop/src/components/asset-panel/icon--sound.svg
   const imageIconSource = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg width=\"100px\" height=\"100px\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g id=\"Sound\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <path d=\"M12.4785058,12.6666667 C12.3144947,12.6666667 12.1458852,12.6272044 11.9926038,12.5440517 C11.537358,12.2960031 11.3856094,11.7562156 11.6553847,11.3376335 C12.1688774,10.5371131 12.1688774,9.54491867 11.6553847,8.74580756 C11.3856094,8.32581618 11.537358,7.78602861 11.9926038,7.53798001 C12.452448,7.29275014 13.0379829,7.43086811 13.3046926,7.84804076 C14.1737981,9.20103311 14.1737981,10.8809986 13.3046926,12.233991 C13.1268862,12.5130457 12.806528,12.6666667 12.4785058,12.6666667 Z M15.3806784,13.8333333 C15.2408902,13.8333333 15.0958763,13.796281 14.9665396,13.7182064 C14.5785295,13.485306 14.4491928,12.9784829 14.6791247,12.5854634 C15.5949331,11.0160321 15.5949331,9.065491 14.6791247,7.49738299 C14.4491928,7.10436352 14.5785295,6.59621712 14.9665396,6.36331669 C15.3558562,6.13438616 15.8549129,6.26274605 16.0848448,6.65444223 C17.3050517,8.74260632 17.3050517,11.3389168 16.0848448,13.4270809 C15.9319924,13.6890939 15.6602547,13.8333333 15.3806784,13.8333333 Z M10.3043478,5.62501557 L10.3043478,13.873675 C10.3043478,14.850934 9.10969849,15.3625101 8.36478311,14.7038052 L6.7566013,13.2797607 C6.18712394,12.7762834 5.44499329,12.4968737 4.67362297,12.4968737 L4.3923652,12.4968737 C3.62377961,12.4968737 3,11.8935108 3,11.1470686 L3,8.36646989 C3,7.62137743 3.62377961,7.01666471 4.3923652,7.01666471 L4.65830695,7.01666471 C5.42967727,7.01666471 6.17180792,6.73725504 6.74128529,6.23377771 L8.36478311,4.79623519 C9.10969849,4.13753026 10.3043478,4.64910643 10.3043478,5.62501557 Z\" id=\"Combined-Shape\" fill=\"#575E75\"></path>\n    </g>\n</svg>";
   const soundIconHref = "data:image/svg+xml;base64,".concat(btoa(imageIconSource));
   let folderColorStylesheet = null;
@@ -4058,7 +4080,7 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
     }
   }
   const patchSortableHOC = (SortableHOC, type) => {
-    // SortableHOC should be: https://github.com/LLK/scratch-gui/blob/29d9851778febe4e69fa5111bf7559160611e366/src/lib/sortable-hoc.jsx#L8
+    // SortableHOC should be: https://github.com/scratchfoundation/scratch-gui/blob/29d9851778febe4e69fa5111bf7559160611e366/src/lib/sortable-hoc.jsx#L8
 
     const itemCache = new Cache();
     const folderItemCache = new Cache();
@@ -4371,6 +4393,7 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
       };
     });
   };
+  await addon.tab.scratchClassReady();
   addon.tab.createEditorContextMenu((ctxType, ctx) => {
     if (ctxType !== "sprite" && ctxType !== "costume" && ctxType !== "sound") return;
     const component = ctx.target[addon.tab.traps.getInternalKey(ctx.target)].return.return.return.stateNode;
@@ -4641,10 +4664,20 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
         return r;
       });
     };
-    const originalAddCostume = RenderedTarget.prototype.addCostume;
-    RenderedTarget.prototype.addCostume = function () {
+    const originalDuplicateSprite = vm.duplicateSprite;
+    vm.duplicateSprite = function () {
       for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
         args[_key5] = arguments[_key5];
+      }
+      return originalDuplicateSprite.call(this, ...args).then(r => {
+        fixTargetOrder();
+        return r;
+      });
+    };
+    const originalAddCostume = RenderedTarget.prototype.addCostume;
+    RenderedTarget.prototype.addCostume = function () {
+      for (var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
+        args[_key6] = arguments[_key6];
       }
       if (currentAssetFolder !== null) {
         const costume = args[0];
@@ -4658,8 +4691,8 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
     };
     const originalAddSound = RenderedTarget.prototype.addSound;
     RenderedTarget.prototype.addSound = function () {
-      for (var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
-        args[_key6] = arguments[_key6];
+      for (var _len7 = arguments.length, args = new Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {
+        args[_key7] = arguments[_key7];
       }
       if (currentAssetFolder !== null) {
         const sound = args[0];
@@ -4849,8 +4882,8 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
     // Temporal bug fix for #5762
     const originalShareSoundToTarget = vm.shareSoundToTarget;
     vm.shareSoundToTarget = function () {
-      for (var _len7 = arguments.length, args = new Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {
-        args[_key7] = arguments[_key7];
+      for (var _len8 = arguments.length, args = new Array(_len8), _key8 = 0; _key8 < _len8; _key8++) {
+        args[_key8] = arguments[_key8];
       }
       const target = this.runtime.getTargetById(args[1]);
       if (!target) {
@@ -4859,7 +4892,6 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
         // This would also work no matter what we returned, probably
         // Original method returns a promise, so here too
       }
-
       return originalShareSoundToTarget.call(this, ...args);
     };
   };
@@ -4897,8 +4929,8 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
     };
     const originalHandleDrop = Backpack.prototype.handleDrop;
     Backpack.prototype.handleDrop = function () {
-      for (var _len8 = arguments.length, args = new Array(_len8), _key8 = 0; _key8 < _len8; _key8++) {
-        args[_key8] = arguments[_key8];
+      for (var _len9 = arguments.length, args = new Array(_len9), _key9 = 0; _key9 < _len9; _key9++) {
+        args[_key9] = arguments[_key9];
       }
       // When a folder is dropped into the backpack, upload all the items in the folder.
       const dragInfo = args[0];
@@ -4970,6 +5002,2179 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
 
 /***/ }),
 
+/***/ "./src/addons/addons/middle-click-popup/BlockRenderer.js":
+/*!***************************************************************!*\
+  !*** ./src/addons/addons/middle-click-popup/BlockRenderer.js ***!
+  \***************************************************************/
+/*! exports provided: getBlockHeight, BlockComponent, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getBlockHeight", function() { return getBlockHeight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockComponent", function() { return BlockComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return renderBlock; });
+/* harmony import */ var _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BlockTypeInfo.js */ "./src/addons/addons/middle-click-popup/BlockTypeInfo.js");
+/* harmony import */ var _module_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./module.js */ "./src/addons/addons/middle-click-popup/module.js");
+/**
+ * @file Contains the code for rendering the blocks in the middle click dropdown.
+ * Main function is {@link renderBlock} which takes in a block and returns a renderer SVG element.
+ * @author Tacodiva
+ */
+
+
+
+const SVG_NS = "http://www.w3.org/2000/svg";
+const BlockShapes = {
+  // eg (my variable)
+  Round: {
+    padding: 12,
+    minWidth: 20,
+    backgroundPath: width => "m -12 -20 m 20 0 h ".concat(width - 16, " a 20 20 0 0 1 0 40 H 8 a 20 20 0 0 1 0 -40 z"),
+    /**
+     * 'Snuggling' is my wholesome term for when a block can sit extra close to a block
+     * of the same shape as it. Take a look at the blocks ( ( "" + "" ) - "" ) and
+     * ( < "" = "" > - "" ), observe how there's a lot more blank space in the outer
+     * block in the second example, this is because in the first example the '+' block
+     * can snuggle with the '-' block.
+     */
+    snugglePadding: 0,
+    get snuggleWith() {
+      // Don't feel bad BlockShapes.Round, I only snuggle with myself too :_(
+      return [BlockShapes.Round];
+    }
+  },
+  // eg <() = ()>
+  Boolean: {
+    padding: 20,
+    minWidth: 20,
+    backgroundPath: width => "m -20 -20 m 20 0 h ".concat(width, " l 20 20 l -20 20 H 0 l -20 -20 l 20 -20 z"),
+    snugglePadding: 0,
+    get snuggleWith() {
+      return [BlockShapes.Boolean];
+    }
+  },
+  // Square dropdowns like variables
+  SquareInput: {
+    padding: 8,
+    minWidth: 20,
+    backgroundPath: width => "m -2 -16 h ".concat(width + 4, " a 4 4 0 0 1 4 4 V 12 a 4 4 0 0 1 -4 4 H -2 a 4 4 0 0 1 -4 -4 V -12 a 4 4 0 0 1 4 -4")
+  },
+  // eg show
+  Stack: {
+    padding: 8,
+    minWidth: 60,
+    backgroundPath: width => "m -8 -20 A 4 4 0 0 1 -4 -24 H 4 c 2 0 3 1 4 2 l 4 4 c 1 1 2 2 4 2 h 12 c 2 0 3 -1 4 -2 l 4 -4 C 37 -23 38 -24 40 -24 H ".concat(width, " a 4 4 0 0 1 4 4 v 40 a 4 4 0 0 1 -4 4 H 40 c -2 0 -3 1 -4 2 l -4 4 c -1 1 -2 2 -4 2 h -12 c -2 0 -3 -1 -4 -2 l -4 -4 c -1 -1 -2 -2 -4 -2 H -4 a 4 4 0 0 1 -4 -4 z")
+  },
+  // eg when I start as a clone
+  Hat: {
+    padding: 8,
+    minWidth: 60,
+    backgroundPath: width => "m -8 -20 A 4 4 0 0 1 -4 -24 H ".concat(width, " a 4 4 0 0 1 4 4 v 40 a 4 4 0 0 1 -4 4 H 40 c -2 0 -3 1 -4 2 l -4 4 c -1 1 -2 2 -4 2 h -12 c -2 0 -3 -1 -4 -2 l -4 -4 c -1 -1 -2 -2 -4 -2 H -4 a 4 4 0 0 1 -4 -4 z")
+  },
+  // eg delete this clone
+  End: {
+    padding: 8,
+    minWidth: 60,
+    backgroundPath: width => "m -8 -20 A 4 4 0 0 1 -4 -24 H 4 c 2 0 3 1 4 2 l 4 4 c 1 1 2 2 4 2 h 12 c 2 0 3 -1 4 -2 l 4 -4 C 37 -23 38 -24 40 -24 H ".concat(width, " a 4 4 0 0 1 4 4 v 40 a 4 4 0 0 1 -4 4 H -4 a 4 4 0 0 1 -4 -4 z")
+  },
+  // The white oval for text or number inputs
+  TextInput: {
+    padding: 12,
+    minWidth: 16,
+    backgroundPath: width => "m -12 -16 m 16 0 h ".concat(width - 8, " a 16 16 0 0 1 0 32 H 4 a 16 16 0 0 1 0 -32 z"),
+    snugglePadding: 4,
+    get snuggleWith() {
+      return [BlockShapes.Round];
+    }
+  },
+  BooleanInput: {
+    padding: 16,
+    minWidth: 16,
+    backgroundPath: width => "m 0 -16 h ".concat(width, " l 16 16 l -16 16 h -16 l -16 -16 l 16 -16 z"),
+    snugglePadding: 6,
+    get snuggleWith() {
+      return [BlockShapes.Boolean];
+    }
+  },
+  HorizontalBlock: {
+    padding: 16,
+    minWidth: 45,
+    backgroundPath: width => "M -4 -20 a 4 4 0 0 1 4 -4 H ".concat(width + 8, " a 4 4 0 0 1 4 4 v 2 c 0 2 -1 3 -2 4 l -4 4 c -1 1 -2 2 -2 4 v 12 c 0 2 1 3 2 4 l 4 4 c 1 1 2 2 2 4 v 2 a 4 4 0 0 1 -4 4 H 0 a 4 4 0 0 1 -4 -4 v -2 c 0 -2 -1 -3 -2 -4 l -4 -4 c -1 -1 -2 -2 -2 -4 v -12 c 0 -2 1 -3 2 -4 l 4 -4 c 1 -1 2 -2 2 -4 z")
+  },
+  HorizontalBlockEnd: {
+    padding: 16,
+    minWidth: 45,
+    backgroundPath: width => "M -4 -20 a 4 4 0 0 1 4 -4 H ".concat(width + 8, " a 4 4 0 0 1 4 4 V 20 a 4 4 0 0 1 -4 4 H 0 a 4 4 0 0 1 -4 -4 v -2 c 0 -2 -1 -3 -2 -4 l -4 -4 c -1 -1 -2 -2 -2 -4 v -12 c 0 -2 1 -3 2 -4 l 4 -4 c 1 -1 2 -2 2 -4 z")
+  }
+};
+
+/**
+ * Gets the block shape info from {@link BlockShapes} given a {@link BlockShape}.
+ * @param {BlockShape} shape
+ */
+function getShapeInfo(shape, isVertical) {
+  if (shape === _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Round) return BlockShapes.Round;
+  if (shape === _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Boolean) return BlockShapes.Boolean;
+  if (shape === _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Stack) return isVertical ? BlockShapes.Stack : BlockShapes.HorizontalBlock;
+  if (shape === _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Hat) return BlockShapes.Hat;
+  if (shape === _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].End) return isVertical ? BlockShapes.End : BlockShapes.HorizontalBlockEnd;
+  throw new Error(shape);
+}
+
+/**
+ * @param {BlockInstance} block
+ * @returns {number}
+ */
+function getBlockHeight(block) {
+  switch (block.typeInfo.shape) {
+    case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].End:
+    case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Hat:
+    case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Stack:
+      return 62;
+    case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Boolean:
+    case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Round:
+      return 48;
+  }
+  return 0;
+}
+const BLOCK_ELEMENT_SPACING = 8;
+
+/**
+ * A part of a block. Think of these like the different parts in the 'make a block' menu.
+ */
+class BlockComponent {
+  constructor(element, padding, width, snuggleWith, snugglePadding) {
+    this.dom = element;
+    this.padding = padding;
+    this.width = width;
+    this.snuggleWith = snuggleWith;
+    this.snugglePadding = snugglePadding;
+  }
+}
+
+/**
+ * Creates a BlockComponent with some text. Like the 'label' element in the make a block menu.
+ * @param {string} text The contents of the component.
+ * @param {SVGElement} container The element to add the text to.
+ * @returns {BlockComponent} The BlockComponent.
+ */
+function createTextComponent(text, fillVar, container) {
+  let textElement = container.appendChild(document.createElementNS(SVG_NS, "text"));
+  textElement.setAttribute("class", "blocklyText");
+  textElement.style.fill = "var(".concat(fillVar, ")");
+  textElement.setAttribute("dominant-baseline", "middle");
+  textElement.setAttribute("dy", 1);
+  textElement.appendChild(document.createTextNode(text));
+  return new BlockComponent(textElement, 0, Object(_module_js__WEBPACK_IMPORTED_MODULE_1__["getTextWidth"])(textElement));
+}
+
+/**
+ * Creates a DOM element to hold all the contents of a block.
+ * A block could be the top level block, or it could be a block like (() + ()) that's inside
+ * another block.
+ * @returns {SVGElement} The SVGElement which will contain all the block's components.
+ */
+function createBlockContainer() {
+  let container = document.createElementNS(SVG_NS, "g");
+  let background = document.createElementNS(SVG_NS, "path");
+  background.setAttribute("class", "blocklyPath");
+  container.appendChild(background);
+  return container;
+}
+
+/**
+ * Creates a block component from a container containing all its components.
+ * @param {SVGElement} container The block container, created by {@link createBlockContainer}.
+ * @param {object} shape An object containing information of the shape of the block to be created. From the {@link BlockShapes} object.
+ * @param {string|null} categoryClass The category of the block, used for filling the background.
+ * @param {string} fill
+ * @param {string} stroke
+ * @param {number} width The width of the background of the block.
+ */
+function createBlockComponent(container, shape, categoryClass, fill, stroke, width) {
+  if (width < shape.minWidth) width = shape.minWidth;
+  container.classList.add("sa-block-color");
+  if (categoryClass) {
+    container.classList.add(categoryClass);
+  }
+  const background = container.children[0];
+  let style = "";
+  if (fill) style += "fill: var(".concat(fill, ");");
+  if (stroke) style += "stroke: var(".concat(stroke, ");");
+  background.setAttribute("style", style);
+  background.setAttribute("d", shape.backgroundPath(width));
+  return new BlockComponent(container, shape.padding, width + shape.padding * 2, shape.snuggleWith, shape.snugglePadding);
+}
+function createBackedTextedComponent(text, container, shape, categoryClass, fill, stroke, textVar) {
+  const blockContainer = createBlockContainer();
+  container.appendChild(blockContainer);
+  const textElement = createTextComponent(text, textVar, blockContainer);
+  if (textElement.width < shape.minWidth) {
+    textElement.dom.setAttribute("x", (shape.minWidth - textElement.width) / 2);
+  }
+  const blockElement = createBlockComponent(blockContainer, shape, categoryClass, fill, stroke, textElement.width);
+  return blockElement;
+}
+
+/**
+ * Renders a block, with the center of it's leftmost side located at 0, 0.
+ * @param {BlockInstance} block
+ * @param {SVGElement} container
+ * @returns {BlockComponent} The rendered block
+ */
+function renderBlock(block, container) {
+  var blockComponent = _renderBlock(block, container, block.typeInfo.category, true);
+  blockComponent.dom.classList.add("sa-block-color");
+  blockComponent.dom.setAttribute("transform", "translate(".concat(blockComponent.padding, ", 0)"));
+  return blockComponent;
+}
+
+/**
+ * Renders a block, with the center of it's leftmost side located at 0, 0.
+ * @param {BlockInstance} block
+ * @param {SVGAElement} container
+ * @param {string} parentCategory The category of this blocks parent. If no parent, than this blocks category.
+ * @returns {BlockComponent} The rendered component.
+ */
+function _renderBlock(block, container, parentCategory, isVertical) {
+  const blockContainer = container.appendChild(createBlockContainer());
+  const shape = getShapeInfo(block.typeInfo.shape, isVertical);
+  const category = block.typeInfo.category;
+  const COLOR_CLASSES = ["motion", "looks", "sounds", "events", "control", "sensing", "operators", "data", "data-lists", "list", "more", "pen", "addon-custom-block"];
+  const categoryClass = COLOR_CLASSES.includes(category.name) ? "sa-block-color-" + category.name : null;
+  let xOffset = 0;
+  let inputIdx = 0;
+  for (let partIdx = 0; partIdx < block.typeInfo.parts.length; partIdx++) {
+    const blockPart = block.typeInfo.parts[partIdx];
+    let component;
+    if (typeof blockPart === "string") {
+      component = createTextComponent(blockPart, "--sa-block-text", blockContainer);
+    } else {
+      const blockInput = block.inputs[inputIdx++];
+      if (blockInput instanceof _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInstance"]) {
+        component = _renderBlock(blockInput, blockContainer, block.typeInfo.category, false);
+      } else if (blockPart instanceof _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputEnum"]) {
+        if (blockPart.isRound) {
+          component = createBackedTextedComponent(blockInput.string, blockContainer, BlockShapes.TextInput, categoryClass, "--sa-block-background-secondary, ".concat(category.colorSecondary), "--sa-block-background-tertiary, ".concat(category.colorTertiary), "--sa-block-text");
+        } else {
+          component = createBackedTextedComponent(blockInput.string, blockContainer, BlockShapes.SquareInput, categoryClass, "--sa-block-background-primary, ".concat(category.colorPrimary), "--sa-block-background-tertiary, ".concat(category.colorTertiary), "--sa-block-text");
+        }
+      } else if (blockPart instanceof _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputBoolean"]) {
+        component = createBackedTextedComponent("", blockContainer, BlockShapes.BooleanInput, categoryClass, "--sa-block-field-background, ".concat(category.colorTertiary), "--sa-block-field-background, ".concat(category.colorTertiary), "--sa-block-text");
+      } else if (blockPart instanceof _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputBlock"]) {
+        component = createBackedTextedComponent("", blockContainer, BlockShapes.HorizontalBlock, categoryClass, "--sa-block-field-background, ".concat(category.colorTertiary), "--sa-block-field-background, ".concat(category.colorTertiary), "--sa-block-text");
+      } else {
+        var _ref, _blockInput$toString;
+        component = createBackedTextedComponent((_ref = (_blockInput$toString = blockInput === null || blockInput === void 0 ? void 0 : blockInput.toString()) !== null && _blockInput$toString !== void 0 ? _blockInput$toString : blockPart.defaultValue) !== null && _ref !== void 0 ? _ref : "", blockContainer, BlockShapes.TextInput, categoryClass, "--sa-block-input-color, ".concat(category.colorColor), "--sa-block-background-tertiary, ".concat(category.colorTertiary), "--sa-block-input-text");
+        component.dom.classList.add("blocklyNonEditableText");
+      }
+    }
+    let xTranslation = xOffset + component.padding;
+    if (partIdx === 0 || partIdx === block.typeInfo.parts.length - 1) {
+      if (component.snuggleWith && component.snuggleWith.indexOf(shape) !== -1) {
+        const positionDelta = component.snugglePadding - component.padding;
+        component.width += positionDelta;
+        if (partIdx === 0) {
+          xTranslation += positionDelta;
+        }
+      }
+    }
+    component.dom.setAttribute("transform", "translate(".concat(xTranslation, ", 0)"));
+    xOffset += BLOCK_ELEMENT_SPACING + component.width;
+  }
+  return createBlockComponent(blockContainer, shape, categoryClass, "--sa-block-background-primary, ".concat(category.colorPrimary), "--sa-block-background-tertiary, ".concat(category.colorTertiary), xOffset - BLOCK_ELEMENT_SPACING);
+}
+
+/***/ }),
+
+/***/ "./src/addons/addons/middle-click-popup/BlockTypeInfo.js":
+/*!***************************************************************!*\
+  !*** ./src/addons/addons/middle-click-popup/BlockTypeInfo.js ***!
+  \***************************************************************/
+/*! exports provided: BlockInputType, BlockInput, BlockInputRound, BlockInputString, BlockInputNumber, BlockInputBoolean, BlockInputColour, BlockInputEnum, BlockInputBlock, BlockInstance, BlockShape, BlockTypeInfo */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockInputType", function() { return BlockInputType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockInput", function() { return BlockInput; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockInputRound", function() { return BlockInputRound; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockInputString", function() { return BlockInputString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockInputNumber", function() { return BlockInputNumber; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockInputBoolean", function() { return BlockInputBoolean; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockInputColour", function() { return BlockInputColour; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockInputEnum", function() { return BlockInputEnum; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockInputBlock", function() { return BlockInputBlock; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockInstance", function() { return BlockInstance; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockShape", function() { return BlockShape; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockTypeInfo", function() { return BlockTypeInfo; });
+var _class2;
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+/**
+ * @file Contains the code for enumerating the different types of blocks in a workspace,
+ * and provides a more friendly way to create instances blocks with some inputs.
+ */
+
+/**
+ * A numeric value to represent the type of an {@link BlockInput}
+ * @readonly
+ * @enum {number}
+ */
+const BlockInputType = {
+  STRING: 0,
+  NUMBER: 1,
+  BOOLEAN: 2,
+  COLOUR: 3,
+  ENUM: 4,
+  BLOCK: 5
+};
+
+/**
+ * @abstract
+ */
+class BlockInput {
+  /**
+   * @param {BlockInputType} type
+   * @param {number} inputIdx
+   * @param {number} fieldIdx
+   */
+  constructor(type, inputIdx, fieldIdx) {
+    if (this.constructor === BlockInput) throw new Error("Abstract classes can't be instantiated.");
+    /** @type {BlockInputType} */
+    this.type = type;
+    /** @type {number} The index of this input in the workspace version of the block's input array.  */
+    this.inputIdx = inputIdx;
+    /**
+     * The index of this input in the workspace version of the block's field array.
+     * The special case of -1 means that in the workspace version, this input is inside a sub-block,
+     * that has been abstracted away.
+     *  @type {number}
+     */
+    this.fieldIdx = fieldIdx;
+    /** @type {*} The default value to set this input to, or null to not set it to anything. */
+    this.defaultValue = null;
+  }
+
+  /**
+   * Sets the field this input refers to on a block to a value.
+   * @param {BlockInstance} block
+   * @param {*} value
+   * @abstract
+   */
+  setValue(block, value) {
+    throw new Error("Sub-class must override abstract method.");
+  }
+
+  /**
+   * Gets the input this block input refers to on block.
+   * @param {BlockInstance} block
+   * @returns {*}
+   * @protected
+   */
+  getInput(block) {
+    return block.inputList[this.inputIdx];
+  }
+
+  /**
+   * Gets the field this block input refers to on block.
+   * @param {BlockInstance} block
+   * @returns {*}
+   * @protected
+   */
+  getField(block) {
+    if (this.fieldIdx === -1) {
+      return this.getInput(block).connection.targetBlock().inputList[0].fieldRow[0];
+    } else {
+      return this.getInput(block).fieldRow[this.fieldIdx];
+    }
+  }
+}
+
+/**
+ * The base class for any round input.
+ * @abstract
+ */
+class BlockInputRound extends BlockInput {
+  constructor(type, inputIdx, fieldIdx, defaultValue) {
+    super(type, inputIdx, fieldIdx);
+    if (this.constructor === BlockInputRound) throw new Error("Abstract classes can't be instantiated.");
+    this.defaultValue = defaultValue;
+  }
+  setValue(block, value) {
+    if (value instanceof BlockInstance) {
+      const subblock = value.createWorkspaceForm();
+      if (!subblock.outputConnection) throw new Error('Cannot put block "' + subblock.typeInfo.id + '" into a round type input.');
+      subblock.outputConnection.connect(this.getInput(block).connection);
+    } else {
+      this.getField(block).setValue(this._toFieldValue(value));
+    }
+  }
+
+  /**
+   * Converts a value passed in to setValue to a value we can set the block's field to.
+   * @param {*} value
+   * @protected
+   */
+  _toFieldValue(value) {
+    throw new Error("Sub-class must override abstract method.");
+  }
+}
+class BlockInputString extends BlockInputRound {
+  constructor(inputIdx, fieldIdx, defaultValue) {
+    super(BlockInputType.STRING, inputIdx, fieldIdx, defaultValue);
+  }
+  _toFieldValue(value) {
+    const type = typeof value;
+    if (type === "number") return value;
+    if (type === "string") return value;
+    throw new Error("Cannot set round type input to value of type " + type);
+  }
+}
+class BlockInputNumber extends BlockInputRound {
+  constructor(inputIdx, fieldIdx, defaultValue) {
+    super(BlockInputType.NUMBER, inputIdx, fieldIdx, defaultValue);
+  }
+  _toFieldValue(value) {
+    const type = typeof value;
+    if (type === "number") return value;
+    if (type === "string") {
+      if (value.length === 0) return value;
+      const number = parseFloat(value);
+      if (isNaN(number)) throw new Error('Cannot set numeric type input to string "' + value + '".');
+      return value;
+    }
+    throw new Error("Cannot set round type input to value of type " + type);
+  }
+}
+class BlockInputBoolean extends BlockInput {
+  constructor(inputIdx, fieldIdx) {
+    super(BlockInputType.BOOLEAN, inputIdx, fieldIdx);
+  }
+  setValue(block, value) {
+    if (value instanceof BlockInstance) {
+      const subblock = value.createWorkspaceForm();
+      if (!subblock.outputConnection || value.typeInfo.shape !== BlockShape.Boolean) throw new Error('Cannot put block "' + value.typeInfo.id + '" into a boolean type input.');
+      subblock.outputConnection.connect(this.getInput(block).connection);
+    } else {
+      throw new Error("Boolean type inputs can only contain blocks.");
+    }
+  }
+}
+class BlockInputColour extends BlockInput {
+  constructor(inputIdx, fieldIdx) {
+    super(BlockInputType.COLOUR, inputIdx, fieldIdx);
+  }
+  setValue(block, value) {
+    if (typeof value !== "string") throw new Error("Cannot set color type input to value of type " + typeof type);
+    if (!value.match(/^#[0-9a-fA-F]{6}$/)) throw new Error('Invalid color "' + value + '".');
+    this.getField(block).setValue(value);
+  }
+}
+
+/**
+ * @typedef BlockInputEnumOption
+ * @property {string} value The internal name of this input option
+ * @property {string} string The localized name of this input option.
+ */
+
+/**
+ * A block input that can be one of a list of values.
+ * Usually represented by a dropdown menu in Scratch.
+ */
+class BlockInputEnum extends BlockInput {
+  /**
+   * @param {Array} options
+   * @param {number} inputIdx
+   * @param {number} fieldIdx
+   */
+  constructor(options, inputIdx, fieldIdx, isRound) {
+    super(BlockInputType.ENUM, inputIdx, fieldIdx);
+    /** @type {BlockInputEnumOption[]} */
+    this.values = [];
+    for (let i = 0; i < options.length; i++) {
+      if (typeof options[i][1] === "string" && BlockInputEnum.INVALID_VALUES.indexOf(options[i][1]) === -1) {
+        this.values.push({
+          value: options[i][1],
+          string: options[i][0].replaceAll(String.fromCharCode(160), " ")
+        });
+      }
+    }
+    this.isRound = isRound;
+    this.defaultValue = this.values[0];
+  }
+
+  /**
+   * @param {BlockInputEnumOption} value
+   */
+  setValue(block, value) {
+    if (this.isRound && value instanceof BlockInstance) {
+      value.createWorkspaceForm().outputConnection.connect(this.getInput(block).connection);
+    } else {
+      if (this.values.indexOf(value) === -1) throw new Error("Invalid enum value. Expected item from the values list.");
+      this.getField(block).setValue(value.value);
+    }
+  }
+}
+
+/**
+ * A block input that is a stack of blocks.
+ * The 'if' block has a single block input, the 'if else' block has two block inputs.
+ */
+_defineProperty(BlockInputEnum, "INVALID_VALUES", ["DELETE_VARIABLE_ID", "RENAME_VARIABLE_ID", "NEW_BROADCAST_MESSAGE_ID", "NEW_BROADCAST_MESSAGE_ID",
+// editor-searchable-dropdowns compatibility
+"createGlobalVariable", "createLocalVariable", "createGlobalList", "createLocalList", "createBroadcast",
+// rename-broadcasts compatibility
+"RENAME_BROADCAST_MESSAGE_ID"]);
+class BlockInputBlock extends BlockInput {
+  constructor(inputIdx, fieldIdx) {
+    super(BlockInputType.BLOCK, inputIdx, fieldIdx);
+  }
+  setValue(block, value) {
+    if (value instanceof BlockInstance) {
+      const subblock = value.createWorkspaceForm();
+      if (!subblock.previousConnection || !value.typeInfo.shape.canStackUp) throw new Error('Cannot put block "' + value.typeInfo.id + '" into a block type input.');
+      subblock.previousConnection.connect(this.getInput(block).connection);
+    } else {
+      throw new Error("Block type inputs can only contain blocks.");
+    }
+  }
+}
+
+/**
+ * Because everyone was thinking "You know what Scratch really needs, ANOTHER way to represent blocks!"
+ *
+ * Another way to represent a Scratch block.
+ */
+class BlockInstance {
+  constructor(typeInfo) {
+    /** @type {BlockTypeInfo} */
+    this.typeInfo = typeInfo;
+    /** @type {Array} */
+    for (var _len = arguments.length, inputs = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      inputs[_key - 1] = arguments[_key];
+    }
+    this.inputs = inputs;
+    for (let i = 0; i < this.typeInfo.inputs.length; i++) {
+      if (this.inputs[i] == null) this.inputs[i] = this.typeInfo.inputs[i].defaultValue;
+    }
+  }
+
+  /**
+   * Creates a real Scratch block from this imaginary representation.
+   * @returns {*} A 'workspace form' block.
+   */
+  createWorkspaceForm() {
+    if (this.typeInfo.id === "control_stop") {
+      this.typeInfo.domForm.querySelector("mutation").setAttribute("hasnext", "" + (this.inputs[0].value === "other scripts in sprite"));
+    }
+    const block = this.typeInfo.Blockly.Xml.domToBlock(this.typeInfo.domForm, this.typeInfo.workspace);
+    for (let i = 0; i < this.typeInfo.inputs.length; i++) {
+      const inputValue = this.inputs[i];
+      if (inputValue != null) this.typeInfo.inputs[i].setValue(block, inputValue);
+    }
+    return block;
+  }
+}
+
+/**
+ * An enum for the different shapes of blocks.
+ * Contains information on what each type of block can do.
+ */
+class BlockShape {
+  static getBlockShape(workspaceBlock) {
+    if (workspaceBlock.edgeShape_ === 2) {
+      return BlockShape.Round;
+    } else if (workspaceBlock.edgeShape_ === 1) {
+      return BlockShape.Boolean;
+    } else if (workspaceBlock.startHat_) {
+      return BlockShape.Hat;
+    } else if (!workspaceBlock.nextConnection) {
+      return BlockShape.End;
+    } else {
+      return BlockShape.Stack;
+    }
+  }
+  constructor(canStackUp, canStackDown, canBeRound) {
+    /** @type {boolean} Can blocks be stacked above this block? */
+    this.canStackUp = canStackUp;
+    /** @type {boolean} Can blocks be stacked below this block? */
+    this.canStackDown = canStackDown;
+    /** @type {boolean} Does this block fit into a round hole? */
+    this.canBeRound = canBeRound;
+  }
+}
+
+/**
+ * @typedef BlockCategory
+ * @property {string} name
+ * @property {string} colorPrimary
+ * @property {string} colorSecondary
+ * @property {string} colorTertiary
+ */
+
+/**
+ * A type of Scratch block, like 'move () steps'. Every instance of the 'move () steps'
+ * block shares this type info.
+ */
+_class2 = BlockShape;
+_defineProperty(BlockShape, "Round", new _class2(false, false, true));
+_defineProperty(BlockShape, "Boolean", new _class2(false, false, true));
+_defineProperty(BlockShape, "Hat", new _class2(false, true, false));
+_defineProperty(BlockShape, "End", new _class2(true, false, false));
+_defineProperty(BlockShape, "Stack", new _class2(true, true, false));
+class BlockTypeInfo {
+  /**
+   * @param {*} block Block in workspace form
+   * @param {*} vm
+   * @returns {BlockCategory} The block's category
+   */
+  static getBlockCategory(block, vm) {
+    let name;
+    if (block.type === "procedures_call") {
+      if (vm.getAddonBlock(block.getProcCode())) name = "addon-custom-block";else name = "more";
+    } else if (block.usesDefaultExtensionColors) name = "pen";else if (block.type === "sensing_of") name = "sensing";else if (block.type === "event_whenbackdropswitchesto") name = "events";else name = block.category_;
+    return {
+      name,
+      colorPrimary: block.colour_,
+      colorSecondary: block.colourSecondary_,
+      colorTertiary: block.colourTertiary_
+    };
+  }
+
+  /**
+   * Enumerates all the different types of blocks, given a workspace.
+   * @param {Blockly} Blockly
+   * @param {*} vm
+   * @param {*} workspace
+   * @param {(string) => string} locale The translations used for converting icons into text
+   * @returns {BlockTypeInfo[]}
+   */
+  static getBlocks(Blockly, vm, workspace, locale) {
+    var _workspace$getToolbox;
+    const flyoutWorkspace = (_workspace$getToolbox = workspace.getToolbox()) === null || _workspace$getToolbox === void 0 ? void 0 : _workspace$getToolbox.flyout_.getWorkspace();
+    if (!flyoutWorkspace) return [];
+    const blocks = [];
+    const flyoutDom = Blockly.Xml.workspaceToDom(flyoutWorkspace);
+    const flyoutDomBlockMap = {};
+    for (const blockDom of flyoutDom.children) {
+      if (blockDom.tagName === "BLOCK") {
+        let id = blockDom.getAttribute("id");
+        flyoutDomBlockMap[id] = blockDom;
+      }
+    }
+    for (const workspaceBlock of flyoutWorkspace.getTopBlocks()) {
+      blocks.push(...BlockTypeInfo._createBlocks(workspace, vm, Blockly, locale, workspaceBlock, flyoutDomBlockMap[workspaceBlock.id]));
+    }
+    return blocks;
+  }
+  static _createBlocks(workspace, vm, Blockly, locale, workspaceForm, domForm) {
+    let parts = [];
+    let inputs = [];
+    const addInput = input => {
+      parts.push(input);
+      inputs.push(input);
+    };
+    const addFieldInputs = (field, inputIdx, fieldIdx) => {
+      if (field.className_ === "blocklyText blocklyDropdownText") {
+        const options = field.getOptions();
+        addInput(new BlockInputEnum(options, inputIdx, fieldIdx, fieldIdx === -1));
+      } else if (field instanceof Blockly.FieldImage) {
+        switch (field.src_.split("/").pop()) {
+          case "green-flag.svg":
+            parts.push(locale("/_general/blocks/green-flag"));
+            break;
+          case "rotate-right.svg":
+            parts.push(locale("/_general/blocks/clockwise"));
+            break;
+          case "rotate-left.svg":
+            parts.push(locale("/_general/blocks/anticlockwise"));
+            break;
+        }
+      } else {
+        if (!field.argType_) {
+          if (field.getText().trim().length !== 0) parts.push(field.getText());
+        } else if (field.argType_[0] === "colour") {
+          addInput(new BlockInputColour(inputIdx, fieldIdx));
+        } else if (field.argType_[1] === "number") {
+          addInput(new BlockInputNumber(inputIdx, fieldIdx, field.text_));
+        } else {
+          addInput(new BlockInputString(inputIdx, fieldIdx, field.text_));
+        }
+      }
+    };
+    for (let inputIdx = 0; inputIdx < ((_workspaceForm$inputL = workspaceForm.inputList) === null || _workspaceForm$inputL === void 0 ? void 0 : _workspaceForm$inputL.length); inputIdx++) {
+      var _workspaceForm$inputL;
+      const input = workspaceForm.inputList[inputIdx];
+      for (let fieldIdx = 0; fieldIdx < input.fieldRow.length; fieldIdx++) {
+        addFieldInputs(input.fieldRow[fieldIdx], inputIdx, fieldIdx);
+      }
+      if (input.connection) {
+        const innerBlock = input.connection.targetBlock();
+        if (innerBlock) {
+          if (innerBlock.inputList.length !== 1 || innerBlock.inputList[0].fieldRow.length !== 1) throw new Error("This should never happen.");
+          let innerField = innerBlock.inputList[0].fieldRow[0];
+          addFieldInputs(innerField, inputIdx, -1);
+        } else {
+          if (input.outlinePath) {
+            addInput(new BlockInputBoolean(inputIdx, -1));
+          } else {
+            addInput(new BlockInputBlock(inputIdx, -1));
+          }
+        }
+      }
+    }
+    if (workspaceForm.id === "of") {
+      let blocks = [];
+      let baseVarInputIdx, baseTargetInputIdx;
+      // In most languages, the 'of' block inputs are: [variable] of [sprite], and in others
+      // it's the opposite (sprite then variable). We can tell that the variable comes first
+      // if the first input is round.
+      if (inputs[0].isRound) {
+        baseVarInputIdx = 1;
+        baseTargetInputIdx = 0;
+      } else {
+        baseVarInputIdx = 0;
+        baseTargetInputIdx = 1;
+      }
+      let baseVarInput = inputs[baseVarInputIdx];
+      let baseTargetInput = inputs[baseTargetInputIdx];
+      const baseVarPartIdx = parts.indexOf(baseVarInput);
+      const baseTargetPartIdx = parts.indexOf(baseTargetInput);
+
+      // Adapted from https://github.com/scratchfoundation/scratch-gui/blob/cc6e6324064493cf1788f3c7c0ff31e4057964ee/src/lib/blocks.js#L230
+      const stageOptions = [[Blockly.Msg.SENSING_OF_BACKDROPNUMBER, "backdrop #"], [Blockly.Msg.SENSING_OF_BACKDROPNAME, "backdrop name"], [Blockly.Msg.SENSING_OF_VOLUME, "volume"]];
+      const spriteOptions = [[Blockly.Msg.SENSING_OF_XPOSITION, "x position"], [Blockly.Msg.SENSING_OF_YPOSITION, "y position"], [Blockly.Msg.SENSING_OF_DIRECTION, "direction"], [Blockly.Msg.SENSING_OF_COSTUMENUMBER, "costume #"], [Blockly.Msg.SENSING_OF_COSTUMENAME, "costume name"], [Blockly.Msg.SENSING_OF_SIZE, "size"], [Blockly.Msg.SENSING_OF_VOLUME, "volume"]];
+      for (const targetInput of baseTargetInput.values) {
+        let options;
+        const isStage = targetInput.value === "_stage_";
+        if (isStage) {
+          const stageVariableOptions = vm.runtime.getTargetForStage().getAllVariableNamesInScopeByType("");
+          options = stageVariableOptions.map(variable => [variable, variable]).concat(stageOptions);
+        } else {
+          const sprite = vm.runtime.getSpriteTargetByName(targetInput.value);
+          const spriteVariableOptions = sprite.getAllVariableNamesInScopeByType("", true);
+          options = spriteVariableOptions.map(variable => [variable, variable]).concat(spriteOptions);
+        }
+        const ofInputs = [];
+        ofInputs[baseVarInputIdx] = new BlockInputEnum(options, baseVarInput.inputIdx, baseVarInput.fieldIdx, false);
+        ofInputs[baseTargetInputIdx] = new BlockInputEnum([[targetInput.string, targetInput.value]], baseTargetInput.inputIdx, baseTargetInput.fieldIdx, isStage);
+        const ofParts = [...parts];
+        ofParts[baseVarPartIdx] = ofInputs[baseVarInputIdx];
+        ofParts[baseTargetPartIdx] = ofInputs[baseTargetInputIdx];
+        blocks.push(new BlockTypeInfo(workspace, Blockly, vm, workspaceForm, domForm, ofParts, ofInputs));
+      }
+      return blocks;
+    } else if (workspaceForm.id === "control_stop") {
+      // This block is special because when "other scripts in sprite" is selected the block
+      //  needs to be BlockShape.End.
+      const oldInput = inputs[0];
+      const otherScriptsOptionIdx = oldInput.values.findIndex(option => option.string === "other scripts in sprite");
+      const otherScriptsOption = oldInput.values.splice(otherScriptsOptionIdx, 1)[0];
+      const newInput = new BlockInputEnum([[otherScriptsOption.string, otherScriptsOption.value]], oldInput.inputIdx, oldInput.fieldIdx, oldInput.isRound);
+      const newBlockParts = [...parts];
+      newBlockParts[parts.indexOf(oldInput)] = newInput;
+      return [new BlockTypeInfo(workspace, Blockly, vm, workspaceForm, domForm, parts, inputs, BlockShape.End), new BlockTypeInfo(workspace, Blockly, vm, workspaceForm, domForm, newBlockParts, [newInput], BlockShape.Stack)];
+    } else {
+      return [new BlockTypeInfo(workspace, Blockly, vm, workspaceForm, domForm, parts, inputs)];
+    }
+  }
+  constructor(workspace, Blockly, vm, workspaceForm, domForm, parts, inputs, shape) {
+    /** @type {string} */
+    this.id = workspaceForm.id;
+    this.workspaceForm = workspaceForm;
+    this.domForm = domForm;
+    /** @type {BlockShape} */
+    this.shape = shape !== null && shape !== void 0 ? shape : BlockShape.getBlockShape(this.workspaceForm);
+    /** @type {BlockCategory} */
+    this.category = BlockTypeInfo.getBlockCategory(this.workspaceForm, vm);
+    this.workspace = workspace;
+    this.Blockly = Blockly;
+
+    /**
+     * A list of all the 'parts' of this block. Each part is either an instance
+     * of BlockInput or a string for some text which is a part of a block.
+     *
+     * For example, for the 'say' block, the first element of the array would be
+     * the string 'say', and the second element would be a BlockInput of type
+     * BlockInputString.
+     * @type {(BlockInput | string)[]}
+     */
+    this.parts = parts;
+    /**
+     * A list of all this block's inputs. The same as this.parts, but with the
+     * strings omitted.
+     * @type {BlockInput[]}
+     */
+    this.inputs = inputs;
+  }
+
+  /**
+   * Creates a block of this type with the given inputs
+   * @param  {...any} inputs
+   * @returns {BlockInstance}
+   */
+  createBlock() {
+    for (var _len2 = arguments.length, inputs = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      inputs[_key2] = arguments[_key2];
+    }
+    return new BlockInstance(this, ...inputs);
+  }
+}
+
+/***/ }),
+
+/***/ "./src/addons/addons/middle-click-popup/WorkspaceQuerier.js":
+/*!******************************************************************!*\
+  !*** ./src/addons/addons/middle-click-popup/WorkspaceQuerier.js ***!
+  \******************************************************************/
+/*! exports provided: QueryResult, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QueryResult", function() { return QueryResult; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return WorkspaceQuerier; });
+/* harmony import */ var _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BlockTypeInfo.js */ "./src/addons/addons/middle-click-popup/BlockTypeInfo.js");
+var _class, _class3;
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+/**
+ * @file Contains all the logic for the parsing of queries by the {@link WorkspaceQuerier}.
+ * I'm really sorry if somebody other than me ever has to debug this.
+ * Wish you luck <3
+ *
+ * Once you *think* you understand the function of the major classes, read the docs on
+ * {@link WorkspaceQuerier._createTokenGroups} for some more specifics on the algorithm works,
+ * and to achieve maximum enlightenment.
+ *
+ * @author Tacodiva
+ */
+
+
+
+/**
+ *
+ * A token is a part of a query that is interpreted in a specific way.
+ *
+ * In the query 'say 1 = Hello World', the base tokens are 'say', '1', '=, and 'Hello World'.
+ * Each token contains where in the query it is located and what {@link TokenType} it is.
+ *
+ * Sometimes the same section of a query has multiple tokens because there are different
+ * interpretations of what type of token it is. For example, imagine you had a variable named
+ * 'x'. The query 'set x to 10', is ambiguous because you could be referring to the motion block
+ * `set x to ()` or the data block `set [x] to ()`. This ambiguity results in two different
+ * tokens being creating for 'x', one is 'set x to' referring to the motion block, and the other
+ * is just 'x', referring to the variable.
+ *
+ * Calling this a 'token' is somewhat misleading, often language interpreters will have a 'parse tree'
+ * with tokens and an 'abstract syntax tree' with higher level elements, but I have chosen to make these
+ * two trees one in the same. Because of this, every token represents a logical part of a block.
+ * Going back to the 'say 1 = Hello World' example, there are two 'parent' tokens, both are of type
+ * {@link TokenTypeBlock}. The first is for the equals block, which contains three subtokens; '1',
+ * '=' and 'Hello World'. The second is the say block, whos first child is 'say' and second child is
+ * the token for the equals block (which itself has three children). For a query result to be valid,
+ * it must have a token which encapsulates the entire query, in this case the say block token starts
+ * at the first letter and ends at the last letter, so it's a valid interpretation. The token which
+ * encapsulates the whole query is referred to as the root token.
+ */
+class Token {
+  /**
+   * @param {number} start
+   * @param {number} end
+   * @param {TokenType} type
+   * @param {*} value
+   * @param {number} precedence
+   * @param {boolean} isTruncated
+   * @param {boolean} isLegal
+   */
+  constructor(start, end, type, value) {
+    let {
+      precedence = -1,
+      isProper = true,
+      isTruncated = false,
+      isLegal = true,
+      isDefiningFeature = false
+    } = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {};
+    /** @type {number} The index of the first letter of this token in the query */
+    this.start = start;
+    /** @type {number} The index of the last letter of this token in the query */
+    this.end = end;
+    /** @type {TokenType} The type of this token. */
+    this.type = type;
+    /** @type {*} Additional information about this token, controlled and interpreted by the token type. */
+    this.value = value;
+    /**
+     * The precedence of this token, used to implement order of operations. Tokens with a higher
+     * precedence should be evaluated *after* those with a lower precedence. Brackets have a
+     * precedence of 0 so they are always evaluated first. A precedence of -1 means that precedence
+     * is not specified and the parser makes no guarantees about the order of operations.
+     * @type {number}
+     */
+    this.precedence = precedence;
+    /**
+     * True if this token is fully written out. For example, in the query "m v = 10" where "m v"
+     * expands to "my variable", the token "m v" is not proper, as it is not fully written.
+     * Note that unlike trauncation, parent tokens do not inherit this property (so in the above
+     * example, the '=' block token would still be proper).
+     */
+    this.isProper = isProper;
+    /**
+     * Sometimes, tokens are truncated. Imagine the query 'say Hello for 10 se', here the last
+     * token should be 'seconds', but it's truncated. For this token, the isTruncated value is set
+     * to true. Additionally, the token for the whole block (which contains the tokens 'say', 'Hello',
+     * 'for', '10' and 'se') also has it's isTruncated value set to true, because it contains a
+     * truncated token.
+     * @type {boolean}
+     */
+    this.isTruncated = isTruncated;
+    /**
+     * Used to generate autocomplete text, even if that autocomplete text doesn't make a valid query
+     * by itself. For example in the query 'if my varia', we want to autocomplete to 'my variable',
+     * but the query 'if my variable' is still not valid, because my variable is not a boolean. In
+     * this case, the 'my variable' token would still be emitted as the second child of the 'if' token,
+     * but it would be marked as illegal.
+     */
+    this.isLegal = isLegal;
+    /**
+     * If we see this token, should we know what block it's connected to?
+     *
+     * For example, in the query 'say Hi', 'say' is a defining feature because
+     * we can narrow down what block it's from based only the fact that it's present.
+     * 'Hi', however, is not a defining feature as it could be a part of lots of
+     * different blocks.
+     *
+     * This is used to help eliminate some dodgey interpretations of queries, if a block
+     * has no subtokens marked a defining feature it's disguarded.
+     * @type {boolean}
+     */
+    this.isDefiningFeature = isDefiningFeature;
+  }
+
+  /**
+   * @see {TokenType.createBlockValue}
+   * @param {QueryInfo} query
+   * @returns
+   */
+  createBlockValue(query) {
+    return this.type.createBlockValue(this, query);
+  }
+}
+
+/**
+ * The parent of any class that can enumerate tokens given a query and a location within that
+ * query to search.
+ *
+ * As the same position in a query can have multiple interpretations (see {@link Token}), every
+ * token provider's {@link parseTokens} method can return multiple tokens for the same index.
+ *
+ * Like tokens, there is a token provider tree. See {@link WorkspaceQuerier._createTokenGroups}
+ * for more info on this tree.
+ *
+ * @abstract
+ */
+class TokenProvider {
+  constructor(shouldCache) {
+    if (this.constructor === TokenProvider) throw new Error("Abstract classes can't be instantiated.");
+    /**
+     * Can the results of this token provider be stored? True
+     * if {@link parseTokens} will always return the same thing for the same inputs or if
+     * this token provider already caches it's result, so caching it again is redundant.
+     * @type {boolean}
+     */
+    this.shouldCache = shouldCache;
+  }
+
+  /**
+   * Return the tokens found by this token provider in `query` at character `idx`.
+   * @param {QueryInfo} query The query to search
+   * @param {number} idx The index to start the search at
+   * @yields {Token} All the tokens found
+   * @abstract
+   */
+  // eslint-disable-next-line require-yield
+  *parseTokens(query, idx) {
+    throw new Error("Sub-class must override abstract method.");
+  }
+}
+
+/**
+ * A token provider which wraps around another token provider, always returning a blank token in
+ * addition to whatever the inner token provider returns.
+ *
+ * Used for tokens that can possibility be omitted, like numbers. For example, the '+' block always
+ * needs three inputs, but the user could query '1 +'. In this case its subtokens are '1', '+' and
+ * a {@link TokenTypeBlank}, provided by this provider.
+ */
+class TokenProviderOptional extends TokenProvider {
+  /**
+   * @param {TokenProvider} inner
+   */
+  constructor(inner) {
+    super(inner.shouldCache);
+    /** @type {TokenProvider} The inner token provider to return along with the blank token. */
+    this.inner = inner;
+  }
+  *parseTokens(query, idx) {
+    yield TokenTypeBlank.INSTANCE.createToken(idx);
+    yield* this.inner.parseTokens(query, idx);
+  }
+}
+
+/**
+ * Caches the output of an inner token provider.
+ * Used for tokens that are a part of multiple token provider groups.
+ */
+class TokenProviderSingleCache extends TokenProvider {
+  /**
+   * @param {TokenProvider} inner
+   */
+  constructor(inner) {
+    super(false);
+    /** @type {TokenProvider} */
+    this.inner = inner;
+    if (this.inner.shouldCache) {
+      /** @type {Token[]?} */
+      this.cache = [];
+      /** @type {number?} */
+      this.cacheQueryID = null;
+    }
+  }
+  *parseTokens(query, idx) {
+    if (!this.inner.shouldCache) {
+      yield* this.inner.parseTokens();
+      return;
+    }
+    if (this.cacheQueryID !== query.id) {
+      this.cache = [];
+      this.cacheQueryID = query.id;
+    }
+    let cacheEntry = this.cache[idx];
+    if (cacheEntry) {
+      yield* cacheEntry;
+      return;
+    }
+    this.cache[idx] = cacheEntry = [];
+    for (const token of this.inner.parseTokens(query, idx)) {
+      cacheEntry.push(token);
+      yield token;
+    }
+  }
+}
+
+/**
+ * Collects multiple inner token providers into one token provider group.
+ * Additionally, caches the results of all the cacheable inner token providers.
+ */
+class TokenProviderGroup extends TokenProvider {
+  constructor() {
+    // No need to cache this as it already caches it's own output.
+    super(false);
+    /** @type {TokenProvider[]} The providers that make up this group */
+    this.providers = [];
+    /** @type {TokenProvider[]} Providers that are a part of the group, but tokens they produce are illegal */
+    this.illegalProviders = [];
+    /** @type {Object<number, CacheEntry>?} The cache */
+    this.cache = null;
+    /** @type {number?} The query ID of the query whos results are currently cached */
+    this.cacheQueryID = null;
+    /** @type {boolean} Are any of our inner tokens cacheable? */
+    this.hasCacheable = false;
+  }
+
+  /**
+   * @typedef CacheEntry
+   * @property {Token[][]} tokenCaches
+   * @property {TokenProvider[][]} providerCaches
+   */
+
+  /**
+   * Adds token providers to this token provider group.
+   * @param {TokenProvider[]} providers
+   * @param {boolean} legal Are the results of this provider legal in the current context?
+   */
+  pushProviders(providers) {
+    let legal = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+    if (!this.hasCacheable) for (const provider of providers) {
+      if (provider.shouldCache) {
+        this.hasCacheable = true;
+        break;
+      }
+    }
+    if (legal) this.providers.push(...providers);else this.illegalProviders.push(...providers);
+  }
+  *parseTokens(query, idx) {
+    // If none of our providers are cacheable, just parse all the tokens again
+    if (!this.hasCacheable) {
+      for (const provider of this.providers) yield* provider.parseTokens(query, idx, false);
+      return;
+    }
+
+    // If the query ID has changed, the cache is no longer valid
+    if (this.cacheQueryID !== query.id) {
+      this.cache = [];
+      this.cacheQueryID = query.id;
+    } else {
+      // Otherwise, search for a cache entry for idx
+      const cacheEntry = this.cache[idx];
+      if (cacheEntry) {
+        // If we find one, yield all the cached results
+        const tokenCaches = cacheEntry.tokenCaches;
+        const providerCaches = cacheEntry.providerCaches;
+        for (let i = 0; i < tokenCaches.length; i++) {
+          const tokenCache = tokenCaches[i];
+          const providerCache = providerCaches[i];
+          for (const provider of providerCache) yield* provider.parseTokens(query, idx, false);
+          yield* tokenCache;
+        }
+        return;
+      }
+    }
+
+    // No applicable cache entry was found :(
+    // Call all our child token providers and create a new cache entry
+
+    let tokenCache = [];
+    let providerCache = [];
+    const tokenCaches = [tokenCache];
+    const providerCaches = [providerCache];
+    this.cache[idx] = {
+      tokenCaches,
+      providerCaches
+    };
+    for (const provider of this.providers) {
+      if (provider.shouldCache) {
+        for (const token of provider.parseTokens(query, idx, false)) {
+          tokenCache.push(token);
+          yield token;
+        }
+      } else {
+        if (tokenCache.length !== 0) {
+          tokenCache = [];
+          providerCache = [];
+          tokenCaches.push(tokenCache);
+          providerCaches.push(providerCache);
+        }
+        providerCache.push(provider);
+        yield* provider.parseTokens(query, idx, false);
+      }
+    }
+    for (const provider of this.illegalProviders) {
+      for (let token of provider.parseTokens(query, idx, false)) {
+        token = _objectSpread(_objectSpread({}, token), {}, {
+          isLegal: false
+        });
+        tokenCache.push(token);
+        yield token;
+      }
+    }
+  }
+}
+
+/**
+ * A class representing the type of a token (see {@link Token.type})
+ *
+ * All token types extend from {@link TokenProvider} and they provide all the tokens
+ * of their type they can find.
+ *
+ * @abstract
+ */
+class TokenType extends TokenProvider {
+  constructor() {
+    let dontCache = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    super(!dontCache);
+    if (this.constructor === TokenType) throw new Error("Abstract classes can't be instantiated.");
+
+    /** @type {boolean} Is this token type always represented by the same string of characters? */
+    this.isConstant = false;
+  }
+
+  /**
+   * Turns `token` into a value which can be passed into the {@link BlockInstance} constructor.
+   * For example, in string literal tokens, this gets the string value of the token which can then
+   * be used to create a block.
+   * @param {Token} token
+   * @param {QueryInfo} query
+   * @returns {*}
+   */
+  createBlockValue(token, query) {
+    return token.value;
+  }
+
+  /**
+   * Creates the string form of this token in the same format that was used in the query.
+   * If the token was only partially typed in the query, creating the text will complete the token.
+   * @param {Token} token
+   * @param {QueryInfo} query
+   * @param {boolean} endOnly Should we only append to the end of the query. If this is false, we
+   * can create text in the middle of the query that wasn't there. This is used to autocomplete
+   * {@link StringEnum.GriffTokenType} tokens in the middle of a query.
+   * @returns {string}
+   */
+  createText(token, query, endOnly) {
+    throw new Error("Sub-class must override abstract method.");
+  }
+
+  /**
+   * @param {Token} token
+   * @param {QueryInfo} query
+   * @returns {Token[]}
+   */
+  getSubtokens(token, query) {
+    return undefined;
+  }
+}
+
+/**
+ * The type for tokens that represent an omitted field.
+ * Used by {@link TokenProviderOptional}
+ */
+class TokenTypeBlank extends TokenType {
+  constructor() {
+    super();
+    this.isConstant = true;
+  }
+  *parseTokens(query, idx) {
+    yield this.createToken(idx);
+  }
+
+  /**
+   * Create a new blank token
+   * @param {number} idx The position of the blank token
+   * @returns {Token}
+   */
+  createToken(idx) {
+    return new Token(idx, idx, this, null);
+  }
+  createText(token, query) {
+    return "";
+  }
+}
+
+/**
+ * Represents a token whos value must be one of a predetermined set of strings.
+ * For example, a token for a dropdown menu (like the one in `set [my variable] to x`) is a
+ * string enum, because the value must be one of a set of strings.
+ *
+ * String enums are also used for values that can only be one specific value (like the 'set' from
+ * `set [my variable] to x`). These cases are just string enums with one possible value.
+ */
+_class = TokenTypeBlank;
+_defineProperty(TokenTypeBlank, "INSTANCE", new _class());
+class TokenTypeStringEnum extends TokenType {
+  /**
+   * @typedef StringEnumValue
+   * @property {string} value The string that needs to be in the query
+   * @property {string} lower Cached value.toLowerCase()
+   * @property {string[]} parts lower, split up by ignoreable characters.
+   */
+
+  /**
+   * @param {(import("./BlockTypeInfo").BlockInputEnumOption[]} values
+   */
+  constructor(values) {
+    super();
+    this.isConstant = values.length === 1;
+
+    /** @type {StringEnumValue[]} */
+    this.values = [];
+    for (const value of values) {
+      let lower = value.string.toLowerCase();
+      const parts = [];
+      {
+        let lastPart = 0;
+        for (let i = 0; i <= lower.length; i++) {
+          const char = lower[i];
+          if (QueryInfo.IGNORABLE_CHARS.indexOf(char) !== -1 || !char) {
+            parts.push(lower.substring(lastPart, i));
+            i = QueryInfo.skipIgnorable(lower, i);
+            lastPart = i;
+          }
+        }
+      }
+      this.values.push({
+        lower,
+        parts,
+        value
+      });
+    }
+  }
+  *parseTokens(query, idx) {
+    for (let valueIdx = 0; valueIdx < this.values.length; valueIdx++) {
+      const valueInfo = this.values[valueIdx];
+      let yieldedToken = false;
+      const remainingChar = query.length - idx;
+      const substr = query.lowercase.substring(idx);
+
+      // If all we have is a string which could be a number, it doesn't count as a defining feature.
+      // This is to get rid of "10" constantly suggesting "10 ^ of ()"
+      let isDefiningFeature = !TokenTypeNumberLiteral.isValidNumber(substr);
+      if (remainingChar < valueInfo.lower.length) {
+        if (valueInfo.lower.startsWith(substr)) {
+          const end = remainingChar < 0 ? 0 : query.length;
+          yield new Token(idx, end, this, valueInfo, {
+            isTruncated: true,
+            isDefiningFeature
+          });
+          yieldedToken = true;
+        }
+      } else {
+        if (query.lowercase.startsWith(valueInfo.lower, idx)) {
+          yield new Token(idx, idx + valueInfo.lower.length, this, valueInfo, {
+            isDefiningFeature
+          });
+          yieldedToken = true;
+        }
+      }
+    }
+  }
+  createBlockValue(token, query) {
+    return token.value.value;
+  }
+  createText(token, query, endOnly) {
+    if (!token) return this.values[0].lower;
+    return token.value.lower;
+  }
+}
+
+/**
+ * The token type for a literal string, like 'Hello World' in the query `say Hello World`
+ */
+class TokenTypeStringLiteral extends TokenType {
+  static isTerminator(char) {
+    return this.TERMINATORS.includes(char);
+  }
+
+  /**
+   * Each time we encounter a 'terminator' we have to return the string we've read so far as a
+   * possible interpretation. If we didn't, when looking for a string at index 4 of 'say Hello
+   * World for 10 seconds' we would just return 'Hello World for 10 seconds', leading to the
+   * only result being `say "Hello World for 10 seconds"`. This also means in addition to
+   * 'Hello World' we also return 'Hello', 'Hello World for', 'Hello World for 10' and '
+   * Hello World for 10 seconds', but that's just the price we pay for trying to enumerate every
+   * interpretation.
+   */
+  *parseTokens(query, idx) {
+    // First, look for strings in quotes
+    let quoteEnd = -1;
+    if (query.str[idx] === '"' || query.str[idx] === "'") {
+      const quote = query.str[idx];
+      let value = "";
+      let valueStart = idx + 1;
+      for (let i = idx + 1; i <= query.length; i++) {
+        if (query.str[i] === "\\") {
+          value += query.str.substring(valueStart, i);
+          valueStart = ++i;
+        } else if (query.str[i] === quote) {
+          yield new Token(idx, i + 1, this, value + query.str.substring(valueStart, i));
+          quoteEnd = i + 1;
+          break;
+        }
+      }
+    }
+    // Then all the other strings
+    let wasTerminator = false;
+    let wasIgnorable = false;
+    for (let i = idx; i <= query.length; i++) {
+      const isTerminator = TokenTypeStringLiteral.isTerminator(query.str[i]);
+      const isIgnorable = QueryInfo.IGNORABLE_CHARS.includes(query.str[i]);
+      if ((wasTerminator !== isTerminator || i == query.length) && !wasIgnorable && i !== idx && i !== quoteEnd) {
+        const value = query.str.substring(idx, i);
+        yield new Token(idx, i, this, value);
+      }
+      wasTerminator = isTerminator;
+      wasIgnorable = isIgnorable;
+    }
+  }
+  createText(token, query, endOnly) {
+    return query.str.substring(token.start, token.end);
+  }
+}
+
+/**
+ * The token type for a literal number, like 69 in the query 'Hello + 69'
+ * This token type also supports numbers in formats scratch doesn't let you type,
+ * but accepts like '0xFF', 'Infinity' or '1e3'.
+ */
+_defineProperty(TokenTypeStringLiteral, "TERMINATORS", [undefined, " ", "+", "-", "*", "/", "=", "<", ">", ")"]);
+class TokenTypeNumberLiteral extends TokenType {
+  static isValidNumber(str) {
+    return !isNaN(+str) || !isNaN(parseFloat(+str));
+  }
+  *parseTokens(query, idx) {
+    for (let i = idx; i <= query.length; i++) {
+      if (TokenTypeStringLiteral.isTerminator(query.str[i]) && i !== idx) {
+        const value = query.str.substring(idx, i);
+        if (TokenTypeNumberLiteral.isValidNumber(value)) {
+          yield new Token(idx, i, this, value);
+          break;
+        }
+      }
+    }
+  }
+  createText(token, query, endOnly) {
+    return query.str.substring(token.start, token.end);
+  }
+}
+
+/**
+ * A token type for literal colors, like '#ffffff' for white.
+ */
+class TokenTypeColor extends TokenType {
+  *parseTokens(query, idx) {
+    if (!query.str.startsWith("#", idx)) return;
+    for (let i = 0; i < 6; i++) {
+      if (TokenTypeColor.HEX_CHARS.indexOf(query.lowercase[idx + i + 1]) === -1) return;
+    }
+    yield new Token(idx, idx + 7, this, query.str.substring(idx, idx + 7));
+  }
+  createText(token, query, endOnly) {
+    return query.query.substring(token.start, token.end);
+  }
+}
+
+/**
+ * A token type for tokens that are in brackets, like (1 + 1) in '(1 + 1) * 2'.
+ */
+_class3 = TokenTypeColor;
+_defineProperty(TokenTypeColor, "INSTANCE", new TokenProviderOptional(new _class3()));
+_defineProperty(TokenTypeColor, "HEX_CHARS", ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"]);
+class TokenTypeBrackets extends TokenType {
+  /**
+   * @param {TokenProvider} tokenProvider
+   */
+  constructor(tokenProvider) {
+    super();
+    /** @type {TokenProvider} The tokens to look for between the brackets */
+    this.tokenProvider = tokenProvider;
+  }
+  *parseTokens(query, idx) {
+    const start = idx;
+    if (query.str[idx++] !== "(") return;
+    idx = query.skipIgnorable(idx);
+    for (const token of this.tokenProvider.parseTokens(query, idx)) {
+      if (token.type instanceof TokenTypeBlank) continue; // Do not allow empty brackets like '()'
+      var tokenEnd = query.skipIgnorable(token.end);
+      let isTruncated = token.isTruncated;
+      if (!isTruncated) {
+        if (tokenEnd === query.length) isTruncated = true;else if (query.str[tokenEnd] === ")") ++tokenEnd;else continue;
+      }
+      // Note that for bracket tokens, precedence = 0
+      const newToken = new Token(start, tokenEnd, this, token.value, {
+        precedence: 0,
+        isTruncated,
+        isLegal: token.isLegal
+      });
+      newToken.innerToken = token;
+      yield newToken;
+    }
+  }
+  createBlockValue(token, query) {
+    return token.innerToken.createBlockValue(token.innerToken, query);
+  }
+  createText(token, query, endOnly) {
+    let text = "(";
+    text += query.str.substring(token.start + 1, token.innerToken.start);
+    text += token.innerToken.type.createText(token.innerToken, query, endOnly);
+    if (token.innerToken.end !== token.end) text += query.str.substring(token.innerToken.end, token.end - 1);
+    text += ")";
+    return text;
+  }
+  getSubtokens(token, query) {
+    return [token.innerToken];
+  }
+}
+
+/**
+ * The token type for a block, like 'say Hello' or '1 + 1'.
+ */
+class TokenTypeBlock extends TokenType {
+  /**
+   * @param {WorkspaceQuerier} querier
+   * @param {BlockTypeInfo} block
+   * @private
+   */
+  constructor(querier, block) {
+    var _this;
+    super();
+    _this = this;
+    this.block = block;
+    this.hasSubTokens = true;
+    /**
+     * The list of token types that make up this block.
+     *
+     * For example, for the non-griff version of the 'say' block this array would contains two
+     * providers, the first is a {@link StringEnum.FullTokenType} containing only the value 'say'
+     * and the second is equal to querier.tokenGroupString.
+     *
+     * @type {TokenProvider[]}
+     */
+    this.fullTokenProviders = [];
+    for (const blockPart of block.parts) {
+      let fullTokenProvider;
+      if (typeof blockPart === "string") {
+        fullTokenProvider = new TokenTypeStringEnum([{
+          value: null,
+          string: blockPart
+        }]);
+      } else {
+        switch (blockPart.type) {
+          case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputType"].ENUM:
+            fullTokenProvider = new TokenTypeStringEnum(blockPart.values);
+            if (blockPart.isRound) {
+              const enumGroup = new TokenProviderGroup();
+              enumGroup.pushProviders([fullTokenProvider, querier.tokenGroupRoundBlocks]);
+              fullTokenProvider = enumGroup;
+            }
+            break;
+          case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputType"].STRING:
+            fullTokenProvider = querier.tokenGroupString;
+            break;
+          case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputType"].NUMBER:
+            fullTokenProvider = querier.tokenGroupNumber;
+            break;
+          case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputType"].COLOUR:
+            fullTokenProvider = TokenTypeColor.INSTANCE;
+            break;
+          case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputType"].BOOLEAN:
+            fullTokenProvider = querier.tokenGroupBoolean;
+            break;
+          case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputType"].BLOCK:
+            fullTokenProvider = querier.tokenGroupStack;
+            break;
+        }
+      }
+      this.fullTokenProviders.push(fullTokenProvider);
+    }
+
+    /**
+     * @type {{strings: string[], inputs: [], length: number}[]}
+     */
+    this.stringForms = [];
+    const enumerateStringForms = function enumerateStringForms() {
+      let partIdx = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+      let strings = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+      let inputs = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
+      let length = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+      for (; partIdx < block.parts.length; partIdx++) {
+        let blockPart = block.parts[partIdx];
+        if (typeof blockPart === "string") {
+          length += blockPart.length;
+          strings.push(...blockPart.toLowerCase().split(" "));
+        } else if (blockPart.type === _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputType"].ENUM) {
+          for (const enumValue of blockPart.values) {
+            enumerateStringForms(partIdx + 1, [...strings, ...enumValue.string.toLowerCase().split(" ")], [...inputs, enumValue], length + enumValue.string.length);
+          }
+          return;
+        } else {
+          inputs.push(null);
+        }
+      }
+      _this.stringForms.push({
+        strings,
+        inputs,
+        length
+      });
+    };
+    enumerateStringForms();
+  }
+
+  /**
+   *
+   * @param {QueryInfo} query
+   * @param {*} idx
+   * @returns
+   */
+  *parseTokens(query, idx) {
+    let yieldedTokens = false;
+    for (const subtokens of this._parseSubtokens(query, idx, this.fullTokenProviders)) {
+      let token = this._createToken(query, idx, this.fullTokenProviders, subtokens);
+      if (token) {
+        yield token;
+        yieldedTokens = true;
+      }
+    }
+    if (yieldedTokens) return;
+    outer: for (const stringForm of this.stringForms) {
+      let lastPartIdx = -1;
+      let i = idx;
+      let hasDefiningFeature = false;
+      while (true) {
+        i = query.skipIgnorable(i);
+        const wordEnd = query.skipUnignorable(i);
+        if (wordEnd === i) {
+          if (hasDefiningFeature) yield new Token(idx, wordEnd, this, {
+            stringForm,
+            lastPartIdx: -1
+          }, {
+            isProper: false
+          });
+          break;
+        } else {
+          const word = query.lowercase.substring(i, wordEnd);
+          let match = -1;
+          for (let formPartIdx = lastPartIdx + 1; formPartIdx < stringForm.strings.length; formPartIdx++) {
+            const stringFormPart = stringForm.strings[formPartIdx];
+            if (stringFormPart.startsWith(word)) {
+              match = formPartIdx;
+              break;
+            }
+          }
+          if (match === -1) continue outer;
+          lastPartIdx = match;
+          hasDefiningFeature || (hasDefiningFeature = !TokenTypeNumberLiteral.isValidNumber(word));
+          if (query.skipIgnorable(wordEnd) < query.length) {
+            if (hasDefiningFeature) yield new Token(idx, wordEnd, this, {
+              stringForm,
+              lastPartIdx,
+              i
+            }, {
+              isProper: false
+            });
+          }
+          i = wordEnd;
+        }
+      }
+    }
+  }
+
+  /**
+   * @private
+   * @param {QueryInfo} query
+   * @param {number} idx
+   * @param {TokenProvider[]} subtokenProviders
+   * @param {Token[]} subtokens
+   * @returns {Token?}
+   */
+  _createToken(query, idx, subtokenProviders, subtokens) {
+    subtokens.reverse();
+    let isLegal = true;
+    let isTruncated = subtokens.length < subtokenProviders.length;
+    let hasDefiningFeature = false;
+    for (const subtoken of subtokens) {
+      isTruncated |= subtoken.isTruncated; // If any of our kids are truncated, so are we
+      isLegal && (isLegal = subtoken.isLegal); // If any of our kids are illegal, so are we
+      if (subtoken.isDefiningFeature && subtoken.start < query.length) hasDefiningFeature = true;
+    }
+
+    /** See {@link Token.isDefiningFeature} */
+    if (!hasDefiningFeature) return null;
+    const end = query.skipIgnorable(subtokens[subtokens.length - 1].end);
+    return new Token(idx, end, this, {
+      subtokens
+    }, {
+      precedence: this.block.precedence,
+      isTruncated,
+      isLegal
+    });
+  }
+
+  /**
+   * Parse all the tokens from this.tokenProviders[tokenProviderIdx] then
+   * recursively call this for the next token. Returns a list of tokens for
+   * each combination of possible interpretations of the subtokens.
+   *
+   * Note that the tokens in the returned token arrays are in reverse to the
+   * order of their providers in this.tokenProviders, just to confuse you :P
+   *
+   * @private
+   * @param {QueryInfo} query
+   * @param {number} idx
+   * @param {TokenProvider[]} subtokenProviders
+   * @param {number} tokenProviderIdx
+   * @param {boolean} parseSubSubTokens
+   * @yields {Token[]}
+   */
+  _parseSubtokens(query, idx, subtokenProviders) {
+    var _this2 = this;
+    let tokenProviderIdx = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+    let parseSubSubTokens = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : true;
+    return function* () {
+      idx = query.skipIgnorable(idx);
+      let tokenProvider = subtokenProviders[tokenProviderIdx];
+      for (const token of tokenProvider.parseTokens(query, idx)) {
+        ++query.tokenCount;
+        if (!query.canCreateMoreTokens()) break;
+        if (_this2.block.precedence !== -1) {
+          if (
+          // If we care about the precedence of this block
+          // Discard this token if its precedence is higher than ours, meaning it should be calculated
+          //  before us not afterward.
+          token.precedence > _this2.block.precedence && (
+          // See https://github.com/ScratchAddons/ScratchAddons/issues/5981
+          tokenProviderIdx === 0 || !(token.type instanceof TokenTypeBlock) || token.type.block.id !== "operator_not")) continue;
+          /**
+           * This check eliminates thousands of results by making sure blocks with equal precedence
+           * can only contain themselves as their own first input. Without this, the query '1 + 2 + 3'
+           * would have two interpretations '(1 + 2) + 3' and '1 + (2 + 3)'. This rule makes the second
+           * of those invalid because the root '+' block contains itself as its third token.
+           */
+          if (token.precedence === _this2.block.precedence) {
+            const inputIndex = _this2.block.parts[tokenProviderIdx].inputIdx;
+            if (inputIndex !== 0) continue;
+          }
+        }
+        if (!parseSubSubTokens || !token.isLegal || tokenProviderIdx === subtokenProviders.length - 1) {
+          yield [token];
+        } else {
+          for (const subTokenArr of _this2._parseSubtokens(query, token.end, subtokenProviders, tokenProviderIdx + 1, !token.isTruncated)) {
+            subTokenArr.push(token);
+            yield subTokenArr;
+          }
+        }
+      }
+    }();
+  }
+  createBlockValue(token, query) {
+    if (!token.isLegal) throw new Error("Cannot create a block from an illegal token.");
+    let blockInputs;
+    if (token.value.stringForm) {
+      blockInputs = token.value.stringForm.inputs;
+    } else {
+      const subtokens = token.value.subtokens;
+      blockInputs = [];
+      for (let i = 0; i < subtokens.length; i++) {
+        const blockPart = this.block.parts[i];
+        if (typeof blockPart !== "string") blockInputs.push(subtokens[i].createBlockValue(query));
+      }
+      while (blockInputs.length < this.block.inputs.length) blockInputs.push(null);
+    }
+    return this.block.createBlock(...blockInputs);
+  }
+  createText(token, query, endOnly) {
+    if (token.value.stringForm) {
+      if (endOnly) {
+        if (token.value.lastPartIdx === -1 || token.end <= query.length) {
+          return query.str.substring(token.start, token.end);
+        } else {
+          return query.str.substring(token.start, token.end) + token.value.stringForm.strings[token.value.lastPartIdx].substring(token.end - token.value.i) + " " + token.value.stringForm.strings.slice(token.value.lastPartIdx + 1).join(" ");
+        }
+      }
+      return token.value.stringForm.strings.join(" ");
+    }
+    if (!token.isTruncated && endOnly) return query.str.substring(token.start, token.end);
+    const subtokens = token.value.subtokens;
+    let text = "";
+    if (token.start !== subtokens[0].start) {
+      text += query.str.substring(token.start, subtokens[0].start);
+    }
+    let i;
+    for (i = 0; i < subtokens.length; i++) {
+      var _subtoken$type$create;
+      const subtoken = subtokens[i];
+      if (!token.isLegal && subtoken.start >= query.length) break;
+      const subtokenText = (_subtoken$type$create = subtoken.type.createText(subtoken, query, endOnly)) !== null && _subtoken$type$create !== void 0 ? _subtoken$type$create : "";
+      text += subtokenText;
+      if (i !== subtokens.length - 1) {
+        const next = subtokens[i + 1];
+        const nextStart = next.start;
+        if (nextStart !== subtoken.end) {
+          text += query.str.substring(subtoken.end, nextStart);
+        } else {
+          if ((!endOnly || nextStart >= query.length) && subtokenText.length !== 0 && QueryInfo.IGNORABLE_CHARS.indexOf(subtokenText.at(-1)) === -1) text += " ";
+        }
+      }
+    }
+    return text;
+  }
+  getSubtokens(token, query) {
+    return token.value.subtokens;
+  }
+}
+
+/**
+ * A single interpretation of a query.
+ */
+class QueryResult {
+  constructor(query, token) {
+    /**
+     * The query that this is a result of.
+     * @type {QueryInfo}
+     */
+    this.query = query;
+    /**
+     * The root token of this result.
+     *
+     * The root token is a token which encapsules the entire query.
+     * @type {Token}
+     */
+    this.token = token;
+  }
+  get isTruncated() {
+    return this.token.isTruncated;
+  }
+
+  /**
+   * @param {boolean} endOnly
+   * @returns {string}
+   */
+  toText(endOnly) {
+    var _this$token$type$crea;
+    return (_this$token$type$crea = this.token.type.createText(this.token, this.query, endOnly)) !== null && _this$token$type$crea !== void 0 ? _this$token$type$crea : "";
+  }
+
+  /**
+   * @returns {BlockInstance}
+   */
+  getBlock() {
+    if (!this.block) this.block = this.token.createBlockValue(this.query);
+    return this.block;
+  }
+
+  /**
+   * @returns {{stringLength: number, tokenLength: number}}
+   */
+  getLengths() {
+    if (this.lengths) return this.lengths;
+    let stringLength = 0;
+    let tokenLength = 0;
+
+    /** @type {(block: BlockInstance) => void} */
+    const getBlockLengths = block => {
+      let inputIdx = 0;
+      for (const part of block.typeInfo.parts) {
+        ++tokenLength;
+        if (typeof part === "string") {
+          stringLength += part.length;
+        } else {
+          const input = block.inputs[inputIdx++];
+          if (input instanceof _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInstance"]) {
+            getBlockLengths(input);
+          } else if (part instanceof _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputEnum"]) {
+            stringLength += input.string.length;
+          } else if (part instanceof _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockInputString"] && input !== part.defaultValue) {
+            // Make string inputs 100x their real length so they appear at the bottom
+            stringLength += ("" + input).length * 100;
+          } else if (input != null) {
+            stringLength += ("" + input).length;
+          }
+        }
+      }
+
+      // Account for the spaces between inputs
+      stringLength += block.typeInfo.parts.length - 1;
+    };
+    getBlockLengths(this.getBlock());
+    return this.lengths = {
+      stringLength,
+      tokenLength
+    };
+  }
+}
+
+/**
+ * Information on the current query being executed, with some utility
+ * functions for helping out token providers.
+ */
+class QueryInfo {
+  constructor(querier, query, id) {
+    /** @type {WorkspaceQuerier} */
+    this.querier = querier;
+    /** @type {string} The query */
+    this.str = query.replaceAll(String.fromCharCode(160), " ");
+    /** @type {string} A lowercase version of the query. Used for case insensitive comparisons. */
+    this.lowercase = this.str.toLowerCase();
+    /** @type {number} A unique identifier for this query */
+    this.id = id;
+    /** @type{number} The number of tokens we've found so far */
+    this.tokenCount = 0;
+  }
+
+  /**
+   * @param {string} str
+   * @param {number} idx The index to start at.
+   * @returns {number} The index of the next non-ignorable character in str, after idx.
+   */
+  static skipIgnorable(str, idx) {
+    while (QueryInfo.IGNORABLE_CHARS.indexOf(str[idx]) !== -1) ++idx;
+    return idx;
+  }
+
+  /**
+   * @param {number} idx The index to start at.
+   * @returns {number} The index of the next non-ignorable character in the query, after idx.
+   */
+  skipIgnorable(idx) {
+    return QueryInfo.skipIgnorable(this.lowercase, idx);
+  }
+
+  /**
+   * @param {string} str
+   * @param {number} idx The index to start at.
+   * @returns {number} The index of the next ignorable character in str, after idx.
+   */
+  static skipUnignorable(str, idx) {
+    while (QueryInfo.IGNORABLE_CHARS.indexOf(str[idx]) === -1 && idx < str.length) ++idx;
+    return idx;
+  }
+
+  /**
+   * @param {number} idx The index to start at.
+   * @returns {number} The index of the next ignorable character in the query, after idx.
+   */
+  skipUnignorable(idx) {
+    return QueryInfo.skipUnignorable(this.lowercase, idx);
+  }
+
+  /** @type {number} The length in characters of the query. */
+  get length() {
+    return this.str.length;
+  }
+  canCreateMoreTokens() {
+    return this.tokenCount < WorkspaceQuerier.MAX_TOKENS;
+  }
+}
+
+/**
+ * Workspace queriers keep track of all the data needed to query a given workspace (referred to as
+ * the 'workspace index') and provides the methods to execute queries on the indexed workspace.
+ */
+/** Characters that can be safely skipped over. */
+_defineProperty(QueryInfo, "IGNORABLE_CHARS", [" "]);
+class WorkspaceQuerier {
+  /**
+   * Indexes a workspace in preparation for querying it.
+   * @param {BlockTypeInfo[]} blocks The list of blocks in the workspace.
+   */
+  indexWorkspace(blocks) {
+    this._queryCounter = 0;
+    this._createTokenGroups();
+    this._populateTokenGroups(blocks);
+    this.workspaceIndexed = true;
+  }
+
+  /**
+   * Queries the indexed workspace for blocks matching the query string.
+   * @param {string} queryStr The query.
+   * @returns {{results: QueryResult[], illegalResult: QueryResult | null, limited: boolean}} A list of the results of the query, sorted by their relevance.
+   */
+  queryWorkspace(queryStr) {
+    if (!this.workspaceIndexed) throw new Error("A workspace must be indexed before it can be queried!");
+    if (queryStr.trim().length === 0) return {
+      results: [],
+      illegalResult: null,
+      limited: false
+    };
+    const query = new QueryInfo(this, queryStr, this._queryCounter++);
+    const results = [];
+    let foundTokenCount = 0;
+    let limited = false;
+    let bestIllegalResult = null;
+    let bestIllegalResultText = "";
+    for (const option of this.tokenGroupBlocks.parseTokens(query, 0)) {
+      if (option.end >= queryStr.length) {
+        if (option.isLegal) {
+          results.push(new QueryResult(query, option));
+        } else {
+          const text = option.type.createText(option, query, true);
+          if (!bestIllegalResult || text.length < text) {
+            bestIllegalResult = new QueryResult(query, option);
+            bestIllegalResultText = text;
+          }
+        }
+      }
+      ++foundTokenCount;
+      if (foundTokenCount > WorkspaceQuerier.MAX_RESULTS) {
+        console.log("Warning: Workspace query exceeded maximum result count.");
+        limited = true;
+        break;
+      }
+      if (!query.canCreateMoreTokens()) {
+        console.log("Warning: Workspace query exceeded maximum token count.");
+        limited = true;
+        break;
+      }
+    }
+
+    // Used to eliminate blocks whos strings can be parsed as something else.
+    //  This step removes silly suggestions like `if <(1 + 1) = "2 then"> then`
+    const canBeString = Array(queryStr.length).fill(true);
+    function searchToken(token) {
+      const subtokens = token.type.getSubtokens(token, query);
+      if (subtokens) for (const subtoken of subtokens) searchToken(subtoken);else if (!(token.type instanceof TokenTypeStringLiteral) && token.isProper && !token.isTruncated) for (let i = token.start; i < token.end; i++) {
+        canBeString[i] = false;
+      }
+    }
+    for (const result of results) searchToken(result.token);
+    function checkValidity(token) {
+      const subtokens = token.type.getSubtokens(token, query);
+      if (subtokens) {
+        for (const subtoken of subtokens) if (!checkValidity(subtoken)) return false;
+      } else if (token.type instanceof TokenTypeStringLiteral && !TokenTypeNumberLiteral.isValidNumber(token.value)) {
+        for (let i = token.start; i < token.end; i++) if (!canBeString[i]) return false;
+      }
+      return true;
+    }
+    let validResults = [];
+    for (const result of results) if (checkValidity(result.token)) validResults.push(result);
+    validResults = validResults.sort((a, b) => {
+      const aLengths = a.getLengths();
+      const bLengths = b.getLengths();
+      if (aLengths.stringLength != bLengths.stringLength) return aLengths.stringLength - bLengths.stringLength;
+      return aLengths.tokenLength - bLengths.tokenLength;
+    });
+    return {
+      results: validResults,
+      illegalResult: validResults.length === 0 ? bestIllegalResult : null,
+      limited
+    };
+  }
+
+  /**
+   * Creates the token group hierarchy used by this querier.
+   *
+   * Each of these token groups represents a list of all the tokens that could be encountered
+   * when we're looking for a specific type of input. For example, tokenGroupString contains all
+   * the tokens that could be encountered when we're looking for a string input (like after the
+   * word 'say' for the `say ()` block). tokenGroupBlocks is an interesting one, it contains all
+   * the tokens that could be the root token of a query result. In practice, this just means all
+   * the stackable blocks (like 'say') and all the reporter blocks (like '+').
+   *
+   * But wait, there's a problem. Blocks like `() + ()` have two inputs, both of which are numbers.
+   * The issue arises when you realize the block '+' itself also returns a number. So when we
+   * try to call parseTokens on the '+' block, it will try to look for it's first parameter thus
+   * calling parseTokens on tokenGroupNumber, which will call parseTokens on the '+' block again
+   * (because + can return a number) which will call tokenGroupNumber again... and we're in an
+   * infinite loop. We can't just exclude blocks from being their own first parameter because then
+   * queries like '1 + 2 + 3' wouldn't work. The solution is something you might have only thought
+   * of as a performance boost; caching. When tokenGroupNumber gets queried for the second time,
+   * it's mid way though building its cache from the first query. If this happens, it just returns
+   * all the tokens it had already found, but no more. So in the example above, when the + block calls
+   * tokenGroupNumber for the second time it finds only the number literal '1'. It then finds the
+   * second number literal '2' and yields the block '1 + 2' which gets added to tokenGroupNumber's
+   * cache. '1 + 2' then gets disguarded by the queryWorkspace function because it doesn't cover the
+   * whole query. But the '+' block's query to tokenGroupNumber never finished, so it will continue
+   * and, because the first one we found is now a part of the cache, tokenGroupNumber will yield
+   * '1 + 2' as a result. The + block will continue parsing, find the second '+' and the number '3'
+   * and yield '(1 + 2) + 3'. No infinite loops!
+   *
+   * A consequence of this system is something I implicitly implied in the above paragraph "when the
+   * + block calls tokenGroupNumber for the second time it finds only the number literal '1'" This
+   * is only true if 'TokenTypeNumberLiteral' is searched before the '+' block. This is why the order
+   * the token providers are in is critically important. I'll leave it as an exercise to the reader to
+   * work out why, but the same parsing order problems crops up when implementing order of operations.
+   * If a suggestion that should show up isn't showing up, it's probably because the token providers
+   * in one of the groups is in the wrong order. Ordering the providers within the base groups is dealt
+   * with by {@link _populateTokenGroups} and the inter-group ordering is dealt with below, by the
+   * order they are passed into pushProviders.
+   *
+   * @private
+   */
+  _createTokenGroups() {
+    this.tokenTypeStringLiteral = new TokenProviderSingleCache(new TokenTypeStringLiteral());
+    this.tokenTypeNumberLiteral = new TokenProviderSingleCache(new TokenTypeNumberLiteral());
+    this.tokenGroupRoundBlocks = new TokenProviderGroup(); // Round blocks like (() + ()) or (my variable)
+    this.tokenGroupBooleanBlocks = new TokenProviderGroup(); // Boolean blocks like <not ()>
+    this.tokenGroupStackBlocks = new TokenProviderGroup(); // Stackable blocks like `move (10) steps`
+    this.tokenGroupHatBlocks = new TokenProviderGroup(); // Hat block like `when green flag clicked`
+
+    // Anything that fits into a boolean hole. (Boolean blocks + Brackets)
+    this.tokenGroupBoolean = new TokenProviderOptional(new TokenProviderGroup());
+    this.tokenGroupBoolean.inner.pushProviders([this.tokenGroupBooleanBlocks, new TokenTypeBrackets(this.tokenGroupBoolean)]);
+    this.tokenGroupBoolean.inner.pushProviders([this.tokenGroupRoundBlocks], false);
+
+    // Anything that fits into a number hole. (Round blocks + Boolean blocks + Number Literals + Brackets)
+    this.tokenGroupNumber = new TokenProviderOptional(new TokenProviderGroup());
+    this.tokenGroupNumber.inner.pushProviders([this.tokenTypeNumberLiteral, this.tokenGroupRoundBlocks, this.tokenGroupBooleanBlocks, new TokenTypeBrackets(this.tokenGroupNumber)]);
+
+    // Anything that fits into a string hole (Round blocks + Boolean blocks + String Literals + Brackets)
+    this.tokenGroupString = new TokenProviderOptional(new TokenProviderGroup());
+    this.tokenGroupString.inner.pushProviders([this.tokenTypeStringLiteral, this.tokenGroupRoundBlocks, this.tokenGroupBooleanBlocks, new TokenTypeBrackets(this.tokenGroupString)]);
+
+    // Anything that fits into a c shaped hole (Stackable blocks)
+    this.tokenGroupStack = new TokenProviderOptional(this.tokenGroupStackBlocks);
+
+    // Anything you can spawn using the menu (All blocks)
+    this.tokenGroupBlocks = new TokenProviderGroup();
+    this.tokenGroupBlocks.pushProviders([this.tokenGroupStackBlocks, this.tokenGroupBooleanBlocks, this.tokenGroupRoundBlocks, this.tokenGroupHatBlocks]);
+  }
+
+  /**
+   * Populates the token groups created by {@link _createTokenGroups} with the blocks
+   * found in the workspace.
+   * @param {BlockTypeInfo[]} blocks The list of blocks in the workspace.
+   * @private
+   */
+  _populateTokenGroups(blocks) {
+    // Apply order of operations
+    for (const block of blocks) {
+      block.precedence = WorkspaceQuerier.ORDER_OF_OPERATIONS.indexOf(block.id);
+    }
+    for (let i = blocks.length - 1; i >= 0; i--) {
+      const block = blocks[i];
+      if (block.precedence !== -1) {
+        const target = blocks.length - (WorkspaceQuerier.ORDER_OF_OPERATIONS.length - (block.precedence - 1));
+        if (i !== target) {
+          const oldBlock = blocks[target];
+          blocks[target] = block;
+          blocks[i] = oldBlock;
+        }
+      }
+    }
+    for (const block of blocks) {
+      const blockTokenType = new TokenTypeBlock(this, block);
+      switch (block.shape) {
+        case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Round:
+          this.tokenGroupRoundBlocks.pushProviders([blockTokenType]);
+          break;
+        case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Boolean:
+          this.tokenGroupBooleanBlocks.pushProviders([blockTokenType]);
+          break;
+        case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Stack:
+        case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].End:
+          this.tokenGroupStackBlocks.pushProviders([blockTokenType]);
+          break;
+        case _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_0__["BlockShape"].Hat:
+          this.tokenGroupHatBlocks.pushProviders([blockTokenType]);
+          break;
+      }
+    }
+  }
+
+  /**
+   * Clears the memory used by the workspace index.
+   */
+  clearWorkspaceIndex() {
+    this.workspaceIndexed = false;
+    this._destroyTokenGroups();
+  }
+
+  /**
+   * @private
+   */
+  _destroyTokenGroups() {
+    this.tokenTypeStringLiteral = null;
+    this.tokenTypeNumberLiteral = null;
+    this.tokenGroupBooleanBlocks = null;
+    this.tokenGroupRoundBlocks = null;
+    this.tokenGroupStackBlocks = null;
+    this.tokenGroupHatBlocks = null;
+    this.tokenGroupBoolean = null;
+    this.tokenGroupNumber = null;
+    this.tokenGroupString = null;
+    this.tokenGroupStack = null;
+    this.tokenGroupBlocks = null;
+  }
+}
+_defineProperty(WorkspaceQuerier, "ORDER_OF_OPERATIONS", [null,
+// brackets
+"operator_join", "operator_round", "operator_mathop", "operator_mod", "operator_divide", "operator_multiply", "operator_subtract", "operator_add", "operator_equals", "operator_lt", "operator_gt", "operator_or", "operator_and", "operator_not"]);
+/**
+ * The maximum number of results to find before giving up.
+ */
+_defineProperty(WorkspaceQuerier, "MAX_RESULTS", 1000);
+/**
+ * The maximum number of tokens to find before giving up.
+ */
+_defineProperty(WorkspaceQuerier, "MAX_TOKENS", 10000);
+
+/***/ }),
+
 /***/ "./src/addons/addons/middle-click-popup/_runtime_entry.js":
 /*!****************************************************************!*\
   !*** ./src/addons/addons/middle-click-popup/_runtime_entry.js ***!
@@ -4993,6 +7198,60 @@ const resources = {
 
 /***/ }),
 
+/***/ "./src/addons/addons/middle-click-popup/module.js":
+/*!********************************************************!*\
+  !*** ./src/addons/addons/middle-click-popup/module.js ***!
+  \********************************************************/
+/*! exports provided: getTextWidth, clearTextWidthCache, onClearTextWidthCache */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getTextWidth", function() { return getTextWidth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "clearTextWidthCache", function() { return clearTextWidthCache; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onClearTextWidthCache", function() { return onClearTextWidthCache; });
+/* harmony import */ var _event_target_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../event-target.js */ "./src/addons/event-target.js");
+ /* inserted by pull.js */
+
+const textWidthCache = new Map();
+const textWidthCacheSize = 1000;
+const eventTarget = new _event_target_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
+const eventClearTextCache = "clearTextCache";
+
+/**
+ * Gets the width of an svg text element, with caching.
+ * @param {SVGTextElement} textElement
+ */
+function getTextWidth(textElement) {
+  let string = textElement.innerHTML;
+  if (string.length === 0) return 0;
+  let width = textWidthCache.get(string);
+  if (width) return width;
+  width = textElement.getBoundingClientRect().width;
+  textWidthCache.set(string, width);
+  if (textWidthCache.size > textWidthCacheSize) {
+    textWidthCache.delete(textWidthCache.keys().next());
+  }
+  return width;
+}
+
+/**
+ * Clears the text width cache of the middle click popup.
+ */
+function clearTextWidthCache() {
+  textWidthCache.clear();
+  eventTarget.dispatchEvent(new CustomEvent(eventClearTextCache));
+}
+
+/**
+ * @param {() => void} func
+ */
+function onClearTextWidthCache(func) {
+  eventTarget.addEventListener(eventClearTextCache, func);
+}
+
+/***/ }),
+
 /***/ "./src/addons/addons/middle-click-popup/userscript.js":
 /*!************************************************************!*\
   !*** ./src/addons/addons/middle-click-popup/userscript.js ***!
@@ -5002,6 +7261,16 @@ const resources = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _WorkspaceQuerier_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WorkspaceQuerier.js */ "./src/addons/addons/middle-click-popup/WorkspaceQuerier.js");
+/* harmony import */ var _BlockRenderer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BlockRenderer.js */ "./src/addons/addons/middle-click-popup/BlockRenderer.js");
+/* harmony import */ var _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BlockTypeInfo.js */ "./src/addons/addons/middle-click-popup/BlockTypeInfo.js");
+/* harmony import */ var _module_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module.js */ "./src/addons/addons/middle-click-popup/module.js");
+//@ts-check
+
+
+
+
+
 /* harmony default export */ __webpack_exports__["default"] = (async function (_ref) {
   let {
     addon,
@@ -5009,439 +7278,387 @@ __webpack_require__.r(__webpack_exports__);
     console
   } = _ref;
   const Blockly = await addon.tab.traps.getBlockly();
-  let mouse = {
+  const vm = addon.tab.traps.vm;
+  const PREVIEW_LIMIT = 50;
+  const popupRoot = document.body.appendChild(document.createElement("div"));
+  popupRoot.classList.add("sa-mcp-root");
+  popupRoot.dir = addon.tab.direction;
+  popupRoot.style.display = "none";
+  const popupContainer = popupRoot.appendChild(document.createElement("div"));
+  popupContainer.classList.add("sa-mcp-container");
+  const popupInputContainer = popupContainer.appendChild(document.createElement("div"));
+  popupInputContainer.classList.add(addon.tab.scratchClass("input_input-form"));
+  popupInputContainer.classList.add("sa-mcp-input-wrapper");
+  const popupInputSuggestion = popupInputContainer.appendChild(document.createElement("input"));
+  popupInputSuggestion.classList.add("sa-mcp-input-suggestion");
+  const popupInput = popupInputContainer.appendChild(document.createElement("input"));
+  popupInput.classList.add("sa-mcp-input");
+  popupInput.setAttribute("autocomplete", "off");
+  const popupPreviewContainer = popupContainer.appendChild(document.createElement("div"));
+  popupPreviewContainer.classList.add("sa-mcp-preview-container");
+  const popupPreviewScrollbarSVG = popupContainer.appendChild(document.createElementNS("http://www.w3.org/2000/svg", "svg"));
+  popupPreviewScrollbarSVG.classList.add("sa-mcp-preview-scrollbar", "blocklyScrollbarVertical", "blocklyMainWorkspaceScrollbar");
+  popupPreviewScrollbarSVG.style.display = "none";
+  const popupPreviewScrollbarBackground = popupPreviewScrollbarSVG.appendChild(document.createElementNS("http://www.w3.org/2000/svg", "rect"));
+  popupPreviewScrollbarBackground.setAttribute("width", "11");
+  popupPreviewScrollbarBackground.classList.add("blocklyScrollbarBackground");
+  const popupPreviewScrollbarHandle = popupPreviewScrollbarSVG.appendChild(document.createElementNS("http://www.w3.org/2000/svg", "rect"));
+  popupPreviewScrollbarHandle.setAttribute("rx", "3");
+  popupPreviewScrollbarHandle.setAttribute("ry", "3");
+  popupPreviewScrollbarHandle.setAttribute("width", "6");
+  popupPreviewScrollbarHandle.setAttribute("x", "2.5");
+  popupPreviewScrollbarHandle.classList.add("blocklyScrollbarHandle");
+  const popupPreviewBlocks = popupPreviewContainer.appendChild(document.createElementNS("http://www.w3.org/2000/svg", "svg"));
+  popupPreviewBlocks.classList.add("sa-mcp-preview-blocks");
+  const querier = new _WorkspaceQuerier_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
+  let mousePosition = {
     x: 0,
     y: 0
   };
-  class FloatingInput {
-    constructor() {
-      this.floatBar = null;
-      this.floatInput = null;
-      this.dropdownOut = null;
-      this.dropdown = null;
-      this.prevVal = "";
-      this.DROPDOWN_BLOCK_LIST_MAX_ROWS = 25;
-      this.createDom();
-    }
-    get workspace() {
-      return Blockly.getMainWorkspace();
-    }
-    get selectedTab() {
-      return addon.tab.redux.state.scratchGui.editorTab.activeTabIndex;
-    }
-    createDom() {
-      var _this = this;
-      // Popup new input box for block injection
-      this.floatBar = document.body.appendChild(document.createElement("div"));
-      this.floatBar.className = "sa-float-bar";
-      this.floatBar.dir = addon.tab.direction;
-      this.floatBar.style.display = "none";
-      this.dropdownOut = this.floatBar.appendChild(document.createElement("div"));
-      this.dropdownOut.className = "sa-float-bar-dropdown-out";
-      this.floatInput = this.dropdownOut.appendChild(document.createElement("input"));
-      this.floatInput.placeholder = msg("start-typing");
-      this.floatInput.className = "sa-float-bar-input";
-      this.floatInput.className = addon.tab.scratchClass("input_input-form", {
-        others: "sa-float-bar-input"
-      });
-      this.dropdown = this.dropdownOut.appendChild(document.createElement("ul"));
-      this.dropdown.className = "sa-float-bar-dropdown";
-      this.floatInput.addEventListener("keyup", () => this.inputChange());
-      this.floatInput.addEventListener("focus", () => this.inputChange());
-      this.floatInput.addEventListener("keydown", function () {
-        return _this.inputKeyDown(...arguments);
-      });
-      this.floatInput.addEventListener("focusout", () => this.hide());
-      this.dropdownOut.addEventListener("mousedown", function () {
-        return _this.onClick(...arguments);
-      });
-      document.addEventListener("keydown", e => {
-        if (addon.tab.editorMode !== "editor") {
-          return;
-        }
-        let ctrlKey = e.ctrlKey || e.metaKey;
-        if (e.key === " " && ctrlKey) {
-          // Ctrl + Space (Inject Code)
-          this.show(e);
-          e.cancelBubble = true;
-          e.preventDefault();
-          return true;
-        }
-      });
-    }
-    show(e) {
-      var _e$clientX, _e$clientY;
-      if (this.selectedTab !== 0) {
-        return;
-      }
-      e.cancelBubble = true;
-      e.preventDefault();
-      this.buildFilterList();
-      this.floatBar.style.left = ((_e$clientX = e.clientX) !== null && _e$clientX !== void 0 ? _e$clientX : mouse.x) + 16 + "px";
-      this.floatBar.style.top = ((_e$clientY = e.clientY) !== null && _e$clientY !== void 0 ? _e$clientY : mouse.y) - 8 + "px";
-      this.floatBar.style.display = "";
-      this.floatInput.value = "";
-      this.floatInput.focus();
-    }
-    onClick(e) {
-      e.cancelBubble = true;
-      if (!e.target.closest("input")) {
-        e.preventDefault();
-      }
-      let sel = e && e.target;
-      if (sel.tagName === "B") {
-        sel = sel.parentNode;
-      }
-      if (e instanceof MouseEvent && sel.tagName !== "LI") {
-        // Mouse clicks need to be on a block...
-        return;
-      }
-      if (!sel || !sel.data) {
-        sel = this.dropdown.querySelector(".sel");
-      }
-      if (!sel) {
-        return;
-      }
-      this.createDraggingBlock(sel, e);
-      if (e.shiftKey) {
-        this.floatBar.style.display = "";
-        this.floatInput.focus();
-      }
-    }
-    createDraggingBlock(sel, e) {
-      let option = sel.data.option;
-      // block:option.block, dom:option.dom, option:option.option
-      if (option.option) {
-        // We need to tweak the dropdown in this xml...
-        let field = option.dom.querySelector("field[name=" + option.pickField + "]");
-        if (field.getAttribute("id")) {
-          field.innerText = option.option[0];
-          field.setAttribute("id", option.option[1] + "-" + option.option[0]);
-        } else {
-          field.innerText = option.option[1];
-        }
-
-        // Handle "stop other scripts in sprite"
-        if (option.option[1] === "other scripts in sprite") {
-          option.dom.querySelector("mutation").setAttribute("hasnext", "true");
-        }
-      }
-
-      // This is mostly copied from https://github.com/LLK/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/scratch_blocks_utils.js#L171
-      // Some bits were removed or changed to fit our needs.
-      this.workspace.setResizesEnabled(false);
-      Blockly.Events.disable();
-      try {
-        var newBlock = Blockly.Xml.domToBlock(option.dom, this.workspace);
-        Blockly.scratchBlocksUtils.changeObscuredShadowIds(newBlock);
-        var svgRootNew = newBlock.getSvgRoot();
-        if (!svgRootNew) {
-          throw new Error("newBlock is not rendered.");
-        }
-        let blockBounds = newBlock.svgPath_.getBoundingClientRect();
-        let newBlockX = Math.floor((mouse.x - (blockBounds.left + blockBounds.right) / 2) / this.workspace.scale);
-        let newBlockY = Math.floor((mouse.y - (blockBounds.top + blockBounds.bottom) / 2) / this.workspace.scale);
-        newBlock.moveBy(newBlockX, newBlockY);
-      } finally {
-        Blockly.Events.enable();
-      }
-      if (Blockly.Events.isEnabled()) {
-        Blockly.Events.fire(new Blockly.Events.BlockCreate(newBlock));
-      }
-      var fakeEvent = {
-        clientX: mouse.x,
-        clientY: mouse.y,
-        type: "mousedown",
-        preventDefault: function preventDefault() {
-          e.preventDefault();
-        },
-        stopPropagation: function stopPropagation() {
-          e.stopPropagation();
-        },
-        target: sel
-      };
-      this.workspace.startDragWithFakeEvent(fakeEvent, newBlock);
-    }
-    inputChange() {
-      // Filter the list...
-      let val = (this.floatInput.value || "").toLowerCase();
-      if (val === this.prevVal) {
-        return;
-      }
-      this.prevVal = val;
-      let p = this.dropdown.parentNode;
-      this.dropdown.remove();
-      let count = 0;
-      let split = val.split(" ");
-      let listLI = this.dropdown.getElementsByTagName("li");
-      for (const li of listLI) {
-        const procCode = li.data.text;
-        const lower = li.data.lower;
-        // let i = li.data.lower.indexOf(val);
-        // let array = regExp.exec(li.data.lower);
-
-        let im = 0;
-        let match = [];
-        for (let si = 0; si < split.length; si++) {
-          let find = " " + split[si];
-          let idx = lower.indexOf(find, im);
-          if (idx === -1) {
-            match = null;
-            break;
-          }
-          match.push(idx);
-          im = idx + find.length;
-        }
-        if (count < this.DROPDOWN_BLOCK_LIST_MAX_ROWS && match) {
-          li.style.display = "block";
-          while (li.firstChild) {
-            li.removeChild(li.firstChild);
-          }
-          let i = 0;
-          for (let iM = 0; iM < match.length; iM++) {
-            let im = match[iM];
-            if (im > i) {
-              li.appendChild(document.createTextNode(procCode.substring(i, im)));
-              i = im;
-            }
-            let bText = document.createElement("b");
-            let len = split[iM].length;
-            bText.appendChild(document.createTextNode(procCode.substr(i, len)));
-            li.appendChild(bText);
-            i += len;
-          }
-          if (i < procCode.length) {
-            li.appendChild(document.createTextNode(procCode.substr(i)));
-          }
-          if (count === 0) {
-            li.classList.add("sel");
-          } else {
-            li.classList.remove("sel");
-          }
-          count++;
-        } else {
-          li.style.display = "none";
-          li.classList.remove("sel");
-        }
-      }
-      p.append(this.dropdown);
-    }
-    inputKeyDown(e) {
-      if (e.keyCode === 38) {
-        this.navigateFloatFilter(-1);
-        e.preventDefault();
-        return;
-      }
-      if (e.keyCode === 40) {
-        this.navigateFloatFilter(1);
-        e.preventDefault();
-        return;
-      }
-      if (e.keyCode === 13) {
-        // Enter
-        let sel = this.dropdown.querySelector(".sel");
-        if (sel) {
-          this.onClick(e);
-          this.hide();
-        }
-        e.cancelBubble = true;
-        e.preventDefault();
-        return;
-      }
-      if (e.keyCode === 27) {
-        // Escape
-        if (this.floatInput.value.length > 0) {
-          this.floatInput.value = ""; // Clear search first, then close on second press
-          this.inputChange(e);
-        } else {
-          this.hide();
-        }
-        e.preventDefault();
-        return;
-      }
-    }
-    buildFilterList() {
-      let options = [];
-      let toolbox = this.workspace.getToolbox();
-
-      // This can happen during custom block creation, for example
-      if (!toolbox) return;
-      let blocks = toolbox.flyout_.getWorkspace().getTopBlocks();
-      // 107 blocks, not in order... but we can sort by y value or description right :)
-
-      let fullDom = Blockly.Xml.workspaceToDom(toolbox.flyout_.getWorkspace());
-      const doms = {};
-      for (const x of fullDom.children) {
-        if (x.tagName === "BLOCK") {
-          let id = x.getAttribute("id");
-          doms[id] = x;
-        }
-      }
-      for (const block of blocks) {
-        this.getBlockText(block, options, doms);
-      }
-      options.sort((a, b) => a.desc.length < b.desc.length ? -1 : a.desc.length > b.desc.length ? 1 : a.desc.localeCompare(b.desc));
-      let count = 0;
-      while (this.dropdown.firstChild) {
-        this.dropdown.removeChild(this.dropdown.firstChild);
-      }
-      for (const option of options) {
-        const li = document.createElement("li");
-        const desc = option.desc;
-
-        // bType = hat block reporter boolean
-
-        let bType = this.getEdgeTypeClass(option.block);
-        count++;
-        li.innerText = desc;
-        li.data = {
-          text: desc,
-          lower: " " + desc.toLowerCase(),
-          option: option
-        };
-        const blockTypes = {
-          // Some of these blocks in the flyout have a category of `null` for some reason, the
-          // same as procedures. Without making bigger changes to the custom block color system
-          // hardcoding these is the best solution for now.
-          sensing_of: "sensing",
-          event_whenbackdropswitchesto: "events"
-        };
-        let ending = option.block.getCategory() || blockTypes[option.block.type] || "null";
-        if (option.block.isScratchExtension) {
-          ending = "pen";
-        } else if (addon.tab.getCustomBlock(option.block.procCode_)) {
-          ending = "addon-custom-block";
-        }
-        li.className = "sa-block-color sa-block-color-" + ending + " sa-" + bType;
-        if (count > this.DROPDOWN_BLOCK_LIST_MAX_ROWS) {
-          // Limit maximum number of rows to prevent lag when no filter is applied
-          li.style.display = "none";
-        }
-        this.dropdown.appendChild(li);
-      }
-      this.dropdownOut.classList.add("vis");
-    }
-    navigateFloatFilter(dir) {
-      let sel = this.dropdown.getElementsByClassName("sel");
-      let nxt;
-      if (sel.length > 0 && sel[0].style.display !== "none") {
-        nxt = dir === -1 ? sel[0].previousSibling : sel[sel.length - 1].nextSibling;
-      } else {
-        nxt = this.dropdown.children[0];
-        dir = 1;
-      }
-      while (nxt && nxt.style.display === "none") {
-        nxt = dir === -1 ? nxt.previousSibling : nxt.nextSibling;
-      }
-      if (nxt) {
-        for (const i of sel) {
-          i.classList.remove("sel");
-        }
-        nxt.classList.add("sel");
-        // centerTop(nxt.data.labelID);
-      }
-    }
-
-    getBlockText(block, options, doms) {
-      // block.type;  "looks_nextbackdrop"
-
-      let desc;
-      let picklist, pickField;
-      let dom = doms[block.id];
-
-      // dom = doms[block.type];
-
-      const process = block => {
-        for (const input of block.inputList) {
-          // input.name = "", input.type = 5
-          let fields = input.fieldRow;
-          for (const field of fields) {
-            // field --- Blockly.FieldLabel .className = "blocklyText"
-            // Blockly.FieldDropdown --- .className = "blocklyText blocklyDropdownText"
-
-            let text;
-            if (!picklist && field.className_ === "blocklyText blocklyDropdownText") {
-              picklist = field.getOptions();
-              pickField = field.name;
-              if (picklist && picklist.length > 0) {
-                text = "^^";
-              } else {
-                text = field.getText();
-              }
-            } else {
-              text = field.getText();
-            }
-            desc = (desc ? desc + " " : "") + text;
-          }
-          if (input.connection) {
-            let innerBlock = input.connection.targetBlock();
-            if (innerBlock) {
-              process(innerBlock); // Recursive process connected child blocks...
-            }
-          }
-        }
-      };
-
-      process(block);
-      if (picklist) {
-        for (const item of picklist) {
-          let code = item[1];
-          if (typeof code !== "string" ||
-          // Audio Record is a function!
-          code === "DELETE_VARIABLE_ID" || code === "RENAME_VARIABLE_ID" || code === "NEW_BROADCAST_MESSAGE_ID" || code === "NEW_BROADCAST_MESSAGE_ID" ||
-          // editor-searchable-dropdowns compatibility
-          code === "createGlobalVariable" || code === "createLocalVariable" || code === "createGlobalList" || code === "createLocalList" || code === "createBroadcast" ||
-          // rename-broadcasts compatibility
-          code === "RENAME_BROADCAST_MESSAGE_ID") {
-            continue; // Skip these
-          }
-
-          options.push({
-            desc: desc.replace("^^", item[0]),
-            block: block,
-            dom: dom,
-            option: item,
-            pickField: pickField
-          });
-        }
-      } else {
-        options.push({
-          desc: desc,
-          block: block,
-          dom: dom
-        });
-      }
-      return desc;
-    }
-    getEdgeTypeClass(block) {
-      switch (block.edgeShape_) {
-        case 1:
-          return "boolean";
-        case 2:
-          return "reporter";
-        default:
-          return block.startHat_ ? "hat" : "block";
-      }
-    }
-    hide() {
-      this.floatBar.style.display = "none";
-    }
-  }
-  const floatingInput = new FloatingInput();
-  const _doWorkspaceClick_ = Blockly.Gesture.prototype.doWorkspaceClick_;
-  Blockly.Gesture.prototype.doWorkspaceClick_ = function () {
-    if (!addon.self.disabled && (this.mostRecentEvent_.button === 1 || this.mostRecentEvent_.shiftKey)) {
-      // Wheel button...
-      floatingInput.show(this.mostRecentEvent_);
-    }
-    _doWorkspaceClick_.call(this);
-  };
   document.addEventListener("mousemove", e => {
-    mouse = {
+    mousePosition = {
       x: e.clientX,
       y: e.clientY
     };
   });
+  document.addEventListener("mousedown", e => {
+    mousePosition = {
+      x: e.clientX,
+      y: e.clientY
+    };
+  }, {
+    capture: true
+  });
+  Object(_module_js__WEBPACK_IMPORTED_MODULE_3__["onClearTextWidthCache"])(closePopup);
+
+  /**
+   * @typedef ResultPreview
+   * @property {BlockInstance} block
+   * @property {((endOnly: boolean) => string)?} autocompleteFactory
+   * @property {BlockComponent} renderedBlock
+   * @property {SVGGElement} svgBlock
+   * @property {SVGRectElement} svgBackground
+   */
+  /** @type {ResultPreview[]} */
+  let queryPreviews = [];
+  /** @type {QueryResult | null} */
+  let queryIllegalResult = null;
+  let selectedPreviewIdx = 0;
+  /** @type {BlockTypeInfo[]?} */
+  let blockTypes = null;
+  let limited = false;
+  let allowMenuClose = true;
+  let popupPosition = null;
+  let popupOrigin = null;
+  let previewWidth = 0;
+  let previewHeight = 0;
+  let previewScale = 0;
+  let previewMinHeight = 0;
+  let previewMaxHeight = 0;
+  function openPopup() {
+    if (addon.self.disabled) return;
+
+    // Don't show the menu if we're not in the code editor
+    if (addon.tab.editorMode !== "editor") return;
+    if (addon.tab.redux.state.scratchGui.editorTab.activeTabIndex !== 0) return;
+    blockTypes = _BlockTypeInfo_js__WEBPACK_IMPORTED_MODULE_2__["BlockTypeInfo"].getBlocks(Blockly, vm, Blockly.getMainWorkspace(), msg);
+    querier.indexWorkspace([...blockTypes]);
+    blockTypes.sort((a, b) => {
+      const prio = block => ["operators", "data"].indexOf(block.category.name) - block.id.startsWith("data_");
+      return prio(b) - prio(a);
+    });
+    previewScale = window.innerWidth * 0.00005 + addon.settings.get("popup_scale") / 100;
+    previewWidth = window.innerWidth * addon.settings.get("popup_width") / 100;
+    previewMaxHeight = window.innerHeight * addon.settings.get("popup_max_height") / 100;
+    popupContainer.style.width = previewWidth + "px";
+    popupOrigin = {
+      x: mousePosition.x,
+      y: mousePosition.y
+    };
+    popupRoot.style.display = "";
+    popupInput.value = "";
+    popupInput.focus();
+    updateInput();
+  }
+  function closePopup() {
+    if (allowMenuClose) {
+      popupOrigin = null;
+      popupPosition = null;
+      popupRoot.style.display = "none";
+      blockTypes = null;
+      querier.clearWorkspaceIndex();
+    }
+  }
+  popupInput.addEventListener("input", updateInput);
+  function updateInput() {
+    /**
+     * @typedef MenuItem
+     * @property {BlockInstance} block
+     * @property {(endOnly: boolean) => string} [autocompleteFactory]
+     */
+    /** @type {MenuItem[]} */
+    const blockList = [];
+    if (popupInput.value.trim().length === 0) {
+      queryIllegalResult = null;
+      if (blockTypes) for (const blockType of blockTypes) {
+        blockList.push({
+          block: blockType.createBlock()
+        });
+      }
+      limited = false;
+    } else {
+      // Get the list of blocks to display using the input content
+      const queryResultObj = querier.queryWorkspace(popupInput.value);
+      const queryResults = queryResultObj.results;
+      queryIllegalResult = queryResultObj.illegalResult;
+      limited = queryResultObj.limited;
+      if (queryResults.length > PREVIEW_LIMIT) queryResults.length = PREVIEW_LIMIT;
+      for (const queryResult of queryResults) {
+        blockList.push({
+          block: queryResult.getBlock(),
+          autocompleteFactory: endOnly => queryResult.toText(endOnly)
+        });
+      }
+    }
+
+    // @ts-ignore Delete the old previews
+    while (popupPreviewBlocks.firstChild) popupPreviewBlocks.removeChild(popupPreviewBlocks.lastChild);
+
+    // Create the new previews
+    queryPreviews.length = 0;
+    let y = 0;
+    for (let resultIdx = 0; resultIdx < blockList.length; resultIdx++) {
+      var _result$autocompleteF;
+      const result = blockList[resultIdx];
+      const mouseMoveListener = () => {
+        updateSelection(resultIdx);
+      };
+      const mouseDownListener = e => {
+        e.stopPropagation();
+        e.preventDefault();
+        updateSelection(resultIdx);
+        allowMenuClose = !e.shiftKey;
+        selectBlock();
+        allowMenuClose = true;
+        if (e.shiftKey) popupInput.focus();
+      };
+      const svgBackground = popupPreviewBlocks.appendChild(document.createElementNS("http://www.w3.org/2000/svg", "rect"));
+      const height = Object(_BlockRenderer_js__WEBPACK_IMPORTED_MODULE_1__["getBlockHeight"])(result.block);
+      svgBackground.setAttribute("transform", "translate(0, ".concat((y + height / 10) * previewScale, ")"));
+      svgBackground.setAttribute("height", height * previewScale + "px");
+      svgBackground.classList.add("sa-mcp-preview-block-bg");
+      svgBackground.addEventListener("mousemove", mouseMoveListener);
+      svgBackground.addEventListener("mousedown", mouseDownListener);
+      const svgBlock = popupPreviewBlocks.appendChild(document.createElementNS("http://www.w3.org/2000/svg", "g"));
+      svgBlock.addEventListener("mousemove", mouseMoveListener);
+      svgBlock.addEventListener("mousedown", mouseDownListener);
+      svgBlock.classList.add("sa-mcp-preview-block");
+      const renderedBlock = Object(_BlockRenderer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(result.block, svgBlock);
+      queryPreviews.push({
+        block: result.block,
+        autocompleteFactory: (_result$autocompleteF = result.autocompleteFactory) !== null && _result$autocompleteF !== void 0 ? _result$autocompleteF : null,
+        renderedBlock,
+        svgBlock,
+        svgBackground
+      });
+      y += height;
+    }
+    const height = (y + 8) * previewScale;
+    if (height < previewMinHeight) previewHeight = previewMinHeight;else if (height > previewMaxHeight) previewHeight = previewMaxHeight;else previewHeight = height;
+    popupPreviewBlocks.setAttribute("height", "".concat(height, "px"));
+    popupPreviewContainer.style.height = previewHeight + "px";
+    popupPreviewScrollbarSVG.style.height = previewHeight + "px";
+    popupPreviewScrollbarBackground.setAttribute("height", "" + previewHeight);
+    popupInputContainer.dataset["error"] = "" + limited;
+    popupPosition = {
+      x: popupOrigin.x + 16,
+      y: popupOrigin.y - 8
+    };
+    const popupHeight = popupContainer.getBoundingClientRect().height;
+    const popupBottom = popupPosition.y + popupHeight;
+    if (popupBottom > window.innerHeight) {
+      popupPosition.y -= popupBottom - window.innerHeight;
+    }
+    popupRoot.style.top = popupPosition.y + "px";
+    popupRoot.style.left = popupPosition.x + "px";
+    selectedPreviewIdx = -1;
+    updateSelection(0);
+    updateCursor();
+    updateScrollbar();
+  }
+  function updateSelection(newIdx) {
+    if (selectedPreviewIdx === newIdx) return;
+    const oldSelection = queryPreviews[selectedPreviewIdx];
+    if (oldSelection) {
+      oldSelection.svgBackground.classList.remove("sa-mcp-preview-block-bg-selection");
+      oldSelection.svgBlock.classList.remove("sa-mcp-preview-block-selection");
+    }
+    if (queryPreviews.length === 0 && queryIllegalResult) {
+      popupInputSuggestion.value = popupInput.value + queryIllegalResult.toText(true).substring(popupInput.value.length);
+      return;
+    }
+    const newSelection = queryPreviews[newIdx];
+    if (newSelection && newSelection.autocompleteFactory) {
+      newSelection.svgBackground.classList.add("sa-mcp-preview-block-bg-selection");
+      newSelection.svgBlock.classList.add("sa-mcp-preview-block-selection");
+      newSelection.svgBackground.scrollIntoView({
+        block: "nearest",
+        behavior: Math.abs(newIdx - selectedPreviewIdx) > 1 ? "smooth" : "auto"
+      });
+      popupInputSuggestion.value = popupInput.value + newSelection.autocompleteFactory(true).substring(popupInput.value.length);
+    } else {
+      popupInputSuggestion.value = "";
+    }
+    selectedPreviewIdx = newIdx;
+  }
+
+  // @ts-ignore
+  document.addEventListener("selectionchange", updateCursor);
+  function updateCursor() {
+    var _popupInput$selection;
+    const cursorPos = (_popupInput$selection = popupInput.selectionStart) !== null && _popupInput$selection !== void 0 ? _popupInput$selection : 0;
+    const cursorPosRel = popupInput.value.length === 0 ? 0 : cursorPos / popupInput.value.length;
+    let y = 0;
+    for (let previewIdx = 0; previewIdx < queryPreviews.length; previewIdx++) {
+      const preview = queryPreviews[previewIdx];
+      var blockX = 5;
+      if (blockX + preview.renderedBlock.width > previewWidth / previewScale) blockX += (previewWidth / previewScale - blockX - preview.renderedBlock.width) * previewScale * cursorPosRel;
+      var blockY = (y + 30) * previewScale;
+      preview.svgBlock.setAttribute("transform", "translate(".concat(blockX, ", ").concat(blockY, ") scale(").concat(previewScale, ")"));
+      y += Object(_BlockRenderer_js__WEBPACK_IMPORTED_MODULE_1__["getBlockHeight"])(preview.block);
+    }
+    popupInputSuggestion.scrollLeft = popupInput.scrollLeft;
+  }
+  popupPreviewContainer.addEventListener("scroll", updateScrollbar);
+  function updateScrollbar() {
+    const scrollTop = popupPreviewContainer.scrollTop;
+    const scrollY = popupPreviewContainer.scrollHeight;
+    if (scrollY <= previewHeight) {
+      popupPreviewScrollbarSVG.style.display = "none";
+      return;
+    }
+    const scrollbarHeight = previewHeight / scrollY * previewHeight;
+    const scrollbarY = scrollTop / scrollY * previewHeight;
+    popupPreviewScrollbarSVG.style.display = "";
+    popupPreviewScrollbarHandle.setAttribute("height", "" + scrollbarHeight);
+    popupPreviewScrollbarHandle.setAttribute("y", "" + scrollbarY);
+  }
+  function selectBlock() {
+    const selectedPreview = queryPreviews[selectedPreviewIdx];
+    if (!selectedPreview) return;
+    const workspace = Blockly.getMainWorkspace();
+    // This is mostly copied from https://github.com/scratchfoundation/scratch-blocks/blob/893c7e7ad5bfb416eaed75d9a1c93bdce84e36ab/core/scratch_blocks_utils.js#L171
+    // Some bits were removed or changed to fit our needs.
+    workspace.setResizesEnabled(false);
+    let newBlock;
+    Blockly.Events.disable();
+    try {
+      newBlock = selectedPreview.block.createWorkspaceForm();
+      Blockly.scratchBlocksUtils.changeObscuredShadowIds(newBlock);
+      var svgRootNew = newBlock.getSvgRoot();
+      if (!svgRootNew) {
+        throw new Error("newBlock is not rendered.");
+      }
+      let blockBounds = newBlock.svgPath_.getBoundingClientRect();
+      let newBlockX = Math.floor((mousePosition.x - (blockBounds.left + blockBounds.right) / 2) / workspace.scale);
+      let newBlockY = Math.floor((mousePosition.y - (blockBounds.top + blockBounds.bottom) / 2) / workspace.scale);
+      newBlock.moveBy(newBlockX, newBlockY);
+    } finally {
+      Blockly.Events.enable();
+    }
+    if (Blockly.Events.isEnabled()) {
+      Blockly.Events.fire(new Blockly.Events.BlockCreate(newBlock));
+    }
+    let fakeEvent = {
+      clientX: mousePosition.x,
+      clientY: mousePosition.y,
+      type: "mousedown",
+      stopPropagation: function stopPropagation() {},
+      preventDefault: function preventDefault() {},
+      target: selectedPreview.svgBlock
+    };
+    if (workspace.getGesture(fakeEvent)) {
+      workspace.startDragWithFakeEvent(fakeEvent, newBlock);
+    }
+  }
+  function acceptAutocomplete() {
+    let factory;
+    if (queryPreviews[selectedPreviewIdx]) factory = queryPreviews[selectedPreviewIdx].autocompleteFactory;else factory = () => popupInputSuggestion.value;
+    if (popupInputSuggestion.value.length === 0 || !factory) return;
+    popupInput.value = factory(false);
+    // Move cursor to the end of the newly inserted text
+    popupInput.selectionStart = popupInput.value.length + 1;
+    updateInput();
+  }
+  popupInput.addEventListener("keydown", e => {
+    switch (e.key) {
+      case "Escape":
+        // If there's something in the input, clear it
+        if (popupInput.value.length > 0) {
+          popupInput.value = "";
+          updateInput();
+        } else {
+          // If not, close the menu
+          closePopup();
+        }
+        e.stopPropagation();
+        e.preventDefault();
+        break;
+      case "Tab":
+        acceptAutocomplete();
+        e.stopPropagation();
+        e.preventDefault();
+        break;
+      case "Enter":
+        selectBlock();
+        closePopup();
+        e.stopPropagation();
+        e.preventDefault();
+        break;
+      case "ArrowDown":
+        if (selectedPreviewIdx + 1 >= queryPreviews.length) updateSelection(0);else updateSelection(selectedPreviewIdx + 1);
+        e.stopPropagation();
+        e.preventDefault();
+        break;
+      case "ArrowUp":
+        if (selectedPreviewIdx - 1 < 0) updateSelection(queryPreviews.length - 1);else updateSelection(selectedPreviewIdx - 1);
+        e.stopPropagation();
+        e.preventDefault();
+        break;
+    }
+  });
+  popupInput.addEventListener("focusout", closePopup);
+
+  // Open on ctrl + space
+  document.addEventListener("keydown", e => {
+    if (e.key === " " && (e.ctrlKey || e.metaKey)) {
+      openPopup();
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  });
+
+  // Open on mouse wheel button
+  const _doWorkspaceClick_ = Blockly.Gesture.prototype.doWorkspaceClick_;
+  Blockly.Gesture.prototype.doWorkspaceClick_ = function () {
+    if (this.mostRecentEvent_.button === 1 || this.mostRecentEvent_.shiftKey) openPopup();
+    mousePosition = {
+      x: this.mostRecentEvent_.clientX,
+      y: this.mostRecentEvent_.clientY
+    };
+    _doWorkspaceClick_.call(this);
+  };
+
+  // The popup should delete blocks dragged ontop of it
+  const _isDeleteArea = Blockly.WorkspaceSvg.prototype.isDeleteArea;
+  Blockly.WorkspaceSvg.prototype.isDeleteArea = function (e) {
+    if (popupPosition) {
+      if (e.clientX > popupPosition.x && e.clientX < popupPosition.x + previewWidth && e.clientY > popupPosition.y && e.clientY < popupPosition.y + previewHeight) {
+        return Blockly.DELETE_AREA_TOOLBOX;
+      }
+    }
+    return _isDeleteArea.call(this, e);
+  };
 });
 
 /***/ }),
@@ -5596,7 +7813,6 @@ __webpack_require__.r(__webpack_exports__);
     hexNumber & 0xff // B
     ];
   };
-
   const settings = {
     enabled: addon.settings.get("default") && !addon.self.disabled,
     previous: +addon.settings.get("previous"),
@@ -5614,7 +7830,7 @@ __webpack_require__.r(__webpack_exports__);
   };
   const injectPaper = () => {
     // When background guide layer is added, show onion layers.
-    // https://github.com/LLK/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/helper/layer.js#L145
+    // https://github.com/scratchfoundation/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/helper/layer.js#L145
     const originalAddLayer = paper.Project.prototype.addLayer;
     paper.Project.prototype.addLayer = function (layer) {
       const result = originalAddLayer.call(this, layer);
@@ -5629,7 +7845,7 @@ __webpack_require__.r(__webpack_exports__);
     };
 
     // Scratch uses importJSON to undo or redo
-    // https://github.com/LLK/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/helper/undo.js#L37
+    // https://github.com/scratchfoundation/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/helper/undo.js#L37
     // The code prior to this will remove our onion layers, so we have to manually add them back.
     const originalImportJSON = paper.Project.prototype.importJSON;
     paper.Project.prototype.importJSON = function (json) {
@@ -5640,7 +7856,7 @@ __webpack_require__.r(__webpack_exports__);
       return result;
     };
 
-    // https://github.com/LLK/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/helper/layer.js#L114
+    // https://github.com/scratchfoundation/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/helper/layer.js#L114
     // When background guide layer is removed, hide onion layers.
     const originalRemoveLayer = paper.Layer.prototype.remove;
     paper.Layer.prototype.remove = function () {
@@ -5662,7 +7878,7 @@ __webpack_require__.r(__webpack_exports__);
     const PaperCanvas = paperCanvas.constructor;
 
     // importImage is called to start loading an image.
-    // https://github.com/LLK/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L124
+    // https://github.com/scratchfoundation/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L124
     const originalImportImage = PaperCanvas.prototype.importImage;
     PaperCanvas.prototype.importImage = function () {
       expectingImport = true;
@@ -5675,7 +7891,7 @@ __webpack_require__.r(__webpack_exports__);
 
     // recalibrateSize is called when the canvas finishes loading an image.
     // all paths of importImage will result in a call to this method.
-    // https://github.com/LLK/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L310-L327
+    // https://github.com/scratchfoundation/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L310-L327
     // We use this to know when to add layers.
     const originalRecalibrateSize = PaperCanvas.prototype.recalibrateSize;
     PaperCanvas.prototype.recalibrateSize = function (callback) {
@@ -5827,7 +8043,7 @@ __webpack_require__.r(__webpack_exports__);
         const canvas = this.canvas;
         const ctx = this.context;
 
-        // Based on https://github.com/LLK/paper.js/blob/16d5ff0267e3a0ef647c25e58182a27300afad20/src/item/Item.js#L1761
+        // Based on https://github.com/scratchfoundation/paper.js/blob/16d5ff0267e3a0ef647c25e58182a27300afad20/src/item/Item.js#L1761
         const scaledWidth = width * newScale;
         const scaledHeight = height * newScale;
         canvas.width = scaledWidth;
@@ -5858,7 +8074,7 @@ __webpack_require__.r(__webpack_exports__);
       rotationCenterX,
       rotationCenterY
     } = costume;
-    // https://github.com/LLK/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L196-L218
+    // https://github.com/scratchfoundation/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L196-L218
     asset = asset.split(/<\s*svg:/).join("<");
     asset = asset.split(/<\/\s*svg:/).join("</");
     const svgAttrs = asset.match(/<svg [^>]*>/);
@@ -5876,7 +8092,7 @@ __webpack_require__.r(__webpack_exports__);
     const handleLoad = root => {
       root.opacity = opacity;
 
-      // https://github.com/LLK/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L274-L275
+      // https://github.com/scratchfoundation/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L274-L275
       recursePaperItem(root, i => {
         if (i.className === "PathItem") {
           i.clockwise = true;
@@ -5914,7 +8130,7 @@ __webpack_require__.r(__webpack_exports__);
         });
       }
       const paperCenter = getPaperCenter();
-      // https://github.com/LLK/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L277-L287
+      // https://github.com/scratchfoundation/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L277-L287
       if (typeof rotationCenterX !== "undefined" && typeof rotationCenterY !== "undefined") {
         let rotationPoint = new paper.Point(rotationCenterX, rotationCenterY);
         if (viewBox && viewBox.length >= 2 && !isNaN(viewBox[0]) && !isNaN(viewBox[1])) {
@@ -5949,7 +8165,7 @@ __webpack_require__.r(__webpack_exports__);
       const width = Math.min(paperCenter.x * 2, image.width);
       const height = Math.min(paperCenter.y * 2, image.height);
 
-      // https://github.com/LLK/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L151-L156
+      // https://github.com/scratchfoundation/scratch-paint/blob/cdf0afc217633e6cfb8ba90ea4ae38b79882cf6c/src/containers/paper-canvas.jsx#L151-L156
       if (typeof rotationCenterX === "undefined") {
         rotationCenterX = width / 2;
       }
@@ -6126,6 +8342,9 @@ __webpack_require__.r(__webpack_exports__);
   settingButton.addEventListener("click", () => setSettingsOpen(!areSettingsOpen()));
   settingButton.title = msg("settings");
   settingButton.appendChild(createButtonImage("settings"));
+  document.body.addEventListener("click", e => {
+    if (areSettingsOpen() && !e.target.matches(".sa-onion-group *")) setSettingsOpen(false);
+  });
 
   //
   // Settings page
@@ -6335,6 +8554,188 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/addons/addons/paint-skew/_runtime_entry.js":
+/*!********************************************************!*\
+  !*** ./src/addons/addons/paint-skew/_runtime_entry.js ***!
+  \********************************************************/
+/*! exports provided: resources */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resources", function() { return resources; });
+/* harmony import */ var _userscript_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./userscript.js */ "./src/addons/addons/paint-skew/userscript.js");
+/* generated by pull.js */
+
+const resources = {
+  "userscript.js": _userscript_js__WEBPACK_IMPORTED_MODULE_0__["default"]
+};
+
+/***/ }),
+
+/***/ "./src/addons/addons/paint-skew/userscript.js":
+/*!****************************************************!*\
+  !*** ./src/addons/addons/paint-skew/userscript.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _paint_snap_compatibility_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../paint-snap/compatibility.js */ "./src/addons/addons/paint-snap/compatibility.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (async function (_ref) {
+  let {
+    addon
+  } = _ref;
+  const paper = await addon.tab.traps.getPaper();
+  const addSkew = function addSkew() {
+    var _paper$tool$boundingB, _paper$tool$boundingB2;
+    if (!paper.tool || !paper.tool.boundingBoxTool) return;
+    // ScaleTool
+    const ST = (_paper$tool$boundingB = paper.tool.boundingBoxTool._modeMap) === null || _paper$tool$boundingB === void 0 ? void 0 : (_paper$tool$boundingB2 = _paper$tool$boundingB.SCALE) === null || _paper$tool$boundingB2 === void 0 ? void 0 : _paper$tool$boundingB2.constructor;
+    if (!ST || ST.hasSkew) {
+      return;
+    }
+    ST.hasSkew = true;
+    const ogMouseDown = ST.prototype.onMouseDown;
+    ST.prototype.onMouseDown = function (hitResult, boundsPath, selectedItems) {
+      if (this.active) return;
+      this.index = hitResult.item.data.index;
+      ogMouseDown.call(this, hitResult, boundsPath, selectedItems);
+      this.skewCenter = false;
+      this.lastSkx = 0;
+      this.lastSky = 0;
+      this.skewBounds = this.itemGroup.bounds.clone();
+    };
+    _paint_snap_compatibility_js__WEBPACK_IMPORTED_MODULE_0__["addons"].paintSkew = function (event, original) {
+      if (!this.active) return;
+      if (addon.self.disabled) return original();
+      const bounds = this.skewBounds;
+      const doShear = (skx, sky) => {
+        if (skx === 0 && sky === 0) return;
+        let offcenterPosition;
+        if (!this.skewCenter) {
+          switch (this._getRectCornerNameByIndex(this.index)) {
+            case "topCenter":
+            case "leftCenter":
+              offcenterPosition = this.itemGroup.position.add(new paper.Point(bounds.width / 2, bounds.height / 2));
+              break;
+            case "bottomCenter":
+            case "rightCenter":
+              offcenterPosition = this.itemGroup.position.subtract(new paper.Point(bounds.width / 2, bounds.height / 2));
+              break;
+          }
+        }
+        const position = this.skewCenter ? this.itemGroup.position : offcenterPosition;
+        const shearMult = this.skewCenter ? 2 : 1;
+        // swap width and height because apparently
+        // shearing is based on the dimension perpendicular
+        // to the one that is being skewed
+        const shearX = skx / bounds.height * shearMult;
+        const shearY = sky / bounds.width * shearMult;
+        this.itemGroup.shear(shearX, shearY, position);
+        if (this.selectionAnchor) {
+          this.selectionAnchor.shear(-shearX, -shearY);
+        }
+      };
+
+      // Revert skew
+      doShear(-this.lastSkx, -this.lastSky);
+      this.skewCenter = event.modifiers.alt;
+      let skx = 0;
+      let sky = 0;
+      this.lastSkx = 0;
+      this.lastSky = 0;
+      if ((event.modifiers.control || event.modifiers.command) && !this.isCorner) {
+        // Skew
+        // Reset position
+        this.centered = false;
+        this.itemGroup.scale(1 / this.lastSx, 1 / this.lastSy, this.pivot);
+        if (this.selectionAnchor) {
+          this.selectionAnchor.scale(this.lastSx, this.lastSy);
+        }
+        this.lastSx = 1;
+        this.lastSy = 1;
+        const delta = event.point.subtract(this.pivot);
+        switch (this._getRectCornerNameByIndex(this.index)) {
+          case "topCenter":
+            delta.x *= -1;
+            delta.y = 0;
+            break;
+          case "bottomCenter":
+            delta.y = 0;
+            break;
+          case "leftCenter":
+            delta.y *= -1;
+            delta.x = 0;
+            break;
+          case "rightCenter":
+            delta.x = 0;
+            break;
+          default:
+            delta.x = 0;
+            delta.y = 0;
+        }
+        skx = delta.x;
+        sky = delta.y;
+        doShear(skx, sky);
+      } else {
+        // Scale
+        original();
+      }
+      this.lastSkx = skx;
+      this.lastSky = sky;
+    };
+    Object(_paint_snap_compatibility_js__WEBPACK_IMPORTED_MODULE_0__["initialize"])(paper, ST);
+  };
+  addon.tab.redux.initialize();
+  addon.tab.redux.addEventListener("statechanged", e => {
+    const action = e.detail.action;
+    if (action.type === "scratch-paint/modes/CHANGE_MODE" && (action.mode === "BIT_SELECT" || action.mode === "SELECT")) {
+      addSkew();
+    }
+  });
+  addSkew();
+});
+
+/***/ }),
+
+/***/ "./src/addons/addons/paint-snap/compatibility.js":
+/*!*******************************************************!*\
+  !*** ./src/addons/addons/paint-snap/compatibility.js ***!
+  \*******************************************************/
+/*! exports provided: addons, initialize */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addons", function() { return addons; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initialize", function() { return initialize; });
+let overridden = false;
+const addons = {
+  paintSkew: null,
+  paintSnap: null
+};
+function initialize(paper, ScaleTool) {
+  if (overridden) return;
+  overridden = true;
+  const ogMouseDrag = ScaleTool.prototype.onMouseDrag;
+  ScaleTool.prototype.onMouseDrag = function (event) {
+    if (!this.active) return;
+    const callSnap = () => {
+      if (addons.paintSnap) addons.paintSnap.call(this, event);else ogMouseDrag.call(this, event);
+    };
+    if (addons.paintSkew) {
+      addons.paintSkew.call(this, event, callSnap);
+    } else {
+      callSnap();
+    }
+  };
+}
+
+/***/ }),
+
 /***/ "./src/addons/addons/pick-colors-from-stage/_runtime_entry.js":
 /*!********************************************************************!*\
   !*** ./src/addons/addons/pick-colors-from-stage/_runtime_entry.js ***!
@@ -6370,8 +8771,8 @@ __webpack_require__.r(__webpack_exports__);
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 /* harmony default export */ __webpack_exports__["default"] = (async function (_ref) {
   let {
     addon,
@@ -6409,7 +8810,7 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
             // By the time we get here, scratch-paint will have already deactivated its eye dropper.
             // If we were to just call the callback, the color would indeed update, but the sliders
             // in the color selector would not update.
-            // https://github.com/LLK/scratch-paint/blob/970b72c3e75d0ad44ab54e403a44786ca5f45512/src/containers/color-picker.jsx#L64
+            // https://github.com/scratchfoundation/scratch-paint/blob/970b72c3e75d0ad44ab54e403a44786ca5f45512/src/containers/color-picker.jsx#L64
             // To work around this, we will re-enable the color picker before running the callback.
             addon.tab.redux.dispatch(_objectSpread(_objectSpread({}, action), {}, {
               [brand]: true
@@ -6722,1231 +9123,1174 @@ class RateLimiter {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-// TinyColor v1.4.2
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return tinycolor; });
 // https://github.com/bgrins/TinyColor
 // Brian Grinstead, MIT License
-// Modified to use ES6 export
 
-const tinycolor = function (Math) {
-  var trimLeft = /^\s+/,
-    trimRight = /\s+$/,
-    tinyCounter = 0,
-    mathRound = Math.round,
-    mathMin = Math.min,
-    mathMax = Math.max,
-    mathRandom = Math.random;
-  function tinycolor(color, opts) {
-    color = color ? color : '';
-    opts = opts || {};
+const trimLeft = /^\s+/;
+const trimRight = /\s+$/;
+function tinycolor(color, opts) {
+  color = color ? color : "";
+  opts = opts || {};
 
-    // If input is already a tinycolor, return itself
-    if (color instanceof tinycolor) {
-      return color;
-    }
-    // If we are called as a function, call using new instead
-    if (!(this instanceof tinycolor)) {
-      return new tinycolor(color, opts);
-    }
-    var rgb = inputToRGB(color);
-    this._originalInput = color, this._r = rgb.r, this._g = rgb.g, this._b = rgb.b, this._a = rgb.a, this._roundA = mathRound(100 * this._a) / 100, this._format = opts.format || rgb.format;
-    this._gradientType = opts.gradientType;
-
-    // Don't let the range of [0,255] come back in [0,1].
-    // Potentially lose a little bit of precision here, but will fix issues where
-    // .5 gets interpreted as half of the total, instead of half of 1
-    // If it was supposed to be 128, this was already taken care of by `inputToRgb`
-    if (this._r < 1) {
-      this._r = mathRound(this._r);
-    }
-    if (this._g < 1) {
-      this._g = mathRound(this._g);
-    }
-    if (this._b < 1) {
-      this._b = mathRound(this._b);
-    }
-    this._ok = rgb.ok;
-    this._tc_id = tinyCounter++;
+  // If input is already a tinycolor, return itself
+  if (color instanceof tinycolor) {
+    return color;
   }
-  tinycolor.prototype = {
-    isDark: function isDark() {
-      return this.getBrightness() < 128;
-    },
-    isLight: function isLight() {
-      return !this.isDark();
-    },
-    isValid: function isValid() {
-      return this._ok;
-    },
-    getOriginalInput: function getOriginalInput() {
-      return this._originalInput;
-    },
-    getFormat: function getFormat() {
-      return this._format;
-    },
-    getAlpha: function getAlpha() {
-      return this._a;
-    },
-    getBrightness: function getBrightness() {
-      //http://www.w3.org/TR/AERT#color-contrast
-      var rgb = this.toRgb();
-      return (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000;
-    },
-    getLuminance: function getLuminance() {
-      //http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef
-      var rgb = this.toRgb();
-      var RsRGB, GsRGB, BsRGB, R, G, B;
-      RsRGB = rgb.r / 255;
-      GsRGB = rgb.g / 255;
-      BsRGB = rgb.b / 255;
-      if (RsRGB <= 0.03928) {
-        R = RsRGB / 12.92;
-      } else {
-        R = Math.pow((RsRGB + 0.055) / 1.055, 2.4);
-      }
-      if (GsRGB <= 0.03928) {
-        G = GsRGB / 12.92;
-      } else {
-        G = Math.pow((GsRGB + 0.055) / 1.055, 2.4);
-      }
-      if (BsRGB <= 0.03928) {
-        B = BsRGB / 12.92;
-      } else {
-        B = Math.pow((BsRGB + 0.055) / 1.055, 2.4);
-      }
-      return 0.2126 * R + 0.7152 * G + 0.0722 * B;
-    },
-    setAlpha: function setAlpha(value) {
-      this._a = boundAlpha(value);
-      this._roundA = mathRound(100 * this._a) / 100;
-      return this;
-    },
-    toHsv: function toHsv() {
-      var hsv = rgbToHsv(this._r, this._g, this._b);
-      return {
-        h: hsv.h * 360,
-        s: hsv.s,
-        v: hsv.v,
-        a: this._a
-      };
-    },
-    toHsvString: function toHsvString() {
-      var hsv = rgbToHsv(this._r, this._g, this._b);
-      var h = mathRound(hsv.h * 360),
-        s = mathRound(hsv.s * 100),
-        v = mathRound(hsv.v * 100);
-      return this._a == 1 ? "hsv(" + h + ", " + s + "%, " + v + "%)" : "hsva(" + h + ", " + s + "%, " + v + "%, " + this._roundA + ")";
-    },
-    toHsl: function toHsl() {
-      var hsl = rgbToHsl(this._r, this._g, this._b);
-      return {
-        h: hsl.h * 360,
-        s: hsl.s,
-        l: hsl.l,
-        a: this._a
-      };
-    },
-    toHslString: function toHslString() {
-      var hsl = rgbToHsl(this._r, this._g, this._b);
-      var h = mathRound(hsl.h * 360),
-        s = mathRound(hsl.s * 100),
-        l = mathRound(hsl.l * 100);
-      return this._a == 1 ? "hsl(" + h + ", " + s + "%, " + l + "%)" : "hsla(" + h + ", " + s + "%, " + l + "%, " + this._roundA + ")";
-    },
-    toHex: function toHex(allow3Char) {
-      return rgbToHex(this._r, this._g, this._b, allow3Char);
-    },
-    toHexString: function toHexString(allow3Char) {
-      return '#' + this.toHex(allow3Char);
-    },
-    toHex8: function toHex8(allow4Char) {
-      return rgbaToHex(this._r, this._g, this._b, this._a, allow4Char);
-    },
-    toHex8String: function toHex8String(allow4Char) {
-      return '#' + this.toHex8(allow4Char);
-    },
-    toRgb: function toRgb() {
-      return {
-        r: mathRound(this._r),
-        g: mathRound(this._g),
-        b: mathRound(this._b),
-        a: this._a
-      };
-    },
-    toRgbString: function toRgbString() {
-      return this._a == 1 ? "rgb(" + mathRound(this._r) + ", " + mathRound(this._g) + ", " + mathRound(this._b) + ")" : "rgba(" + mathRound(this._r) + ", " + mathRound(this._g) + ", " + mathRound(this._b) + ", " + this._roundA + ")";
-    },
-    toPercentageRgb: function toPercentageRgb() {
-      return {
-        r: mathRound(bound01(this._r, 255) * 100) + "%",
-        g: mathRound(bound01(this._g, 255) * 100) + "%",
-        b: mathRound(bound01(this._b, 255) * 100) + "%",
-        a: this._a
-      };
-    },
-    toPercentageRgbString: function toPercentageRgbString() {
-      return this._a == 1 ? "rgb(" + mathRound(bound01(this._r, 255) * 100) + "%, " + mathRound(bound01(this._g, 255) * 100) + "%, " + mathRound(bound01(this._b, 255) * 100) + "%)" : "rgba(" + mathRound(bound01(this._r, 255) * 100) + "%, " + mathRound(bound01(this._g, 255) * 100) + "%, " + mathRound(bound01(this._b, 255) * 100) + "%, " + this._roundA + ")";
-    },
-    toName: function toName() {
-      if (this._a === 0) {
-        return "transparent";
-      }
-      if (this._a < 1) {
-        return false;
-      }
-      return hexNames[rgbToHex(this._r, this._g, this._b, true)] || false;
-    },
-    toFilter: function toFilter(secondColor) {
-      var hex8String = '#' + rgbaToArgbHex(this._r, this._g, this._b, this._a);
-      var secondHex8String = hex8String;
-      var gradientType = this._gradientType ? "GradientType = 1, " : "";
-      if (secondColor) {
-        var s = tinycolor(secondColor);
-        secondHex8String = '#' + rgbaToArgbHex(s._r, s._g, s._b, s._a);
-      }
-      return "progid:DXImageTransform.Microsoft.gradient(" + gradientType + "startColorstr=" + hex8String + ",endColorstr=" + secondHex8String + ")";
-    },
-    toString: function toString(format) {
-      var formatSet = !!format;
-      format = format || this._format;
-      var formattedString = false;
-      var hasAlpha = this._a < 1 && this._a >= 0;
-      var needsAlphaFormat = !formatSet && hasAlpha && (format === "hex" || format === "hex6" || format === "hex3" || format === "hex4" || format === "hex8" || format === "name");
-      if (needsAlphaFormat) {
-        // Special case for "transparent", all other non-alpha formats
-        // will return rgba when there is transparency.
-        if (format === "name" && this._a === 0) {
-          return this.toName();
-        }
-        return this.toRgbString();
-      }
-      if (format === "rgb") {
-        formattedString = this.toRgbString();
-      }
-      if (format === "prgb") {
-        formattedString = this.toPercentageRgbString();
-      }
-      if (format === "hex" || format === "hex6") {
-        formattedString = this.toHexString();
-      }
-      if (format === "hex3") {
-        formattedString = this.toHexString(true);
-      }
-      if (format === "hex4") {
-        formattedString = this.toHex8String(true);
-      }
-      if (format === "hex8") {
-        formattedString = this.toHex8String();
-      }
-      if (format === "name") {
-        formattedString = this.toName();
-      }
-      if (format === "hsl") {
-        formattedString = this.toHslString();
-      }
-      if (format === "hsv") {
-        formattedString = this.toHsvString();
-      }
-      return formattedString || this.toHexString();
-    },
-    clone: function clone() {
-      return tinycolor(this.toString());
-    },
-    _applyModification: function _applyModification(fn, args) {
-      var color = fn.apply(null, [this].concat([].slice.call(args)));
-      this._r = color._r;
-      this._g = color._g;
-      this._b = color._b;
-      this.setAlpha(color._a);
-      return this;
-    },
-    lighten: function lighten() {
-      return this._applyModification(_lighten, arguments);
-    },
-    brighten: function brighten() {
-      return this._applyModification(_brighten, arguments);
-    },
-    darken: function darken() {
-      return this._applyModification(_darken, arguments);
-    },
-    desaturate: function desaturate() {
-      return this._applyModification(_desaturate, arguments);
-    },
-    saturate: function saturate() {
-      return this._applyModification(_saturate, arguments);
-    },
-    greyscale: function greyscale() {
-      return this._applyModification(_greyscale, arguments);
-    },
-    spin: function spin() {
-      return this._applyModification(_spin, arguments);
-    },
-    _applyCombination: function _applyCombination(fn, args) {
-      return fn.apply(null, [this].concat([].slice.call(args)));
-    },
-    analogous: function analogous() {
-      return this._applyCombination(_analogous, arguments);
-    },
-    complement: function complement() {
-      return this._applyCombination(_complement, arguments);
-    },
-    monochromatic: function monochromatic() {
-      return this._applyCombination(_monochromatic, arguments);
-    },
-    splitcomplement: function splitcomplement() {
-      return this._applyCombination(_splitcomplement, arguments);
-    },
-    triad: function triad() {
-      return this._applyCombination(_triad, arguments);
-    },
-    tetrad: function tetrad() {
-      return this._applyCombination(_tetrad, arguments);
-    }
-  };
+  // If we are called as a function, call using new instead
+  if (!(this instanceof tinycolor)) {
+    return new tinycolor(color, opts);
+  }
+  var rgb = inputToRGB(color);
+  this._originalInput = color, this._r = rgb.r, this._g = rgb.g, this._b = rgb.b, this._a = rgb.a, this._roundA = Math.round(100 * this._a) / 100, this._format = opts.format || rgb.format;
+  this._gradientType = opts.gradientType;
 
-  // If input is an object, force 1 into "1.0" to handle ratios properly
-  // String input requires "1.0" as input, so 1 will be treated as 1
-  tinycolor.fromRatio = function (color, opts) {
-    if (typeof color == "object") {
-      var newColor = {};
-      for (var i in color) {
-        if (color.hasOwnProperty(i)) {
-          if (i === "a") {
-            newColor[i] = color[i];
-          } else {
-            newColor[i] = convertToPercentage(color[i]);
-          }
+  // Don't let the range of [0,255] come back in [0,1].
+  // Potentially lose a little bit of precision here, but will fix issues where
+  // .5 gets interpreted as half of the total, instead of half of 1
+  // If it was supposed to be 128, this was already taken care of by `inputToRgb`
+  if (this._r < 1) this._r = Math.round(this._r);
+  if (this._g < 1) this._g = Math.round(this._g);
+  if (this._b < 1) this._b = Math.round(this._b);
+  this._ok = rgb.ok;
+}
+tinycolor.prototype = {
+  isDark: function isDark() {
+    return this.getBrightness() < 128;
+  },
+  isLight: function isLight() {
+    return !this.isDark();
+  },
+  isValid: function isValid() {
+    return this._ok;
+  },
+  getOriginalInput: function getOriginalInput() {
+    return this._originalInput;
+  },
+  getFormat: function getFormat() {
+    return this._format;
+  },
+  getAlpha: function getAlpha() {
+    return this._a;
+  },
+  getBrightness: function getBrightness() {
+    //http://www.w3.org/TR/AERT#color-contrast
+    var rgb = this.toRgb();
+    return (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000;
+  },
+  getLuminance: function getLuminance() {
+    //http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef
+    var rgb = this.toRgb();
+    var RsRGB, GsRGB, BsRGB, R, G, B;
+    RsRGB = rgb.r / 255;
+    GsRGB = rgb.g / 255;
+    BsRGB = rgb.b / 255;
+    if (RsRGB <= 0.03928) R = RsRGB / 12.92;else R = Math.pow((RsRGB + 0.055) / 1.055, 2.4);
+    if (GsRGB <= 0.03928) G = GsRGB / 12.92;else G = Math.pow((GsRGB + 0.055) / 1.055, 2.4);
+    if (BsRGB <= 0.03928) B = BsRGB / 12.92;else B = Math.pow((BsRGB + 0.055) / 1.055, 2.4);
+    return 0.2126 * R + 0.7152 * G + 0.0722 * B;
+  },
+  setAlpha: function setAlpha(value) {
+    this._a = boundAlpha(value);
+    this._roundA = Math.round(100 * this._a) / 100;
+    return this;
+  },
+  toHsv: function toHsv() {
+    var hsv = rgbToHsv(this._r, this._g, this._b);
+    return {
+      h: hsv.h * 360,
+      s: hsv.s,
+      v: hsv.v,
+      a: this._a
+    };
+  },
+  toHsvString: function toHsvString() {
+    var hsv = rgbToHsv(this._r, this._g, this._b);
+    var h = Math.round(hsv.h * 360),
+      s = Math.round(hsv.s * 100),
+      v = Math.round(hsv.v * 100);
+    return this._a == 1 ? "hsv(" + h + ", " + s + "%, " + v + "%)" : "hsva(" + h + ", " + s + "%, " + v + "%, " + this._roundA + ")";
+  },
+  toHsl: function toHsl() {
+    var hsl = rgbToHsl(this._r, this._g, this._b);
+    return {
+      h: hsl.h * 360,
+      s: hsl.s,
+      l: hsl.l,
+      a: this._a
+    };
+  },
+  toHslString: function toHslString() {
+    var hsl = rgbToHsl(this._r, this._g, this._b);
+    var h = Math.round(hsl.h * 360),
+      s = Math.round(hsl.s * 100),
+      l = Math.round(hsl.l * 100);
+    return this._a == 1 ? "hsl(" + h + ", " + s + "%, " + l + "%)" : "hsla(" + h + ", " + s + "%, " + l + "%, " + this._roundA + ")";
+  },
+  toHex: function toHex(allow3Char) {
+    return rgbToHex(this._r, this._g, this._b, allow3Char);
+  },
+  toHexString: function toHexString(allow3Char) {
+    return "#" + this.toHex(allow3Char);
+  },
+  toHex8: function toHex8(allow4Char) {
+    return rgbaToHex(this._r, this._g, this._b, this._a, allow4Char);
+  },
+  toHex8String: function toHex8String(allow4Char) {
+    return "#" + this.toHex8(allow4Char);
+  },
+  toRgb: function toRgb() {
+    return {
+      r: Math.round(this._r),
+      g: Math.round(this._g),
+      b: Math.round(this._b),
+      a: this._a
+    };
+  },
+  toRgbString: function toRgbString() {
+    return this._a == 1 ? "rgb(" + Math.round(this._r) + ", " + Math.round(this._g) + ", " + Math.round(this._b) + ")" : "rgba(" + Math.round(this._r) + ", " + Math.round(this._g) + ", " + Math.round(this._b) + ", " + this._roundA + ")";
+  },
+  toPercentageRgb: function toPercentageRgb() {
+    return {
+      r: Math.round(bound01(this._r, 255) * 100) + "%",
+      g: Math.round(bound01(this._g, 255) * 100) + "%",
+      b: Math.round(bound01(this._b, 255) * 100) + "%",
+      a: this._a
+    };
+  },
+  toPercentageRgbString: function toPercentageRgbString() {
+    return this._a == 1 ? "rgb(" + Math.round(bound01(this._r, 255) * 100) + "%, " + Math.round(bound01(this._g, 255) * 100) + "%, " + Math.round(bound01(this._b, 255) * 100) + "%)" : "rgba(" + Math.round(bound01(this._r, 255) * 100) + "%, " + Math.round(bound01(this._g, 255) * 100) + "%, " + Math.round(bound01(this._b, 255) * 100) + "%, " + this._roundA + ")";
+  },
+  toName: function toName() {
+    if (this._a === 0) {
+      return "transparent";
+    }
+    if (this._a < 1) {
+      return false;
+    }
+    return hexNames[rgbToHex(this._r, this._g, this._b, true)] || false;
+  },
+  toFilter: function toFilter(secondColor) {
+    var hex8String = "#" + rgbaToArgbHex(this._r, this._g, this._b, this._a);
+    var secondHex8String = hex8String;
+    var gradientType = this._gradientType ? "GradientType = 1, " : "";
+    if (secondColor) {
+      var s = tinycolor(secondColor);
+      secondHex8String = "#" + rgbaToArgbHex(s._r, s._g, s._b, s._a);
+    }
+    return "progid:DXImageTransform.Microsoft.gradient(" + gradientType + "startColorstr=" + hex8String + ",endColorstr=" + secondHex8String + ")";
+  },
+  toString: function toString(format) {
+    var formatSet = !!format;
+    format = format || this._format;
+    var formattedString = false;
+    var hasAlpha = this._a < 1 && this._a >= 0;
+    var needsAlphaFormat = !formatSet && hasAlpha && (format === "hex" || format === "hex6" || format === "hex3" || format === "hex4" || format === "hex8" || format === "name");
+    if (needsAlphaFormat) {
+      // Special case for "transparent", all other non-alpha formats
+      // will return rgba when there is transparency.
+      if (format === "name" && this._a === 0) {
+        return this.toName();
+      }
+      return this.toRgbString();
+    }
+    if (format === "rgb") {
+      formattedString = this.toRgbString();
+    }
+    if (format === "prgb") {
+      formattedString = this.toPercentageRgbString();
+    }
+    if (format === "hex" || format === "hex6") {
+      formattedString = this.toHexString();
+    }
+    if (format === "hex3") {
+      formattedString = this.toHexString(true);
+    }
+    if (format === "hex4") {
+      formattedString = this.toHex8String(true);
+    }
+    if (format === "hex8") {
+      formattedString = this.toHex8String();
+    }
+    if (format === "name") {
+      formattedString = this.toName();
+    }
+    if (format === "hsl") {
+      formattedString = this.toHslString();
+    }
+    if (format === "hsv") {
+      formattedString = this.toHsvString();
+    }
+    return formattedString || this.toHexString();
+  },
+  clone: function clone() {
+    return tinycolor(this.toString());
+  },
+  _applyModification: function _applyModification(fn, args) {
+    var color = fn.apply(null, [this].concat([].slice.call(args)));
+    this._r = color._r;
+    this._g = color._g;
+    this._b = color._b;
+    this.setAlpha(color._a);
+    return this;
+  },
+  lighten: function lighten() {
+    return this._applyModification(_lighten, arguments);
+  },
+  brighten: function brighten() {
+    return this._applyModification(_brighten, arguments);
+  },
+  darken: function darken() {
+    return this._applyModification(_darken, arguments);
+  },
+  desaturate: function desaturate() {
+    return this._applyModification(_desaturate, arguments);
+  },
+  saturate: function saturate() {
+    return this._applyModification(_saturate, arguments);
+  },
+  greyscale: function greyscale() {
+    return this._applyModification(_greyscale, arguments);
+  },
+  spin: function spin() {
+    return this._applyModification(_spin, arguments);
+  },
+  _applyCombination: function _applyCombination(fn, args) {
+    return fn.apply(null, [this].concat([].slice.call(args)));
+  },
+  analogous: function analogous() {
+    return this._applyCombination(_analogous, arguments);
+  },
+  complement: function complement() {
+    return this._applyCombination(_complement, arguments);
+  },
+  monochromatic: function monochromatic() {
+    return this._applyCombination(_monochromatic, arguments);
+  },
+  splitcomplement: function splitcomplement() {
+    return this._applyCombination(_splitcomplement, arguments);
+  },
+  // Disabled until https://github.com/bgrins/TinyColor/issues/254
+  // polyad: function (number) {
+  //   return this._applyCombination(polyad, [number]);
+  // },
+  triad: function triad() {
+    return this._applyCombination(polyad, [3]);
+  },
+  tetrad: function tetrad() {
+    return this._applyCombination(polyad, [4]);
+  }
+};
+
+// If input is an object, force 1 into "1.0" to handle ratios properly
+// String input requires "1.0" as input, so 1 will be treated as 1
+tinycolor.fromRatio = function (color, opts) {
+  if (typeof color == "object") {
+    var newColor = {};
+    for (var i in color) {
+      if (color.hasOwnProperty(i)) {
+        if (i === "a") {
+          newColor[i] = color[i];
+        } else {
+          newColor[i] = convertToPercentage(color[i]);
         }
       }
-      color = newColor;
     }
-    return tinycolor(color, opts);
+    color = newColor;
+  }
+  return tinycolor(color, opts);
+};
+
+// Given a string or object, convert that input to RGB
+// Possible string inputs:
+//
+//     "red"
+//     "#f00" or "f00"
+//     "#ff0000" or "ff0000"
+//     "#ff000000" or "ff000000"
+//     "rgb 255 0 0" or "rgb (255, 0, 0)"
+//     "rgb 1.0 0 0" or "rgb (1, 0, 0)"
+//     "rgba (255, 0, 0, 1)" or "rgba 255, 0, 0, 1"
+//     "rgba (1.0, 0, 0, 1)" or "rgba 1.0, 0, 0, 1"
+//     "hsl(0, 100%, 50%)" or "hsl 0 100% 50%"
+//     "hsla(0, 100%, 50%, 1)" or "hsla 0 100% 50%, 1"
+//     "hsv(0, 100%, 100%)" or "hsv 0 100% 100%"
+//
+function inputToRGB(color) {
+  var rgb = {
+    r: 0,
+    g: 0,
+    b: 0
   };
-
-  // Given a string or object, convert that input to RGB
-  // Possible string inputs:
-  //
-  //     "red"
-  //     "#f00" or "f00"
-  //     "#ff0000" or "ff0000"
-  //     "#ff000000" or "ff000000"
-  //     "rgb 255 0 0" or "rgb (255, 0, 0)"
-  //     "rgb 1.0 0 0" or "rgb (1, 0, 0)"
-  //     "rgba (255, 0, 0, 1)" or "rgba 255, 0, 0, 1"
-  //     "rgba (1.0, 0, 0, 1)" or "rgba 1.0, 0, 0, 1"
-  //     "hsl(0, 100%, 50%)" or "hsl 0 100% 50%"
-  //     "hsla(0, 100%, 50%, 1)" or "hsla 0 100% 50%, 1"
-  //     "hsv(0, 100%, 100%)" or "hsv 0 100% 100%"
-  //
-  function inputToRGB(color) {
-    var rgb = {
-      r: 0,
-      g: 0,
-      b: 0
-    };
-    var a = 1;
-    var s = null;
-    var v = null;
-    var l = null;
-    var ok = false;
-    var format = false;
-    if (typeof color == "string") {
-      color = stringInputToObject(color);
-    }
-    if (typeof color == "object") {
-      if (isValidCSSUnit(color.r) && isValidCSSUnit(color.g) && isValidCSSUnit(color.b)) {
-        rgb = rgbToRgb(color.r, color.g, color.b);
-        ok = true;
-        format = String(color.r).substr(-1) === "%" ? "prgb" : "rgb";
-      } else if (isValidCSSUnit(color.h) && isValidCSSUnit(color.s) && isValidCSSUnit(color.v)) {
-        s = convertToPercentage(color.s);
-        v = convertToPercentage(color.v);
-        rgb = hsvToRgb(color.h, s, v);
-        ok = true;
-        format = "hsv";
-      } else if (isValidCSSUnit(color.h) && isValidCSSUnit(color.s) && isValidCSSUnit(color.l)) {
-        s = convertToPercentage(color.s);
-        l = convertToPercentage(color.l);
-        rgb = hslToRgb(color.h, s, l);
-        ok = true;
-        format = "hsl";
-      }
-      if (color.hasOwnProperty("a")) {
-        a = color.a;
-      }
-    }
-    a = boundAlpha(a);
-    return {
-      ok: ok,
-      format: color.format || format,
-      r: mathMin(255, mathMax(rgb.r, 0)),
-      g: mathMin(255, mathMax(rgb.g, 0)),
-      b: mathMin(255, mathMax(rgb.b, 0)),
-      a: a
-    };
+  var a = 1;
+  var s = null;
+  var v = null;
+  var l = null;
+  var ok = false;
+  var format = false;
+  if (typeof color == "string") {
+    color = stringInputToObject(color);
   }
-
-  // Conversion Functions
-  // --------------------
-
-  // `rgbToHsl`, `rgbToHsv`, `hslToRgb`, `hsvToRgb` modified from:
-  // <http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript>
-
-  // `rgbToRgb`
-  // Handle bounds / percentage checking to conform to CSS color spec
-  // <http://www.w3.org/TR/css3-color/>
-  // *Assumes:* r, g, b in [0, 255] or [0, 1]
-  // *Returns:* { r, g, b } in [0, 255]
-  function rgbToRgb(r, g, b) {
-    return {
-      r: bound01(r, 255) * 255,
-      g: bound01(g, 255) * 255,
-      b: bound01(b, 255) * 255
-    };
-  }
-
-  // `rgbToHsl`
-  // Converts an RGB color value to HSL.
-  // *Assumes:* r, g, and b are contained in [0, 255] or [0, 1]
-  // *Returns:* { h, s, l } in [0,1]
-  function rgbToHsl(r, g, b) {
-    r = bound01(r, 255);
-    g = bound01(g, 255);
-    b = bound01(b, 255);
-    var max = mathMax(r, g, b),
-      min = mathMin(r, g, b);
-    var h,
-      s,
-      l = (max + min) / 2;
-    if (max == min) {
-      h = s = 0; // achromatic
-    } else {
-      var d = max - min;
-      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-      switch (max) {
-        case r:
-          h = (g - b) / d + (g < b ? 6 : 0);
-          break;
-        case g:
-          h = (b - r) / d + 2;
-          break;
-        case b:
-          h = (r - g) / d + 4;
-          break;
-      }
-      h /= 6;
+  if (typeof color == "object") {
+    if (isValidCSSUnit(color.r) && isValidCSSUnit(color.g) && isValidCSSUnit(color.b)) {
+      rgb = rgbToRgb(color.r, color.g, color.b);
+      ok = true;
+      format = String(color.r).substr(-1) === "%" ? "prgb" : "rgb";
+    } else if (isValidCSSUnit(color.h) && isValidCSSUnit(color.s) && isValidCSSUnit(color.v)) {
+      s = convertToPercentage(color.s);
+      v = convertToPercentage(color.v);
+      rgb = hsvToRgb(color.h, s, v);
+      ok = true;
+      format = "hsv";
+    } else if (isValidCSSUnit(color.h) && isValidCSSUnit(color.s) && isValidCSSUnit(color.l)) {
+      s = convertToPercentage(color.s);
+      l = convertToPercentage(color.l);
+      rgb = hslToRgb(color.h, s, l);
+      ok = true;
+      format = "hsl";
     }
-    return {
-      h: h,
-      s: s,
-      l: l
-    };
-  }
-
-  // `hslToRgb`
-  // Converts an HSL color value to RGB.
-  // *Assumes:* h is contained in [0, 1] or [0, 360] and s and l are contained [0, 1] or [0, 100]
-  // *Returns:* { r, g, b } in the set [0, 255]
-  function hslToRgb(h, s, l) {
-    var r, g, b;
-    h = bound01(h, 360);
-    s = bound01(s, 100);
-    l = bound01(l, 100);
-    function hue2rgb(p, q, t) {
-      if (t < 0) t += 1;
-      if (t > 1) t -= 1;
-      if (t < 1 / 6) return p + (q - p) * 6 * t;
-      if (t < 1 / 2) return q;
-      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-      return p;
+    if (color.hasOwnProperty("a")) {
+      a = color.a;
     }
-    if (s === 0) {
-      r = g = b = l; // achromatic
-    } else {
-      var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-      var p = 2 * l - q;
-      r = hue2rgb(p, q, h + 1 / 3);
-      g = hue2rgb(p, q, h);
-      b = hue2rgb(p, q, h - 1 / 3);
-    }
-    return {
-      r: r * 255,
-      g: g * 255,
-      b: b * 255
-    };
   }
+  a = boundAlpha(a);
+  return {
+    ok: ok,
+    format: color.format || format,
+    r: Math.min(255, Math.max(rgb.r, 0)),
+    g: Math.min(255, Math.max(rgb.g, 0)),
+    b: Math.min(255, Math.max(rgb.b, 0)),
+    a: a
+  };
+}
 
-  // `rgbToHsv`
-  // Converts an RGB color value to HSV
-  // *Assumes:* r, g, and b are contained in the set [0, 255] or [0, 1]
-  // *Returns:* { h, s, v } in [0,1]
-  function rgbToHsv(r, g, b) {
-    r = bound01(r, 255);
-    g = bound01(g, 255);
-    b = bound01(b, 255);
-    var max = mathMax(r, g, b),
-      min = mathMin(r, g, b);
-    var h,
-      s,
-      v = max;
+// Conversion Functions
+// --------------------
+
+// `rgbToHsl`, `rgbToHsv`, `hslToRgb`, `hsvToRgb` modified from:
+// <http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript>
+
+// `rgbToRgb`
+// Handle bounds / percentage checking to conform to CSS color spec
+// <http://www.w3.org/TR/css3-color/>
+// *Assumes:* r, g, b in [0, 255] or [0, 1]
+// *Returns:* { r, g, b } in [0, 255]
+function rgbToRgb(r, g, b) {
+  return {
+    r: bound01(r, 255) * 255,
+    g: bound01(g, 255) * 255,
+    b: bound01(b, 255) * 255
+  };
+}
+
+// `rgbToHsl`
+// Converts an RGB color value to HSL.
+// *Assumes:* r, g, and b are contained in [0, 255] or [0, 1]
+// *Returns:* { h, s, l } in [0,1]
+function rgbToHsl(r, g, b) {
+  r = bound01(r, 255);
+  g = bound01(g, 255);
+  b = bound01(b, 255);
+  var max = Math.max(r, g, b),
+    min = Math.min(r, g, b);
+  var h,
+    s,
+    l = (max + min) / 2;
+  if (max == min) {
+    h = s = 0; // achromatic
+  } else {
     var d = max - min;
-    s = max === 0 ? 0 : d / max;
-    if (max == min) {
-      h = 0; // achromatic
-    } else {
-      switch (max) {
-        case r:
-          h = (g - b) / d + (g < b ? 6 : 0);
-          break;
-        case g:
-          h = (b - r) / d + 2;
-          break;
-        case b:
-          h = (r - g) / d + 4;
-          break;
-      }
-      h /= 6;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case r:
+        h = (g - b) / d + (g < b ? 6 : 0);
+        break;
+      case g:
+        h = (b - r) / d + 2;
+        break;
+      case b:
+        h = (r - g) / d + 4;
+        break;
     }
-    return {
+    h /= 6;
+  }
+  return {
+    h: h,
+    s: s,
+    l: l
+  };
+}
+
+// `hslToRgb`
+// Converts an HSL color value to RGB.
+// *Assumes:* h is contained in [0, 1] or [0, 360] and s and l are contained [0, 1] or [0, 100]
+// *Returns:* { r, g, b } in the set [0, 255]
+function hslToRgb(h, s, l) {
+  var r, g, b;
+  h = bound01(h, 360);
+  s = bound01(s, 100);
+  l = bound01(l, 100);
+  function hue2rgb(p, q, t) {
+    if (t < 0) t += 1;
+    if (t > 1) t -= 1;
+    if (t < 1 / 6) return p + (q - p) * 6 * t;
+    if (t < 1 / 2) return q;
+    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+    return p;
+  }
+  if (s === 0) {
+    r = g = b = l; // achromatic
+  } else {
+    var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    var p = 2 * l - q;
+    r = hue2rgb(p, q, h + 1 / 3);
+    g = hue2rgb(p, q, h);
+    b = hue2rgb(p, q, h - 1 / 3);
+  }
+  return {
+    r: r * 255,
+    g: g * 255,
+    b: b * 255
+  };
+}
+
+// `rgbToHsv`
+// Converts an RGB color value to HSV
+// *Assumes:* r, g, and b are contained in the set [0, 255] or [0, 1]
+// *Returns:* { h, s, v } in [0,1]
+function rgbToHsv(r, g, b) {
+  r = bound01(r, 255);
+  g = bound01(g, 255);
+  b = bound01(b, 255);
+  var max = Math.max(r, g, b),
+    min = Math.min(r, g, b);
+  var h,
+    s,
+    v = max;
+  var d = max - min;
+  s = max === 0 ? 0 : d / max;
+  if (max == min) {
+    h = 0; // achromatic
+  } else {
+    switch (max) {
+      case r:
+        h = (g - b) / d + (g < b ? 6 : 0);
+        break;
+      case g:
+        h = (b - r) / d + 2;
+        break;
+      case b:
+        h = (r - g) / d + 4;
+        break;
+    }
+    h /= 6;
+  }
+  return {
+    h: h,
+    s: s,
+    v: v
+  };
+}
+
+// `hsvToRgb`
+// Converts an HSV color value to RGB.
+// *Assumes:* h is contained in [0, 1] or [0, 360] and s and v are contained in [0, 1] or [0, 100]
+// *Returns:* { r, g, b } in the set [0, 255]
+function hsvToRgb(h, s, v) {
+  h = bound01(h, 360) * 6;
+  s = bound01(s, 100);
+  v = bound01(v, 100);
+  var i = Math.floor(h),
+    f = h - i,
+    p = v * (1 - s),
+    q = v * (1 - f * s),
+    t = v * (1 - (1 - f) * s),
+    mod = i % 6,
+    r = [v, q, p, p, t, v][mod],
+    g = [t, v, v, q, p, p][mod],
+    b = [p, p, t, v, v, q][mod];
+  return {
+    r: r * 255,
+    g: g * 255,
+    b: b * 255
+  };
+}
+
+// `rgbToHex`
+// Converts an RGB color to hex
+// Assumes r, g, and b are contained in the set [0, 255]
+// Returns a 3 or 6 character hex
+function rgbToHex(r, g, b, allow3Char) {
+  var hex = [pad2(Math.round(r).toString(16)), pad2(Math.round(g).toString(16)), pad2(Math.round(b).toString(16))];
+
+  // Return a 3 character hex if possible
+  if (allow3Char && hex[0].charAt(0) == hex[0].charAt(1) && hex[1].charAt(0) == hex[1].charAt(1) && hex[2].charAt(0) == hex[2].charAt(1)) {
+    return hex[0].charAt(0) + hex[1].charAt(0) + hex[2].charAt(0);
+  }
+  return hex.join("");
+}
+
+// `rgbaToHex`
+// Converts an RGBA color plus alpha transparency to hex
+// Assumes r, g, b are contained in the set [0, 255] and
+// a in [0, 1]. Returns a 4 or 8 character rgba hex
+function rgbaToHex(r, g, b, a, allow4Char) {
+  var hex = [pad2(Math.round(r).toString(16)), pad2(Math.round(g).toString(16)), pad2(Math.round(b).toString(16)), pad2(convertDecimalToHex(a))];
+
+  // Return a 4 character hex if possible
+  if (allow4Char && hex[0].charAt(0) == hex[0].charAt(1) && hex[1].charAt(0) == hex[1].charAt(1) && hex[2].charAt(0) == hex[2].charAt(1) && hex[3].charAt(0) == hex[3].charAt(1)) {
+    return hex[0].charAt(0) + hex[1].charAt(0) + hex[2].charAt(0) + hex[3].charAt(0);
+  }
+  return hex.join("");
+}
+
+// `rgbaToArgbHex`
+// Converts an RGBA color to an ARGB Hex8 string
+// Rarely used, but required for "toFilter()"
+function rgbaToArgbHex(r, g, b, a) {
+  var hex = [pad2(convertDecimalToHex(a)), pad2(Math.round(r).toString(16)), pad2(Math.round(g).toString(16)), pad2(Math.round(b).toString(16))];
+  return hex.join("");
+}
+
+// `equals`
+// Can be called with any tinycolor input
+tinycolor.equals = function (color1, color2) {
+  if (!color1 || !color2) return false;
+  return tinycolor(color1).toRgbString() == tinycolor(color2).toRgbString();
+};
+tinycolor.random = function () {
+  return tinycolor.fromRatio({
+    r: Math.random(),
+    g: Math.random(),
+    b: Math.random()
+  });
+};
+
+// Modification Functions
+// ----------------------
+// Thanks to less.js for some of the basics here
+// <https://github.com/cloudhead/less.js/blob/master/lib/less/functions.js>
+
+function _desaturate(color, amount) {
+  amount = amount === 0 ? 0 : amount || 10;
+  var hsl = tinycolor(color).toHsl();
+  hsl.s -= amount / 100;
+  hsl.s = clamp01(hsl.s);
+  return tinycolor(hsl);
+}
+function _saturate(color, amount) {
+  amount = amount === 0 ? 0 : amount || 10;
+  var hsl = tinycolor(color).toHsl();
+  hsl.s += amount / 100;
+  hsl.s = clamp01(hsl.s);
+  return tinycolor(hsl);
+}
+function _greyscale(color) {
+  return tinycolor(color).desaturate(100);
+}
+function _lighten(color, amount) {
+  amount = amount === 0 ? 0 : amount || 10;
+  var hsl = tinycolor(color).toHsl();
+  hsl.l += amount / 100;
+  hsl.l = clamp01(hsl.l);
+  return tinycolor(hsl);
+}
+function _brighten(color, amount) {
+  amount = amount === 0 ? 0 : amount || 10;
+  var rgb = tinycolor(color).toRgb();
+  rgb.r = Math.max(0, Math.min(255, rgb.r - Math.round(255 * -(amount / 100))));
+  rgb.g = Math.max(0, Math.min(255, rgb.g - Math.round(255 * -(amount / 100))));
+  rgb.b = Math.max(0, Math.min(255, rgb.b - Math.round(255 * -(amount / 100))));
+  return tinycolor(rgb);
+}
+function _darken(color, amount) {
+  amount = amount === 0 ? 0 : amount || 10;
+  var hsl = tinycolor(color).toHsl();
+  hsl.l -= amount / 100;
+  hsl.l = clamp01(hsl.l);
+  return tinycolor(hsl);
+}
+
+// Spin takes a positive or negative amount within [-360, 360] indicating the change of hue.
+// Values outside of this range will be wrapped into this range.
+function _spin(color, amount) {
+  var hsl = tinycolor(color).toHsl();
+  var hue = (hsl.h + amount) % 360;
+  hsl.h = hue < 0 ? 360 + hue : hue;
+  return tinycolor(hsl);
+}
+
+// Combination Functions
+// ---------------------
+// Thanks to jQuery xColor for some of the ideas behind these
+// <https://github.com/infusion/jQuery-xcolor/blob/master/jquery.xcolor.js>
+
+function _complement(color) {
+  var hsl = tinycolor(color).toHsl();
+  hsl.h = (hsl.h + 180) % 360;
+  return tinycolor(hsl);
+}
+function polyad(color, number) {
+  if (isNaN(number) || number <= 0) {
+    throw new Error("Argument to polyad must be a positive number");
+  }
+  var hsl = tinycolor(color).toHsl();
+  var result = [tinycolor(color)];
+  var step = 360 / number;
+  for (var i = 1; i < number; i++) {
+    result.push(tinycolor({
+      h: (hsl.h + i * step) % 360,
+      s: hsl.s,
+      l: hsl.l
+    }));
+  }
+  return result;
+}
+function _splitcomplement(color) {
+  var hsl = tinycolor(color).toHsl();
+  var h = hsl.h;
+  return [tinycolor(color), tinycolor({
+    h: (h + 72) % 360,
+    s: hsl.s,
+    l: hsl.l
+  }), tinycolor({
+    h: (h + 216) % 360,
+    s: hsl.s,
+    l: hsl.l
+  })];
+}
+function _analogous(color, results, slices) {
+  results = results || 6;
+  slices = slices || 30;
+  var hsl = tinycolor(color).toHsl();
+  var part = 360 / slices;
+  var ret = [tinycolor(color)];
+  for (hsl.h = (hsl.h - (part * results >> 1) + 720) % 360; --results;) {
+    hsl.h = (hsl.h + part) % 360;
+    ret.push(tinycolor(hsl));
+  }
+  return ret;
+}
+function _monochromatic(color, results) {
+  results = results || 6;
+  var hsv = tinycolor(color).toHsv();
+  var h = hsv.h,
+    s = hsv.s,
+    v = hsv.v;
+  var ret = [];
+  var modification = 1 / results;
+  while (results--) {
+    ret.push(tinycolor({
       h: h,
       s: s,
       v: v
-    };
+    }));
+    v = (v + modification) % 1;
+  }
+  return ret;
+}
+
+// Utility Functions
+// ---------------------
+
+tinycolor.mix = function (color1, color2, amount) {
+  amount = amount === 0 ? 0 : amount || 50;
+  var rgb1 = tinycolor(color1).toRgb();
+  var rgb2 = tinycolor(color2).toRgb();
+  var p = amount / 100;
+  var rgba = {
+    r: (rgb2.r - rgb1.r) * p + rgb1.r,
+    g: (rgb2.g - rgb1.g) * p + rgb1.g,
+    b: (rgb2.b - rgb1.b) * p + rgb1.b,
+    a: (rgb2.a - rgb1.a) * p + rgb1.a
+  };
+  return tinycolor(rgba);
+};
+
+// Readability Functions
+// ---------------------
+// <http://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef (WCAG Version 2)
+
+// `contrast`
+// Analyze the 2 colors and returns the color contrast defined by (WCAG Version 2)
+tinycolor.readability = function (color1, color2) {
+  var c1 = tinycolor(color1);
+  var c2 = tinycolor(color2);
+  return (Math.max(c1.getLuminance(), c2.getLuminance()) + 0.05) / (Math.min(c1.getLuminance(), c2.getLuminance()) + 0.05);
+};
+
+// `isReadable`
+// Ensure that foreground and background color combinations meet WCAG2 guidelines.
+// The third argument is an optional Object.
+//      the 'level' property states 'AA' or 'AAA' - if missing or invalid, it defaults to 'AA';
+//      the 'size' property states 'large' or 'small' - if missing or invalid, it defaults to 'small'.
+// If the entire object is absent, isReadable defaults to {level:"AA",size:"small"}.
+
+// *Example*
+//    tinycolor.isReadable("#000", "#111") => false
+//    tinycolor.isReadable("#000", "#111",{level:"AA",size:"large"}) => false
+tinycolor.isReadable = function (color1, color2, wcag2) {
+  var readability = tinycolor.readability(color1, color2);
+  var wcag2Parms, out;
+  out = false;
+  wcag2Parms = validateWCAG2Parms(wcag2);
+  switch (wcag2Parms.level + wcag2Parms.size) {
+    case "AAsmall":
+    case "AAAlarge":
+      out = readability >= 4.5;
+      break;
+    case "AAlarge":
+      out = readability >= 3;
+      break;
+    case "AAAsmall":
+      out = readability >= 7;
+      break;
+  }
+  return out;
+};
+
+// `mostReadable`
+// Given a base color and a list of possible foreground or background
+// colors for that base, returns the most readable color.
+// Optionally returns Black or White if the most readable color is unreadable.
+// *Example*
+//    tinycolor.mostReadable(tinycolor.mostReadable("#123", ["#124", "#125"],{includeFallbackColors:false}).toHexString(); // "#112255"
+//    tinycolor.mostReadable(tinycolor.mostReadable("#123", ["#124", "#125"],{includeFallbackColors:true}).toHexString();  // "#ffffff"
+//    tinycolor.mostReadable("#a8015a", ["#faf3f3"],{includeFallbackColors:true,level:"AAA",size:"large"}).toHexString(); // "#faf3f3"
+//    tinycolor.mostReadable("#a8015a", ["#faf3f3"],{includeFallbackColors:true,level:"AAA",size:"small"}).toHexString(); // "#ffffff"
+tinycolor.mostReadable = function (baseColor, colorList, args) {
+  var bestColor = null;
+  var bestScore = 0;
+  var readability;
+  var includeFallbackColors, level, size;
+  args = args || {};
+  includeFallbackColors = args.includeFallbackColors;
+  level = args.level;
+  size = args.size;
+  for (var i = 0; i < colorList.length; i++) {
+    readability = tinycolor.readability(baseColor, colorList[i]);
+    if (readability > bestScore) {
+      bestScore = readability;
+      bestColor = tinycolor(colorList[i]);
+    }
+  }
+  if (tinycolor.isReadable(baseColor, bestColor, {
+    level: level,
+    size: size
+  }) || !includeFallbackColors) {
+    return bestColor;
+  } else {
+    args.includeFallbackColors = false;
+    return tinycolor.mostReadable(baseColor, ["#fff", "#000"], args);
+  }
+};
+
+// Big List of Colors
+// ------------------
+// <https://www.w3.org/TR/css-color-4/#named-colors>
+var names = tinycolor.names = {
+  aliceblue: "f0f8ff",
+  antiquewhite: "faebd7",
+  aqua: "0ff",
+  aquamarine: "7fffd4",
+  azure: "f0ffff",
+  beige: "f5f5dc",
+  bisque: "ffe4c4",
+  black: "000",
+  blanchedalmond: "ffebcd",
+  blue: "00f",
+  blueviolet: "8a2be2",
+  brown: "a52a2a",
+  burlywood: "deb887",
+  burntsienna: "ea7e5d",
+  cadetblue: "5f9ea0",
+  chartreuse: "7fff00",
+  chocolate: "d2691e",
+  coral: "ff7f50",
+  cornflowerblue: "6495ed",
+  cornsilk: "fff8dc",
+  crimson: "dc143c",
+  cyan: "0ff",
+  darkblue: "00008b",
+  darkcyan: "008b8b",
+  darkgoldenrod: "b8860b",
+  darkgray: "a9a9a9",
+  darkgreen: "006400",
+  darkgrey: "a9a9a9",
+  darkkhaki: "bdb76b",
+  darkmagenta: "8b008b",
+  darkolivegreen: "556b2f",
+  darkorange: "ff8c00",
+  darkorchid: "9932cc",
+  darkred: "8b0000",
+  darksalmon: "e9967a",
+  darkseagreen: "8fbc8f",
+  darkslateblue: "483d8b",
+  darkslategray: "2f4f4f",
+  darkslategrey: "2f4f4f",
+  darkturquoise: "00ced1",
+  darkviolet: "9400d3",
+  deeppink: "ff1493",
+  deepskyblue: "00bfff",
+  dimgray: "696969",
+  dimgrey: "696969",
+  dodgerblue: "1e90ff",
+  firebrick: "b22222",
+  floralwhite: "fffaf0",
+  forestgreen: "228b22",
+  fuchsia: "f0f",
+  gainsboro: "dcdcdc",
+  ghostwhite: "f8f8ff",
+  gold: "ffd700",
+  goldenrod: "daa520",
+  gray: "808080",
+  green: "008000",
+  greenyellow: "adff2f",
+  grey: "808080",
+  honeydew: "f0fff0",
+  hotpink: "ff69b4",
+  indianred: "cd5c5c",
+  indigo: "4b0082",
+  ivory: "fffff0",
+  khaki: "f0e68c",
+  lavender: "e6e6fa",
+  lavenderblush: "fff0f5",
+  lawngreen: "7cfc00",
+  lemonchiffon: "fffacd",
+  lightblue: "add8e6",
+  lightcoral: "f08080",
+  lightcyan: "e0ffff",
+  lightgoldenrodyellow: "fafad2",
+  lightgray: "d3d3d3",
+  lightgreen: "90ee90",
+  lightgrey: "d3d3d3",
+  lightpink: "ffb6c1",
+  lightsalmon: "ffa07a",
+  lightseagreen: "20b2aa",
+  lightskyblue: "87cefa",
+  lightslategray: "789",
+  lightslategrey: "789",
+  lightsteelblue: "b0c4de",
+  lightyellow: "ffffe0",
+  lime: "0f0",
+  limegreen: "32cd32",
+  linen: "faf0e6",
+  magenta: "f0f",
+  maroon: "800000",
+  mediumaquamarine: "66cdaa",
+  mediumblue: "0000cd",
+  mediumorchid: "ba55d3",
+  mediumpurple: "9370db",
+  mediumseagreen: "3cb371",
+  mediumslateblue: "7b68ee",
+  mediumspringgreen: "00fa9a",
+  mediumturquoise: "48d1cc",
+  mediumvioletred: "c71585",
+  midnightblue: "191970",
+  mintcream: "f5fffa",
+  mistyrose: "ffe4e1",
+  moccasin: "ffe4b5",
+  navajowhite: "ffdead",
+  navy: "000080",
+  oldlace: "fdf5e6",
+  olive: "808000",
+  olivedrab: "6b8e23",
+  orange: "ffa500",
+  orangered: "ff4500",
+  orchid: "da70d6",
+  palegoldenrod: "eee8aa",
+  palegreen: "98fb98",
+  paleturquoise: "afeeee",
+  palevioletred: "db7093",
+  papayawhip: "ffefd5",
+  peachpuff: "ffdab9",
+  peru: "cd853f",
+  pink: "ffc0cb",
+  plum: "dda0dd",
+  powderblue: "b0e0e6",
+  purple: "800080",
+  rebeccapurple: "663399",
+  red: "f00",
+  rosybrown: "bc8f8f",
+  royalblue: "4169e1",
+  saddlebrown: "8b4513",
+  salmon: "fa8072",
+  sandybrown: "f4a460",
+  seagreen: "2e8b57",
+  seashell: "fff5ee",
+  sienna: "a0522d",
+  silver: "c0c0c0",
+  skyblue: "87ceeb",
+  slateblue: "6a5acd",
+  slategray: "708090",
+  slategrey: "708090",
+  snow: "fffafa",
+  springgreen: "00ff7f",
+  steelblue: "4682b4",
+  tan: "d2b48c",
+  teal: "008080",
+  thistle: "d8bfd8",
+  tomato: "ff6347",
+  turquoise: "40e0d0",
+  violet: "ee82ee",
+  wheat: "f5deb3",
+  white: "fff",
+  whitesmoke: "f5f5f5",
+  yellow: "ff0",
+  yellowgreen: "9acd32"
+};
+
+// Make it easy to access colors via `hexNames[hex]`
+var hexNames = tinycolor.hexNames = flip(names);
+
+// Utilities
+// ---------
+
+// `{ 'name1': 'val1' }` becomes `{ 'val1': 'name1' }`
+function flip(o) {
+  var flipped = {};
+  for (var i in o) {
+    if (o.hasOwnProperty(i)) {
+      flipped[o[i]] = i;
+    }
+  }
+  return flipped;
+}
+
+// Return a valid alpha value [0,1] with all invalid values being set to 1
+function boundAlpha(a) {
+  a = parseFloat(a);
+  if (isNaN(a) || a < 0 || a > 1) {
+    a = 1;
+  }
+  return a;
+}
+
+// Take input from [0, n] and return it as [0, 1]
+function bound01(n, max) {
+  if (isOnePointZero(n)) n = "100%";
+  var processPercent = isPercentage(n);
+  n = Math.min(max, Math.max(0, parseFloat(n)));
+
+  // Automatically convert percentage into number
+  if (processPercent) {
+    n = parseInt(n * max, 10) / 100;
   }
 
-  // `hsvToRgb`
-  // Converts an HSV color value to RGB.
-  // *Assumes:* h is contained in [0, 1] or [0, 360] and s and v are contained in [0, 1] or [0, 100]
-  // *Returns:* { r, g, b } in the set [0, 255]
-  function hsvToRgb(h, s, v) {
-    h = bound01(h, 360) * 6;
-    s = bound01(s, 100);
-    v = bound01(v, 100);
-    var i = Math.floor(h),
-      f = h - i,
-      p = v * (1 - s),
-      q = v * (1 - f * s),
-      t = v * (1 - (1 - f) * s),
-      mod = i % 6,
-      r = [v, q, p, p, t, v][mod],
-      g = [t, v, v, q, p, p][mod],
-      b = [p, p, t, v, v, q][mod];
+  // Handle floating point rounding errors
+  if (Math.abs(n - max) < 0.000001) {
+    return 1;
+  }
+
+  // Convert into [0, 1] range if it isn't already
+  return n % max / parseFloat(max);
+}
+
+// Force a number between 0 and 1
+function clamp01(val) {
+  return Math.min(1, Math.max(0, val));
+}
+
+// Parse a base-16 hex value into a base-10 integer
+function parseIntFromHex(val) {
+  return parseInt(val, 16);
+}
+
+// Need to handle 1.0 as 100%, since once it is a number, there is no difference between it and 1
+// <http://stackoverflow.com/questions/7422072/javascript-how-to-detect-number-as-a-decimal-including-1-0>
+function isOnePointZero(n) {
+  return typeof n == "string" && n.indexOf(".") != -1 && parseFloat(n) === 1;
+}
+
+// Check to see if string passed in is a percentage
+function isPercentage(n) {
+  return typeof n === "string" && n.indexOf("%") != -1;
+}
+
+// Force a hex value to have 2 characters
+function pad2(c) {
+  return c.length == 1 ? "0" + c : "" + c;
+}
+
+// Replace a decimal with it's percentage value
+function convertToPercentage(n) {
+  if (n <= 1) {
+    n = n * 100 + "%";
+  }
+  return n;
+}
+
+// Converts a decimal to a hex value
+function convertDecimalToHex(d) {
+  return Math.round(parseFloat(d) * 255).toString(16);
+}
+// Converts a hex value to a decimal
+function convertHexToDecimal(h) {
+  return parseIntFromHex(h) / 255;
+}
+var matchers = function () {
+  // <http://www.w3.org/TR/css3-values/#integers>
+  var CSS_INTEGER = "[-\\+]?\\d+%?";
+
+  // <http://www.w3.org/TR/css3-values/#number-value>
+  var CSS_NUMBER = "[-\\+]?\\d*\\.\\d+%?";
+
+  // Allow positive/negative integer/number.  Don't capture the either/or, just the entire outcome.
+  var CSS_UNIT = "(?:" + CSS_NUMBER + ")|(?:" + CSS_INTEGER + ")";
+
+  // Actual matching.
+  // Parentheses and commas are optional, but not required.
+  // Whitespace can take the place of commas or opening paren
+  var PERMISSIVE_MATCH3 = "[\\s|\\(]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")\\s*\\)?";
+  var PERMISSIVE_MATCH4 = "[\\s|\\(]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")\\s*\\)?";
+  return {
+    CSS_UNIT: new RegExp(CSS_UNIT),
+    rgb: new RegExp("rgb" + PERMISSIVE_MATCH3),
+    rgba: new RegExp("rgba" + PERMISSIVE_MATCH4),
+    hsl: new RegExp("hsl" + PERMISSIVE_MATCH3),
+    hsla: new RegExp("hsla" + PERMISSIVE_MATCH4),
+    hsv: new RegExp("hsv" + PERMISSIVE_MATCH3),
+    hsva: new RegExp("hsva" + PERMISSIVE_MATCH4),
+    hex3: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
+    hex6: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/,
+    hex4: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
+    hex8: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/
+  };
+}();
+
+// `isValidCSSUnit`
+// Take in a single string / number and check to see if it looks like a CSS unit
+// (see `matchers` above for definition).
+function isValidCSSUnit(color) {
+  return !!matchers.CSS_UNIT.exec(color);
+}
+
+// `stringInputToObject`
+// Permissive string parsing.  Take in a number of formats, and output an object
+// based on detected format.  Returns `{ r, g, b }` or `{ h, s, l }` or `{ h, s, v}`
+function stringInputToObject(color) {
+  color = color.replace(trimLeft, "").replace(trimRight, "").toLowerCase();
+  var named = false;
+  if (names[color]) {
+    color = names[color];
+    named = true;
+  } else if (color == "transparent") {
     return {
-      r: r * 255,
-      g: g * 255,
-      b: b * 255
+      r: 0,
+      g: 0,
+      b: 0,
+      a: 0,
+      format: "name"
     };
   }
 
-  // `rgbToHex`
-  // Converts an RGB color to hex
-  // Assumes r, g, and b are contained in the set [0, 255]
-  // Returns a 3 or 6 character hex
-  function rgbToHex(r, g, b, allow3Char) {
-    var hex = [pad2(mathRound(r).toString(16)), pad2(mathRound(g).toString(16)), pad2(mathRound(b).toString(16))];
-
-    // Return a 3 character hex if possible
-    if (allow3Char && hex[0].charAt(0) == hex[0].charAt(1) && hex[1].charAt(0) == hex[1].charAt(1) && hex[2].charAt(0) == hex[2].charAt(1)) {
-      return hex[0].charAt(0) + hex[1].charAt(0) + hex[2].charAt(0);
-    }
-    return hex.join("");
-  }
-
-  // `rgbaToHex`
-  // Converts an RGBA color plus alpha transparency to hex
-  // Assumes r, g, b are contained in the set [0, 255] and
-  // a in [0, 1]. Returns a 4 or 8 character rgba hex
-  function rgbaToHex(r, g, b, a, allow4Char) {
-    var hex = [pad2(mathRound(r).toString(16)), pad2(mathRound(g).toString(16)), pad2(mathRound(b).toString(16)), pad2(convertDecimalToHex(a))];
-
-    // Return a 4 character hex if possible
-    if (allow4Char && hex[0].charAt(0) == hex[0].charAt(1) && hex[1].charAt(0) == hex[1].charAt(1) && hex[2].charAt(0) == hex[2].charAt(1) && hex[3].charAt(0) == hex[3].charAt(1)) {
-      return hex[0].charAt(0) + hex[1].charAt(0) + hex[2].charAt(0) + hex[3].charAt(0);
-    }
-    return hex.join("");
-  }
-
-  // `rgbaToArgbHex`
-  // Converts an RGBA color to an ARGB Hex8 string
-  // Rarely used, but required for "toFilter()"
-  function rgbaToArgbHex(r, g, b, a) {
-    var hex = [pad2(convertDecimalToHex(a)), pad2(mathRound(r).toString(16)), pad2(mathRound(g).toString(16)), pad2(mathRound(b).toString(16))];
-    return hex.join("");
-  }
-
-  // `equals`
-  // Can be called with any tinycolor input
-  tinycolor.equals = function (color1, color2) {
-    if (!color1 || !color2) {
-      return false;
-    }
-    return tinycolor(color1).toRgbString() == tinycolor(color2).toRgbString();
-  };
-  tinycolor.random = function () {
-    return tinycolor.fromRatio({
-      r: mathRandom(),
-      g: mathRandom(),
-      b: mathRandom()
-    });
-  };
-
-  // Modification Functions
-  // ----------------------
-  // Thanks to less.js for some of the basics here
-  // <https://github.com/cloudhead/less.js/blob/master/lib/less/functions.js>
-
-  function _desaturate(color, amount) {
-    amount = amount === 0 ? 0 : amount || 10;
-    var hsl = tinycolor(color).toHsl();
-    hsl.s -= amount / 100;
-    hsl.s = clamp01(hsl.s);
-    return tinycolor(hsl);
-  }
-  function _saturate(color, amount) {
-    amount = amount === 0 ? 0 : amount || 10;
-    var hsl = tinycolor(color).toHsl();
-    hsl.s += amount / 100;
-    hsl.s = clamp01(hsl.s);
-    return tinycolor(hsl);
-  }
-  function _greyscale(color) {
-    return tinycolor(color).desaturate(100);
-  }
-  function _lighten(color, amount) {
-    amount = amount === 0 ? 0 : amount || 10;
-    var hsl = tinycolor(color).toHsl();
-    hsl.l += amount / 100;
-    hsl.l = clamp01(hsl.l);
-    return tinycolor(hsl);
-  }
-  function _brighten(color, amount) {
-    amount = amount === 0 ? 0 : amount || 10;
-    var rgb = tinycolor(color).toRgb();
-    rgb.r = mathMax(0, mathMin(255, rgb.r - mathRound(255 * -(amount / 100))));
-    rgb.g = mathMax(0, mathMin(255, rgb.g - mathRound(255 * -(amount / 100))));
-    rgb.b = mathMax(0, mathMin(255, rgb.b - mathRound(255 * -(amount / 100))));
-    return tinycolor(rgb);
-  }
-  function _darken(color, amount) {
-    amount = amount === 0 ? 0 : amount || 10;
-    var hsl = tinycolor(color).toHsl();
-    hsl.l -= amount / 100;
-    hsl.l = clamp01(hsl.l);
-    return tinycolor(hsl);
-  }
-
-  // Spin takes a positive or negative amount within [-360, 360] indicating the change of hue.
-  // Values outside of this range will be wrapped into this range.
-  function _spin(color, amount) {
-    var hsl = tinycolor(color).toHsl();
-    var hue = (hsl.h + amount) % 360;
-    hsl.h = hue < 0 ? 360 + hue : hue;
-    return tinycolor(hsl);
-  }
-
-  // Combination Functions
-  // ---------------------
-  // Thanks to jQuery xColor for some of the ideas behind these
-  // <https://github.com/infusion/jQuery-xcolor/blob/master/jquery.xcolor.js>
-
-  function _complement(color) {
-    var hsl = tinycolor(color).toHsl();
-    hsl.h = (hsl.h + 180) % 360;
-    return tinycolor(hsl);
-  }
-  function _triad(color) {
-    var hsl = tinycolor(color).toHsl();
-    var h = hsl.h;
-    return [tinycolor(color), tinycolor({
-      h: (h + 120) % 360,
-      s: hsl.s,
-      l: hsl.l
-    }), tinycolor({
-      h: (h + 240) % 360,
-      s: hsl.s,
-      l: hsl.l
-    })];
-  }
-  function _tetrad(color) {
-    var hsl = tinycolor(color).toHsl();
-    var h = hsl.h;
-    return [tinycolor(color), tinycolor({
-      h: (h + 90) % 360,
-      s: hsl.s,
-      l: hsl.l
-    }), tinycolor({
-      h: (h + 180) % 360,
-      s: hsl.s,
-      l: hsl.l
-    }), tinycolor({
-      h: (h + 270) % 360,
-      s: hsl.s,
-      l: hsl.l
-    })];
-  }
-  function _splitcomplement(color) {
-    var hsl = tinycolor(color).toHsl();
-    var h = hsl.h;
-    return [tinycolor(color), tinycolor({
-      h: (h + 72) % 360,
-      s: hsl.s,
-      l: hsl.l
-    }), tinycolor({
-      h: (h + 216) % 360,
-      s: hsl.s,
-      l: hsl.l
-    })];
-  }
-  function _analogous(color, results, slices) {
-    results = results || 6;
-    slices = slices || 30;
-    var hsl = tinycolor(color).toHsl();
-    var part = 360 / slices;
-    var ret = [tinycolor(color)];
-    for (hsl.h = (hsl.h - (part * results >> 1) + 720) % 360; --results;) {
-      hsl.h = (hsl.h + part) % 360;
-      ret.push(tinycolor(hsl));
-    }
-    return ret;
-  }
-  function _monochromatic(color, results) {
-    results = results || 6;
-    var hsv = tinycolor(color).toHsv();
-    var h = hsv.h,
-      s = hsv.s,
-      v = hsv.v;
-    var ret = [];
-    var modification = 1 / results;
-    while (results--) {
-      ret.push(tinycolor({
-        h: h,
-        s: s,
-        v: v
-      }));
-      v = (v + modification) % 1;
-    }
-    return ret;
-  }
-
-  // Utility Functions
-  // ---------------------
-
-  tinycolor.mix = function (color1, color2, amount) {
-    amount = amount === 0 ? 0 : amount || 50;
-    var rgb1 = tinycolor(color1).toRgb();
-    var rgb2 = tinycolor(color2).toRgb();
-    var p = amount / 100;
-    var rgba = {
-      r: (rgb2.r - rgb1.r) * p + rgb1.r,
-      g: (rgb2.g - rgb1.g) * p + rgb1.g,
-      b: (rgb2.b - rgb1.b) * p + rgb1.b,
-      a: (rgb2.a - rgb1.a) * p + rgb1.a
-    };
-    return tinycolor(rgba);
-  };
-
-  // Readability Functions
-  // ---------------------
-  // <http://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef (WCAG Version 2)
-
-  // `contrast`
-  // Analyze the 2 colors and returns the color contrast defined by (WCAG Version 2)
-  tinycolor.readability = function (color1, color2) {
-    var c1 = tinycolor(color1);
-    var c2 = tinycolor(color2);
-    return (Math.max(c1.getLuminance(), c2.getLuminance()) + 0.05) / (Math.min(c1.getLuminance(), c2.getLuminance()) + 0.05);
-  };
-
-  // `isReadable`
-  // Ensure that foreground and background color combinations meet WCAG2 guidelines.
-  // The third argument is an optional Object.
-  //      the 'level' property states 'AA' or 'AAA' - if missing or invalid, it defaults to 'AA';
-  //      the 'size' property states 'large' or 'small' - if missing or invalid, it defaults to 'small'.
-  // If the entire object is absent, isReadable defaults to {level:"AA",size:"small"}.
-
-  // *Example*
-  //    tinycolor.isReadable("#000", "#111") => false
-  //    tinycolor.isReadable("#000", "#111",{level:"AA",size:"large"}) => false
-  tinycolor.isReadable = function (color1, color2, wcag2) {
-    var readability = tinycolor.readability(color1, color2);
-    var wcag2Parms, out;
-    out = false;
-    wcag2Parms = validateWCAG2Parms(wcag2);
-    switch (wcag2Parms.level + wcag2Parms.size) {
-      case "AAsmall":
-      case "AAAlarge":
-        out = readability >= 4.5;
-        break;
-      case "AAlarge":
-        out = readability >= 3;
-        break;
-      case "AAAsmall":
-        out = readability >= 7;
-        break;
-    }
-    return out;
-  };
-
-  // `mostReadable`
-  // Given a base color and a list of possible foreground or background
-  // colors for that base, returns the most readable color.
-  // Optionally returns Black or White if the most readable color is unreadable.
-  // *Example*
-  //    tinycolor.mostReadable(tinycolor.mostReadable("#123", ["#124", "#125"],{includeFallbackColors:false}).toHexString(); // "#112255"
-  //    tinycolor.mostReadable(tinycolor.mostReadable("#123", ["#124", "#125"],{includeFallbackColors:true}).toHexString();  // "#ffffff"
-  //    tinycolor.mostReadable("#a8015a", ["#faf3f3"],{includeFallbackColors:true,level:"AAA",size:"large"}).toHexString(); // "#faf3f3"
-  //    tinycolor.mostReadable("#a8015a", ["#faf3f3"],{includeFallbackColors:true,level:"AAA",size:"small"}).toHexString(); // "#ffffff"
-  tinycolor.mostReadable = function (baseColor, colorList, args) {
-    var bestColor = null;
-    var bestScore = 0;
-    var readability;
-    var includeFallbackColors, level, size;
-    args = args || {};
-    includeFallbackColors = args.includeFallbackColors;
-    level = args.level;
-    size = args.size;
-    for (var i = 0; i < colorList.length; i++) {
-      readability = tinycolor.readability(baseColor, colorList[i]);
-      if (readability > bestScore) {
-        bestScore = readability;
-        bestColor = tinycolor(colorList[i]);
-      }
-    }
-    if (tinycolor.isReadable(baseColor, bestColor, {
-      "level": level,
-      "size": size
-    }) || !includeFallbackColors) {
-      return bestColor;
-    } else {
-      args.includeFallbackColors = false;
-      return tinycolor.mostReadable(baseColor, ["#fff", "#000"], args);
-    }
-  };
-
-  // Big List of Colors
-  // ------------------
-  // <http://www.w3.org/TR/css3-color/#svg-color>
-  var names = tinycolor.names = {
-    aliceblue: "f0f8ff",
-    antiquewhite: "faebd7",
-    aqua: "0ff",
-    aquamarine: "7fffd4",
-    azure: "f0ffff",
-    beige: "f5f5dc",
-    bisque: "ffe4c4",
-    black: "000",
-    blanchedalmond: "ffebcd",
-    blue: "00f",
-    blueviolet: "8a2be2",
-    brown: "a52a2a",
-    burlywood: "deb887",
-    burntsienna: "ea7e5d",
-    cadetblue: "5f9ea0",
-    chartreuse: "7fff00",
-    chocolate: "d2691e",
-    coral: "ff7f50",
-    cornflowerblue: "6495ed",
-    cornsilk: "fff8dc",
-    crimson: "dc143c",
-    cyan: "0ff",
-    darkblue: "00008b",
-    darkcyan: "008b8b",
-    darkgoldenrod: "b8860b",
-    darkgray: "a9a9a9",
-    darkgreen: "006400",
-    darkgrey: "a9a9a9",
-    darkkhaki: "bdb76b",
-    darkmagenta: "8b008b",
-    darkolivegreen: "556b2f",
-    darkorange: "ff8c00",
-    darkorchid: "9932cc",
-    darkred: "8b0000",
-    darksalmon: "e9967a",
-    darkseagreen: "8fbc8f",
-    darkslateblue: "483d8b",
-    darkslategray: "2f4f4f",
-    darkslategrey: "2f4f4f",
-    darkturquoise: "00ced1",
-    darkviolet: "9400d3",
-    deeppink: "ff1493",
-    deepskyblue: "00bfff",
-    dimgray: "696969",
-    dimgrey: "696969",
-    dodgerblue: "1e90ff",
-    firebrick: "b22222",
-    floralwhite: "fffaf0",
-    forestgreen: "228b22",
-    fuchsia: "f0f",
-    gainsboro: "dcdcdc",
-    ghostwhite: "f8f8ff",
-    gold: "ffd700",
-    goldenrod: "daa520",
-    gray: "808080",
-    green: "008000",
-    greenyellow: "adff2f",
-    grey: "808080",
-    honeydew: "f0fff0",
-    hotpink: "ff69b4",
-    indianred: "cd5c5c",
-    indigo: "4b0082",
-    ivory: "fffff0",
-    khaki: "f0e68c",
-    lavender: "e6e6fa",
-    lavenderblush: "fff0f5",
-    lawngreen: "7cfc00",
-    lemonchiffon: "fffacd",
-    lightblue: "add8e6",
-    lightcoral: "f08080",
-    lightcyan: "e0ffff",
-    lightgoldenrodyellow: "fafad2",
-    lightgray: "d3d3d3",
-    lightgreen: "90ee90",
-    lightgrey: "d3d3d3",
-    lightpink: "ffb6c1",
-    lightsalmon: "ffa07a",
-    lightseagreen: "20b2aa",
-    lightskyblue: "87cefa",
-    lightslategray: "789",
-    lightslategrey: "789",
-    lightsteelblue: "b0c4de",
-    lightyellow: "ffffe0",
-    lime: "0f0",
-    limegreen: "32cd32",
-    linen: "faf0e6",
-    magenta: "f0f",
-    maroon: "800000",
-    mediumaquamarine: "66cdaa",
-    mediumblue: "0000cd",
-    mediumorchid: "ba55d3",
-    mediumpurple: "9370db",
-    mediumseagreen: "3cb371",
-    mediumslateblue: "7b68ee",
-    mediumspringgreen: "00fa9a",
-    mediumturquoise: "48d1cc",
-    mediumvioletred: "c71585",
-    midnightblue: "191970",
-    mintcream: "f5fffa",
-    mistyrose: "ffe4e1",
-    moccasin: "ffe4b5",
-    navajowhite: "ffdead",
-    navy: "000080",
-    oldlace: "fdf5e6",
-    olive: "808000",
-    olivedrab: "6b8e23",
-    orange: "ffa500",
-    orangered: "ff4500",
-    orchid: "da70d6",
-    palegoldenrod: "eee8aa",
-    palegreen: "98fb98",
-    paleturquoise: "afeeee",
-    palevioletred: "db7093",
-    papayawhip: "ffefd5",
-    peachpuff: "ffdab9",
-    peru: "cd853f",
-    pink: "ffc0cb",
-    plum: "dda0dd",
-    powderblue: "b0e0e6",
-    purple: "800080",
-    rebeccapurple: "663399",
-    red: "f00",
-    rosybrown: "bc8f8f",
-    royalblue: "4169e1",
-    saddlebrown: "8b4513",
-    salmon: "fa8072",
-    sandybrown: "f4a460",
-    seagreen: "2e8b57",
-    seashell: "fff5ee",
-    sienna: "a0522d",
-    silver: "c0c0c0",
-    skyblue: "87ceeb",
-    slateblue: "6a5acd",
-    slategray: "708090",
-    slategrey: "708090",
-    snow: "fffafa",
-    springgreen: "00ff7f",
-    steelblue: "4682b4",
-    tan: "d2b48c",
-    teal: "008080",
-    thistle: "d8bfd8",
-    tomato: "ff6347",
-    turquoise: "40e0d0",
-    violet: "ee82ee",
-    wheat: "f5deb3",
-    white: "fff",
-    whitesmoke: "f5f5f5",
-    yellow: "ff0",
-    yellowgreen: "9acd32"
-  };
-
-  // Make it easy to access colors via `hexNames[hex]`
-  var hexNames = tinycolor.hexNames = flip(names);
-
-  // Utilities
-  // ---------
-
-  // `{ 'name1': 'val1' }` becomes `{ 'val1': 'name1' }`
-  function flip(o) {
-    var flipped = {};
-    for (var i in o) {
-      if (o.hasOwnProperty(i)) {
-        flipped[o[i]] = i;
-      }
-    }
-    return flipped;
-  }
-
-  // Return a valid alpha value [0,1] with all invalid values being set to 1
-  function boundAlpha(a) {
-    a = parseFloat(a);
-    if (isNaN(a) || a < 0 || a > 1) {
-      a = 1;
-    }
-    return a;
-  }
-
-  // Take input from [0, n] and return it as [0, 1]
-  function bound01(n, max) {
-    if (isOnePointZero(n)) {
-      n = "100%";
-    }
-    var processPercent = isPercentage(n);
-    n = mathMin(max, mathMax(0, parseFloat(n)));
-
-    // Automatically convert percentage into number
-    if (processPercent) {
-      n = parseInt(n * max, 10) / 100;
-    }
-
-    // Handle floating point rounding errors
-    if (Math.abs(n - max) < 0.000001) {
-      return 1;
-    }
-
-    // Convert into [0, 1] range if it isn't already
-    return n % max / parseFloat(max);
-  }
-
-  // Force a number between 0 and 1
-  function clamp01(val) {
-    return mathMin(1, mathMax(0, val));
-  }
-
-  // Parse a base-16 hex value into a base-10 integer
-  function parseIntFromHex(val) {
-    return parseInt(val, 16);
-  }
-
-  // Need to handle 1.0 as 100%, since once it is a number, there is no difference between it and 1
-  // <http://stackoverflow.com/questions/7422072/javascript-how-to-detect-number-as-a-decimal-including-1-0>
-  function isOnePointZero(n) {
-    return typeof n == "string" && n.indexOf('.') != -1 && parseFloat(n) === 1;
-  }
-
-  // Check to see if string passed in is a percentage
-  function isPercentage(n) {
-    return typeof n === "string" && n.indexOf('%') != -1;
-  }
-
-  // Force a hex value to have 2 characters
-  function pad2(c) {
-    return c.length == 1 ? '0' + c : '' + c;
-  }
-
-  // Replace a decimal with it's percentage value
-  function convertToPercentage(n) {
-    if (n <= 1) {
-      n = n * 100 + "%";
-    }
-    return n;
-  }
-
-  // Converts a decimal to a hex value
-  function convertDecimalToHex(d) {
-    return Math.round(parseFloat(d) * 255).toString(16);
-  }
-  // Converts a hex value to a decimal
-  function convertHexToDecimal(h) {
-    return parseIntFromHex(h) / 255;
-  }
-  var matchers = function () {
-    // <http://www.w3.org/TR/css3-values/#integers>
-    var CSS_INTEGER = "[-\\+]?\\d+%?";
-
-    // <http://www.w3.org/TR/css3-values/#number-value>
-    var CSS_NUMBER = "[-\\+]?\\d*\\.\\d+%?";
-
-    // Allow positive/negative integer/number.  Don't capture the either/or, just the entire outcome.
-    var CSS_UNIT = "(?:" + CSS_NUMBER + ")|(?:" + CSS_INTEGER + ")";
-
-    // Actual matching.
-    // Parentheses and commas are optional, but not required.
-    // Whitespace can take the place of commas or opening paren
-    var PERMISSIVE_MATCH3 = "[\\s|\\(]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")\\s*\\)?";
-    var PERMISSIVE_MATCH4 = "[\\s|\\(]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")\\s*\\)?";
+  // Try to match string input using regular expressions.
+  // Keep most of the number bounding out of this function - don't worry about [0,1] or [0,100] or [0,360]
+  // Just return an object and let the conversion functions handle that.
+  // This way the result will be the same whether the tinycolor is initialized with string or object.
+  var match;
+  if (match = matchers.rgb.exec(color)) {
     return {
-      CSS_UNIT: new RegExp(CSS_UNIT),
-      rgb: new RegExp("rgb" + PERMISSIVE_MATCH3),
-      rgba: new RegExp("rgba" + PERMISSIVE_MATCH4),
-      hsl: new RegExp("hsl" + PERMISSIVE_MATCH3),
-      hsla: new RegExp("hsla" + PERMISSIVE_MATCH4),
-      hsv: new RegExp("hsv" + PERMISSIVE_MATCH3),
-      hsva: new RegExp("hsva" + PERMISSIVE_MATCH4),
-      hex3: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
-      hex6: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/,
-      hex4: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
-      hex8: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/
+      r: match[1],
+      g: match[2],
+      b: match[3]
     };
-  }();
-
-  // `isValidCSSUnit`
-  // Take in a single string / number and check to see if it looks like a CSS unit
-  // (see `matchers` above for definition).
-  function isValidCSSUnit(color) {
-    return !!matchers.CSS_UNIT.exec(color);
   }
-
-  // `stringInputToObject`
-  // Permissive string parsing.  Take in a number of formats, and output an object
-  // based on detected format.  Returns `{ r, g, b }` or `{ h, s, l }` or `{ h, s, v}`
-  function stringInputToObject(color) {
-    color = color.replace(trimLeft, '').replace(trimRight, '').toLowerCase();
-    var named = false;
-    if (names[color]) {
-      color = names[color];
-      named = true;
-    } else if (color == 'transparent') {
-      return {
-        r: 0,
-        g: 0,
-        b: 0,
-        a: 0,
-        format: "name"
-      };
-    }
-
-    // Try to match string input using regular expressions.
-    // Keep most of the number bounding out of this function - don't worry about [0,1] or [0,100] or [0,360]
-    // Just return an object and let the conversion functions handle that.
-    // This way the result will be the same whether the tinycolor is initialized with string or object.
-    var match;
-    if (match = matchers.rgb.exec(color)) {
-      return {
-        r: match[1],
-        g: match[2],
-        b: match[3]
-      };
-    }
-    if (match = matchers.rgba.exec(color)) {
-      return {
-        r: match[1],
-        g: match[2],
-        b: match[3],
-        a: match[4]
-      };
-    }
-    if (match = matchers.hsl.exec(color)) {
-      return {
-        h: match[1],
-        s: match[2],
-        l: match[3]
-      };
-    }
-    if (match = matchers.hsla.exec(color)) {
-      return {
-        h: match[1],
-        s: match[2],
-        l: match[3],
-        a: match[4]
-      };
-    }
-    if (match = matchers.hsv.exec(color)) {
-      return {
-        h: match[1],
-        s: match[2],
-        v: match[3]
-      };
-    }
-    if (match = matchers.hsva.exec(color)) {
-      return {
-        h: match[1],
-        s: match[2],
-        v: match[3],
-        a: match[4]
-      };
-    }
-    if (match = matchers.hex8.exec(color)) {
-      return {
-        r: parseIntFromHex(match[1]),
-        g: parseIntFromHex(match[2]),
-        b: parseIntFromHex(match[3]),
-        a: convertHexToDecimal(match[4]),
-        format: named ? "name" : "hex8"
-      };
-    }
-    if (match = matchers.hex6.exec(color)) {
-      return {
-        r: parseIntFromHex(match[1]),
-        g: parseIntFromHex(match[2]),
-        b: parseIntFromHex(match[3]),
-        format: named ? "name" : "hex"
-      };
-    }
-    if (match = matchers.hex4.exec(color)) {
-      return {
-        r: parseIntFromHex(match[1] + '' + match[1]),
-        g: parseIntFromHex(match[2] + '' + match[2]),
-        b: parseIntFromHex(match[3] + '' + match[3]),
-        a: convertHexToDecimal(match[4] + '' + match[4]),
-        format: named ? "name" : "hex8"
-      };
-    }
-    if (match = matchers.hex3.exec(color)) {
-      return {
-        r: parseIntFromHex(match[1] + '' + match[1]),
-        g: parseIntFromHex(match[2] + '' + match[2]),
-        b: parseIntFromHex(match[3] + '' + match[3]),
-        format: named ? "name" : "hex"
-      };
-    }
-    return false;
-  }
-  function validateWCAG2Parms(parms) {
-    // return valid WCAG2 parms for isReadable.
-    // If input parms are invalid, return {"level":"AA", "size":"small"}
-    var level, size;
-    parms = parms || {
-      "level": "AA",
-      "size": "small"
-    };
-    level = (parms.level || "AA").toUpperCase();
-    size = (parms.size || "small").toLowerCase();
-    if (level !== "AA" && level !== "AAA") {
-      level = "AA";
-    }
-    if (size !== "small" && size !== "large") {
-      size = "small";
-    }
+  if (match = matchers.rgba.exec(color)) {
     return {
-      "level": level,
-      "size": size
+      r: match[1],
+      g: match[2],
+      b: match[3],
+      a: match[4]
     };
   }
-
-  /*// Node: Export function
-  if (typeof module !== "undefined" && module.exports) {
-      module.exports = tinycolor;
+  if (match = matchers.hsl.exec(color)) {
+    return {
+      h: match[1],
+      s: match[2],
+      l: match[3]
+    };
   }
-  // AMD/requirejs: Define the module
-  else if (typeof define === 'function' && define.amd) {
-      define(function () {return tinycolor;});
+  if (match = matchers.hsla.exec(color)) {
+    return {
+      h: match[1],
+      s: match[2],
+      l: match[3],
+      a: match[4]
+    };
   }
-  // Browser: Expose to window
-  else {
-      window.tinycolor = tinycolor;
-  }*/
-
-  return tinycolor;
-}(Math);
-/* harmony default export */ __webpack_exports__["default"] = (tinycolor);
+  if (match = matchers.hsv.exec(color)) {
+    return {
+      h: match[1],
+      s: match[2],
+      v: match[3]
+    };
+  }
+  if (match = matchers.hsva.exec(color)) {
+    return {
+      h: match[1],
+      s: match[2],
+      v: match[3],
+      a: match[4]
+    };
+  }
+  if (match = matchers.hex8.exec(color)) {
+    return {
+      r: parseIntFromHex(match[1]),
+      g: parseIntFromHex(match[2]),
+      b: parseIntFromHex(match[3]),
+      a: convertHexToDecimal(match[4]),
+      format: named ? "name" : "hex8"
+    };
+  }
+  if (match = matchers.hex6.exec(color)) {
+    return {
+      r: parseIntFromHex(match[1]),
+      g: parseIntFromHex(match[2]),
+      b: parseIntFromHex(match[3]),
+      format: named ? "name" : "hex"
+    };
+  }
+  if (match = matchers.hex4.exec(color)) {
+    return {
+      r: parseIntFromHex(match[1] + "" + match[1]),
+      g: parseIntFromHex(match[2] + "" + match[2]),
+      b: parseIntFromHex(match[3] + "" + match[3]),
+      a: convertHexToDecimal(match[4] + "" + match[4]),
+      format: named ? "name" : "hex8"
+    };
+  }
+  if (match = matchers.hex3.exec(color)) {
+    return {
+      r: parseIntFromHex(match[1] + "" + match[1]),
+      g: parseIntFromHex(match[2] + "" + match[2]),
+      b: parseIntFromHex(match[3] + "" + match[3]),
+      format: named ? "name" : "hex"
+    };
+  }
+  return false;
+}
+function validateWCAG2Parms(parms) {
+  // return valid WCAG2 parms for isReadable.
+  // If input parms are invalid, return {"level":"AA", "size":"small"}
+  var level, size;
+  parms = parms || {
+    level: "AA",
+    size: "small"
+  };
+  level = (parms.level || "AA").toUpperCase();
+  size = (parms.size || "small").toLowerCase();
+  if (level !== "AA" && level !== "AAA") {
+    level = "AA";
+  }
+  if (size !== "small" && size !== "large") {
+    size = "small";
+  }
+  return {
+    level: level,
+    size: size
+  };
+}
 
 /***/ })
 

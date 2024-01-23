@@ -12,7 +12,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".pause-btn {\n  width: 2rem;\n  height: 2rem;\n  padding: 0.375rem;\n  border-radius: 0.25rem;\n  user-select: none;\n  user-drag: none;\n  cursor: pointer;\n}\n\n.pause-btn:hover {\n  background-color: hsla(0, 100%, 65%, 0.15);\n}\n", ""]);
+exports.push([module.i, ".pause-btn {\n  width: 2rem;\n  height: 2rem;\n  padding: 0.375rem;\n  border-radius: 0.25rem;\n  user-select: none;\n  user-drag: none;\n  cursor: pointer;\n}\n\n.pause-btn:hover {\n  background-color: var(--looks-light-transparent);\n}\n", ""]);
 
 // exports
 
@@ -31,7 +31,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".modal_modal-content_fN1pD {\n  background-color: white;\n  color: #575e75;\n}\n[theme=\"dark\"] .modal_modal-content_fN1pD {\n  background-color: var(--ui-primary);\n  color: var(--text-primary);\n}\n", ""]);
+exports.push([module.i, ".modal_modal-content_fN1pD {\n  background-color: var(--ui-modal-background);\n  color: var(--ui-modal-foreground);\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -89,10 +89,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-// This list is a subset of `addons` and defines the order by which addon CSS should
-// applied in. Items later in this list are given higher precedence. Addons not listed
-// here are implied to have the lowest possible precedence.
-const addonPrecedence = ['columns', 'editor-stage-left', 'editor-theme3'];
+// This list is a subset of all addon IDs to control the order of userstyles.
+// The last item in the list is given the highest precedence (last in the DOM).
+// If an addon isn't listed here, it's interpreted to have lowest precedence and
+// that its order with other unlisted addons does not matter.
+const addonPrecedence = ['columns', 'editor-stage-left', 'editor-theme3', 'hide-stage'];
 
 /**
  * @param {string} addonId The addon ID
@@ -107,10 +108,10 @@ const getPrecedence = addonId => addonPrecedence.indexOf(addonId) + 1;
 /*!****************************************!*\
   !*** ./src/addons/addons-l10n/en.json ***!
   \****************************************/
-/*! exports provided: editor-devtools/clean-plus, editor-devtools/copy-all, editor-devtools/copy-block, editor-devtools/cut-block, editor-devtools/lists, editor-devtools/make-space, editor-devtools/orphaned, editor-devtools/paste, editor-devtools/replace, editor-devtools/swap, editor-devtools/unused-list, editor-devtools/unused-var, editor-devtools/var-not-exist, editor-devtools/variables, find-bar/complex-broadcast, find-bar/find-placeholder, middle-click-popup/start-typing, editor-searchable-dropdowns/createBroadcast, editor-searchable-dropdowns/createGlobalList, editor-searchable-dropdowns/createGlobalVariable, editor-searchable-dropdowns/createLocalList, editor-searchable-dropdowns/createLocalVariable, data-category-tweaks-v2/for-all-sprites, data-category-tweaks-v2/for-this-sprite-only, data-category-tweaks-v2/list-category, hide-flyout/lock, hide-flyout/unlock, mediarecorder/cancel, mediarecorder/click-flag, mediarecorder/click-flag-description, mediarecorder/option-title, mediarecorder/record, mediarecorder/record-after-flag, mediarecorder/record-audio, mediarecorder/record-audio-description, mediarecorder/record-description, mediarecorder/record-duration, mediarecorder/record-mic, mediarecorder/record-until-stop, mediarecorder/record-until-stop-disabled, mediarecorder/start, mediarecorder/start-delay, mediarecorder/starting-in, mediarecorder/stop, debugger/block-breakpoint, debugger/block-error, debugger/block-log, debugger/block-warn, debugger/cannot-pause-player, debugger/clear, debugger/clone-of, debugger/close, debugger/console, debugger/debug, debugger/empty-string, debugger/enter-format, debugger/export, debugger/export-desc, debugger/icon-error, debugger/icon-warn, debugger/log-msg-broadcasted, debugger/log-msg-clone-cap, debugger/log-msg-clone-created, debugger/log-msg-flag-clicked, debugger/no-logs, debugger/no-threads-running, debugger/step, debugger/step-desc, debugger/tab-logs, debugger/tab-threads, debugger/thread, debugger/unknown-sprite, debugger/unpause, pause/pause, clones/clones, color-picker/hex, remove-sprite-confirm/confirm, block-count/blocks, onion-skinning/behind, onion-skinning/front, onion-skinning/layering, onion-skinning/merge, onion-skinning/mode, onion-skinning/next, onion-skinning/opacity, onion-skinning/opacityStep, onion-skinning/previous, onion-skinning/settings, onion-skinning/tint, onion-skinning/toggle, paint-snap/boxCenter, paint-snap/boxCorners, paint-snap/boxEdgeMids, paint-snap/objectCenters, paint-snap/objectCorners, paint-snap/objectEdges, paint-snap/objectMidlines, paint-snap/off, paint-snap/on, paint-snap/pageAxes, paint-snap/pageCenter, paint-snap/pageCorners, paint-snap/pageEdges, paint-snap/settings, paint-snap/snapFrom, paint-snap/snapTo, paint-snap/threshold, paint-snap/toggle, 2d-color-picker/shade, better-img-uploads/upload, variable-manager/for-all-sprites, variable-manager/for-this-sprite, variable-manager/search, variable-manager/too-big, variable-manager/variables, search-sprites/placeholder, sprite-properties/close-properties-panel-tooltip, sprite-properties/open-properties-panel-tooltip, gamepad/axes-a-b, gamepad/axis-arrows, gamepad/axis-cursor, gamepad/axis-custom, gamepad/axis-none, gamepad/browser-support, gamepad/button-n, gamepad/clear, gamepad/config-header, gamepad/key-click, gamepad/key-down, gamepad/key-enter, gamepad/key-left, gamepad/key-none, gamepad/key-right, gamepad/key-space, gamepad/key-up, gamepad/keyinput-title, gamepad/no-controllers, gamepad/reset, gamepad/settings, gamepad/store-in-project, folders/add-to-folder, folders/closed-folder, folders/confirm-backpack-folder, folders/create-folder, folders/name-not-allowed, folders/name-prompt, folders/name-prompt-title, folders/open-folder, folders/remove-folder, folders/remove-from-folder, folders/rename-folder, folders/rename-folder-prompt, folders/rename-folder-prompt-title, block-switching/control_forever, block-switching/control_if, block-switching/control_if_else, block-switching/control_repeat_until, block-switching/control_wait_until, block-switching/data_changevariableby, block-switching/data_deletealloflist, block-switching/data_deleteoflist, block-switching/data_hidelist, block-switching/data_hidevariable, block-switching/data_insertatlist, block-switching/data_replaceitemoflist, block-switching/data_setvariableto, block-switching/data_showlist, block-switching/data_showvariable, block-switching/debugger_error, block-switching/debugger_log, block-switching/debugger_warn, block-switching/event_broadcast, block-switching/event_broadcastandwait, block-switching/looks_backdropnumbername, block-switching/looks_changeeffectby, block-switching/looks_changesizeby, block-switching/looks_costumenumbername, block-switching/looks_goforwardbackwardlayers, block-switching/looks_gotofrontback, block-switching/looks_hide, block-switching/looks_nextbackdrop, block-switching/looks_nextcostume, block-switching/looks_say, block-switching/looks_sayforsecs, block-switching/looks_seteffectto, block-switching/looks_setsizeto, block-switching/looks_show, block-switching/looks_switchbackdropto, block-switching/looks_switchbackdroptoandwait, block-switching/looks_think, block-switching/looks_thinkforsecs, block-switching/motion_changexby, block-switching/motion_changeyby, block-switching/motion_setx, block-switching/motion_sety, block-switching/motion_turnleft, block-switching/motion_turnright, block-switching/motion_xposition, block-switching/motion_yposition, block-switching/music_changeTempo, block-switching/music_setTempo, block-switching/operator_add, block-switching/operator_and, block-switching/operator_divide, block-switching/operator_equals, block-switching/operator_gt, block-switching/operator_lt, block-switching/operator_mod, block-switching/operator_multiply, block-switching/operator_or, block-switching/operator_subtract, block-switching/pen_changePenColorParamBy, block-switching/pen_changePenHueBy, block-switching/pen_changePenShadeBy, block-switching/pen_changePenSizeBy, block-switching/pen_penDown, block-switching/pen_penUp, block-switching/pen_setPenColorParamTo, block-switching/pen_setPenHueToNumber, block-switching/pen_setPenShadeToNumber, block-switching/pen_setPenSizeTo, block-switching/sensing_coloristouchingcolor, block-switching/sensing_mousex, block-switching/sensing_mousey, block-switching/sensing_touchingcolor, block-switching/sound_changeeffectby, block-switching/sound_changevolumeby, block-switching/sound_play, block-switching/sound_playuntildone, block-switching/sound_seteffectto, block-switching/sound_setvolumeto, blocks2image/error_blocks_not_added, blocks2image/export_all_to_PNG, blocks2image/export_all_to_SVG, blocks2image/export_selected_to_PNG, blocks2image/export_selected_to_SVG, editor-extra-keys/enter-key, move-to-top-bottom/bottom, move-to-top-bottom/top, rename-broadcasts/RENAME_BROADCAST, rename-broadcasts/RENAME_BROADCAST_MODAL_TITLE, rename-broadcasts/RENAME_BROADCAST_TITLE, swap-local-global/cant-convert-cloud, swap-local-global/cant-convert-conflict, swap-local-global/cant-convert-stage, swap-local-global/cant-convert-to-local, swap-local-global/cant-convert-used-elsewhere, swap-local-global/edit, swap-local-global/edit-list-header, swap-local-global/edit-list-option, swap-local-global/edit-variable-header, swap-local-global/edit-variable-option, swap-local-global/to-global, swap-local-global/to-local, hide-stage/hide-stage, default */
+/*! exports provided: _general/blocks/anticlockwise, _general/blocks/clockwise, _general/blocks/green-flag, editor-devtools/clean-plus, editor-devtools/copy-all, editor-devtools/copy-block, editor-devtools/cut-block, editor-devtools/lists, editor-devtools/make-space, editor-devtools/orphaned, editor-devtools/paste, editor-devtools/replace, editor-devtools/swap, editor-devtools/unused-list, editor-devtools/unused-var, editor-devtools/var-not-exist, editor-devtools/variables, find-bar/complex-broadcast, find-bar/event, find-bar/find-placeholder, find-bar/list-global, find-bar/list-local, find-bar/var-global, find-bar/var-local, middle-click-popup/start-typing, editor-searchable-dropdowns/createBroadcast, editor-searchable-dropdowns/createGlobalList, editor-searchable-dropdowns/createGlobalVariable, editor-searchable-dropdowns/createLocalList, editor-searchable-dropdowns/createLocalVariable, data-category-tweaks-v2/for-all-sprites, data-category-tweaks-v2/for-this-sprite-only, data-category-tweaks-v2/list-category, hide-flyout/lock, hide-flyout/unlock, mediarecorder/cancel, mediarecorder/click-flag, mediarecorder/click-flag-description, mediarecorder/option-title, mediarecorder/record, mediarecorder/record-after-flag, mediarecorder/record-audio, mediarecorder/record-audio-description, mediarecorder/record-description, mediarecorder/record-duration, mediarecorder/record-mic, mediarecorder/record-until-stop, mediarecorder/record-until-stop-disabled, mediarecorder/start, mediarecorder/start-delay, mediarecorder/starting-in, mediarecorder/stop, debugger/block-breakpoint, debugger/block-error, debugger/block-log, debugger/block-warn, debugger/cannot-pause-player, debugger/clear, debugger/clone-of, debugger/close, debugger/console, debugger/debug, debugger/empty-string, debugger/enter-format, debugger/export, debugger/export-desc, debugger/icon-error, debugger/icon-warn, debugger/log-msg-broadcasted, debugger/log-msg-clone-cap, debugger/log-msg-clone-created, debugger/log-msg-flag-clicked, debugger/no-logs, debugger/no-threads-running, debugger/step, debugger/step-desc, debugger/tab-logs, debugger/tab-threads, debugger/thread, debugger/unknown-sprite, debugger/unpause, pause/pause, pause/play, clones/clones, color-picker/hex, remove-sprite-confirm/confirm, block-count/blocks, onion-skinning/behind, onion-skinning/front, onion-skinning/layering, onion-skinning/merge, onion-skinning/mode, onion-skinning/next, onion-skinning/opacity, onion-skinning/opacityStep, onion-skinning/previous, onion-skinning/settings, onion-skinning/tint, onion-skinning/toggle, paint-snap/boxCenter, paint-snap/boxCorners, paint-snap/boxEdgeMids, paint-snap/objectCenters, paint-snap/objectCorners, paint-snap/objectEdges, paint-snap/objectMidlines, paint-snap/off, paint-snap/on, paint-snap/pageAxes, paint-snap/pageCenter, paint-snap/pageCorners, paint-snap/pageEdges, paint-snap/settings, paint-snap/snapFrom, paint-snap/snapTo, paint-snap/threshold, paint-snap/toggle, 2d-color-picker/shade, better-img-uploads/upload, variable-manager/for-all-sprites, variable-manager/for-this-sprite, variable-manager/search, variable-manager/too-big, variable-manager/variables, search-sprites/placeholder, sprite-properties/close-properties-panel-tooltip, sprite-properties/open-properties-panel-tooltip, gamepad/axes-a-b, gamepad/axis-arrows, gamepad/axis-cursor, gamepad/axis-custom, gamepad/axis-none, gamepad/browser-support, gamepad/button-n, gamepad/clear, gamepad/config-header, gamepad/key-click, gamepad/key-down, gamepad/key-enter, gamepad/key-left, gamepad/key-none, gamepad/key-right, gamepad/key-space, gamepad/key-up, gamepad/keyinput-title, gamepad/no-controllers, gamepad/reset, gamepad/settings, gamepad/store-in-project, folders/add-to-folder, folders/closed-folder, folders/confirm-backpack-folder, folders/create-folder, folders/name-not-allowed, folders/name-prompt, folders/name-prompt-title, folders/open-folder, folders/remove-folder, folders/remove-from-folder, folders/rename-folder, folders/rename-folder-prompt, folders/rename-folder-prompt-title, block-switching/control_forever, block-switching/control_if, block-switching/control_if_else, block-switching/control_repeat_until, block-switching/control_wait_until, block-switching/data_changevariableby, block-switching/data_deletealloflist, block-switching/data_deleteoflist, block-switching/data_hidelist, block-switching/data_hidevariable, block-switching/data_insertatlist, block-switching/data_replaceitemoflist, block-switching/data_setvariableto, block-switching/data_showlist, block-switching/data_showvariable, block-switching/debugger_error, block-switching/debugger_log, block-switching/debugger_warn, block-switching/event_broadcast, block-switching/event_broadcastandwait, block-switching/looks_backdropnumbername, block-switching/looks_changeeffectby, block-switching/looks_changesizeby, block-switching/looks_costumenumbername, block-switching/looks_goforwardbackwardlayers, block-switching/looks_gotofrontback, block-switching/looks_hide, block-switching/looks_nextbackdrop, block-switching/looks_nextcostume, block-switching/looks_say, block-switching/looks_sayforsecs, block-switching/looks_seteffectto, block-switching/looks_setsizeto, block-switching/looks_show, block-switching/looks_switchbackdropto, block-switching/looks_switchbackdroptoandwait, block-switching/looks_think, block-switching/looks_thinkforsecs, block-switching/motion_changexby, block-switching/motion_changeyby, block-switching/motion_setx, block-switching/motion_sety, block-switching/motion_turnleft, block-switching/motion_turnright, block-switching/motion_xposition, block-switching/motion_yposition, block-switching/music_changeTempo, block-switching/music_setTempo, block-switching/operator_add, block-switching/operator_and, block-switching/operator_divide, block-switching/operator_equals, block-switching/operator_gt, block-switching/operator_lt, block-switching/operator_mod, block-switching/operator_multiply, block-switching/operator_or, block-switching/operator_subtract, block-switching/pen_changePenColorParamBy, block-switching/pen_changePenHueBy, block-switching/pen_changePenShadeBy, block-switching/pen_changePenSizeBy, block-switching/pen_penDown, block-switching/pen_penUp, block-switching/pen_setPenColorParamTo, block-switching/pen_setPenHueToNumber, block-switching/pen_setPenShadeToNumber, block-switching/pen_setPenSizeTo, block-switching/sensing_coloristouchingcolor, block-switching/sensing_mousex, block-switching/sensing_mousey, block-switching/sensing_touchingcolor, block-switching/sound_changeeffectby, block-switching/sound_changevolumeby, block-switching/sound_play, block-switching/sound_playuntildone, block-switching/sound_seteffectto, block-switching/sound_setvolumeto, copy-reporter/copy-to-clipboard, copy-reporter/copy-value, blocks2image/error_blocks_not_added, blocks2image/export_all_to_PNG, blocks2image/export_all_to_SVG, blocks2image/export_selected_to_PNG, blocks2image/export_selected_to_SVG, editor-extra-keys/enter-key, move-to-top-bottom/bottom, move-to-top-bottom/top, move-to-top-layer/move-to-front-layer, rename-broadcasts/RENAME_BROADCAST, rename-broadcasts/RENAME_BROADCAST_MODAL_TITLE, rename-broadcasts/RENAME_BROADCAST_TITLE, swap-local-global/cant-convert-cloud, swap-local-global/cant-convert-conflict, swap-local-global/cant-convert-stage, swap-local-global/cant-convert-to-local, swap-local-global/cant-convert-used-elsewhere, swap-local-global/edit, swap-local-global/edit-list-header, swap-local-global/edit-list-option, swap-local-global/edit-variable-header, swap-local-global/edit-variable-option, swap-local-global/to-global, swap-local-global/to-local, hide-stage/hide-stage, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"editor-devtools/clean-plus\":\"Clean up Blocks +\",\"editor-devtools/copy-all\":\"Copy All\",\"editor-devtools/copy-block\":\"Copy Block\",\"editor-devtools/cut-block\":\"Cut Block\",\"editor-devtools/lists\":\"lists\",\"editor-devtools/make-space\":\"Make Space\",\"editor-devtools/orphaned\":\"{count, plural, one {Developer tools: Delete 1 orphaned reporter block?} other {Developer tools: Delete # orphaned reporter blocks?} }\",\"editor-devtools/paste\":\"Paste\",\"editor-devtools/replace\":\"Developer tools: Switch all {name} in this sprite for the variable named:\",\"editor-devtools/swap\":\"Swap {var} in Sprite\",\"editor-devtools/unused-list\":\"{count, plural, one {Developer tools: Delete 1 unused local list? Here it is:\\n} other {Developer tools: Delete # unused local lists? Here they are:\\n} }\",\"editor-devtools/unused-var\":\"{count, plural, one {Developer tools: Delete 1 unused local variable? Here it is:\\n} other {Developer tools: Delete # unused local variables? Here they are:\\n} }\",\"editor-devtools/var-not-exist\":\"That variable does not exist...\",\"editor-devtools/variables\":\"variables\",\"find-bar/complex-broadcast\":\"(expression)\",\"find-bar/find-placeholder\":\"Find (Ctrl+F)\",\"middle-click-popup/start-typing\":\"Start Typing...\",\"editor-searchable-dropdowns/createBroadcast\":\"Create message \\\"{name}\\\"\",\"editor-searchable-dropdowns/createGlobalList\":\"Create list \\\"{name}\\\" for all sprites\",\"editor-searchable-dropdowns/createGlobalVariable\":\"Create variable \\\"{name}\\\" for all sprites\",\"editor-searchable-dropdowns/createLocalList\":\"Create list \\\"{name}\\\" for this sprite only\",\"editor-searchable-dropdowns/createLocalVariable\":\"Create variable \\\"{name}\\\" for this sprite only\",\"data-category-tweaks-v2/for-all-sprites\":\"For all sprites:\",\"data-category-tweaks-v2/for-this-sprite-only\":\"For this sprite only:\",\"data-category-tweaks-v2/list-category\":\"Lists\",\"hide-flyout/lock\":\"Lock Palette\",\"hide-flyout/unlock\":\"Unlock Palette\",\"mediarecorder/cancel\":\"Cancel\",\"mediarecorder/click-flag\":\"Waiting...\",\"mediarecorder/click-flag-description\":\"Click the green flag to start recording. Click this button to stop.\",\"mediarecorder/option-title\":\"Record Options\",\"mediarecorder/record\":\"Record\",\"mediarecorder/record-after-flag\":\"Do not start recording until the Green Flag is clicked\",\"mediarecorder/record-audio\":\"Include project sounds\",\"mediarecorder/record-audio-description\":\"This does not include Text-to-Speech.\",\"mediarecorder/record-description\":\"Record the stage as a WebM file. You can save it to your computer after the recording is finished.\\nNote: variable and list monitors will not be visible.\",\"mediarecorder/record-duration\":\"Record Duration (in seconds)\",\"mediarecorder/record-mic\":\"Include sounds from microphone\",\"mediarecorder/record-until-stop\":\"Stop recording after the project has stopped\",\"mediarecorder/record-until-stop-disabled\":\"You need to enable \\\"{afterFlagOption}\\\" to use this option.\",\"mediarecorder/start\":\"Start\",\"mediarecorder/start-delay\":\"Start Delay (in seconds)\",\"mediarecorder/starting-in\":\"Starting in {secs}...\",\"mediarecorder/stop\":\"Stop Recording\",\"debugger/block-breakpoint\":\"breakpoint\",\"debugger/block-error\":\"error %s\",\"debugger/block-log\":\"log %s\",\"debugger/block-warn\":\"warn %s\",\"debugger/cannot-pause-player\":\"Breakpoint block can only be used while on the editor.\",\"debugger/clear\":\"Clear\",\"debugger/clone-of\":\"Clone of {sprite}\",\"debugger/close\":\"Close\",\"debugger/console\":\"Logs\",\"debugger/debug\":\"Debug\",\"debugger/empty-string\":\"(empty string)\",\"debugger/enter-format\":\"Enter export format:\",\"debugger/export\":\"Export\",\"debugger/export-desc\":\"Click while holding Shift to customize export format.\",\"debugger/icon-error\":\"Error\",\"debugger/icon-warn\":\"Warning\",\"debugger/log-msg-broadcasted\":\"Broadcasted '{broadcast}'.\",\"debugger/log-msg-clone-cap\":\"Failed to create clone of '{sprite}', cannot create over 300 clones.\",\"debugger/log-msg-clone-created\":\"Created clone of '{sprite}'.\",\"debugger/log-msg-flag-clicked\":\"Green flag clicked.\",\"debugger/no-logs\":\"There are no logs to display.\",\"debugger/no-threads-running\":\"No threads running.\",\"debugger/step\":\"Step\",\"debugger/step-desc\":\"Executes one block.\",\"debugger/tab-logs\":\"Logs\",\"debugger/tab-threads\":\"Threads\",\"debugger/thread\":\"Thread {id}\",\"debugger/unknown-sprite\":\"(unknown sprite)\",\"debugger/unpause\":\"Resume\",\"pause/pause\":\"Pause\",\"clones/clones\":\"clones: {cloneCount}\",\"color-picker/hex\":\"hex color\",\"remove-sprite-confirm/confirm\":\"Do you want to delete the sprite?\",\"block-count/blocks\":\"{num, plural, one {1 block} other {# blocks}}\",\"onion-skinning/behind\":\"Behind\",\"onion-skinning/front\":\"Front\",\"onion-skinning/layering\":\"Layering\",\"onion-skinning/merge\":\"Merge\",\"onion-skinning/mode\":\"Mode\",\"onion-skinning/next\":\"Next costumes\",\"onion-skinning/opacity\":\"Opacity (%)\",\"onion-skinning/opacityStep\":\"Opacity step (%)\",\"onion-skinning/previous\":\"Previous costumes\",\"onion-skinning/settings\":\"Onion Skinning Settings\",\"onion-skinning/tint\":\"Tint\",\"onion-skinning/toggle\":\"Toggle Onion Skinning\",\"paint-snap/boxCenter\":\"Center of selection\",\"paint-snap/boxCorners\":\"Corners of selection\",\"paint-snap/boxEdgeMids\":\"Selection edge midpoints\",\"paint-snap/objectCenters\":\"Centers of objects\",\"paint-snap/objectCorners\":\"Corners of objects\",\"paint-snap/objectEdges\":\"Edges of objects\",\"paint-snap/objectMidlines\":\"Midlines of objects\",\"paint-snap/off\":\"Off\",\"paint-snap/on\":\"On\",\"paint-snap/pageAxes\":\"Page x and y axes\",\"paint-snap/pageCenter\":\"Center of the page\",\"paint-snap/pageCorners\":\"Corners of the page\",\"paint-snap/pageEdges\":\"Edges of the page\",\"paint-snap/settings\":\"Snap Settings\",\"paint-snap/snapFrom\":\"Snap from:\",\"paint-snap/snapTo\":\"Snap to:\",\"paint-snap/threshold\":\"Snapping distance\",\"paint-snap/toggle\":\"Toggle Snapping\",\"2d-color-picker/shade\":\"Shade\",\"better-img-uploads/upload\":\"HD Upload\",\"variable-manager/for-all-sprites\":\"Variables for all sprites\",\"variable-manager/for-this-sprite\":\"Variables for this sprite\",\"variable-manager/search\":\"Search\",\"variable-manager/too-big\":\"Click to display very large value.\",\"variable-manager/variables\":\"Variables\",\"search-sprites/placeholder\":\"Search sprites...\",\"sprite-properties/close-properties-panel-tooltip\":\"Collapse properties panel\",\"sprite-properties/open-properties-panel-tooltip\":\"Open properties panel\",\"gamepad/axes-a-b\":\"Axes {a} & {b}\",\"gamepad/axis-arrows\":\"Arrow Keys\",\"gamepad/axis-cursor\":\"Cursor\",\"gamepad/axis-custom\":\"Custom\",\"gamepad/axis-none\":\"None\",\"gamepad/browser-support\":\"This browser and operating system have known bugs that may make this addon difficult to use. Try another browser if you encounter problems.\",\"gamepad/button-n\":\"Button {n}\",\"gamepad/clear\":\"Clear all controls\",\"gamepad/config-header\":\"This comment contains configuration for gamepad support in third-party tools or websites such as https://turbowarp.org/\\nDo not edit by hand\",\"gamepad/key-click\":\"Click\",\"gamepad/key-down\":\"Down\",\"gamepad/key-enter\":\"Enter\",\"gamepad/key-left\":\"Left\",\"gamepad/key-none\":\"(none)\",\"gamepad/key-right\":\"Right\",\"gamepad/key-space\":\"Space\",\"gamepad/key-up\":\"Up\",\"gamepad/keyinput-title\":\"Click and press a key or click to change button. Escape to cancel. Backspace or delete to clear.\",\"gamepad/no-controllers\":\"No controllers detected. Try plugging one in and pressing a button on it.\",\"gamepad/reset\":\"Reset all controls to project defaults\",\"gamepad/settings\":\"Gamepad Settings\",\"gamepad/store-in-project\":\"Store these settings in the project to override the default configuration (Experimental tool for project creators)\",\"folders/add-to-folder\":\"add to folder: {folder}\",\"folders/closed-folder\":\"Folder\",\"folders/confirm-backpack-folder\":\"Save entire folder to backpack?\",\"folders/create-folder\":\"create folder\",\"folders/name-not-allowed\":\"Invalid folder name\",\"folders/name-prompt\":\"Name of folder:\",\"folders/name-prompt-title\":\"Create Folder\",\"folders/open-folder\":\"Opened\",\"folders/remove-folder\":\"remove folder\",\"folders/remove-from-folder\":\"remove from folder\",\"folders/rename-folder\":\"rename folder\",\"folders/rename-folder-prompt\":\"Rename folder to:\",\"folders/rename-folder-prompt-title\":\"Rename Folder\",\"block-switching/control_forever\":\"forever\",\"block-switching/control_if\":\"if\",\"block-switching/control_if_else\":\"if... else\",\"block-switching/control_repeat_until\":\"repeat until\",\"block-switching/control_wait_until\":\"wait until\",\"block-switching/data_changevariableby\":\"change variable\",\"block-switching/data_deletealloflist\":\"delete all\",\"block-switching/data_deleteoflist\":\"delete item\",\"block-switching/data_hidelist\":\"hide list\",\"block-switching/data_hidevariable\":\"hide variable\",\"block-switching/data_insertatlist\":\"insert item\",\"block-switching/data_replaceitemoflist\":\"replace item\",\"block-switching/data_setvariableto\":\"set variable\",\"block-switching/data_showlist\":\"show list\",\"block-switching/data_showvariable\":\"show variable\",\"block-switching/debugger_error\":\"error\",\"block-switching/debugger_log\":\"log\",\"block-switching/debugger_warn\":\"warn\",\"block-switching/event_broadcast\":\"broadcast\",\"block-switching/event_broadcastandwait\":\"broadcast and wait\",\"block-switching/looks_backdropnumbername\":\"backdrop number or name\",\"block-switching/looks_changeeffectby\":\"change effect\",\"block-switching/looks_changesizeby\":\"change size\",\"block-switching/looks_costumenumbername\":\"costume number or name\",\"block-switching/looks_goforwardbackwardlayers\":\"go forward or backward layers\",\"block-switching/looks_gotofrontback\":\"go to front or back layer\",\"block-switching/looks_hide\":\"hide\",\"block-switching/looks_nextbackdrop\":\"next backdrop\",\"block-switching/looks_nextcostume\":\"next costume\",\"block-switching/looks_say\":\"say\",\"block-switching/looks_sayforsecs\":\"say for seconds\",\"block-switching/looks_seteffectto\":\"set effect\",\"block-switching/looks_setsizeto\":\"set size\",\"block-switching/looks_show\":\"show\",\"block-switching/looks_switchbackdropto\":\"switch backdrop\",\"block-switching/looks_switchbackdroptoandwait\":\"switch backdrop and wait\",\"block-switching/looks_think\":\"think\",\"block-switching/looks_thinkforsecs\":\"think for seconds\",\"block-switching/motion_changexby\":\"change x\",\"block-switching/motion_changeyby\":\"change y\",\"block-switching/motion_setx\":\"set x\",\"block-switching/motion_sety\":\"set y\",\"block-switching/motion_turnleft\":\"turn left\",\"block-switching/motion_turnright\":\"turn right\",\"block-switching/motion_xposition\":\"x position\",\"block-switching/motion_yposition\":\"y position\",\"block-switching/music_changeTempo\":\"change tempo\",\"block-switching/music_setTempo\":\"set tempo\",\"block-switching/operator_add\":\"+\",\"block-switching/operator_and\":\"and\",\"block-switching/operator_divide\":\"/\",\"block-switching/operator_equals\":\"=\",\"block-switching/operator_gt\":\">\",\"block-switching/operator_lt\":\"<\",\"block-switching/operator_mod\":\"mod\",\"block-switching/operator_multiply\":\"*\",\"block-switching/operator_or\":\"or\",\"block-switching/operator_subtract\":\"-\",\"block-switching/pen_changePenColorParamBy\":\"change parameter\",\"block-switching/pen_changePenHueBy\":\"change hue\",\"block-switching/pen_changePenShadeBy\":\"change shade\",\"block-switching/pen_changePenSizeBy\":\"change size\",\"block-switching/pen_penDown\":\"pen down\",\"block-switching/pen_penUp\":\"pen up\",\"block-switching/pen_setPenColorParamTo\":\"set parameter\",\"block-switching/pen_setPenHueToNumber\":\"set hue\",\"block-switching/pen_setPenShadeToNumber\":\"set shade\",\"block-switching/pen_setPenSizeTo\":\"set size\",\"block-switching/sensing_coloristouchingcolor\":\"color touching color\",\"block-switching/sensing_mousex\":\"mouse x\",\"block-switching/sensing_mousey\":\"mouse y\",\"block-switching/sensing_touchingcolor\":\"touching color\",\"block-switching/sound_changeeffectby\":\"change effect\",\"block-switching/sound_changevolumeby\":\"change volume\",\"block-switching/sound_play\":\"start\",\"block-switching/sound_playuntildone\":\"play until done\",\"block-switching/sound_seteffectto\":\"set effect\",\"block-switching/sound_setvolumeto\":\"set volume\",\"blocks2image/error_blocks_not_added\":\"Add blocks to workspace!\",\"blocks2image/export_all_to_PNG\":\"Export all as PNG\",\"blocks2image/export_all_to_SVG\":\"Export all as SVG\",\"blocks2image/export_selected_to_PNG\":\"Export block as PNG\",\"blocks2image/export_selected_to_SVG\":\"Export block as SVG\",\"editor-extra-keys/enter-key\":\"enter\",\"move-to-top-bottom/bottom\":\"move to bottom\",\"move-to-top-bottom/top\":\"move to top\",\"rename-broadcasts/RENAME_BROADCAST\":\"Rename message\",\"rename-broadcasts/RENAME_BROADCAST_MODAL_TITLE\":\"Rename Message\",\"rename-broadcasts/RENAME_BROADCAST_TITLE\":\"Rename all \\\"{name}\\\" messages to:\",\"swap-local-global/cant-convert-cloud\":\"Cloud variables can't be converted to this sprite only.\",\"swap-local-global/cant-convert-conflict\":\"Can't convert because it would conflict with variables in another sprite: {sprites}\",\"swap-local-global/cant-convert-stage\":\"The stage can't have variables for this sprite only.\",\"swap-local-global/cant-convert-to-local\":\"Can't convert because it's used by multiple sprites: {sprites}\",\"swap-local-global/cant-convert-used-elsewhere\":\"Can't convert because it's used by another sprite: {sprite}\",\"swap-local-global/edit\":\"Edit properties:\",\"swap-local-global/edit-list-header\":\"Edit List\",\"swap-local-global/edit-list-option\":\"Rename or edit list\",\"swap-local-global/edit-variable-header\":\"Edit Variable\",\"swap-local-global/edit-variable-option\":\"Rename or edit variable\",\"swap-local-global/to-global\":\"Convert to \\\"For all sprites\\\"\",\"swap-local-global/to-local\":\"Convert to \\\"For this sprite only\\\"\",\"hide-stage/hide-stage\":\"Hide stage\"}");
+module.exports = JSON.parse("{\"_general/blocks/anticlockwise\":\"anti-clockwise\",\"_general/blocks/clockwise\":\"clockwise\",\"_general/blocks/green-flag\":\"flag\",\"editor-devtools/clean-plus\":\"Clean up Blocks +\",\"editor-devtools/copy-all\":\"Copy All\",\"editor-devtools/copy-block\":\"Copy Block\",\"editor-devtools/cut-block\":\"Cut Block\",\"editor-devtools/lists\":\"lists\",\"editor-devtools/make-space\":\"Make Space\",\"editor-devtools/orphaned\":\"{count, plural, one {Developer tools: Delete 1 orphaned reporter block?} other {Developer tools: Delete # orphaned reporter blocks?} }\",\"editor-devtools/paste\":\"Paste\",\"editor-devtools/replace\":\"Developer tools: Switch all {name} in this sprite for the variable named:\",\"editor-devtools/swap\":\"Swap {var} in Sprite\",\"editor-devtools/unused-list\":\"{count, plural, one {Developer tools: Delete 1 unused local list? Here it is:\\n} other {Developer tools: Delete # unused local lists? Here they are:\\n} }\",\"editor-devtools/unused-var\":\"{count, plural, one {Developer tools: Delete 1 unused local variable? Here it is:\\n} other {Developer tools: Delete # unused local variables? Here they are:\\n} }\",\"editor-devtools/var-not-exist\":\"That variable does not exist...\",\"editor-devtools/variables\":\"variables\",\"find-bar/complex-broadcast\":\"(expression)\",\"find-bar/event\":\"event {name}\",\"find-bar/find-placeholder\":\"Find (Ctrl+F)\",\"find-bar/list-global\":\"LIST {name}\",\"find-bar/list-local\":\"list {name}\",\"find-bar/var-global\":\"VAR {name}\",\"find-bar/var-local\":\"var {name}\",\"middle-click-popup/start-typing\":\"Start Typing...\",\"editor-searchable-dropdowns/createBroadcast\":\"Create message \\\"{name}\\\"\",\"editor-searchable-dropdowns/createGlobalList\":\"Create list \\\"{name}\\\" for all sprites\",\"editor-searchable-dropdowns/createGlobalVariable\":\"Create variable \\\"{name}\\\" for all sprites\",\"editor-searchable-dropdowns/createLocalList\":\"Create list \\\"{name}\\\" for this sprite only\",\"editor-searchable-dropdowns/createLocalVariable\":\"Create variable \\\"{name}\\\" for this sprite only\",\"data-category-tweaks-v2/for-all-sprites\":\"For all sprites:\",\"data-category-tweaks-v2/for-this-sprite-only\":\"For this sprite only:\",\"data-category-tweaks-v2/list-category\":\"Lists\",\"hide-flyout/lock\":\"Lock Palette\",\"hide-flyout/unlock\":\"Unlock Palette\",\"mediarecorder/cancel\":\"Cancel\",\"mediarecorder/click-flag\":\"Waiting...\",\"mediarecorder/click-flag-description\":\"Click the green flag to start recording. Click this button to stop.\",\"mediarecorder/option-title\":\"Record Options\",\"mediarecorder/record\":\"Record\",\"mediarecorder/record-after-flag\":\"Do not start recording until the Green Flag is clicked\",\"mediarecorder/record-audio\":\"Include project sounds\",\"mediarecorder/record-audio-description\":\"This does not include Text-to-Speech.\",\"mediarecorder/record-description\":\"Record the stage as a {extension} file. You can save it to your computer after the recording is finished.\\nNote: variable and list monitors will not be visible.\",\"mediarecorder/record-duration\":\"Record Duration (in seconds)\",\"mediarecorder/record-mic\":\"Include sounds from microphone\",\"mediarecorder/record-until-stop\":\"Stop recording after the project has stopped\",\"mediarecorder/record-until-stop-disabled\":\"You need to enable \\\"{afterFlagOption}\\\" to use this option.\",\"mediarecorder/start\":\"Start\",\"mediarecorder/start-delay\":\"Start Delay (in seconds)\",\"mediarecorder/starting-in\":\"Starting in {secs}...\",\"mediarecorder/stop\":\"Stop Recording\",\"debugger/block-breakpoint\":\"breakpoint\",\"debugger/block-error\":\"error %s\",\"debugger/block-log\":\"log %s\",\"debugger/block-warn\":\"warn %s\",\"debugger/cannot-pause-player\":\"Breakpoint block can only be used while on the editor.\",\"debugger/clear\":\"Clear\",\"debugger/clone-of\":\"Clone of {sprite}\",\"debugger/close\":\"Close\",\"debugger/console\":\"Logs\",\"debugger/debug\":\"Debug\",\"debugger/empty-string\":\"(empty string)\",\"debugger/enter-format\":\"Enter export format:\",\"debugger/export\":\"Export\",\"debugger/export-desc\":\"Click while holding Shift to customize export format.\",\"debugger/icon-error\":\"Error\",\"debugger/icon-warn\":\"Warning\",\"debugger/log-msg-broadcasted\":\"Broadcasted '{broadcast}'.\",\"debugger/log-msg-clone-cap\":\"Failed to create clone of '{sprite}', cannot create over 300 clones.\",\"debugger/log-msg-clone-created\":\"Created clone of '{sprite}'.\",\"debugger/log-msg-flag-clicked\":\"Green flag clicked.\",\"debugger/no-logs\":\"There are no logs to display.\",\"debugger/no-threads-running\":\"No threads running.\",\"debugger/step\":\"Step\",\"debugger/step-desc\":\"Executes one block.\",\"debugger/tab-logs\":\"Logs\",\"debugger/tab-threads\":\"Threads\",\"debugger/thread\":\"Thread {id}\",\"debugger/unknown-sprite\":\"(unknown sprite)\",\"debugger/unpause\":\"Resume\",\"pause/pause\":\"Pause\",\"pause/play\":\"Resume\",\"clones/clones\":\"clones: {cloneCount}\",\"color-picker/hex\":\"hex color\",\"remove-sprite-confirm/confirm\":\"Do you want to delete the sprite?\",\"block-count/blocks\":\"{num, plural, one {1 block} other {# blocks}}\",\"onion-skinning/behind\":\"Behind\",\"onion-skinning/front\":\"Front\",\"onion-skinning/layering\":\"Layering\",\"onion-skinning/merge\":\"Merge\",\"onion-skinning/mode\":\"Mode\",\"onion-skinning/next\":\"Next costumes\",\"onion-skinning/opacity\":\"Opacity (%)\",\"onion-skinning/opacityStep\":\"Opacity step (%)\",\"onion-skinning/previous\":\"Previous costumes\",\"onion-skinning/settings\":\"Onion Skinning Settings\",\"onion-skinning/tint\":\"Tint\",\"onion-skinning/toggle\":\"Toggle Onion Skinning\",\"paint-snap/boxCenter\":\"Center of selection\",\"paint-snap/boxCorners\":\"Corners of selection\",\"paint-snap/boxEdgeMids\":\"Selection edge midpoints\",\"paint-snap/objectCenters\":\"Centers of objects\",\"paint-snap/objectCorners\":\"Corners of objects\",\"paint-snap/objectEdges\":\"Edges of objects\",\"paint-snap/objectMidlines\":\"Midlines of objects\",\"paint-snap/off\":\"Off\",\"paint-snap/on\":\"On\",\"paint-snap/pageAxes\":\"Page x and y axes\",\"paint-snap/pageCenter\":\"Center of the page\",\"paint-snap/pageCorners\":\"Corners of the page\",\"paint-snap/pageEdges\":\"Edges of the page\",\"paint-snap/settings\":\"Snap Settings\",\"paint-snap/snapFrom\":\"Snap from:\",\"paint-snap/snapTo\":\"Snap to:\",\"paint-snap/threshold\":\"Snapping distance\",\"paint-snap/toggle\":\"Toggle Snapping\",\"2d-color-picker/shade\":\"Shade\",\"better-img-uploads/upload\":\"HD Upload\",\"variable-manager/for-all-sprites\":\"Variables for all sprites\",\"variable-manager/for-this-sprite\":\"Variables for this sprite\",\"variable-manager/search\":\"Search\",\"variable-manager/too-big\":\"Click to display very large value.\",\"variable-manager/variables\":\"Variables\",\"search-sprites/placeholder\":\"Search sprites...\",\"sprite-properties/close-properties-panel-tooltip\":\"Collapse properties panel\",\"sprite-properties/open-properties-panel-tooltip\":\"Open properties panel\",\"gamepad/axes-a-b\":\"Axes {a} & {b}\",\"gamepad/axis-arrows\":\"Arrow Keys\",\"gamepad/axis-cursor\":\"Cursor\",\"gamepad/axis-custom\":\"Custom\",\"gamepad/axis-none\":\"None\",\"gamepad/browser-support\":\"This browser and operating system have known bugs that may make this addon difficult to use. Try another browser if you encounter problems.\",\"gamepad/button-n\":\"Button {n}\",\"gamepad/clear\":\"Clear all controls\",\"gamepad/config-header\":\"This comment contains configuration for gamepad support in third-party tools or websites such as https://turbowarp.org/\\nDo not edit by hand\",\"gamepad/key-click\":\"Click\",\"gamepad/key-down\":\"Down\",\"gamepad/key-enter\":\"Enter\",\"gamepad/key-left\":\"Left\",\"gamepad/key-none\":\"(none)\",\"gamepad/key-right\":\"Right\",\"gamepad/key-space\":\"Space\",\"gamepad/key-up\":\"Up\",\"gamepad/keyinput-title\":\"Click and press a key or click to change button. Escape to cancel. Backspace or delete to clear.\",\"gamepad/no-controllers\":\"No controllers detected. Try plugging one in and pressing a button on it.\",\"gamepad/reset\":\"Reset all controls to project defaults\",\"gamepad/settings\":\"Gamepad Settings\",\"gamepad/store-in-project\":\"Store the mappings set above inside the project. After saving the project, these mappings will become the new default configuration.\",\"folders/add-to-folder\":\"add to folder: {folder}\",\"folders/closed-folder\":\"Folder\",\"folders/confirm-backpack-folder\":\"Save entire folder to backpack?\",\"folders/create-folder\":\"create folder\",\"folders/name-not-allowed\":\"Invalid folder name\",\"folders/name-prompt\":\"Name of folder:\",\"folders/name-prompt-title\":\"Create Folder\",\"folders/open-folder\":\"Opened\",\"folders/remove-folder\":\"remove folder\",\"folders/remove-from-folder\":\"remove from folder\",\"folders/rename-folder\":\"rename folder\",\"folders/rename-folder-prompt\":\"Rename folder to:\",\"folders/rename-folder-prompt-title\":\"Rename Folder\",\"block-switching/control_forever\":\"forever\",\"block-switching/control_if\":\"if\",\"block-switching/control_if_else\":\"if... else\",\"block-switching/control_repeat_until\":\"repeat until\",\"block-switching/control_wait_until\":\"wait until\",\"block-switching/data_changevariableby\":\"change variable\",\"block-switching/data_deletealloflist\":\"delete all\",\"block-switching/data_deleteoflist\":\"delete item\",\"block-switching/data_hidelist\":\"hide list\",\"block-switching/data_hidevariable\":\"hide variable\",\"block-switching/data_insertatlist\":\"insert item\",\"block-switching/data_replaceitemoflist\":\"replace item\",\"block-switching/data_setvariableto\":\"set variable\",\"block-switching/data_showlist\":\"show list\",\"block-switching/data_showvariable\":\"show variable\",\"block-switching/debugger_error\":\"error\",\"block-switching/debugger_log\":\"log\",\"block-switching/debugger_warn\":\"warn\",\"block-switching/event_broadcast\":\"broadcast\",\"block-switching/event_broadcastandwait\":\"broadcast and wait\",\"block-switching/looks_backdropnumbername\":\"backdrop number or name\",\"block-switching/looks_changeeffectby\":\"change effect\",\"block-switching/looks_changesizeby\":\"change size\",\"block-switching/looks_costumenumbername\":\"costume number or name\",\"block-switching/looks_goforwardbackwardlayers\":\"go forward or backward layers\",\"block-switching/looks_gotofrontback\":\"go to front or back layer\",\"block-switching/looks_hide\":\"hide\",\"block-switching/looks_nextbackdrop\":\"next backdrop\",\"block-switching/looks_nextcostume\":\"next costume\",\"block-switching/looks_say\":\"say\",\"block-switching/looks_sayforsecs\":\"say for seconds\",\"block-switching/looks_seteffectto\":\"set effect\",\"block-switching/looks_setsizeto\":\"set size\",\"block-switching/looks_show\":\"show\",\"block-switching/looks_switchbackdropto\":\"switch backdrop\",\"block-switching/looks_switchbackdroptoandwait\":\"switch backdrop and wait\",\"block-switching/looks_think\":\"think\",\"block-switching/looks_thinkforsecs\":\"think for seconds\",\"block-switching/motion_changexby\":\"change x\",\"block-switching/motion_changeyby\":\"change y\",\"block-switching/motion_setx\":\"set x\",\"block-switching/motion_sety\":\"set y\",\"block-switching/motion_turnleft\":\"turn left\",\"block-switching/motion_turnright\":\"turn right\",\"block-switching/motion_xposition\":\"x position\",\"block-switching/motion_yposition\":\"y position\",\"block-switching/music_changeTempo\":\"change tempo\",\"block-switching/music_setTempo\":\"set tempo\",\"block-switching/operator_add\":\"+\",\"block-switching/operator_and\":\"and\",\"block-switching/operator_divide\":\"/\",\"block-switching/operator_equals\":\"=\",\"block-switching/operator_gt\":\">\",\"block-switching/operator_lt\":\"<\",\"block-switching/operator_mod\":\"mod\",\"block-switching/operator_multiply\":\"*\",\"block-switching/operator_or\":\"or\",\"block-switching/operator_subtract\":\"-\",\"block-switching/pen_changePenColorParamBy\":\"change parameter\",\"block-switching/pen_changePenHueBy\":\"change hue\",\"block-switching/pen_changePenShadeBy\":\"change shade\",\"block-switching/pen_changePenSizeBy\":\"change size\",\"block-switching/pen_penDown\":\"pen down\",\"block-switching/pen_penUp\":\"pen up\",\"block-switching/pen_setPenColorParamTo\":\"set parameter\",\"block-switching/pen_setPenHueToNumber\":\"set hue\",\"block-switching/pen_setPenShadeToNumber\":\"set shade\",\"block-switching/pen_setPenSizeTo\":\"set size\",\"block-switching/sensing_coloristouchingcolor\":\"color touching color\",\"block-switching/sensing_mousex\":\"mouse x\",\"block-switching/sensing_mousey\":\"mouse y\",\"block-switching/sensing_touchingcolor\":\"touching color\",\"block-switching/sound_changeeffectby\":\"change effect\",\"block-switching/sound_changevolumeby\":\"change volume\",\"block-switching/sound_play\":\"start\",\"block-switching/sound_playuntildone\":\"play until done\",\"block-switching/sound_seteffectto\":\"set effect\",\"block-switching/sound_setvolumeto\":\"set volume\",\"copy-reporter/copy-to-clipboard\":\"Copy\",\"copy-reporter/copy-value\":\"copy value\",\"blocks2image/error_blocks_not_added\":\"Add blocks to workspace!\",\"blocks2image/export_all_to_PNG\":\"Export all as PNG\",\"blocks2image/export_all_to_SVG\":\"Export all as SVG\",\"blocks2image/export_selected_to_PNG\":\"Export block as PNG\",\"blocks2image/export_selected_to_SVG\":\"Export block as SVG\",\"editor-extra-keys/enter-key\":\"enter\",\"move-to-top-bottom/bottom\":\"move to bottom\",\"move-to-top-bottom/top\":\"move to top\",\"move-to-top-layer/move-to-front-layer\":\"move to front layer\",\"rename-broadcasts/RENAME_BROADCAST\":\"Rename message\",\"rename-broadcasts/RENAME_BROADCAST_MODAL_TITLE\":\"Rename Message\",\"rename-broadcasts/RENAME_BROADCAST_TITLE\":\"Rename all \\\"{name}\\\" messages to:\",\"swap-local-global/cant-convert-cloud\":\"Cloud variables can't be converted to this sprite only.\",\"swap-local-global/cant-convert-conflict\":\"Can't convert because it would conflict with variables in another sprite: {sprites}\",\"swap-local-global/cant-convert-stage\":\"The stage can't have variables for this sprite only.\",\"swap-local-global/cant-convert-to-local\":\"Can't convert because it's used by multiple sprites: {sprites}\",\"swap-local-global/cant-convert-used-elsewhere\":\"Can't convert because it's used by another sprite: {sprite}\",\"swap-local-global/edit\":\"Edit properties:\",\"swap-local-global/edit-list-header\":\"Edit List\",\"swap-local-global/edit-list-option\":\"Rename or edit list\",\"swap-local-global/edit-variable-header\":\"Edit Variable\",\"swap-local-global/edit-variable-option\":\"Rename or edit variable\",\"swap-local-global/to-global\":\"Convert to \\\"For all sprites\\\"\",\"swap-local-global/to-local\":\"Convert to \\\"For this sprite only\\\"\",\"hide-stage/hide-stage\":\"Hide stage\"}");
 
 /***/ }),
 
@@ -133,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _event_target_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../event-target.js */ "./src/addons/event-target.js");
  /* inserted by pull.js */
 
-// https://github.com/LLK/scratch-vm/blob/bb352913b57991713a5ccf0b611fda91056e14ec/src/engine/thread.js#L198
+// https://github.com/scratchfoundation/scratch-vm/blob/bb352913b57991713a5ccf0b611fda91056e14ec/src/engine/thread.js#L198
 const STATUS_RUNNING = 0;
 const STATUS_PROMISE_WAIT = 1;
 const STATUS_YIELD = 2;
@@ -263,7 +264,7 @@ const onSingleStep = listener => {
 const getRunningThread = () => steppingThread;
 
 // A modified version of this function
-// https://github.com/LLK/scratch-vm/blob/0e86a78a00db41af114df64255e2cd7dd881329f/src/engine/sequencer.js#L179
+// https://github.com/scratchfoundation/scratch-vm/blob/0e86a78a00db41af114df64255e2cd7dd881329f/src/engine/sequencer.js#L179
 // Returns if we should continue executing this thread.
 const singleStepThread = thread => {
   if (thread.status === STATUS_DONE) {
@@ -289,7 +290,7 @@ const singleStepThread = thread => {
     have access to that method, so we need to force the original stepThread to run
     execute for us then exit before it tries to run more blocks.
     So, we make `thread.blockGlowInFrame = ...` throw an exception, so this line:
-    https://github.com/LLK/scratch-vm/blob/bb352913b57991713a5ccf0b611fda91056e14ec/src/engine/sequencer.js#L214
+    https://github.com/scratchfoundation/scratch-vm/blob/bb352913b57991713a5ccf0b611fda91056e14ec/src/engine/sequencer.js#L214
     will end the function early. We then have to set it back to normal afterward.
      Why are we here just to suffer?
   */
@@ -615,7 +616,7 @@ __webpack_require__.r(__webpack_exports__);
         // Sometimes the menu flashes open, so force hide it.
         contextMenu.style.display = "none";
         // Override DOM methods to import the text file directly
-        // See: https://github.com/LLK/scratch-gui/blob/develop/src/lib/import-csv.js#L21-L22
+        // See: https://github.com/scratchfoundation/scratch-gui/blob/develop/src/lib/import-csv.js#L21-L22
         const appendChild = document.body.appendChild;
         document.body.appendChild = fileInput => {
           // Restore appendChild to <body>
@@ -984,7 +985,6 @@ class NavigationHistory {
               console.log('transform, scale matrix: ', transformMatrix, scaleMatrix);
     */
   }
-
   goForward() {
     let view = forward.pop();
     if (!view) {
@@ -1208,12 +1208,21 @@ __webpack_require__.r(__webpack_exports__);
   img.className = "pause-btn";
   img.draggable = false;
   img.title = msg("pause");
-  const setSrc = () => img.src = addon.self.getResource(Object(_debugger_module_js__WEBPACK_IMPORTED_MODULE_0__["isPaused"])() ? "/play.svg" : "/pause.svg") /* rewritten by pull.js */;
+  const setSrc = () => {
+    img.src = addon.self.getResource(Object(_debugger_module_js__WEBPACK_IMPORTED_MODULE_0__["isPaused"])() ? "/play.svg" : "/pause.svg") /* rewritten by pull.js */;
+    img.title = Object(_debugger_module_js__WEBPACK_IMPORTED_MODULE_0__["isPaused"])() ? msg("play") : msg("pause");
+  };
   img.addEventListener("click", () => Object(_debugger_module_js__WEBPACK_IMPORTED_MODULE_0__["setPaused"])(!Object(_debugger_module_js__WEBPACK_IMPORTED_MODULE_0__["isPaused"])()));
   addon.tab.displayNoneWhileDisabled(img);
   addon.self.addEventListener("disabled", () => Object(_debugger_module_js__WEBPACK_IMPORTED_MODULE_0__["setPaused"])(false));
   setSrc();
   Object(_debugger_module_js__WEBPACK_IMPORTED_MODULE_0__["onPauseChanged"])(setSrc);
+  document.addEventListener("keydown", function (e) {
+    if (e.altKey && e.key.toLowerCase() === "x" && !addon.self.disabled) {
+      e.preventDefault();
+      Object(_debugger_module_js__WEBPACK_IMPORTED_MODULE_0__["setPaused"])(!Object(_debugger_module_js__WEBPACK_IMPORTED_MODULE_0__["isPaused"])());
+    }
+  });
   while (true) {
     await addon.tab.waitForElement("[class^='green-flag']", {
       markAsSeen: true,
@@ -1336,6 +1345,7 @@ var _addons_l10n_en_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__PURE__*/_
 /* harmony import */ var _polyfill__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_polyfill__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _conditional_style__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./conditional-style */ "./src/addons/conditional-style.js");
 /* harmony import */ var _addon_precedence__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./addon-precedence */ "./src/addons/addon-precedence.js");
+/* harmony import */ var _redux__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./redux */ "./src/addons/redux.js");
 /**
  * Copyright (C) 2021 Thomas Weber
  *
@@ -1351,6 +1361,7 @@ var _addons_l10n_en_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__PURE__*/_
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
+
 
 
 
@@ -1424,53 +1435,15 @@ const addMutationObserverCallback = newCallback => {
 const removeMutationObserverCallback = callback => {
   _mutationObserverCallbacks = _mutationObserverCallbacks.filter(i => i !== callback);
 };
-class Redux extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
-  constructor() {
-    super();
-    this._isInReducer = false;
-    this._initialized = false;
-    this._nextState = null;
-  }
-  initialize() {
-    if (!this._initialized) {
-      _hooks__WEBPACK_IMPORTED_MODULE_4__["default"].appStateReducer = (action, prev, next) => {
-        this._isInReducer = true;
-        this._nextState = next;
-        this.dispatchEvent(new CustomEvent('statechanged', {
-          detail: {
-            action,
-            prev,
-            next
-          }
-        }));
-        this._nextState = null;
-        this._isInReducer = false;
-      };
-      this._initialized = true;
-    }
-  }
-  dispatch(m) {
-    if (this._isInReducer) {
-      queueMicrotask(() => _hooks__WEBPACK_IMPORTED_MODULE_4__["default"].appStateStore.dispatch(m));
-    } else {
-      _hooks__WEBPACK_IMPORTED_MODULE_4__["default"].appStateStore.dispatch(m);
-    }
-  }
-  get state() {
-    if (this._nextState) return this._nextState;
-    return _hooks__WEBPACK_IMPORTED_MODULE_4__["default"].appStateStore.getState();
-  }
-}
 const getEditorMode = () => {
   // eslint-disable-next-line no-use-before-define
-  const mode = tabReduxInstance.state.scratchGui.mode;
+  const mode = _redux__WEBPACK_IMPORTED_MODULE_15__["default"].state.scratchGui.mode;
   if (mode.isEmbedded) return 'embed';
   if (mode.isFullScreen) return 'fullscreen';
   if (mode.isPlayerOnly) return 'projectpage';
   return 'editor';
 };
-const tabReduxInstance = new Redux();
-const language = tabReduxInstance.state.locales.locale.split('-')[0];
+const language = _redux__WEBPACK_IMPORTED_MODULE_15__["default"].state.locales.locale.split('-')[0];
 const getTranslations = async () => {
   if (_generated_l10n_entries__WEBPACK_IMPORTED_MODULE_7__["default"][language]) {
     const localeMessages = await _generated_l10n_entries__WEBPACK_IMPORTED_MODULE_7__["default"][language]();
@@ -1479,18 +1452,18 @@ const getTranslations = async () => {
 };
 const addonMessagesPromise = getTranslations();
 const untilInEditor = () => {
-  if (!tabReduxInstance.state.scratchGui.mode.isPlayerOnly || tabReduxInstance.state.scratchGui.mode.isEmbedded) {
+  if (!_redux__WEBPACK_IMPORTED_MODULE_15__["default"].state.scratchGui.mode.isPlayerOnly || _redux__WEBPACK_IMPORTED_MODULE_15__["default"].state.scratchGui.mode.isEmbedded) {
     return;
   }
   return new Promise(resolve => {
     const handler = () => {
-      if (!tabReduxInstance.state.scratchGui.mode.isPlayerOnly) {
+      if (!_redux__WEBPACK_IMPORTED_MODULE_15__["default"].state.scratchGui.mode.isPlayerOnly) {
         resolve();
-        tabReduxInstance.removeEventListener('statechanged', handler);
+        _redux__WEBPACK_IMPORTED_MODULE_15__["default"].removeEventListener('statechanged', handler);
       }
     };
-    tabReduxInstance.initialize();
-    tabReduxInstance.addEventListener('statechanged', handler);
+    _redux__WEBPACK_IMPORTED_MODULE_15__["default"].initialize();
+    _redux__WEBPACK_IMPORTED_MODULE_15__["default"].addEventListener('statechanged', handler);
   });
 };
 const getDisplayNoneWhileDisabledClass = id => "addons-display-none-".concat(id);
@@ -1498,14 +1471,23 @@ const parseArguments = code => code.split(/(?=[^\\]%[nbs])/g).map(i => i.trim())
 const fixDisplayName = displayName => displayName.replace(/([^\s])(%[nbs])/g, (_, before, arg) => "".concat(before, " ").concat(arg));
 const compareArrays = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 let _firstAddBlockRan = false;
-const addonBlockColor = {
-  color: '#29beb8',
-  secondaryColor: '#3aa8a4',
-  tertiaryColor: '#3aa8a4'
-};
 const contextMenuCallbacks = [];
 const CONTEXT_MENU_ORDER = ['editor-devtools', 'block-switching', 'blocks2image', 'swap-local-global'];
 let createdAnyBlockContextMenus = false;
+const updateClasses = () => {
+  const state = _redux__WEBPACK_IMPORTED_MODULE_15__["default"].state;
+  const isSmallStage = state.scratchGui.stageSize.stageSize === 'small';
+  const isFullScreen = state.scratchGui.mode.isFullScreen;
+  const isPlayerOnly = state.scratchGui.mode.isPlayerOnly;
+  document.body.classList.toggle('sa-small-stage', isSmallStage && !isFullScreen && !isPlayerOnly);
+  document.body.classList.toggle('sa-body-editor', !isPlayerOnly || isFullScreen);
+};
+_redux__WEBPACK_IMPORTED_MODULE_15__["default"].addEventListener('statechanged', e => {
+  if (e.detail.action.type === 'scratch-gui/StageSize/SET_STAGE_SIZE' || e.detail.action.type === 'scratch-gui/mode/SET_FULL_SCREEN' || e.detail.action.type === 'scratch-gui/mode/SET_PLAYER') {
+    updateClasses();
+  }
+});
+updateClasses();
 const getInternalKey = element => Object.keys(element).find(key => key.startsWith('__reactInternalInstance$'));
 class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
   constructor(id) {
@@ -1515,7 +1497,7 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
     // traps is public API
     this.traps = {
       get vm() {
-        return tabReduxInstance.state.scratchGui.vm;
+        return _redux__WEBPACK_IMPORTED_MODULE_15__["default"].state.scratchGui.vm;
       },
       getBlockly: () => {
         if (_hooks__WEBPACK_IMPORTED_MODULE_4__["default"].blockly) {
@@ -1525,6 +1507,7 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
           _hooks__WEBPACK_IMPORTED_MODULE_4__["default"].blocklyCallbacks.push(() => resolve(_hooks__WEBPACK_IMPORTED_MODULE_4__["default"].blockly));
         });
       },
+      getWorkspace: () => _hooks__WEBPACK_IMPORTED_MODULE_4__["default"].blocklyWorkspace,
       getPaper: async () => {
         const modeSelector = await this.waitForElement("[class*='paint-editor_mode-selector']", {
           reduxCondition: state => state.scratchGui.editorTab.activeTabIndex === 1 && !state.scratchGui.mode.isPlayerOnly
@@ -1556,7 +1539,7 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
     };
   }
   get redux() {
-    return tabReduxInstance;
+    return _redux__WEBPACK_IMPORTED_MODULE_15__["default"];
   }
   waitForElement(selector) {
     let {
@@ -1569,7 +1552,7 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
     const evaluateCondition = () => {
       if (!externalEventSatisfied) return false;
       if (condition && !condition()) return false;
-      if (reduxCondition && !reduxCondition(tabReduxInstance.state)) return false;
+      if (reduxCondition && !reduxCondition(_redux__WEBPACK_IMPORTED_MODULE_15__["default"].state)) return false;
       return true;
     };
     if (evaluateCondition()) {
@@ -1624,40 +1607,40 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
       order,
       scope
     } = _ref2;
+    const q = document.querySelector.bind(document);
     const SHARED_SPACES = {
       stageHeader: {
-        element: () => document.querySelector("[class^='stage-header_stage-size-row']"),
+        // Non-fullscreen stage header only
+        element: () => q("[class^='stage-header_stage-size-row']"),
         from: () => [],
-        until: () => [document.querySelector("[class^='stage-header_stage-size-toggle-group']"), document.querySelector("[class^='stage-header_stage-size-row']").lastChild]
+        until: () => [
+        // Small/big stage buttons (for editor mode)
+        q("[class^='stage-header_stage-size-toggle-group']"),
+        // Full screen icon (for player mode)
+        q("[class^='stage-header_stage-size-row']").lastChild]
       },
       fullscreenStageHeader: {
-        element: () => document.querySelector("[class^='stage-header_stage-menu-wrapper']"),
-        from: function from() {
-          let emptyDiv = this.element().querySelector('.addon-spacer');
-          if (!emptyDiv) {
-            emptyDiv = document.createElement('div');
-            emptyDiv.style.marginLeft = 'auto';
-            emptyDiv.className = 'addon-spacer';
-            this.element().insertBefore(emptyDiv, this.element().lastChild);
-          }
-          return [emptyDiv];
-        },
-        until: () => [document.querySelector("[class^='stage-header_stage-menu-wrapper']").lastChild]
+        // Upstream uses sa-spacer for this one, but we don't need to
+        // Fullscreen stage header only
+        element: () => q("[class^='stage-header_fullscreen-buttons-row_']"),
+        from: () => [],
+        until: () => [q("[class^='stage-header_fullscreen-buttons-row_']").lastChild]
       },
       afterGreenFlag: {
-        element: () => document.querySelector("[class^='controls_controls-container']"),
+        element: () => q("[class^='controls_controls-container']"),
         from: () => [],
-        until: () => [document.querySelector("[class^='stop-all_stop-all']")]
+        until: () => [q("[class^='stop-all_stop-all']")]
       },
       afterStopButton: {
-        element: () => document.querySelector("[class^='controls_controls-container']"),
-        from: () => [document.querySelector("[class^='stop-all_stop-all']")],
+        element: () => q("[class^='controls_controls-container']"),
+        from: () => [q("[class^='stop-all_stop-all']")],
         until: () => []
       },
       afterSoundTab: {
-        element: () => document.querySelector("[class^='react-tabs_react-tabs__tab-list']"),
-        from: () => [document.querySelector("[class^='react-tabs_react-tabs__tab-list']").children[2]],
-        until: () => [document.querySelector('.sa-find-bar')]
+        element: () => q("[class^='react-tabs_react-tabs__tab-list']"),
+        from: () => [q("[class^='react-tabs_react-tabs__tab-list']").children[2]],
+        // Element used in find-bar addon
+        until: () => [q('.sa-find-bar')]
       },
       assetContextMenuAfterExport: {
         element: () => scope,
@@ -1669,15 +1652,24 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
         from: () => Array.prototype.filter.call(scope.children, c => c.textContent === this.scratchMessage('gui.spriteSelectorItem.contextMenuDelete')),
         until: () => []
       },
+      monitor: {
+        element: () => scope,
+        from: () => {
+          const endOfVanilla = [this.scratchMessage('gui.monitor.contextMenu.large'), this.scratchMessage('gui.monitor.contextMenu.slider'), this.scratchMessage('gui.monitor.contextMenu.sliderRange'), this.scratchMessage('gui.monitor.contextMenu.export')];
+          const potential = Array.prototype.filter.call(scope.children, c => endOfVanilla.includes(c.textContent));
+          return [potential[potential.length - 1]];
+        },
+        until: () => []
+      },
       paintEditorZoomControls: {
-        element: () => document.querySelector('.sa-paintEditorZoomControls-wrapper') || (() => {
+        element: () => q('.sa-paintEditorZoomControls-wrapper') || (() => {
           const wrapper = Object.assign(document.createElement('div'), {
             className: 'sa-paintEditorZoomControls-wrapper'
           });
           wrapper.style.display = 'flex';
           wrapper.style.flexDirection = 'row-reverse';
           wrapper.style.height = 'calc(1.95rem + 2px)';
-          const zoomControls = document.querySelector("[class^='paint-editor_zoom-controls']");
+          const zoomControls = q("[class^='paint-editor_zoom-controls']");
           zoomControls.replaceWith(wrapper);
           wrapper.appendChild(zoomControls);
           return wrapper;
@@ -1711,7 +1703,6 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
           // If this is the last child, insertAfter will stay null
           // and the element will be appended at the end of space
         }
-
         continue;
       }
       if (until.includes(child)) {
@@ -1787,9 +1778,14 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
           if (!this.isInsertionMarker() && this.type === 'procedures_call') {
             const block = this.procCode_ && vm.runtime.getAddonBlock(this.procCode_);
             if (block) {
-              this.colour_ = addonBlockColor.color;
-              this.colourSecondary_ = addonBlockColor.secondaryColor;
-              this.colourTertiary_ = addonBlockColor.tertiaryColor;
+              const theme = _redux__WEBPACK_IMPORTED_MODULE_15__["default"].state.scratchGui.theme.theme;
+              const colors = theme.getBlockColors().addons;
+              this.colour_ = colors.primary;
+              this.colourSecondary_ = colors.secondary;
+              this.colourTertiary_ = colors.tertiary;
+              this.colourQuaternary_ = colors.quaternary;
+
+              // do not show edit button
               this.customContextMenu = null;
             }
           }
@@ -1822,12 +1818,6 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
   getCustomBlock(procedureCode) {
     const vm = this.traps.vm;
     return vm.getAddonBlock(procedureCode);
-  }
-  getCustomBlockColor() {
-    return addonBlockColor;
-  }
-  setCustomBlockColor(newColor) {
-    Object.assign(addonBlockColor, newColor);
   }
   createBlockContextMenu(callback) {
     let {
@@ -1885,7 +1875,7 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
             const itemElt = blocklyContextMenu.children[i];
             itemElt.style.paddingTop = '2px';
             itemElt.classList.add('sa-blockly-menu-item-border');
-            itemElt.style.borderTop = '1px solid hsla(0, 0%, 0%, 0.15)';
+            itemElt.style.borderTop = '1px solid var(--ui-black-transparent)';
           }
         });
       };
@@ -1906,7 +1896,11 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
     return navigator.clipboard.write(items);
   }
   scratchMessage(id) {
-    return tabReduxInstance.state.locales.messages[id];
+    return _redux__WEBPACK_IMPORTED_MODULE_15__["default"].state.locales.messages[id];
+  }
+  scratchClassReady() {
+    // they are always ready
+    return Promise.resolve();
   }
   scratchClass() {
     const scratchClasses = getScratchClassNames();
@@ -1936,8 +1930,11 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
   get editorMode() {
     return getEditorMode();
   }
-  displayNoneWhileDisabled(el) {
+  displayNoneWhileDisabled(el, options) {
     el.classList.add(getDisplayNoneWhileDisabledClass(this._id));
+    if (options && options.display) {
+      el.style.display = options.display;
+    }
   }
   get direction() {
     return this.redux.state.locales.isRtl ? 'rtl' : 'ltr';
@@ -1961,6 +1958,34 @@ class Tab extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
       args[_key5] = arguments[_key5];
     }
     return _modal__WEBPACK_IMPORTED_MODULE_10__["prompt"](this, ...args);
+  }
+  recolorable() {
+    // this is some pretty awful code that makes a *lot* of assumptions about how addons work
+
+    const image = document.createElement('img');
+    let svg = '';
+    const updateRealSrc = () => {
+      const newSrc = svg.replace(/#855cd6/gi, window.Recolor.primary);
+      const nativeSrcSetter = Object.getOwnPropertyDescriptor(window.HTMLImageElement.prototype, 'src').set;
+      nativeSrcSetter.call(image, "data:image/svg+xml;,".concat(encodeURIComponent(newSrc)));
+    };
+    Object.defineProperty(image, 'src', {
+      get: () => {
+        // return the 'original' source, roughly
+        if (!svg) return '';
+        return "data:image/svg+xml;,".concat(encodeURIComponent(svg));
+      },
+      set: newSrc => {
+        // we assume it is a base64-encoded data: URI that is supported by atob()
+        const base64 = newSrc.split(';base64,')[1];
+        svg = atob(base64);
+        updateRealSrc();
+      }
+    });
+
+    // this leaks memory if an addon creates these disposably
+    _hooks__WEBPACK_IMPORTED_MODULE_4__["default"].recolorCallbacks.push(updateRealSrc);
+    return image;
   }
 }
 class Settings extends _event_target__WEBPACK_IMPORTED_MODULE_3__["default"] {
@@ -2007,7 +2032,7 @@ class AddonRunner {
     };
   }
   _msg(key, vars, handler) {
-    const namespacedKey = "".concat(this.id, "/").concat(key);
+    const namespacedKey = key.startsWith('/') ? key.substring(1) : "".concat(this.id, "/").concat(key);
     if (this.messageCache[namespacedKey]) {
       return this.messageCache[namespacedKey].format(vars);
     }
@@ -2194,37 +2219,6 @@ const runAddon = addonId => {
   const runner = new AddonRunner(addonId);
   runner.run();
 };
-let oldMode = getEditorMode();
-const emitUrlChange = () => {
-  // In Scratch, URL changes usually mean someone went from editor to fullscreen or something like that.
-  // This is not the case in TW -- the URL can change for many other reasons that addons probably aren't prepared
-  // to handle.
-  const newMode = getEditorMode();
-  if (newMode !== oldMode) {
-    oldMode = newMode;
-    setTimeout(() => {
-      for (const addon of AddonRunner.instances) {
-        addon.publicAPI.addon.tab.dispatchEvent(new CustomEvent('urlChange'));
-      }
-    });
-  }
-};
-const originalReplaceState = history.replaceState;
-history.replaceState = function () {
-  for (var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
-    args[_key6] = arguments[_key6];
-  }
-  originalReplaceState.apply(this, args);
-  emitUrlChange();
-};
-const originalPushState = history.pushState;
-history.pushState = function () {
-  for (var _len7 = arguments.length, args = new Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {
-    args[_key7] = arguments[_key7];
-  }
-  originalPushState.apply(this, args);
-  emitUrlChange();
-};
 _settings_store_singleton__WEBPACK_IMPORTED_MODULE_1__["default"].addEventListener('addon-changed', e => {
   const addonId = e.detail.addonId;
   const runner = AddonRunner.instances.find(i => i.id === addonId);
@@ -2268,6 +2262,7 @@ __webpack_require__.r(__webpack_exports__);
 // than those in <head> and above dark mode which is appended at the start of <body>
 const stylesheetContainer = document.createElement('div');
 stylesheetContainer.style.display = 'none';
+stylesheetContainer.className = 'addons-styles';
 document.body.appendChild(stylesheetContainer);
 
 /**
@@ -2416,8 +2411,8 @@ __webpack_require__.r(__webpack_exports__);
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 // This file is imported from
 // https://github.com/ScratchAddons/ScratchAddons/blob/master/addon-api/content-script/contextmenu.js
 
@@ -2544,10 +2539,13 @@ __webpack_require__.r(__webpack_exports__);
   "default-costume-editor-color": () => __webpack_require__.e(/*! import() | addon-entry-default-costume-editor-color */ "addon-entry-default-costume-editor-color").then(__webpack_require__.bind(null, /*! ../addons/default-costume-editor-color/_runtime_entry.js */ "./src/addons/addons/default-costume-editor-color/_runtime_entry.js")),
   "bitmap-copy": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/bitmap-copy/_runtime_entry.js */ "./src/addons/addons/bitmap-copy/_runtime_entry.js")),
   "2d-color-picker": () => __webpack_require__.e(/*! import() | addon-entry-2d-color-picker */ "addon-entry-2d-color-picker").then(__webpack_require__.bind(null, /*! ../addons/2d-color-picker/_runtime_entry.js */ "./src/addons/addons/2d-color-picker/_runtime_entry.js")),
+  "paint-skew": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/paint-skew/_runtime_entry.js */ "./src/addons/addons/paint-skew/_runtime_entry.js")),
   "better-img-uploads": () => __webpack_require__.e(/*! import() | addon-entry-better-img-uploads */ "addon-entry-better-img-uploads").then(__webpack_require__.bind(null, /*! ../addons/better-img-uploads/_runtime_entry.js */ "./src/addons/addons/better-img-uploads/_runtime_entry.js")),
   "pick-colors-from-stage": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/pick-colors-from-stage/_runtime_entry.js */ "./src/addons/addons/pick-colors-from-stage/_runtime_entry.js")),
   "custom-block-shape": () => __webpack_require__.e(/*! import() | addon-entry-custom-block-shape */ "addon-entry-custom-block-shape").then(__webpack_require__.bind(null, /*! ../addons/custom-block-shape/_runtime_entry.js */ "./src/addons/addons/custom-block-shape/_runtime_entry.js")),
+  "editor-square-inputs": () => __webpack_require__.e(/*! import() | addon-entry-editor-square-inputs */ "addon-entry-editor-square-inputs").then(__webpack_require__.bind(null, /*! ../addons/editor-square-inputs/_runtime_entry.js */ "./src/addons/addons/editor-square-inputs/_runtime_entry.js")),
   "zebra-striping": () => __webpack_require__.e(/*! import() | addon-entry-zebra-striping */ "addon-entry-zebra-striping").then(__webpack_require__.bind(null, /*! ../addons/zebra-striping/_runtime_entry.js */ "./src/addons/addons/zebra-striping/_runtime_entry.js")),
+  "editor-compact": () => __webpack_require__.e(/*! import() | addon-entry-editor-compact */ "addon-entry-editor-compact").then(__webpack_require__.bind(null, /*! ../addons/editor-compact/_runtime_entry.js */ "./src/addons/addons/editor-compact/_runtime_entry.js")),
   "editor-theme3": () => __webpack_require__.e(/*! import() | addon-entry-editor-theme3 */ "addon-entry-editor-theme3").then(__webpack_require__.bind(null, /*! ../addons/editor-theme3/_runtime_entry.js */ "./src/addons/addons/editor-theme3/_runtime_entry.js")),
   "custom-block-text": () => __webpack_require__.e(/*! import() | addon-entry-custom-block-text */ "addon-entry-custom-block-text").then(__webpack_require__.bind(null, /*! ../addons/custom-block-text/_runtime_entry.js */ "./src/addons/addons/custom-block-text/_runtime_entry.js")),
   "editor-colored-context-menus": () => __webpack_require__.e(/*! import() | addon-entry-editor-colored-context-menus */ "addon-entry-editor-colored-context-menus").then(__webpack_require__.bind(null, /*! ../addons/editor-colored-context-menus/_runtime_entry.js */ "./src/addons/addons/editor-colored-context-menus/_runtime_entry.js")),
@@ -2562,6 +2560,7 @@ __webpack_require__.r(__webpack_exports__);
   "block-switching": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/block-switching/_runtime_entry.js */ "./src/addons/addons/block-switching/_runtime_entry.js")),
   "load-extensions": () => __webpack_require__.e(/*! import() | addon-entry-load-extensions */ "addon-entry-load-extensions").then(__webpack_require__.bind(null, /*! ../addons/load-extensions/_runtime_entry.js */ "./src/addons/addons/load-extensions/_runtime_entry.js")),
   "custom-zoom": () => __webpack_require__.e(/*! import() | addon-entry-custom-zoom */ "addon-entry-custom-zoom").then(__webpack_require__.bind(null, /*! ../addons/custom-zoom/_runtime_entry.js */ "./src/addons/addons/custom-zoom/_runtime_entry.js")),
+  "copy-reporter": () => __webpack_require__.e(/*! import() | addon-entry-copy-reporter */ "addon-entry-copy-reporter").then(__webpack_require__.bind(null, /*! ../addons/copy-reporter/_runtime_entry.js */ "./src/addons/addons/copy-reporter/_runtime_entry.js")),
   "initialise-sprite-position": () => __webpack_require__.e(/*! import() | addon-entry-initialise-sprite-position */ "addon-entry-initialise-sprite-position").then(__webpack_require__.bind(null, /*! ../addons/initialise-sprite-position/_runtime_entry.js */ "./src/addons/addons/initialise-sprite-position/_runtime_entry.js")),
   "blocks2image": () => __webpack_require__.e(/*! import() | addon-entry-blocks2image */ "addon-entry-blocks2image").then(__webpack_require__.bind(null, /*! ../addons/blocks2image/_runtime_entry.js */ "./src/addons/addons/blocks2image/_runtime_entry.js")),
   "remove-curved-stage-border": () => __webpack_require__.e(/*! import() | addon-entry-remove-curved-stage-border */ "addon-entry-remove-curved-stage-border").then(__webpack_require__.bind(null, /*! ../addons/remove-curved-stage-border/_runtime_entry.js */ "./src/addons/addons/remove-curved-stage-border/_runtime_entry.js")),
@@ -2574,6 +2573,7 @@ __webpack_require__.r(__webpack_exports__);
   "no-script-bumping": () => __webpack_require__.e(/*! import() | addon-entry-no-script-bumping */ "addon-entry-no-script-bumping").then(__webpack_require__.bind(null, /*! ../addons/no-script-bumping/_runtime_entry.js */ "./src/addons/addons/no-script-bumping/_runtime_entry.js")),
   "disable-stage-drag-select": () => __webpack_require__.e(/*! import() | addon-entry-disable-stage-drag-select */ "addon-entry-disable-stage-drag-select").then(__webpack_require__.bind(null, /*! ../addons/disable-stage-drag-select/_runtime_entry.js */ "./src/addons/addons/disable-stage-drag-select/_runtime_entry.js")),
   "move-to-top-bottom": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/move-to-top-bottom/_runtime_entry.js */ "./src/addons/addons/move-to-top-bottom/_runtime_entry.js")),
+  "move-to-top-layer": () => __webpack_require__.e(/*! import() | addon-entry-move-to-top-layer */ "addon-entry-move-to-top-layer").then(__webpack_require__.bind(null, /*! ../addons/move-to-top-layer/_runtime_entry.js */ "./src/addons/addons/move-to-top-layer/_runtime_entry.js")),
   "disable-paste-offset": () => __webpack_require__.e(/*! import() | addon-entry-disable-paste-offset */ "addon-entry-disable-paste-offset").then(__webpack_require__.bind(null, /*! ../addons/disable-paste-offset/_runtime_entry.js */ "./src/addons/addons/disable-paste-offset/_runtime_entry.js")),
   "block-duplicate": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/block-duplicate/_runtime_entry.js */ "./src/addons/addons/block-duplicate/_runtime_entry.js")),
   "rename-broadcasts": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/rename-broadcasts/_runtime_entry.js */ "./src/addons/addons/rename-broadcasts/_runtime_entry.js")),
@@ -2581,6 +2581,7 @@ __webpack_require__.r(__webpack_exports__);
   "editor-comment-previews": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/editor-comment-previews/_runtime_entry.js */ "./src/addons/addons/editor-comment-previews/_runtime_entry.js")),
   "columns": () => __webpack_require__.e(/*! import() | addon-entry-columns */ "addon-entry-columns").then(__webpack_require__.bind(null, /*! ../addons/columns/_runtime_entry.js */ "./src/addons/addons/columns/_runtime_entry.js")),
   "number-pad": () => __webpack_require__.e(/*! import() | addon-entry-number-pad */ "addon-entry-number-pad").then(__webpack_require__.bind(null, /*! ../addons/number-pad/_runtime_entry.js */ "./src/addons/addons/number-pad/_runtime_entry.js")),
+  "editor-number-arrow-keys": () => __webpack_require__.e(/*! import() | addon-entry-editor-number-arrow-keys */ "addon-entry-editor-number-arrow-keys").then(__webpack_require__.bind(null, /*! ../addons/editor-number-arrow-keys/_runtime_entry.js */ "./src/addons/addons/editor-number-arrow-keys/_runtime_entry.js")),
   "script-snap": () => __webpack_require__.e(/*! import() | addon-entry-script-snap */ "addon-entry-script-snap").then(__webpack_require__.bind(null, /*! ../addons/script-snap/_runtime_entry.js */ "./src/addons/addons/script-snap/_runtime_entry.js")),
   "fullscreen": () => __webpack_require__.e(/*! import() | addon-entry-fullscreen */ "addon-entry-fullscreen").then(__webpack_require__.bind(null, /*! ../addons/fullscreen/_runtime_entry.js */ "./src/addons/addons/fullscreen/_runtime_entry.js")),
   "hide-stage": () => __webpack_require__.e(/*! import() | addon-entry-hide-stage */ "addon-entry-hide-stage").then(__webpack_require__.bind(null, /*! ../addons/hide-stage/_runtime_entry.js */ "./src/addons/addons/hide-stage/_runtime_entry.js")),
@@ -2607,6 +2608,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   "de": () => __webpack_require__.e(/*! import() | addon-l10n-de */ "addon-l10n-de").then(__webpack_require__.t.bind(null, /*! ../addons-l10n/de.json */ "./src/addons/addons-l10n/de.json", 3)),
   "es": () => __webpack_require__.e(/*! import() | addon-l10n-es */ "addon-l10n-es").then(__webpack_require__.t.bind(null, /*! ../addons-l10n/es.json */ "./src/addons/addons-l10n/es.json", 3)),
+  "fi": () => __webpack_require__.e(/*! import() | addon-l10n-fi */ "addon-l10n-fi").then(__webpack_require__.t.bind(null, /*! ../addons-l10n/fi.json */ "./src/addons/addons-l10n/fi.json", 3)),
   "fr": () => __webpack_require__.e(/*! import() | addon-l10n-fr */ "addon-l10n-fr").then(__webpack_require__.t.bind(null, /*! ../addons-l10n/fr.json */ "./src/addons/addons-l10n/fr.json", 3)),
   "hu": () => __webpack_require__.e(/*! import() | addon-l10n-hu */ "addon-l10n-hu").then(__webpack_require__.t.bind(null, /*! ../addons-l10n/hu.json */ "./src/addons/addons-l10n/hu.json", 3)),
   "it": () => __webpack_require__.e(/*! import() | addon-l10n-it */ "addon-l10n-it").then(__webpack_require__.t.bind(null, /*! ../addons-l10n/it.json */ "./src/addons/addons-l10n/it.json", 3)),
@@ -3123,6 +3125,58 @@ if (typeof queueMicrotask !== 'function') {
     Promise.resolve().then(callback);
   };
 }
+
+/***/ }),
+
+/***/ "./src/addons/redux.js":
+/*!*****************************!*\
+  !*** ./src/addons/redux.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _event_target__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./event-target */ "./src/addons/event-target.js");
+/* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hooks */ "./src/addons/hooks.js");
+
+
+class AddonRedux extends _event_target__WEBPACK_IMPORTED_MODULE_0__["default"] {
+  constructor() {
+    super();
+    this._isInReducer = false;
+    this._nextState = null;
+    _hooks__WEBPACK_IMPORTED_MODULE_1__["default"].appStateReducer = (action, prev, next) => {
+      this._isInReducer = true;
+      this._nextState = next;
+      this.dispatchEvent(new CustomEvent('statechanged', {
+        detail: {
+          action,
+          prev,
+          next
+        }
+      }));
+      this._nextState = null;
+      this._isInReducer = false;
+    };
+  }
+  initialize() {
+    // no-op; it is always initialized
+  }
+  dispatch(m) {
+    if (this._isInReducer) {
+      queueMicrotask(() => _hooks__WEBPACK_IMPORTED_MODULE_1__["default"].appStateStore.dispatch(m));
+    } else {
+      _hooks__WEBPACK_IMPORTED_MODULE_1__["default"].appStateStore.dispatch(m);
+    }
+  }
+  get state() {
+    if (this._nextState) return this._nextState;
+    return _hooks__WEBPACK_IMPORTED_MODULE_1__["default"].appStateStore.getState();
+  }
+}
+const reduxInstance = new AddonRedux();
+/* harmony default export */ __webpack_exports__["default"] = (reduxInstance);
 
 /***/ })
 

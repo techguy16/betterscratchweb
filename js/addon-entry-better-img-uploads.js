@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
     });
     button.append(img);
     const input = Object.assign(document.createElement("input"), {
-      accept: ".svg, .png, .bmp, .jpg, .jpeg",
+      accept: ".svg, .png, .bmp, .jpg, .jpeg, .sprite2, .sprite3",
       className: "".concat(addon.tab.scratchClass("action-menu_file-input" /* TODO: when adding dynamicDisable, ensure compat with drag-drop */), " sa-better-img-uploads-input"),
       multiple: "true",
       type: "file"
@@ -162,8 +162,8 @@ __webpack_require__.r(__webpack_exports__);
     let files = Array.from(el.files);
     let processed = new Array();
     for (let file of files) {
-      if (file.type.includes("svg")) {
-        //The file is already a svg, we should not change it...
+      if (!/\.(png|jpe?g|bmp)$/i.test(file.name)) {
+        // The file is not processable, so we should ignore it, and let scratch deal with it..
         processed.push(file);
         continue;
       }
@@ -201,7 +201,7 @@ __webpack_require__.r(__webpack_exports__);
       } //Otherwise just leave the image the same size
 
       function getResizedWidthHeight(oldWidth, oldHeight) {
-        const STAGE_WIDTH = 479;
+        const STAGE_WIDTH = 480;
         const STAGE_HEIGHT = 360;
         const STAGE_RATIO = STAGE_WIDTH / STAGE_HEIGHT;
 
@@ -254,7 +254,6 @@ __webpack_require__.r(__webpack_exports__);
 
     el.dispatchEvent(new e.constructor(e.type, e)); //Start a new, duplicate, event, but allow scratch to receive it this time.
   }
-
   function FileList() {
     let arr = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
     //File list constructor. Does not need the `new` keyword, but it is easier to read

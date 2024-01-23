@@ -44,10 +44,11 @@ __webpack_require__.r(__webpack_exports__);
   // Do not focus sprite after dragging it
   const oldStopDrag = vm.stopDrag;
   vm.stopDrag = function () {
+    const allowDrag = shiftKeyPressed || addon.settings.get("drag_while_stopped") && !addon.tab.redux.state.scratchGui.vmStatus.running;
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
-    if (shiftKeyPressed || addon.self.disabled) return oldStopDrag.call(this, ...args);
+    if (allowDrag || addon.self.disabled) return oldStopDrag.call(this, ...args);
     const setEditingTarget = this.setEditingTarget;
     this.setEditingTarget = () => {};
     const r = oldStopDrag.call(this, ...args);
@@ -58,11 +59,12 @@ __webpack_require__.r(__webpack_exports__);
   // Don't let the editor drag sprites that aren't marked as draggable
   const oldGetTargetIdForDrawableId = vm.getTargetIdForDrawableId;
   vm.getTargetIdForDrawableId = function () {
+    const allowDrag = shiftKeyPressed || addon.settings.get("drag_while_stopped") && !addon.tab.redux.state.scratchGui.vmStatus.running;
     for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
       args[_key2] = arguments[_key2];
     }
     const targetId = oldGetTargetIdForDrawableId.call(this, ...args);
-    if (shiftKeyPressed || addon.self.disabled) return targetId;
+    if (allowDrag || addon.self.disabled) return targetId;
     if (targetId !== null) {
       const target = this.runtime.getTargetById(targetId);
       if (target && !target.draggable) {

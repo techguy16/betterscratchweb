@@ -19,6 +19,40 @@ const resources = {
 
 /***/ }),
 
+/***/ "./src/addons/addons/custom-block-shape/update-all-blocks.js":
+/*!*******************************************************************!*\
+  !*** ./src/addons/addons/custom-block-shape/update-all-blocks.js ***!
+  \*******************************************************************/
+/*! exports provided: updateAllBlocks */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateAllBlocks", function() { return updateAllBlocks; });
+function updateAllBlocks(vm, workspace, blockly) {
+  const eventsOriginallyEnabled = blockly.Events.isEnabled();
+  blockly.Events.disable(); // Clears workspace right-click→undo (see SA/SA#6691)
+
+  if (workspace) {
+    if (vm.editingTarget) {
+      vm.emitWorkspaceUpdate();
+    }
+    const flyout = workspace.getFlyout();
+    if (flyout) {
+      const flyoutWorkspace = flyout.getWorkspace();
+      window.Blockly.Xml.clearWorkspaceAndLoadFromXml(window.Blockly.Xml.workspaceToDom(flyoutWorkspace), flyoutWorkspace);
+      workspace.getToolbox().refreshSelection();
+      workspace.toolboxRefreshEnabled_ = true;
+    }
+  }
+
+  // There's no particular reason for checking whether events were originally enabled.
+  // Unconditionally enabling events at this point could, in theory, cause bugs in the future.
+  if (eventsOriginallyEnabled) blockly.Events.enable(); // Re-enable events
+}
+
+/***/ }),
+
 /***/ "./src/addons/addons/custom-block-shape/userscript.js":
 /*!************************************************************!*\
   !*** ./src/addons/addons/custom-block-shape/userscript.js ***!
@@ -28,6 +62,8 @@ const resources = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _update_all_blocks_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./update-all-blocks.js */ "./src/addons/addons/custom-block-shape/update-all-blocks.js");
+
 /* harmony default export */ __webpack_exports__["default"] = (async function (_ref) {
   let {
     addon,
@@ -36,25 +72,11 @@ __webpack_require__.r(__webpack_exports__);
   var BlocklyInstance = await addon.tab.traps.getBlockly();
   (function (Blockly) {
     const BlockSvg = BlocklyInstance.BlockSvg;
+    var originalDropdownObject = BlocklyInstance.FieldDropdown.prototype.positionArrow;
     var vm = addon.tab.traps.vm;
     const {
       GRID_UNIT
     } = BlockSvg;
-    function updateAllBlocks() {
-      const workspace = Blockly.getMainWorkspace();
-      if (workspace) {
-        if (vm.editingTarget) {
-          vm.emitWorkspaceUpdate();
-        }
-        const flyout = workspace.getFlyout();
-        if (flyout) {
-          const flyoutWorkspace = flyout.getWorkspace();
-          Blockly.Xml.clearWorkspaceAndLoadFromXml(Blockly.Xml.workspaceToDom(flyoutWorkspace), flyoutWorkspace);
-          workspace.getToolbox().refreshSelection();
-          workspace.toolboxRefreshEnabled_ = true;
-        }
-      }
-    }
     function applyChanges() {
       let paddingSize = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : addon.settings.get("paddingSize");
       let cornerSize = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : addon.settings.get("cornerSize");
@@ -80,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
       BlockSvg.NOTCH_PATH_RIGHT = "h " + (-4 * (cornerSize - 1) - 5 * (1 - notchSize)) + "c -2,0 -3," + 1 * notchSize + " -4," + 2 * notchSize + " l " + -4 * multiplier * notchSize + "," + 4 * multiplier * notchSize + " c -1," + 1 * notchSize + " -2," + 2 * notchSize + " -4," + 2 * notchSize + " h " + -24 * (multiplier - 0.5) + " c -2,0 -3,-" + 1 * notchSize + " -4,-" + 2 * notchSize + " l " + -4 * multiplier * notchSize + "," + -4 * multiplier * notchSize + "c -1,-" + 1 * notchSize + " -2,-" + 2 * notchSize + " -4,-" + 2 * notchSize;
       BlockSvg.INPUT_SHAPE_HEXAGONAL = "M " + 4 * GRID_UNIT * multiplier + ",0 " + " h " + 4 * GRID_UNIT + " l " + 4 * GRID_UNIT * multiplier + "," + 4 * GRID_UNIT * multiplier + " l " + -4 * GRID_UNIT * multiplier + "," + 4 * GRID_UNIT * multiplier + " h " + -4 * GRID_UNIT + " l " + -4 * GRID_UNIT * multiplier + "," + -4 * GRID_UNIT * multiplier + " l " + 4 * GRID_UNIT * multiplier + "," + -4 * GRID_UNIT * multiplier + " z";
       BlockSvg.INPUT_SHAPE_HEXAGONAL_WIDTH = 12 * GRID_UNIT * multiplier;
-      BlockSvg.INPUT_SHAPE_ROUND = "M " + 4 * GRID_UNIT + ",0" + " h " + 4 * GRID_UNIT + " a " + 4 * GRID_UNIT + " " + 4 * GRID_UNIT + " 0 0 1 0 " + 8 * GRID_UNIT + " h " + -4 * GRID_UNIT + " a " + 4 * GRID_UNIT + " " + 4 * GRID_UNIT + " 0 0 1 0 -" + 8 * GRID_UNIT + " z";
+      BlockSvg.INPUT_SHAPE_ROUND = "M " + 4 * GRID_UNIT * multiplier + ",0" + " h " + 4 * GRID_UNIT * multiplier + " a " + 4 * GRID_UNIT * multiplier + " " + 4 * GRID_UNIT * multiplier + " 0 0 1 0 " + 8 * GRID_UNIT * multiplier + " h " + -4 * GRID_UNIT * multiplier + " a " + 4 * GRID_UNIT * multiplier + " " + 4 * GRID_UNIT * multiplier + " 0 0 1 0 -" + 8 * GRID_UNIT * multiplier + " z";
       BlockSvg.INPUT_SHAPE_ROUND_WIDTH = 12 * GRID_UNIT * multiplier;
       BlockSvg.INPUT_SHAPE_HEIGHT = 8 * GRID_UNIT * multiplier;
       BlockSvg.FIELD_HEIGHT = 8 * GRID_UNIT * multiplier; // NOTE: Determines string input heights
@@ -95,9 +117,9 @@ __webpack_require__.r(__webpack_exports__);
       BlockSvg.SHAPE_IN_SHAPE_PADDING[1][0] = 5 * GRID_UNIT * multiplier;
       BlockSvg.SHAPE_IN_SHAPE_PADDING[1][2] = 5 * GRID_UNIT * multiplier;
       BlockSvg.SHAPE_IN_SHAPE_PADDING[1][3] = 5 * GRID_UNIT * multiplier;
-      var originalDropdownObject = BlocklyInstance.FieldDropdown.prototype.positionArrow;
       BlocklyInstance.FieldDropdown.prototype.positionArrow = function (x) {
-        this.arrowY_ = 11 * multiplier;
+        const arrowHeight = 12;
+        this.arrowY_ = (BlockSvg.FIELD_HEIGHT - arrowHeight) / 2 + 1;
         return originalDropdownObject.call(this, x);
       };
 
@@ -115,7 +137,7 @@ __webpack_require__.r(__webpack_exports__);
     }
     function applyAndUpdate() {
       applyChanges(...arguments);
-      updateAllBlocks();
+      Object(_update_all_blocks_js__WEBPACK_IMPORTED_MODULE_0__["updateAllBlocks"])(vm, addon.tab.traps.getWorkspace(), BlocklyInstance);
     }
     addon.settings.addEventListener("change", () => applyAndUpdate());
     addon.self.addEventListener("disabled", () => {

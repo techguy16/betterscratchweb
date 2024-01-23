@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
   };
   const getTargetsThatUseVariable = id => vm.runtime.targets.filter(target => target.isOriginal).filter(target => Object.values(target.blocks._blocks).find(block => block.fields.LIST && block.fields.LIST.id === id || block.fields.VARIABLE && block.fields.VARIABLE.id === id));
 
-  // https://github.com/LLK/scratch-vm/blob/7c6f1e44fb0a9b0d0279225cd4c62fbe59b6af54/src/engine/blocks.js#L388-L394
+  // https://github.com/scratchfoundation/scratch-vm/blob/7c6f1e44fb0a9b0d0279225cd4c62fbe59b6af54/src/engine/blocks.js#L388-L394
   const getTargetsWithLocalVariableNamed = (name, type) => vm.runtime.targets.filter(target => target.isOriginal && target.lookupVariableByNameAndType(name, type, true));
   const getVmVariable = id => vm.editingTarget.lookupVariableById(id);
   const isStageSelected = () => vm.editingTarget.isStage;
@@ -93,7 +93,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   };
 
-  // https://github.com/LLK/scratch-blocks/blob/0d6012df1e18e66d82c1247f1f6d772a719982a7/core/variable_events.js#L194
+  // https://github.com/scratchfoundation/scratch-blocks/blob/0d6012df1e18e66d82c1247f1f6d772a719982a7/core/variable_events.js#L194
   const customUndoVarDelete = function customUndoVarDelete(forward) {
     const workspace = this.getEventWorkspace_();
     if (forward) {
@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   };
 
-  // https://github.com/LLK/scratch-blocks/blob/0d6012df1e18e66d82c1247f1f6d772a719982a7/core/variable_events.js#L131
+  // https://github.com/scratchfoundation/scratch-blocks/blob/0d6012df1e18e66d82c1247f1f6d772a719982a7/core/variable_events.js#L131
   const customUndoVarCreate = function customUndoVarCreate(forward) {
     const workspace = this.getEventWorkspace_();
     if (forward) {
@@ -118,7 +118,7 @@ __webpack_require__.r(__webpack_exports__);
   };
   const flushBlocklyEventQueue = () => ScratchBlocks.Events.fireNow_();
   const beginPreservingState = (workspace, id) => {
-    // oldMonitorState is an instance of https://github.com/LLK/scratch-vm/blob/develop/src/engine/monitor-record.js or undefined
+    // oldMonitorState is an instance of https://github.com/scratchfoundation/scratch-vm/blob/develop/src/engine/monitor-record.js or undefined
     const oldMonitorState = vm.runtime._monitorState.get(id);
     const oldVmVariable = getVmVariable(id);
     return () => {
@@ -353,7 +353,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   };
 
-  // https://github.com/LLK/scratch-blocks/blob/c5014f61e2e538e99601a9e0cb39e339e44c3910/core/variables.js#L470
+  // https://github.com/scratchfoundation/scratch-blocks/blob/c5014f61e2e538e99601a9e0cb39e339e44c3910/core/variables.js#L470
   const originalRenameVariable = ScratchBlocks.Variables.renameVariable;
   ScratchBlocks.Variables.renameVariable = function (workspace, variable, opt_callback) {
     const ret = originalRenameVariable.call(this, workspace, variable, function () {

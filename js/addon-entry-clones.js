@@ -13,7 +13,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".clone-container-container {\n  display: none;\n  align-items: center;\n  padding: 0.25rem;\n  user-select: none;\n  color: #a065ff;\n}\n\n.clone-container {\n  font-size: 0.625rem;\n  font-weight: bold;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  white-space: nowrap;\n}\n\n.clone-icon {\n  margin: 0.25rem;\n  display: inline-block;\n  background-image: url(" + escape(__webpack_require__(/*! ./cat.svg */ "./src/addons/addons/clones/cat.svg")) + ");\n  height: 16px;\n  width: 16px;\n}\n\n.clone-container-container[data-count=\"none\"] {\n  display: none;\n}\n\n.clone-container-container[data-count=\"full\"] {\n  color: #ff6680;\n}\n\n.clone-container-container[data-count=\"full\"] .clone-icon {\n  background-image: url(" + escape(__webpack_require__(/*! ./300cats.svg */ "./src/addons/addons/clones/300cats.svg")) + ");\n}\n\n.clone-count::after {\n  content: attr(data-str);\n}\n\n.sa-clones-small .clone-container-container {\n  display: none !important;\n}\n", ""]);
+exports.push([module.i, ".clone-container-container {\n  display: none;\n  align-items: center;\n  padding: 0.25rem;\n  user-select: none;\n  color: #a065ff;\n}\n\n.clone-container {\n  font-size: 0.625rem;\n  font-weight: bold;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  white-space: nowrap;\n}\n\n.clone-icon {\n  margin: 0.25rem;\n  display: inline-block;\n  background-image: url(" + escape(__webpack_require__(/*! ./cat.svg */ "./src/addons/addons/clones/cat.svg")) + ");\n  height: 16px;\n  width: 16px;\n}\n\n.clone-container-container[data-count=\"none\"] {\n  display: none;\n}\n\n.clone-container-container[data-count=\"full\"] {\n  color: #ff6680;\n}\n\n.clone-container-container[data-count=\"full\"] .clone-icon {\n  background-image: url(" + escape(__webpack_require__(/*! ./300cats.svg */ "./src/addons/addons/clones/300cats.svg")) + ");\n}\n\n.clone-count::after {\n  content: attr(data-str);\n}\n\n.sa-small-stage .clone-container-container {\n  display: none !important;\n}\n", ""]);
 
 // exports
 
@@ -51,9 +51,9 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./src/addons/addons/clones/300cats.svg ***!
   \**********************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/60fb267c5ab0c6f4ed9ab4a891ca7dd5.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTS0xLTFoODAydjYwMkgtMXoiLz48ZyBmaWxsPSIjZmZkMWQ4Ij48Y2lyY2xlIGN5PSI4LjQ4NCIgY3g9IjcuNDE0IiByPSI0LjczMyIvPjxwYXRoIGQ9Im0zLjg0MyA2LjEuMjk2LTQuODMgMi4yMzYgNC4yNjVtMS40MTEtLjEwOEw5LjQuODY2bC45NzUgNC43MTYiIGZpbGwtb3BhY2l0eT0ibnVsbCIvPjwvZz48ZyBmaWxsPSIjZmY5MWEzIj48Y2lyY2xlIGN5PSI5LjEwNCIgY3g9IjcuOTg3IiByPSI0LjczMyIvPjxwYXRoIGQ9Im00LjQxNSA2LjcyLjI5Ni00LjgzIDIuMjM3IDQuMjY1bTEuNDEtLjEwOCAxLjYxNi00LjU2Ljk3NCA0LjcxNSIgZmlsbC1vcGFjaXR5PSJudWxsIi8+PC9nPjxnIGZpbGw9IiNmZjY2ODAiPjxjaXJjbGUgY3k9IjkuNDg2IiBjeD0iOC45NDEiIHI9IjQuNzMzIi8+PHBhdGggZD0ibTUuMzcgNy4xMDIuMjk1LTQuODMgMi4yMzcgNC4yNjVtMS40MS0uMTA3IDEuNjE2LTQuNTYyLjk3NCA0LjcxNiIgZmlsbC1vcGFjaXR5PSJudWxsIi8+PC9nPjwvc3ZnPg=="
 
 /***/ }),
 
@@ -91,9 +91,9 @@ const resources = {
   !*** ./src/addons/addons/clones/cat.svg ***!
   \******************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/8a30520407ffdf5b0e7e06e490db9c1d.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTS0xLTFoODAydjYwMkgtMXoiLz48ZyBmaWxsPSIjZGNjOWZmIj48Y2lyY2xlIGN5PSI4LjQ4NCIgY3g9IjcuNDE0IiByPSI0LjczMyIvPjxwYXRoIGQ9Im0zLjg0MyA2LjEuMjk2LTQuODMgMi4yMzYgNC4yNjVtMS40MTEtLjEwOEw5LjQuODY2bC45NzUgNC43MTYiIGZpbGwtb3BhY2l0eT0ibnVsbCIvPjwvZz48ZyBmaWxsPSIjYmM5NmZmIj48Y2lyY2xlIGN5PSI5LjEwNCIgY3g9IjcuOTg3IiByPSI0LjczMyIvPjxwYXRoIGQ9Im00LjQxNSA2LjcyLjI5Ni00LjgzIDIuMjM3IDQuMjY1bTEuNDEtLjEwOCAxLjYxNi00LjU2Ljk3NCA0LjcxNSIgZmlsbC1vcGFjaXR5PSJudWxsIi8+PC9nPjxnIGZpbGw9IiNhMDY1ZmYiPjxjaXJjbGUgY3k9IjkuNDg2IiBjeD0iOC45NDEiIHI9IjQuNzMzIi8+PHBhdGggZD0ibTUuMzcgNy4xMDIuMjk1LTQuODMgMi4yMzcgNC4yNjVtMS40MS0uMTA3IDEuNjE2LTQuNTYyLjk3NCA0LjcxNiIgZmlsbC1vcGFjaXR5PSJudWxsIi8+PC9nPjwvc3ZnPg=="
 
 /***/ }),
 
@@ -106,6 +106,8 @@ module.exports = __webpack_require__.p + "static/assets/8a30520407ffdf5b0e7e06e4
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _libraries_common_cs_small_stage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../libraries/common/cs/small-stage.js */ "./src/addons/libraries/common/cs/small-stage.js");
+
 /* harmony default export */ __webpack_exports__["default"] = (async function (_ref) {
   let {
     addon,
@@ -113,19 +115,9 @@ __webpack_require__.r(__webpack_exports__);
     msg
   } = _ref;
   const vm = addon.tab.traps.vm;
+  let showOnProjectPage = addon.settings.get("projectpage");
   let showIconOnly = addon.settings.get("showicononly");
-  if (addon.tab.redux.state && addon.tab.redux.state.scratchGui.stageSize.stageSize === "small") {
-    document.body.classList.add("sa-clones-small");
-  }
-  document.addEventListener("click", e => {
-    if (e.target.closest("[class*='stage-header_stage-button-first']")) {
-      document.body.classList.add("sa-clones-small");
-    } else if (e.target.closest("[class*='stage-header_stage-button-last']")) {
-      document.body.classList.remove("sa-clones-small");
-    }
-  }, {
-    capture: true
-  });
+  Object(_libraries_common_cs_small_stage_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
   let countContainerContainer = document.createElement("div");
   addon.tab.displayNoneWhileDisabled(countContainerContainer);
   let countContainer = document.createElement("div");
@@ -161,10 +153,11 @@ __webpack_require__.r(__webpack_exports__);
         cloneCount: v
       });
     }
-    if (v === 0) countContainerContainer.style.display = "none";else countContainerContainer.style.display = "flex";
+    if (v === 0 || addon.tab.editorMode !== "editor" && !showOnProjectPage) countContainerContainer.style.display = "none";else countContainerContainer.style.display = "flex";
   }
   addon.settings.addEventListener("change", () => {
     showIconOnly = addon.settings.get("showicononly");
+    showOnProjectPage = addon.settings.get("projectpage");
     doCloneChecks(true);
   });
   const oldStep = vm.runtime._step;
@@ -194,15 +187,32 @@ __webpack_require__.r(__webpack_exports__);
       markAsSeen: true,
       reduxEvents: ["scratch-gui/mode/SET_PLAYER", "fontsLoaded/SET_FONTS_LOADED", "scratch-gui/locales/SELECT_LOCALE"]
     });
-    if (addon.tab.editorMode === "editor" || addon.tab.redux.state.scratchGui.mode.isEmbedded) {
+    if (showOnProjectPage || addon.tab.editorMode === "editor" || addon.tab.redux.state.scratchGui.mode.isEmbedded) {
       addon.tab.appendToSharedSpace({
         space: "afterStopButton",
         element: countContainerContainer,
         order: 2
       });
+      doCloneChecks(true);
     }
   }
 });
+
+/***/ }),
+
+/***/ "./src/addons/libraries/common/cs/small-stage.js":
+/*!*******************************************************!*\
+  !*** ./src/addons/libraries/common/cs/small-stage.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return addSmallStageClass; });
+function addSmallStageClass() {
+  // TW: no-op; sa-small-stage class is handled by scratch-gui
+}
 
 /***/ })
 

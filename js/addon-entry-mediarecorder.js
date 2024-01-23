@@ -12,7 +12,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".mediaRecorderPopup {\n  box-sizing: border-box;\n  width: 700px;\n  max-height: min(800px, 80vh);\n  max-width: 85%;\n  margin-top: 12vh;\n  overflow-y: auto;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.mediaRecorderPopupContent {\n  padding: 1.5rem 2.25rem;\n}\n\n.mediaRecorderPopup p {\n  font-size: 1rem;\n  margin: 0.5rem auto;\n}\n\n.mediaRecorderPopup p :last-child {\n  margin-left: 1rem;\n}\n\n.mediaRecorderPopup[dir=\"rtl\"] p :last-child {\n  margin-left: 0;\n  margin-right: 1rem;\n}\n\np.mediaRecorderPopupOption {\n  display: flex;\n  align-items: center;\n}\n\n.mediaRecorderPopupOption input[type=\"checkbox\"] {\n  height: 1.5rem;\n}\n\n#recordOptionSecondsInput,\n#recordOptionDelayInput {\n  width: 6rem;\n}\n\n.mediaRecorderPopupButtons {\n  margin-top: 1.5rem;\n}\n\n.mediaRecorderPopupButtons button {\n  margin-left: 0.5rem;\n}\n\n/* TW: Fixes cancel button in dark mode */\n.mediaRecorderPopupButtons button:nth-of-type(1) {\n  color: black;\n}\n", ""]);
+exports.push([module.i, ".mediaRecorderPopup {\n  box-sizing: border-box;\n  width: 700px;\n  max-height: min(800px, 80vh);\n  max-width: 85%;\n  margin-top: 12vh;\n  overflow-y: auto;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.mediaRecorderPopupContent {\n  padding: 1.5rem 2.25rem;\n}\n\n.mediaRecorderPopup p {\n  font-size: 1rem;\n  margin: 0.5rem auto;\n}\n\n.mediaRecorderPopup p :last-child {\n  margin-left: 1rem;\n}\n\n.mediaRecorderPopup[dir=\"rtl\"] p :last-child {\n  margin-left: 0;\n  margin-right: 1rem;\n}\n\np.mediaRecorderPopupOption {\n  display: flex;\n  align-items: center;\n}\n\n.mediaRecorderPopupOption input[type=\"checkbox\"] {\n  height: 1.5rem;\n}\n\n#recordOptionSecondsInput,\n#recordOptionDelayInput {\n  width: 6rem;\n}\n\n.mediaRecorderPopupButtons {\n  margin-top: 1.5rem;\n}\n\n.mediaRecorderPopupButtons button {\n  margin-left: 0.5rem;\n}\n\n.mediaRecorderPopupButtons button:nth-of-type(1) {\n  color: black;\n}\n", ""]);
 
 // exports
 
@@ -68,6 +68,15 @@ __webpack_require__.r(__webpack_exports__);
   let recordBuffer = [];
   let recorder;
   let timeout;
+  const mimeType = [
+  // Chrome and Firefox only support encoding as webm
+  // VP9 is preferred as its playback is better supported across platforms
+  "video/webm; codecs=vp9",
+  // Firefox only supports encoding VP8
+  "video/webm",
+  // Safari only supports encoding H264 as mp4
+  "video/mp4"].find(i => MediaRecorder.isTypeSupported(i));
+  const fileExtension = mimeType.split(";")[0].split("/")[1];
   while (true) {
     const elem = await addon.tab.waitForElement('div[class*="menu-bar_file-group"] > div:last-child:not(.sa-record)', {
       markAsSeen: true,
@@ -87,7 +96,9 @@ __webpack_require__.r(__webpack_exports__);
       container.classList.add("mediaRecorderPopup");
       content.classList.add("mediaRecorderPopupContent");
       content.appendChild(Object.assign(document.createElement("p"), {
-        textContent: msg("record-description"),
+        textContent: msg("record-description", {
+          extension: ".".concat(fileExtension)
+        }),
         className: "recordOptionDescription"
       }));
 
@@ -96,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
       const recordOptionSecondsInput = Object.assign(document.createElement("input"), {
         type: "number",
         min: 1,
-        max: 300,
+        max: 600,
         defaultValue: 30,
         id: "recordOptionSecondsInput",
         className: addon.tab.scratchClass("prompt_variable-name-text-input")
@@ -114,7 +125,7 @@ __webpack_require__.r(__webpack_exports__);
       const recordOptionDelayInput = Object.assign(document.createElement("input"), {
         type: "number",
         min: 0,
-        max: 300,
+        max: 600,
         defaultValue: 0,
         id: "recordOptionDelayInput",
         className: addon.tab.scratchClass("prompt_variable-name-text-input")
@@ -273,9 +284,9 @@ __webpack_require__.r(__webpack_exports__);
       } else {
         recorder.onstop = () => {
           const blob = new Blob(recordBuffer, {
-            type: "video/webm"
+            type: mimeType
           });
-          Object(_libraries_common_cs_download_blob_js__WEBPACK_IMPORTED_MODULE_0__["default"])("video.webm", blob);
+          Object(_libraries_common_cs_download_blob_js__WEBPACK_IMPORTED_MODULE_0__["default"])("video.".concat(fileExtension), blob);
           disposeRecorder();
         };
         recorder.stop();
@@ -283,7 +294,7 @@ __webpack_require__.r(__webpack_exports__);
     };
     const startRecording = async opts => {
       // Timer
-      const secs = Math.min(300, Math.max(1, opts.secs));
+      const secs = Math.min(600, Math.max(1, opts.secs));
 
       // Initialize MediaRecorder
       recordBuffer = [];
@@ -343,7 +354,7 @@ __webpack_require__.r(__webpack_exports__);
         stream.addTrack(dest.stream.getAudioTracks()[0]);
       }
       recorder = new MediaRecorder(stream, {
-        mimeType: "video/webm"
+        mimeType
       });
       recorder.ondataavailable = e => {
         recordBuffer.push(e.data);
@@ -405,7 +416,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-// From https://github.com/LLK/scratch-gui/blob/develop/src/lib/download-blob.js
+// From https://github.com/scratchfoundation/scratch-gui/blob/develop/src/lib/download-blob.js
 /* harmony default export */ __webpack_exports__["default"] = ((filename, blob) => {
   const downloadLink = document.createElement("a");
   document.body.appendChild(downloadLink);

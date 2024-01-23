@@ -29,7 +29,7 @@ const resources = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /**
- * Based on https://github.com/LLK/scratch-blocks/compare/hotfix/totally-normal-2021 (Apache 2.0)
+ * Based on https://github.com/scratchfoundation/scratch-blocks/compare/hotfix/totally-normal-2021 (Apache 2.0)
  * It has been modified to work properly in our environment and fix some bugs.
  */
 
@@ -40,6 +40,7 @@ __webpack_require__.r(__webpack_exports__);
   } = _ref;
   const Blockly = await addon.tab.traps.getBlockly();
   const shouldWatchMouseCursor = addon.settings.get("watch");
+  Blockly.BlockSvg.prototype.CAT_BLOCKS = true;
   Blockly.BlockSvg.START_HAT_HEIGHT = 31;
   Blockly.BlockSvg.START_HAT_PATH = "c2.6,-2.3 5.5,-4.3 8.5,-6.2" + "c-1,-12.5 5.3,-23.3 8.4,-24.8c3.7,-1.8 16.5,13.1 18.4,15.4" + "c8.4,-1.3 17,-1.3 25.4,0c1.9,-2.3 14.7,-17.2 18.4,-15.4" + "c3.1,1.5 9.4,12.3 8.4,24.8c3,1.8 5.9,3.9 8.5,6.1";
   Blockly.BlockSvg.TOP_LEFT_CORNER_DEFINE_HAT = "c0,-7.1 3.7,-13.3 9.3,-16.9c1.7,-7.5 5.4,-13.2 7.6,-14.2" + "c2.6,-1.3 10,6 14.6,11.1h33c4.6,-5.1 11.9,-12.4 14.6,-11.1" + "c1.9,0.9 4.9,5.2 6.8,11.1c2.6,0,5.2,0,7.8,0";
@@ -312,10 +313,12 @@ __webpack_require__.r(__webpack_exports__);
     }
     const flyout = workspace.getFlyout();
     if (flyout) {
+      Blockly.Events.disable();
       const flyoutWorkspace = flyout.getWorkspace();
       Blockly.Xml.clearWorkspaceAndLoadFromXml(Blockly.Xml.workspaceToDom(flyoutWorkspace), flyoutWorkspace);
       workspace.getToolbox().refreshSelection();
       workspace.toolboxRefreshEnabled_ = true;
+      Blockly.Events.enable();
     }
   }
 });

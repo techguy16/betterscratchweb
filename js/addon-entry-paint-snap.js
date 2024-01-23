@@ -12,7 +12,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".sa-paint-snap-button {\n  position: relative;\n}\n.sa-paint-snap-button:focus-within {\n  background-color: hsla(0, 100%, 65%, 0.2);\n}\n.sa-paint-snap-button[data-enabled=\"true\"] .sa-paint-snap-image {\n  filter: brightness(0) invert(1);\n}\n.sa-paint-snap-button[data-enabled=\"true\"] {\n  background-color: #ff4c4c;\n}\n\n.sa-paint-snap-group {\n  position: relative;\n  flex-direction: row;\n}\n\n.sa-paint-snap-settings-wrapper {\n  position: absolute;\n  justify-items: center;\n  left: 50%;\n  width: 1.95rem;\n  height: 1.95rem;\n  display: grid;\n}\n\n.sa-paint-snap-settings {\n  position: absolute;\n  bottom: 100%;\n  /* based on the styles for the color dropdown */\n  padding: 4px;\n  border-radius: 4px;\n  border: 1px solid var(--paint-ui-pane-border, #ddd);\n  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);\n  transition-property: bottom, opacity;\n  transition-duration: 500ms;\n  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);\n  opacity: 0;\n  pointer-events: none;\n  background: var(--ui-primary, white);\n  min-height: 100%;\n  min-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n}\n.sa-paint-snap-settings[data-visible=\"true\"] {\n  bottom: calc(100% + 22px);\n  pointer-events: auto;\n  opacity: 1;\n}\n\n.sa-paint-snap-settings-line {\n  display: flex;\n  justify-content: flex-end;\n  align-items: baseline;\n}\n\n.sa-paint-snap-settings-input {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  text-align: center;\n  border: 0;\n  background: transparent;\n  -moz-appearance: textfield;\n  border: 0;\n  outline: 0;\n}\n\n.sa-paint-snap-settings-input::-webkit-outer-spin-button,\n.sa-paint-snap-settings-input::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n.sa-paint-snap-settings-tip {\n  position: absolute;\n  bottom: 0;\n  transform: translateY(100%);\n  right: calc(50% - 7px);\n}\n.sa-paint-snap-settings-polygon {\n  fill: var(--ui-primary, white);\n  stroke: var(--paint-ui-pane-border, #ddd);\n}\n\n.sa-paint-snap-settings-separator {\n  flex-grow: 1;\n  border-bottom: 1px solid currentColor;\n  margin: 4px;\n  opacity: 0.25;\n}\n\n.sa-paint-snap-settings-section {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n  align-items: flex-end;\n  width: 100%;\n}\n\n.sa-paint-snap-settings-section-title {\n  font-size: 1.2em;\n  font-weight: 500;\n  align-self: flex-start;\n  margin-left: 4px;\n}\n\n.sa-paint-snap-settings-label {\n  white-space: nowrap;\n}\n\n.sa-paint-snap-image[data-shrink=\"true\"] {\n  height: 1em;\n  width: 1em;\n}\n", ""]);
+exports.push([module.i, ".sa-paint-snap-button {\n  position: relative;\n}\n.sa-paint-snap-button:focus-within {\n  background-color: var(--editorDarkMode-primary-transparent35, hsla(260, 60%, 60%, 0.35));\n}\n.sa-paint-snap-button[data-enabled=\"true\"] .sa-paint-snap-image {\n  filter: brightness(0) invert(1);\n}\n.sa-paint-snap-button[data-enabled=\"true\"] {\n  background-color: var(--looks-secondary);\n}\n\n.sa-paint-snap-group {\n  position: relative;\n  flex-direction: row;\n}\n\n.sa-paint-snap-settings-wrapper {\n  position: absolute;\n  justify-items: center;\n  left: 50%;\n  width: 1.95rem;\n  height: 1.95rem;\n  display: grid;\n}\n\n.sa-paint-snap-settings {\n  position: absolute;\n  bottom: 100%;\n  /* based on the styles for the color dropdown */\n  padding: 4px;\n  border-radius: 4px;\n  border: 1px solid var(--ui-black-transparent);\n  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);\n  transition-property: bottom, opacity;\n  transition-duration: 500ms;\n  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);\n  opacity: 0;\n  pointer-events: none;\n  background: var(--ui-modal-background);\n  color: var(--ui-text-primary);\n  min-height: 100%;\n  min-width: 100%;\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n}\n.sa-paint-snap-settings[data-visible=\"true\"] {\n  bottom: calc(100% + 22px);\n  pointer-events: auto;\n  opacity: 1;\n  z-index: 200;\n}\n\n.sa-paint-snap-settings-line {\n  display: flex;\n  justify-content: flex-end;\n  align-items: baseline;\n}\n\n.sa-paint-snap-settings-input {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  text-align: center;\n  border: 0;\n  background: transparent;\n  -moz-appearance: textfield;\n  border: 0;\n  outline: 0;\n}\n\n.sa-paint-snap-settings-input::-webkit-outer-spin-button,\n.sa-paint-snap-settings-input::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n.sa-paint-snap-settings-tip {\n  position: absolute;\n  bottom: 0;\n  transform: translateY(100%);\n  right: calc(50% - 7px);\n}\n.sa-paint-snap-settings-polygon {\n  fill: var(--ui-modal-background);\n  stroke: var(--ui-black-transparent);\n}\n\n.sa-paint-snap-settings-separator {\n  flex-grow: 1;\n  border-bottom: 1px solid currentColor;\n  margin: 4px;\n  opacity: 0.25;\n}\n\n.sa-paint-snap-settings-section {\n  display: flex;\n  flex-direction: column;\n  gap: 0.25em;\n  align-items: flex-end;\n  width: 100%;\n}\n\n.sa-paint-snap-settings-section-title {\n  font-size: 1.2em;\n  font-weight: 500;\n  align-self: flex-start;\n  margin-left: 4px;\n}\n\n.sa-paint-snap-settings-label {\n  white-space: nowrap;\n}\n\n.sa-paint-snap-image[data-shrink=\"true\"] {\n  height: 1em;\n  width: 1em;\n}\n", ""]);
 
 // exports
 
@@ -138,6 +138,41 @@ const resources = {
 
 /***/ }),
 
+/***/ "./src/addons/addons/paint-snap/compatibility.js":
+/*!*******************************************************!*\
+  !*** ./src/addons/addons/paint-snap/compatibility.js ***!
+  \*******************************************************/
+/*! exports provided: addons, initialize */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addons", function() { return addons; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initialize", function() { return initialize; });
+let overridden = false;
+const addons = {
+  paintSkew: null,
+  paintSnap: null
+};
+function initialize(paper, ScaleTool) {
+  if (overridden) return;
+  overridden = true;
+  const ogMouseDrag = ScaleTool.prototype.onMouseDrag;
+  ScaleTool.prototype.onMouseDrag = function (event) {
+    if (!this.active) return;
+    const callSnap = () => {
+      if (addons.paintSnap) addons.paintSnap.call(this, event);else ogMouseDrag.call(this, event);
+    };
+    if (addons.paintSkew) {
+      addons.paintSkew.call(this, event, callSnap);
+    } else {
+      callSnap();
+    }
+  };
+}
+
+/***/ }),
+
 /***/ "./src/addons/addons/paint-snap/genScalePoints.js":
 /*!********************************************************!*\
   !*** ./src/addons/addons/paint-snap/genScalePoints.js ***!
@@ -152,8 +187,8 @@ __webpack_require__.r(__webpack_exports__);
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 function createScalePoints(paper, lib, objects, sx, sy) {
   const {
@@ -224,7 +259,7 @@ function createScalePoints(paper, lib, objects, sx, sy) {
         max: ART_BOARD_BOUNDS.top
       }
     }
-  } : {}) : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectEdges ? Object.fromEntries(objects.filter(item => !(item.selected || item.data.isHelperItem)).map(item => [sx && ["item_".concat(item.id, "_r"), {
+  } : {}) : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectEdges ? Object.fromEntries(objects.filter(item => !(item.selected || item.data.isHelperItem || item.locked || item.guide)).map(item => [sx && ["item_".concat(item.id, "_r"), {
     type: "xcoord",
     value: item.bounds.right
   }], sx && ["item_".concat(item.id, "_l"), {
@@ -250,7 +285,7 @@ function createScalePoints(paper, lib, objects, sx, sy) {
       min: item.bounds.bottom,
       max: item.bounds.top
     }
-  }]].filter(Boolean)).flat(1)) : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectMidlines ? Object.fromEntries(objects.filter(item => !(item.selected || item.data.isHelperItem)).map(item => [sx && ["item_".concat(item.id, "_cx"), {
+  }]].filter(Boolean)).flat(1)) : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectMidlines ? Object.fromEntries(objects.filter(item => !(item.selected || item.data.isHelperItem || item.locked || item.guide)).map(item => [sx && ["item_".concat(item.id, "_cx"), {
     type: "xcoord",
     value: item.bounds.center.x
   }], sy && ["item_".concat(item.id, "_cy"), {
@@ -276,8 +311,8 @@ __webpack_require__.r(__webpack_exports__);
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 function createSnapPoints(paper, selectionBounds, lib, objects) {
   const {
@@ -379,7 +414,7 @@ function createSnapPoints(paper, selectionBounds, lib, objects) {
       type: "point",
       value: ART_BOARD_BOUNDS.bottomRight
     }
-  } : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectEdges ? Object.fromEntries(objects.filter(item => !(item.selected || item.data.isHelperItem)).map(item => [["item_".concat(item.id, "_r"), {
+  } : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectEdges ? Object.fromEntries(objects.filter(item => !(item.selected || item.data.isHelperItem || item.locked || item.guide)).map(item => [["item_".concat(item.id, "_r"), {
     type: "itemSideVert",
     value: item.bounds.right,
     clamp: {
@@ -407,16 +442,16 @@ function createSnapPoints(paper, selectionBounds, lib, objects) {
       min: item.bounds.left,
       max: item.bounds.right
     }
-  }]]).flat(1)) : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectCenters ? Object.fromEntries(objects.filter(item => !item.selected).map(item => [["item_".concat(item.id, "_c"), {
+  }]]).flat(1)) : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectCenters ? Object.fromEntries(objects.filter(item => !(item.selected || item.data.isHelperItem || item.locked || item.guide)).map(item => [["item_".concat(item.id, "_c"), {
     type: "point",
     value: item.bounds.center
-  }]]).flat(1)) : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectMidlines ? Object.fromEntries(objects.filter(item => !item.selected).map(item => [["item_".concat(item.id, "_cx"), {
+  }]]).flat(1)) : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectMidlines ? Object.fromEntries(objects.filter(item => !(item.selected || item.data.isHelperItem || item.locked || item.guide)).map(item => [["item_".concat(item.id, "_cx"), {
     type: "xcoord",
     value: item.bounds.center.x
   }], ["item_".concat(item.id, "_cy"), {
     type: "ycoord",
     value: item.bounds.center.y
-  }]]).flat(1)) : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectCorners ? Object.fromEntries(objects.filter(item => !(item.selected || item.data.isHelperItem)).map(item => [["item_".concat(item.id, "_tl"), {
+  }]]).flat(1)) : {}), _state_js__WEBPACK_IMPORTED_MODULE_0__["snapTo"].objectCorners ? Object.fromEntries(objects.filter(item => !(item.selected || item.data.isHelperItem || item.locked || item.guide)).map(item => [["item_".concat(item.id, "_tl"), {
     type: "point",
     value: item.bounds.topLeft
   }], ["item_".concat(item.id, "_tr"), {
@@ -454,10 +489,10 @@ __webpack_require__.r(__webpack_exports__);
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function loadModules(paper) {
-  // https://github.com/LLK/scratch-paint/blob/2a9fb2356d961200dc849b5b0a090d33f473c0b5/src/helper/math.js
+  // https://github.com/scratchfoundation/scratch-paint/blob/2a9fb2356d961200dc849b5b0a090d33f473c0b5/src/helper/math.js
 
   const checkPointsClose = function checkPointsClose(startPos, eventPoint, threshold) {
     const xOff = Math.abs(startPos.x - eventPoint.x);
@@ -478,7 +513,7 @@ function loadModules(paper) {
     return new paper.Point(dirx * d, diry * d);
   };
 
-  // https://github.com/LLK/scratch-paint/blob/2a9fb2356d961200dc849b5b0a090d33f473c0b5/src/helper/layer.js
+  // https://github.com/scratchfoundation/scratch-paint/blob/2a9fb2356d961200dc849b5b0a090d33f473c0b5/src/helper/layer.js
   const CROSSHAIR_FULL_OPACITY = 0.75;
   const _getLayer = function _getLayer(layerString) {
     for (const layer of paper.project.layers) {
@@ -494,7 +529,7 @@ function loadModules(paper) {
     return _getLayer("isGuideLayer");
   };
 
-  // https://github.com/LLK/scratch-paint/blob/2a9fb2356d961200dc849b5b0a090d33f473c0b5/src/helper/view.js
+  // https://github.com/scratchfoundation/scratch-paint/blob/2a9fb2356d961200dc849b5b0a090d33f473c0b5/src/helper/view.js
 
   // Vectors are imported and exported at SVG_ART_BOARD size.
   // Once they are imported however, both SVGs and bitmaps are on
@@ -569,7 +604,7 @@ const keyMirror = obj => Object.fromEntries(Object.entries(obj).map(_ref => {
   return [k, k];
 }));
 
-// https://github.com/LLK/scratch-paint/blob/2a9fb2356d961200dc849b5b0a090d33f473c0b5/src/lib/modes.js
+// https://github.com/scratchfoundation/scratch-paint/blob/2a9fb2356d961200dc849b5b0a090d33f473c0b5/src/lib/modes.js
 
 const vectorModesObj = {
   BRUSH: null,
@@ -694,17 +729,14 @@ function setSnapTo(point, to) {
   snapTo[point] = !!to;
   //ls.setItem("sa-paint-snap-snapTo", JSON.stringify(snapTo));
 }
-
 function setSnapFrom(point, to) {
   snapFrom[point] = !!to;
   //ls.setItem("sa-paint-snap-snapFrom", JSON.stringify(snapFrom));
 }
-
 function setThreshold(thresh) {
   threshold = thresh;
   //ls.setItem("sa-paint-snap-threshold", JSON.stringify(threshold));
 }
-
 function enable() {
   snapOn = true;
 }
@@ -809,6 +841,9 @@ function initUI(_ref) {
   settingButton.title = msg("settings");
   settingButton.appendChild(createButtonImage("settings"));
   controlsGroup.appendChild(settingButton);
+  document.body.addEventListener("click", e => {
+    if (areSettingsOpen() && !e.target.matches(".sa-paint-snap-group *")) setSettingsOpen(false);
+  });
   const settingsOpenUpdaters = [];
   const setSettingsOpen = open => {
     settingButton.dataset.enabled = open;
@@ -998,8 +1033,8 @@ function initUI(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateScaleTool", function() { return updateScaleTool; });
 /* harmony import */ var _genScalePoints_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./genScalePoints.js */ "./src/addons/addons/paint-snap/genScalePoints.js");
-/* harmony import */ var _genSnapPoints_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./genSnapPoints.js */ "./src/addons/addons/paint-snap/genSnapPoints.js");
-/* harmony import */ var _helpers_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers.js */ "./src/addons/addons/paint-snap/helpers.js");
+/* harmony import */ var _helpers_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers.js */ "./src/addons/addons/paint-snap/helpers.js");
+/* harmony import */ var _compatibility_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./compatibility.js */ "./src/addons/addons/paint-snap/compatibility.js");
 /* harmony import */ var _state_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./state.js */ "./src/addons/addons/paint-snap/state.js");
 
 
@@ -1009,7 +1044,7 @@ const getScaleTool = tool => {
   return tool.boundingBoxTool._modeMap.SCALE;
 };
 const updateScaleTool = (paper, tool) => {
-  const lib = Object(_helpers_js__WEBPACK_IMPORTED_MODULE_2__["loadModules"])(paper);
+  const lib = Object(_helpers_js__WEBPACK_IMPORTED_MODULE_1__["loadModules"])(paper);
   const {
     view: {
       getActionBounds
@@ -1020,7 +1055,7 @@ const updateScaleTool = (paper, tool) => {
   } = lib;
   const scaleTool = getScaleTool(tool);
 
-  // https://github.com/LLK/scratch-paint/blob/develop/src/helper/selection-tools/scale-tool.js
+  // https://github.com/scratchfoundation/scratch-paint/blob/develop/src/helper/selection-tools/scale-tool.js
   const MIN_SCALE_FACTOR = 0.0001;
   const selectionSizeGuide = {
     endLeft: new paper.Path.Line({
@@ -1192,7 +1227,7 @@ const updateScaleTool = (paper, tool) => {
     axisLineY.remove();
     axisLineY.visible = false;
   };
-  scaleTool.constructor.prototype.onMouseDrag = function (event) {
+  _compatibility_js__WEBPACK_IMPORTED_MODULE_2__["addons"].paintSnap = function (event) {
     if (!this.active) return;
     const point = event.point;
     const bounds = getActionBounds(this.isBitmap);
@@ -1414,6 +1449,7 @@ const updateScaleTool = (paper, tool) => {
     this.lastSx = sx;
     this.lastSy = sy;
   };
+  Object(_compatibility_js__WEBPACK_IMPORTED_MODULE_2__["initialize"])(paper, scaleTool.constructor);
   const oldMouseUp = scaleTool.constructor.prototype.onMouseUp;
   scaleTool.constructor.prototype.onMouseUp = function () {
     removeGuides();
@@ -1465,7 +1501,7 @@ const updateSelectTool = (paper, tool) => {
   } = lib;
   const moveTool = getMoveTool(tool);
 
-  // https://github.com/LLK/scratch-paint/blob/2a9fb2356d961200dc849b5b0a090d33f473c0b5/src/helper/selection-tools/move-tool.js
+  // https://github.com/scratchfoundation/scratch-paint/blob/2a9fb2356d961200dc849b5b0a090d33f473c0b5/src/helper/selection-tools/move-tool.js
 
   const FADE_DISTANCE = 10;
   let guideLine = new paper.Path.Line({

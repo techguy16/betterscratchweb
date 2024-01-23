@@ -12,7 +12,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".pos-container-container {\n  display: flex;\n  align-items: center;\n  padding: 0.25rem;\n  user-select: none;\n  width: 45px;\n  justify-content: center;\n}\n\n.pos-container {\n  font-size: 0.6rem;\n  font-weight: bold;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  color: #5cb1d6;\n  white-space: nowrap;\n}\n\n/* Use pseudo elements to avoid firing mutation observers by just moving the cursor */\n.pos-container > span::after {\n  content: attr(data-content);\n}\n\n.sa-mouse-pos-small .pos-container-container {\n  display: none !important;\n}\n", ""]);
+exports.push([module.i, ".pos-container-container {\n  display: flex;\n  align-items: center;\n  padding: 0.25rem;\n  user-select: none;\n  width: 45px;\n  justify-content: center;\n}\n\n.pos-container {\n  font-size: 0.6rem;\n  font-weight: bold;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  color: #5cb1d6;\n  white-space: nowrap;\n}\n\n/* Use pseudo elements to avoid firing mutation observers by just moving the cursor */\n.pos-container > span::after {\n  content: attr(data-content);\n}\n\n.sa-small-stage .pos-container-container {\n  display: none !important;\n}\n", ""]);
 
 // exports
 
@@ -51,6 +51,8 @@ const resources = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _libraries_common_cs_small_stage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../libraries/common/cs/small-stage.js */ "./src/addons/libraries/common/cs/small-stage.js");
+
 /* harmony default export */ __webpack_exports__["default"] = (async function (_ref) {
   let {
     addon,
@@ -92,18 +94,7 @@ __webpack_require__.r(__webpack_exports__);
       this.__scratchY = sety;
     }
   });
-  if (addon.tab.redux.state && addon.tab.redux.state.scratchGui.stageSize.stageSize === "small") {
-    document.body.classList.add("sa-mouse-pos-small");
-  }
-  document.addEventListener("click", e => {
-    if (e.target.closest("[class*='stage-header_stage-button-first']")) {
-      document.body.classList.add("sa-mouse-pos-small");
-    } else if (e.target.closest("[class*='stage-header_stage-button-last']")) {
-      document.body.classList.remove("sa-mouse-pos-small");
-    }
-  }, {
-    capture: true
-  });
+  Object(_libraries_common_cs_small_stage_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
   while (true) {
     await addon.tab.waitForElement('[class*="controls_controls-container"]', {
       markAsSeen: true,
@@ -118,6 +109,22 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
+
+/***/ }),
+
+/***/ "./src/addons/libraries/common/cs/small-stage.js":
+/*!*******************************************************!*\
+  !*** ./src/addons/libraries/common/cs/small-stage.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return addSmallStageClass; });
+function addSmallStageClass() {
+  // TW: no-op; sa-small-stage class is handled by scratch-gui
+}
 
 /***/ })
 

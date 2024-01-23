@@ -168,7 +168,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* #E5F0FF */ /* #E9F1FC */ /* #D9E3F2 */ /* 90% transparent version of motion-primary */ /* #FFFFFF */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 15% transparent version of black */ /* #575E75 */ /* 35% transparent version of motion-primary */ /* 15% transparent version of motion-primary */ /* opt-in theme overrides */ /* #FF661A */ /* #E64D00 */ /* #CF63CF */ /* #BD42BD */ /* #FFAB19 */ /* #FF8C1A */ /* #0FBD8C */ /* #0FBD8C */ /* #FF8C1A */ /* #FFB366 */ /* #FF8C1A */ /* 35% transparent version of extensions-primary */ /* opaque version of extensions-transparent, on white bg */ /* lighter than motion-primary */ * {\n    box-sizing: border-box;\n} body {\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    margin: 0;\n    padding: 0;\n    background: white;\n} body[theme=\"dark\"] {\n    background-color: #111;\n    color: #eee;\n} a {\n    color: blue;\n} [theme=\"dark\"] a {\n    color: #4af;\n} .credits_main_1Rb15 section {\n    max-width: 900px;\n    margin: auto;\n    margin-bottom: 30px;\n} .credits_header-container_10IXn {\n    color: white;\n    background-color: hsla(216.77, 100%, 57.45%, 1);\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n} .credits_header-text_2vWAl {\n\n} .credits_users_2AuwB {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n} .credits_user-image_2rw9X {\n    margin-right: 12px;\n} .credits_user_2nYLS {\n    display: flex;\n    align-items: center;\n    width: 300px;\n    padding: 4px;\n    border-radius: 4px;\n    font-size: 1.25rem;\n    color: inherit !important;\n    text-decoration: none;\n    transition: background .2s;\n} .credits_user_2nYLS:link:hover {\n    background: #eee;\n} [theme=\"dark\"] .credits_user_2nYLS:link:hover {\n    background: #222;\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n* {\n    box-sizing: border-box;\n}\n\nbody {\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    margin: 0;\n    padding: 0;\n    background: var(--page-background);\n    color: var(--page-foreground);\n}\n\na {\n    color: var(--link-color);\n}\n\n.credits_main_1Rb15 section {\n    max-width: 900px;\n    margin: auto;\n    margin-bottom: 30px;\n}\n\n.credits_header-container_10IXn {\n    color: white;\n    background-color: var(--looks-secondary);\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n.credits_header-text_2vWAl {\n\n}\n\n.credits_users_2AuwB {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n}\n\n.credits_user-image_2rw9X {\n    margin-right: 12px;\n}\n\n.credits_user_2nYLS {\n    display: flex;\n    align-items: center;\n    width: 300px;\n    padding: 4px;\n    border-radius: 4px;\n    font-size: 1.25rem;\n    color: inherit !important;\n    text-decoration: none;\n    transition: background .2s;\n}\n\n.credits_user_2nYLS:link:hover {\n    background: var(--ui-black-transparent);\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -182,135 +182,6 @@ exports.locals = {
 	"userImage": "credits_user-image_2rw9X",
 	"user": "credits_user_2nYLS"
 };
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./src/lib/tw-theme-dark.css":
-/*!*************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/lib/tw-theme-dark.css ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/* GUI */\n:root {\n    background: #111;\n    color: #eee;\n    color-scheme: dark;\n    /* see colors.csss */\n    --ui-primary: rgb(17, 17, 17);\n    --ui-secondary: rgb(30, 30, 30);\n    --ui-tertiary: rgb(46, 46, 46);\n    --ui-modal-overlay: #333a;\n    --ui-black-transparent: rgba(255, 255, 255, 0.15);\n    --text-primary: #eee;\n    /* scratch-paint */\n    --paint-ui-pane-border: var(--ui-black-transparent);\n    --paint-text-primary: #eee;\n    --paint-form-border: var(--ui-black-transparent);\n}\n\n/* Blockly */\n.blocklySvg {\n    background-color: var(--ui-secondary) !important;\n    color-scheme: light;\n}\n[id^=\"blocklyGridPattern\"] > line {\n    stroke: #484848;\n}\n.blocklyFlyoutBackground {\n    fill: #111;\n}\n.blocklyFlyoutLabelText {\n    fill: #ccc;\n}\n.blocklyFlyoutButton .blocklyText {\n    fill: #ccc;\n}\n.blocklyFlyoutButton:hover {\n    fill: #111;\n}\n/* blocklyFlyoutCheckboxPath stroke and blocklyFlyoutCheckbox fill must match */\n.blocklyFlyoutCheckboxPath {\n    stroke: #111;\n}\n.blocklyFlyoutCheckbox {\n    fill: #111;\n}\n.checked > .blocklyFlyoutCheckbox {\n    stroke: #a1c6fa;\n}\n.checked > .blocklyFlyoutCheckboxPath {\n    stroke: white;\n}\n.scratchCategoryMenu {\n    color: #ccc;\n}\n.blocklyToolboxDiv,\n.scratchCategoryMenu {\n    background: #111 !important;\n}\n.blocklyScrollbarHandle {\n    fill: #666;\n}\n.blocklyZoom {\n    filter: invert(100%);\n}\n.scratchCategoryMenuItem.categorySelected {\n    background: var(--ui-secondary);\n}\n.valueReportBox {\n    color: black;\n}\n.blocklyWidgetDiv {\n    color-scheme: light;\n}\n.blocklyWidgetDiv .goog-menu {\n    background: var(--ui-primary);\n    border-color: var(--ui-black-transparent);\n}\n.blocklyWidgetDiv .goog-menuitem {\n    color: var(--text-primary);\n}\n.blocklyWidgetDiv .goog-menuitem-disabled .goog-menuitem-content {\n    color: #666 !important;\n}\n.sa-blockly-menu-item-border {\n    border-top-color: var(--ui-black-transparent) !important;\n}\n.blocklyWidgetDiv .goog-menuitem.goog-menuitem-highlight {\n    background-color: var(--ui-tertiary);\n    border-color: transparent; /* remove border */\n}\n.scratchCommentText {\n    color: black;\n}\n.blocklyInsertionMarker > .blocklyPath {\n    fill: #ccc;\n}\n\n/* Other / Multipurpose */\n.Popover {\n    /* weird Chrome bug displays white bar above popovers with color-scheme: dark */\n    color-scheme: light;\n}\n.Popover-body {\n    background: var(--ui-secondary);\n    border-color: var(--ui-black-transparent);\n    color: var(--text-primary);\n}\n.Popover-tipShape {\n    fill: var(--ui-secondary);\n    stroke: var(--ui-black-transparent);\n}\n"
-
-/***/ }),
-
-/***/ "./src/lib/tw-theme-hoc.jsx":
-/*!**********************************!*\
-  !*** ./src/lib/tw-theme-hoc.jsx ***!
-  \**********************************/
-/*! exports provided: getInitialDarkMode, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getInitialDarkMode", function() { return getInitialDarkMode; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ThemeHOC; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _raw_loader_tw_theme_dark_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./tw-theme-dark.css */ "./node_modules/raw-loader/index.js!./src/lib/tw-theme-dark.css");
-/* harmony import */ var _raw_loader_tw_theme_dark_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_raw_loader_tw_theme_dark_css__WEBPACK_IMPORTED_MODULE_1__);
-function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-
-const THEME_KEY = 'tw:theme';
-const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-const getInitialDarkMode = () => {
-  try {
-    const item = localStorage.getItem(THEME_KEY);
-    if (item !== null) {
-      return item === 'dark';
-    }
-  } catch (e) {
-    // ignore
-  }
-  return darkMediaQuery.matches;
-};
-const darkModeStylesheet = document.createElement('style');
-darkModeStylesheet.textContent = _raw_loader_tw_theme_dark_css__WEBPACK_IMPORTED_MODULE_1___default.a;
-const ThemeHOC = function ThemeHOC(WrappedComponent) {
-  class ThemeComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-    constructor(props) {
-      super(props);
-      this.handleQueryChange = this.handleQueryChange.bind(this);
-      this.handleClickTheme = this.handleClickTheme.bind(this);
-      this.state = {
-        dark: getInitialDarkMode()
-      };
-    }
-    componentDidMount() {
-      // media query does not have listeners in legacy edge
-      if (darkMediaQuery.addEventListener) {
-        darkMediaQuery.addEventListener('change', this.handleQueryChange);
-      }
-      this.updateDark();
-    }
-    componentDidUpdate() {
-      try {
-        localStorage.setItem(THEME_KEY, this.state.dark ? 'dark' : 'light');
-      } catch (e) {
-        // ignore
-      }
-      this.updateDark();
-    }
-    componentWillUnmount() {
-      // media query does not have listeners in legacy edge
-      if (darkMediaQuery.removeEventListener) {
-        darkMediaQuery.removeEventListener('change', this.handleQueryChange);
-      }
-    }
-    updateDark() {
-      const dark = this.state.dark;
-      document.body.setAttribute('theme', dark ? 'dark' : 'light');
-      if (dark && !darkModeStylesheet.parentNode) {
-        // Append at the start of <body> we override scratch-gui styles in <head>
-        // but are overridden by addon styles at the end of <body>
-        document.body.insertBefore(darkModeStylesheet, document.body.firstChild);
-      } else if (!dark && darkModeStylesheet.parentNode) {
-        darkModeStylesheet.parentNode.removeChild(darkModeStylesheet);
-      }
-    }
-    handleQueryChange() {
-      this.setState({
-        dark: darkMediaQuery.matches
-      });
-    }
-    handleClickTheme() {
-      this.setState(state => ({
-        dark: !state.dark
-      }));
-    }
-    render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedComponent, _extends({
-        onClickTheme: this.handleClickTheme,
-        isDark: this.state.dark
-      }, this.props));
-    }
-  }
-  return ThemeComponent;
-};
-
-
-/***/ }),
-
-/***/ "./src/playground/app-target.js":
-/*!**************************************!*\
-  !*** ./src/playground/app-target.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const appTarget = document.getElementById('app');
-
-// Remove everything from the target to fix macOS Safari "Save Page As",
-while (appTarget.firstChild) {
-  appTarget.removeChild(appTarget.firstChild);
-}
-document.body.classList.add('tw-loaded');
-/* harmony default export */ __webpack_exports__["default"] = (appTarget);
 
 /***/ }),
 
@@ -362,9 +233,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_target__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../app-target */ "./src/playground/app-target.js");
 /* harmony import */ var _credits_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./credits.css */ "./src/playground/credits/credits.css");
 /* harmony import */ var _credits_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_credits_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _lib_tw_theme_hoc_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../lib/tw-theme-hoc.jsx */ "./src/lib/tw-theme-hoc.jsx");
-/* harmony import */ var _users__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./users */ "./src/playground/credits/users.js");
+/* harmony import */ var _lib_brand__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../lib/brand */ "./src/lib/brand.js");
+/* harmony import */ var _lib_brand__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_lib_brand__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _lib_themes_guiHelpers__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../lib/themes/guiHelpers */ "./src/lib/themes/guiHelpers.js");
+/* harmony import */ var _lib_themes_themePersistance__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../lib/themes/themePersistance */ "./src/lib/themes/themePersistance.js");
+/* harmony import */ var _users__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./users */ "./src/playground/credits/users.js");
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
 
 
 
@@ -375,6 +251,7 @@ function _extends() { _extends = Object.assign ? Object.assign.bind() : function
 
 /* eslint-disable react/jsx-no-literals */
 
+Object(_lib_themes_guiHelpers__WEBPACK_IMPORTED_MODULE_6__["applyGuiColors"])(Object(_lib_themes_themePersistance__WEBPACK_IMPORTED_MODULE_7__["detectTheme"])());
 document.documentElement.lang = 'en';
 const User = _ref => {
   let {
@@ -388,6 +265,7 @@ const User = _ref => {
     rel: "noreferrer",
     className: _credits_css__WEBPACK_IMPORTED_MODULE_4___default.a.user
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    loading: "lazy",
     className: _credits_css__WEBPACK_IMPORTED_MODULE_4___default.a.userImage,
     src: image,
     width: "60",
@@ -420,14 +298,20 @@ const Credits = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.
   className: _credits_css__WEBPACK_IMPORTED_MODULE_4___default.a.headerContainer
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
   className: _credits_css__WEBPACK_IMPORTED_MODULE_4___default.a.headerText
-}, "TurboWarp Credits")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "The TurboWarp project is made possible by the work of many volunteers.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Scratch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "TurboWarp is based on the work of the ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+}, _lib_brand__WEBPACK_IMPORTED_MODULE_5__["APP_NAME"], " Credits")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "The ", _lib_brand__WEBPACK_IMPORTED_MODULE_5__["APP_NAME"], " project is made possible by the work of many volunteers.")), _lib_brand__WEBPACK_IMPORTED_MODULE_5__["APP_NAME"] !== 'TurboWarp' &&
+/*#__PURE__*/
+// Be kind and considerate. Don't remove this :)
+react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "TurboWarp"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _lib_brand__WEBPACK_IMPORTED_MODULE_5__["APP_NAME"], " is based on ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  href: "https://turbowarp.org/"
+}, "TurboWarp"), ".")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Scratch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _lib_brand__WEBPACK_IMPORTED_MODULE_5__["APP_NAME"], " is based on the work of the ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   href: "https://scratch.mit.edu/credits"
 }, "Scratch contributors"), " but is not endorsed by Scratch in any way."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   href: "https://scratch.mit.edu/donate"
 }, "Donate to support Scratch."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Addons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
-  users: _users__WEBPACK_IMPORTED_MODULE_6__["default"].addonDevelopers
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Translators"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "More than 100 people have helped translate TurboWarp and its addons into many languages \u2014 far more than we could hope to list here.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Individual contributors are listed in no particular order. The order is randomized each visit."))));
-document.body.setAttribute('theme', Object(_lib_tw_theme_hoc_jsx__WEBPACK_IMPORTED_MODULE_5__["getInitialDarkMode"])() ? 'dark' : 'light');
+  users: _users__WEBPACK_IMPORTED_MODULE_8__["default"].addonDevelopers
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "TurboWarp Extension Gallery"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
+  users: _users__WEBPACK_IMPORTED_MODULE_8__["default"].extensionDevelopers
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Translators"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "More than 100 people have helped translate ", _lib_brand__WEBPACK_IMPORTED_MODULE_5__["APP_NAME"], " and its addons into many languages \u2014 far more than we could hope to list here.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Individual contributors are listed in no particular order. The order is randomized each visit."))));
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Credits, null), _app_target__WEBPACK_IMPORTED_MODULE_3__["default"]);
 
 /***/ }),
@@ -452,80 +336,190 @@ const shuffle = list => {
 };
 const fromHardcoded = _ref => {
   let {
-    userId,
-    username,
-    name
+    userID = '0',
+    username
   } = _ref;
-  return {
-    image: "https://trampoline.turbowarp.org/avatars/".concat(userId),
-    href: "https://scratch.mit.edu/users/".concat(username, "/"),
-    text: name || username
+  const result = {
+    image: "https://trampoline.turbowarp.org/avatars/".concat(userID),
+    text: username
   };
+  if (username && userID !== '0') {
+    result.href = "https://scratch.mit.edu/users/".concat(username, "/");
+  }
+  return result;
 };
+
+// The lists below are in no particular order.
+
 const addonDevelopers = [{
-  userId: '34018398',
+  userID: '34018398',
   username: 'Jeffalo'
 }, {
-  userId: '64184234',
+  userID: '64184234',
   username: 'ErrorGamer2000'
 }, {
-  userId: '41616512',
+  userID: '41616512',
   username: 'pufferfish101007'
 }, {
-  userId: '61409215',
+  userID: '61409215',
   username: 'TheColaber'
 }, {
-  userId: '1882674',
+  userID: '1882674',
   username: 'griffpatch'
 }, {
-  userId: '10817178',
+  userID: '10817178',
   username: 'apple502j'
 }, {
-  userId: '16947341',
+  userID: '16947341',
   username: '--Explosion--'
 }, {
-  userId: '14880401',
+  userID: '14880401',
   username: 'Sheep_maker'
 }, {
-  userId: '9981676',
+  userID: '9981676',
   username: 'NitroCipher'
 }, {
-  userId: '2561680',
+  userID: '2561680',
   username: 'lisa_wolfgang'
 }, {
-  userId: '60000111',
+  userID: '60000111',
   username: 'GDUcrash'
 }, {
-  userId: '4648559',
+  userID: '4648559',
   username: 'World_Languages'
 }, {
-  userId: '17340565',
+  userID: '17340565',
   username: 'GarboMuffin'
 }, {
-  userId: '5354974',
+  userID: '5354974',
   username: 'Chrome_Cat'
 }, {
-  // actual ID is 34455896 but their avatar is the wrong resolution and looks really weird
-  userId: '0',
+  userID: '34455896',
   username: 'summerscar'
 }, {
-  userId: '55742784',
+  userID: '55742784',
   username: 'RedGuy7'
 }, {
-  userId: '9636514',
+  userID: '9636514',
   username: 'Tacodiva7729'
 }, {
-  userId: '14792872',
+  userID: '14792872',
   username: '_nix'
 }, {
-  userId: '30323614',
+  userID: '30323614',
   username: 'BarelySmooth'
 }, {
-  userId: '64691048',
+  userID: '64691048',
   username: 'CST1229'
+}, {
+  username: 'DNin01'
+}, {
+  userID: '16426047',
+  username: 'Maximouse'
+}, {
+  username: 'retronbv'
+}, {
+  username: 'GrahamSH'
+}, {
+  userID: '22529928',
+  username: 'simiagain'
+}, {
+  username: 'Secret-chest'
+}, {
+  userID: '11677378',
+  username: 'Mr_MPH'
+}, {
+  username: 'TheKodeToad'
+}].map(fromHardcoded);
+const extensionDevelopers = [
+// generated by TurboWarp/extensions/scripts/get-credits-for-gui.js
+{
+  username: '-SIPC-'
+}, {
+  username: '0832'
+}, {
+  userID: '17235330',
+  username: 'aleb2005'
+}, {
+  username: 'BlueDome77'
+}, {
+  username: 'ClaytonTDM'
+}, {
+  userID: '37070511',
+  username: 'cs2627883'
+}, {
+  userID: '64691048',
+  username: 'CST1229'
+}, {
+  userID: '41219524',
+  username: 'CubesterYT'
+}, {
+  userID: '33988895',
+  username: 'D-ScratchNinja'
+}, {
+  username: 'DT'
+}, {
+  userID: '1882674',
+  username: 'griffpatch'
+}, {
+  userID: '41876695',
+  username: 'JeremyGamer13'
+}, {
+  userID: '12498592',
+  username: 'LilyMakesThings'
+}, {
+  username: 'MikeDEV'
+}, {
+  userID: '62950341',
+  username: 'NamelessCat'
+}, {
+  username: 'NOname-awa'
+}, {
+  userID: '26959223',
+  username: 'pinksheep2917'
+}, {
+  username: 'pumpkinhasapatch'
+}, {
+  username: 'qxsck'
+}, {
+  userID: '29118689',
+  username: 'RedMan13'
+}, {
+  userID: '80038021',
+  username: 'RixTheTyrunt'
+}, {
+  userID: '14880401',
+  username: 'Sheep_maker'
+}, {
+  userID: '103496265',
+  username: 'shreder95ua'
+}, {
+  username: 'Skyhigh173'
+}, {
+  userID: '52066199',
+  username: 'softed'
+}, {
+  username: 'TheShovel'
+}, {
+  userID: '105362329',
+  username: 'TrueFantom'
+}, {
+  userID: '19133274',
+  username: 'Vadik1'
+}, {
+  username: 'veggiecan0419'
+}, {
+  userID: '82486672',
+  username: 'lolecksdeehaha'
+}, {
+  userID: '3318598',
+  username: 'plant2014'
+}, {
+  username: 'ZXMushroom63'
 }].map(fromHardcoded);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  addonDevelopers: shuffle(addonDevelopers)
+  addonDevelopers: shuffle(addonDevelopers),
+  extensionDevelopers: shuffle(extensionDevelopers)
 });
 
 /***/ })
